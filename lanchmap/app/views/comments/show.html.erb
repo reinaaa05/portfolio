@@ -1,0 +1,12 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  
+  <%= @comment.body %>
+</p>
+
+<%= link_to "Delete", @scomment, method: :delete, data: { confirm: "Are you sure?" },class:"btn btn-danger" %>
+<%= link_to 'Edit', edit_comment_path(@comment), class: "btn btn-primary" %> 
+
+
+<%= link_to 'Back', comments_path, class: "btn btn-default" %>

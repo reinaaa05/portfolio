@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Shops</h1>
+<%= form_tag("/shops", method: "get") do %>
+<%= label_tag(:name_key, "Search name:") %>
+<%= text_field_tag(:name_key) %>
+<%= submit_tag("Search") %> <%= link_to "Clear", shops_path %>
+<% end %>
+
+<table class="table table-striped table-hover">
+  <thead>
+    <tr>
+      <th>Category</th>
+      <th>Name</th>
+      <th>Address</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @shops.each do |shop| %>
+      <tr>
+        <td><%= link_to shop.category.name, shop, class: "widelink" %></td>
+        <td><%= link_to shop.name,shop,class: "widelink"  %></td>
+        <td><%= link_to shop.address, shop,class: "widelink"%></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Shop', new_shop_path, class: "btn btn-primary" %>
+<%= link_to 'Show Categories', categories_path, class: "btn btn-info" %>

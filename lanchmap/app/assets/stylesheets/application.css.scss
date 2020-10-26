@@ -1,0 +1,65 @@
+@import 'bootstrap-sprockets';
+@import 'bootstrap';
+
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require_tree .
+
+ */
+
+/* universal */
+body {
+  padding: 60px 15px 0;
+}
+
+/* table row link */
+a.widelink {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+}
+
+/* welcome index*/
+
+.welcome-title h1{
+  font-size: 90px;
+  font-weight: 500;
+  position: absolute;
+  top: 200px;
+  width:100%;
+  color: white;
+  opacity: 0.8;
+}
+
+.welcome-title {
+background-image: url('/images/coboto.1.jpg'); 
+background-repeat: no-repeat; background-size: cover; 
+background-position: center center;
+height:720px; 
+text-align: center;
+position: relative;
+color: white;
+}
+
+.welcome-btn {
+  opacity: 0.8;
+  background-color: white;
+  display: inline;
+  position: absolute;
+  top:400px;
+  left: 800px;
+  padding: 5px 0;
+  border-radius: 4px;
+}
