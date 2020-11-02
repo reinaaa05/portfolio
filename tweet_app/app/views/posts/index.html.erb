@@ -1,17 +1,67 @@
 <div class="main posts-index">
-  <div class="container">
-    <% @posts.each do |post| %>
-      <div class="posts-index-item">
-        <div class="post-left">
-          <img src="<%= "/user_images/#{post.user.image_name}" %>">
+  <div class="index-container">
+<%#= -------サイドバー --------- %>
+    <div class="aside">
+      <div class="aside-main">
+        <div class="sub-title">
+          <i class="fa fa-twitter fa-3x"></i>
         </div>
-        <div class="post-right">
-          <div class="post-user-name">
-            <%= link_to(post.user.name, "/users/#{post.user.id}") %>
-          </div>
-          <%= link_to(post.content, "/posts/#{post.id}") %>
+        <ul class="sub-menu">
+          <li><span class="fa fa-home"></span><a href="#">Home</a></li>
+          <li><span class="fa fa-search"></span><a href="#">Explore</a></li>
+          <li><span class="fa fa-bell-o"></span><a href="#">Notfications</a></li>
+          <li><span class="fa fa-envelope-o"></span><a href="#">Messages</a></li>
+          <li><span class="fa fa-bookmark-o"></span><a href="#">Bookmarks</a></li>
+          <li><span class="fa fa-list-alt"></span><a href="#">Lists</a></li>
+          <li><span class="fa fa-user-o"></span><a href="#">Profile</a></li>
+          <li><span class="fa fa-chevron-circle-down"></span><a href="#">More</a></li>
+        </ul>
+        <div class="sub-btn">
+          <a href="/posts/new" ><input class="tweet" type="button"  value="Tweet"></a>
         </div>
       </div>
-    <% end %>
+    </div>
+<%#------ メインエリア -----%>
+    <div class="main-article">
+      <div class="post-article">
+        <div class="post-top">
+          <%= link_to("Home","/posts/index") %>
+          <span class="fa fa-star-o"></span>
+        </div>
+        <div class="post-mid">
+          <div class="user-icon">
+            <img src="<%= "/user_images/#{@current_user.image_name}" %>">
+          </div>
+          <%= form_tag("/posts/create") do %>
+          <div class="post-new">
+            <div class="post-tweet">
+              <% @post.errors.full_messages.each do |message| %>
+                <div class="form-error">
+                  <%= message %>
+                </div>
+              <% end %>
+              <textarea name="content" value="What's happening?"><%= @post.content %></textarea>
+              <input type="submit" value="Tweet">
+            </div>
+          </div>
+          <% end %>
+        </div>
+        <div class="post-bottom">
+          <% @posts.each do |post| %>
+            <div class="posts-index-item">
+              <div class="post-left">
+                <img src="<%= "/user_images/#{post.user.image_name}" %>">
+              </div>
+              <div class="post-right">
+                <div class="post-user-name">
+                  <%= link_to(post.user.name, "/users/#{post.user.id}") %>
+                </div>
+                <%= link_to(post.content, "/posts/#{post.id}") %>
+              </div>
+            </div>
+          <% end %>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
