@@ -15,6 +15,19 @@ ul, li {
   margin: 0;
 }
 
+a {
+  text-decoration: none;
+  color: #2d3133;
+  font-size: 14px;
+}
+
+a.hover {
+  text-decoration: none;
+}
+input {
+  background-color: transparent;
+  outline-width: 0;
+}
 
 h1, h2, h3, h4, h5, h6, p {
   margin: 0;
@@ -135,6 +148,9 @@ body {
   text-align: center;
 }
 
+.btn-top {
+  border: none;
+}
 .login-btn:hover {
   background-color:#F0F8FF;
 }
@@ -193,7 +209,7 @@ letter-spacing: 1px;
   display: inline-block;
 }
 
-.login {
+.login  {
   width: 400px;
   padding: 0.7em 0;
   margin: 0.5em auto;
@@ -202,7 +218,6 @@ letter-spacing: 1px;
   background-color: #FFF;
   border: 2px solid #1DA1F2;
   border-radius: 20px;
-  display: inline-block;
 }
 
 .top-message{
