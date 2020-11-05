@@ -71,13 +71,7 @@
   border: 2px solid #1DA1F2;
   font-size: 15px;
 }
-.user-sub a{
-  position:absolute;
-  left: 3vw;
-  bottom: 3vh;
-  padding: 10px 10px;
-  width: 200px;
-}
+
 
 .user-sub a:hover {
   text-decoration: none;
@@ -97,7 +91,48 @@
   margin-right: 7px;
 }
 
+.user-sub {
+  position: relative;
+  cursor: pointer;
+  display: inline-block;
+}
 
+.display {
+  display: table-cell;
+  vertical-align: middle;
+  display: inline;
+  position:absolute;
+  top: 15vh;
+  padding: 10px;
+  width: 200px;
+}
+
+.display-none {
+  display: none;
+  position: absolute;
+  top: 400px;
+  padding: 10px;
+  font-size: 12px;
+  line-height: 1.6em;
+  color: #fff;
+  border-radius: 5px;
+  width: 200px;
+}
+
+.display-none:before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  border: 15px solid transparent;
+  border-top: 15px solid #000;
+  margin-left: -15px;
+}
+.user-sub:active .display-none{
+  display: inline-block;
+  top: -15px;
+  left: -10px;
+}
 
 /*------ メインエリア -----*/
 /*top*/
@@ -154,7 +189,7 @@ margin-right: 10px;
   font-size: 20px;
   padding-top: 10px;
 }
-
+/*文字を隠す*/
 .post-tweet .everyone {
   height: 0;
   padding: 0;
@@ -165,8 +200,7 @@ margin-right: 10px;
 .post-tweet textarea:focus {
   outline: none;
 }
-
-
+/*forcasすると文字が出る*/
 .post-tweet textarea:focus + .everyone {
   border-bottom: 1px solid lightgrey;
   padding: 1vh;
@@ -267,20 +301,64 @@ margin-right: 10px;
 }
 
 /* posts/show ================================ */
+
+.show-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.aside {
+  width: 30%;
+}
+
+.posts-show-item {
+  background-color: white;
+  overflow: hidden;
+  width: 70%;
+}
+
+.post-article {
+  width: 50%;
+  border:  1px solid lightgray;
+}
+
+.back-tweet {
+  display: flex;
+  border-bottom:  1px solid lightgray;
+  padding: 15px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.back-tweet a {
+  color: #1DA1F2;
+  font-weight: bold;
+  padding:10px;
+}
+
+.back-tweet a:hover {
+  text-decoration: none;
+  padding:10px;
+  color: #1DA1F2;
+  background-color: rgba(204,255,255,0.55);
+  border-radius: 50px;
+}
+
+.back-text {
+  padding-top: 5px;
+}
+.post-main {
+  border-bottom:  1px solid lightgray;
+  padding: 20px;
+  }
+
 .posts-show form {
   display: inline;
 }
 
-.posts-show-item {
-  padding: 30px;
-  background-color: white;
-  box-shadow: 0 2px 6px #c1ced7;
-  overflow: hidden;
-}
-
 .posts-show-item img {
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: 50px;
   border-radius: 40%;
   box-shadow: 0 2px 6px #c1ced7;
   vertical-align: middle;
@@ -289,10 +367,14 @@ margin-right: 10px;
 
 .posts-show-item .post-user-name a {
   vertical-align: middle;
-  font-size: 24px;
+  font-size: 20px;
   margin-left: 15px;
+  color: black;
 }
 
+.post-user-name a:active {
+  color: black;
+}
 .posts-show-item p {
   font-size: 24px;
   margin: 20px 0;
@@ -303,17 +385,15 @@ margin-right: 10px;
   margin-bottom: 10px;
 }
 
-.like-btn {
-  color: #8899a6;
+.count-area ul {
+  display: flex;
+  justify-content: row ;
+  padding: 1vw 2vw;
+  border-bottom:  1px solid lightgray;
 }
 
-.like-btn-unlike {
-  color: #ff2581;
-}
-
-.posts-show-item .fa {
-  font-size: 16px;
-  margin-right: 3px;
+.count-area li {
+  padding-right: 2vw;
 }
 
 .post-menus {
@@ -326,6 +406,47 @@ margin-right: 10px;
   font-size: 14px;
 }
 
+.reaction {
+  display: flex;
+  justify-content: space-between;
+  border-bottom:  1px solid lightgray;
+  padding: 0 2vw;
+}
+
+.like-btn {
+  color: #8899a6;
+}
+
+.like-btn-unlike {
+  color: #ff2581;
+}
+
+.reaction a {
+  font-size: 20px;
+  padding: 10px 15px;
+  color: #8899a6;
+}
+.ab:hover {
+  text-decoration: none;
+  padding: 10px 15px;
+  color: #1DA1F2;
+  background-color: rgba(204,255,255,0.55);
+  border-radius: 50px;
+}
+
+.like-btn:hover {
+  text-decoration: none;
+  padding: 5px;
+  background-color: rgba( 255, 37, 129, 0.23 );
+  border-radius: 50px;
+}
+
+.like-btn-unlike:hover {
+  text-decoration: none;
+  padding: 5px;
+  background-color: rgba( 255, 37, 129, 0.23 );
+  border-radius: 50px;
+}
 /* posts/new ================================ */
 .posts-new textarea {
   font-size: 20px;
