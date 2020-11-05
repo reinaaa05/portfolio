@@ -20,7 +20,14 @@
           <a href="/posts/new" ><input class="tweet" type="button"  value="Tweet"></a>
         </div>
         <div class="user-sub">
-          <a href="#" class="dispry"><img src="<%= "/user_images/#{@current_user.image_name}" %>"><span><%= @current_user.name %><span></a> 
+          <div class="display-none">
+            <ul>
+              <li><img src="<%= "/user_images/#{@current_user.image_name}" %>"><span><%= @current_user.name %><span></li>
+              <li><a href="/signup">既存のアカウントを追加</li>
+              <li><a href="/logout", {method: :post})><%= @current_user.name %>からログアウト</a></li>
+            </ul>
+          </div>
+          <a href="#" class="display"><img src="<%= "/user_images/#{@current_user.image_name}" %>"><span><%= @current_user.name %><span></a> 
         </div>
       </div>
     </div>

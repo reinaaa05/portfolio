@@ -1,33 +1,87 @@
 <div class="main posts-show">
-  <div class="container">
-    <div class="posts-show-item">
-      <div class="post-user-name">
-        <img src="<%= "/user_images/#{@user.image_name}" %>">
-        <%= link_to(@user.name, "/users/#{@user.id}") %>
-      </div>
-      <p>
-        <%= @post.content %>
-      </p>
-      <div class="post-time">
-        <%= @post.created_at %>
-      </div>
-      <% if Like.find_by(user_id: @current_user.id, post_id: @post.id) %>
-        <%= link_to("/likes/#{@post.id}/destroy", {method: "post"}) do %>
-          <span class="fa fa-heart like-btn-unlike"></span>
-        <% end %>
-      <% else %>
-        <%= link_to("/likes/#{@post.id}/create", {method: "post"}) do %>
-          <span class="fa fa-heart like-btn"></span>
-        <% end %>
-      <% end %>
-      <%= @likes_count %>
-      
-      <% if @post.user_id == @current_user.id %>
-        <div class="post-menus">
-          <%= link_to("編集", "/posts/#{@post.id}/edit") %>
-          <%= link_to("削除", "/posts/#{@post.id}/destroy", {method: "post"}) %>
+  <div class="show-container">
+    <%#= -------サイドバー --------- %>
+      <div class="aside">
+        <div class="aside-main">
+          <div class="sub-title">
+            <i class="fa fa-twitter fa-3x"></i>
+          </div>
+          <ul class="sub-menu">
+            <li><span class="fa fa-home"></span><a href="#">Home</a></li>
+            <li><span class="fa fa-search"></span><a href="#">Explore</a></li>
+            <li><span class="fa fa-bell-o"></span><a href="#">Notfications</a></li>
+            <li><span class="fa fa-envelope-o"></span><a href="#">Messages</a></li>
+            <li><span class="fa fa-bookmark-o"></span><a href="#">Bookmarks</a></li>
+            <li><span class="fa fa-list-alt"></span><a href="#">Lists</a></li>
+            <li><span class="fa fa-user-o"></span><a href="#">Profile</a></li>
+            <li><span class="fa fa-chevron-circle-down"></span><a href="#">More</a></li>
+          </ul>
+          <div class="sub-btn">
+            <a href="/posts/new" ><input class="tweet" type="button"  value="Tweet"></a>
+          </div>
+          <div class="user-sub">
+            <div class="display-none">
+              <ul>
+                <li><img src="<%= "/user_images/#{@current_user.image_name}" %>"><span><%= @current_user.name %><span></li>
+                <li><a href="/signup">既存のアカウントを追加</li>
+                <li><a href="/logout", {method: :post})><%= @current_user.name %>からログアウト</a></li>
+              </ul>
+            </div>
+            <div  class="display">
+              <a href="#"><img src="<%= "/user_images/#{@current_user.image_name}" %>"><span><%= @current_user.name %><span></a> 
+            </div>
+          </div>
         </div>
-      <% end %>
+      </div>
+<%#------ メインエリア -----%>
+    <div class="posts-show-item">
+      <div class="post-article">
+        <div class="back-tweet">
+          <a href="/posts/index"><span class="fa fa-arrow-left" ></span></a>
+          <span class="back-text">ツイートする</span>
+        </div>
+        <div class="post-main">
+          <div class="post-user-name">
+            <img src="<%= "/user_images/#{@user.image_name}" %>">
+            <%= link_to(@user.name, "/users/#{@user.id}") %>
+          </div>
+          <p>
+            <%= @post.content %>
+          </p>
+          <div class="post-time">
+            <%= @post.created_at %>
+          </div>
+          <% if @post.user_id == @current_user.id %>
+            <div class="post-menus">
+              <%= link_to("編集", "/posts/#{@post.id}/edit") %>
+              <%= link_to("削除", "/posts/#{@post.id}/destroy", {method: "post"}) %>
+            </div>
+          <% end %>
+        </div>
+        <div class="count-area">
+          <ul>
+            <li>  件のリツイート</li>
+            <li>  件引用ツイート</li>
+            <li><%= @likes_count %>件のいいね</li>
+          </ul>
+        </div>
+        <div class="reaction">
+          <a href="#" class="ab"><span class="fa fa-comment-o"></span></a>
+          <a href="#" class="ab"><span class="fa fa-refresh"></span></a>
+          <% if Like.find_by(user_id: @current_user.id, post_id: @post.id) %>
+            <%= link_to("/likes/#{@post.id}/destroy", {method: "post"}) do %>
+            <span class="fa fa-heart like-btn-unlike">
+            <% end %>
+            <% else %>
+            <%= link_to("/likes/#{@post.id}/create", {method: "post"}) do %>
+              <span class="fa fa-heart like-btn"></span>
+            <% end %>
+          <% end %>
+          <a href="#" class="ab"><span class="fa fa-caret-square-o-up"></span></a>
+        </div>
+      </div>
     </div>
   </div>
 </div>
+
+
