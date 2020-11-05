@@ -5,6 +5,7 @@ class PostsController < ApplicationController
   def index
     @posts = Post.all.order(created_at: :desc)
     @post = Post.new
+    @user = User.find_by(id: params[:id])
   end
   
   def show
