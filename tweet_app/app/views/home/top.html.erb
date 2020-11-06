@@ -1,0 +1,110 @@
+<div class="main top-main">
+  <div class="top-message">
+    <div class="top-left">
+      <div class="top-left-message">
+        <div class="left-message">
+          <div class="fa-area">
+            <span class="fa fa-search"></span>
+          </div>
+          <div class="fa-message">
+            <span>あなたの「好き」をフォローしましょう。</span>
+          </div>
+        </div>
+        <div class="left-message">
+          <div class="fa-area">
+            <span class="fa fa-users"></span>
+          </div>
+          <div class="fa-message">
+            <span>話題のトピックを追いかけましょう。</span>
+          </div>
+        </div>
+        <div class="left-message">
+          <div class="fa-area">
+            <span class="fa fa-comment-o"></span>
+          </div>
+          <div class="fa-message">
+            <span>会話に参加しましょう。</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="top-rigth">
+      <div class="login-top">
+        <div class="login-input">
+          <%= form_tag("/login") do %>
+            <div class="login-item">
+              <div class="login-text">
+                <span>電話、メールまたはユ-...</span>
+              </div>
+              <div class="login-area">
+                <input name="email" value="<%= @email %>">
+              </div>
+            </div>
+            <div class="login-item">
+              <div class="login-text">
+                <span>パスワード</span>
+              </div>
+              <div class="login-area">
+                <input type="password" name="password" value="<%= @password %>">
+              </div>
+              <div class="forget-password">
+                <a href="#">パスワードをお忘れですか？</a>
+              </div>
+            </div>
+            <div class="login-item">
+              <div class="login-btn">
+                <input type="submit" class="btn-top" value="ログイン">
+              </div>
+            </div>
+          <% end %>
+        </div>
+        <div class="login-main">
+          <div class="login-bottom">
+            <i class="fa fa-twitter fa-5x"></i>
+            <div class="login-title">
+              <h2>「いま」起きていることを見つけよう</h2>
+            </div>
+            <div class="login-sab">
+              <p>Twitterをはじめよう</p>
+            </div>
+            <div  class="btn_icon">
+              <ul>
+                <li>
+                  <a href="/signup" ><input type="button" class="new" value="アカウント作成"></a>
+                </li>
+                <li>
+                  <a href="/login"><input type="button" class="login" value="ログイン"></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<footer>
+  <div class="top-footer">
+    <div class="footer-main">
+      <div class="footer-list">
+        <a href="#">Twitterについて</a>
+        <a href="#">ヘルプセンター</a>
+        <a href="#">利用規約</a>
+        <a href="#">プライバシーポリシー</a>
+        <a href="#">cookieのポリシー</a>
+        <a href="#">広告情報</a>
+        <a href="#">ブログ</a>
+        <a href="#">ステータス</a>
+        <a href="#">採用情報</a>
+        <a href="#">ブランドリソース</a>
+        <a href="#">広告</a>
+        <a href="#">マーケティング</a>
+        <a href="#">Twitterのビジネス活用</a>
+        <a href="#">開発者</a>
+        <a href="#">プロフィール一覧</a>
+        <a href="#">設定</a>
+        <span>© 2020 Twitter, Inc.</span>
+      </div>
+    </div>
+  </div>
+</footer>
