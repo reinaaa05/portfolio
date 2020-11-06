@@ -190,6 +190,7 @@ letter-spacing: 1px;
   font-weight: bold;
   font-size: 15px;
 }
+
 .fa-5x{
   font-size:45px !important;
   color: #1DA1F2;
@@ -198,6 +199,7 @@ letter-spacing: 1px;
 .btn-icon {
   font-weight: bold;
 }
+
 .new  {
   background-color: #1DA1F2;
   width: 400px;
