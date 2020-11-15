@@ -64,7 +64,7 @@
 }
 
 .user-syow-main {
-  width: 55%;
+  width: 70%;
   border: 1px solid lightgray;
   position: relative;
 }
@@ -120,20 +120,31 @@
   padding-right: 6px ;
 }
 
-.profeel {
+.profeel  {
   position: absolute;
   top:250px;
   left:550px;
-  width: auto;
+  width: 180px;
   padding: 0.5em 0;
   margin: 1em auto;
   font-weight: bold;
   color: #1DA1F2;
-  background-color: #FFF;
+  background-color: #fff;
   border: 2px solid #1DA1F2;
   border-radius: 20px;
-  display: block;
   text-align: center;
+
+}
+
+.profeel a {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+  color: #1DA1F2;
+}
+
+.profeel a:hover {
+  text-decoration: none;
 }
 
 .user-tabs {
@@ -147,12 +158,8 @@
   text-align: center;
 }
 
-.user-tabs li.active {
+.active {
   border-bottom: 2px solid #3ecdc6;
-}
-
-.user-tabs li.active a {
-  color: #57575f;
 }
 
 .user-tabs a {
