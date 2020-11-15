@@ -45,16 +45,17 @@
           <h2><%= @user.name %></h2>
           <p><%= @user.email %></p>
           <% if @user.id == @current_user.id %>
-            <%= link_to("編集", "/users/#{@user.id}/edit") %>
+            <div  class="profeel">
+              <a href="/users/<%= @user.id %>/edit">set up profeel</a>
+            </div>
           <% end %>
-          <a href="#"><input type="button" class="profeel" value="プロフィールを設定する"></a>
         </div>
         <div class="user-tabs">
           <ul >
-            <li class="active"><%= link_to("ツイート", "/users/#{@user.id}") %></li>
-            <li><%= link_to("ツイートと返信", "/users/index") %></li>
-            <li><%= link_to("メディア", "/users/index") %></li>
-            <li><%= link_to("いいね!", "/users/#{@user.id}/likes") %></li>
+            <li class="user-tab active"><%= link_to("ツイート", "/users/#{@user.id}") %></li>
+            <li class="user-tab"><%= link_to("ツイートと返信", "/users/index") %></li>
+            <li class="user-tab"><%= link_to("メディア", "/users/index") %></li>
+            <li class="user-tab"><%= link_to("いいね!", "/users/#{@user.id}/likes") %></li>
           </ul>
         </div>
         <div class="who-follow">

@@ -1,33 +1,82 @@
 <div class="main user-show">
-  <div class="container">
-    <div class="user">
-      <img src="<%= "/user_images/#{@user.image_name}" %>">
-      <h2><%= @user.name %></h2>
-      <p><%= @user.email %></p>
-      <% if @user.id == @current_user.id %>
-        <%= link_to("編集", "/users/#{@user.id}/edit") %>
-      <% end %>
-    </div>
-    
-    <ul class="user-tabs">
-      <li><%= link_to("投稿", "/users/#{@user.id}") %></li>
-      <li class="active"><%= link_to("いいね!", "/users/#{@user.id}/likes") %></li>
-    </ul>
-    
-    <% @likes.each do |like| %>
-      <% post = Post.find_by(id: like.post_id) %>
-      
-      <div class="posts-index-item">
-        <div class="post-left">
-          <img src="<%= "/user_images/#{post.user.image_name}" %>">
+  <div class="user-show-container">
+  <%#= -------サイドバー --------- %>
+    <div class="aside">
+      <div class="aside-main">
+        <div class="sub-title">
+          <i class="fa fa-twitter fa-3x"></i>
         </div>
-        <div class="post-right">
-          <div class="post-user-name">
-            <%= link_to(post.user.name, "/users/#{post.user.id}") %>
+        <ul class="sub-menu">
+          <li><span class="fa fa-home"></span><a href="#">Home</a></li>
+          <li><span class="fa fa-search"></span><a href="#">Explore</a></li>
+          <li><span class="fa fa-bell-o"></span><a href="#">Notfications</a></li>
+          <li><span class="fa fa-envelope-o"></span><a href="#">Messages</a></li>
+          <li><span class="fa fa-bookmark-o"></span><a href="#">Bookmarks</a></li>
+          <li><span class="fa fa-list-alt"></span><a href="#">Lists</a></li>
+          <li><span class="fa fa-user-o"></span><a href="#">Profile</a></li>
+          <li><span class="fa fa-chevron-circle-down"></span><a href="#">More</a></li>
+        </ul>
+        <div class="sub-btn">
+          <a href="/posts/new" ><input class="tweet" type="button"  value="Tweet"></a>
+        </div>
+        <div class="user-sub">
+          <div class="display-none">
+            <ul>
+              <li><img src="<%= "/user_images/#{@current_user.image_name}" %>"><span><%= @current_user.name %><span></li>
+              <li><a href="/signup">既存のアカウントを追加</li>
+              <li><a href="/logout", {method: :post})><%= @current_user.name %>からログアウト</a></li>
+            </ul>
           </div>
-          <%= link_to(post.content, "/posts/#{post.id}") %>
+          <div  class="display">
+            <a href="#"><img src="<%= "/user_images/#{@current_user.image_name}" %>"><span><%= @current_user.name %><span></a> 
+          </div>
         </div>
       </div>
-    <% end %>
+    </div>
+    <%#= -------メインエリア --------- %>
+    <div class="main-article">
+      <div class="user-syow-main">
+        <div class="back-name">
+          <a href="/posts/index"><span class="fa fa-arrow-left" ></span></a>
+          <%= @user.name %>
+        </div>
+        <div class="user">
+          <img src="<%= "/user_images/#{@user.image_name}" %>">
+          <h2><%= @user.name %></h2>
+          <p><%= @user.email %></p>
+          <% if @user.id == @current_user.id %>
+            <div  class="profeel">
+              <a href="/users/<%= @user.id %>/edit">set up profeel</a>
+            </div>
+          <% end %>
+        </div>
+        <div class="user-tabs">
+          <ul >
+            <li class="user-tab "><%= link_to("ツイート", "/users/#{@user.id}") %></li>
+            <li class="user-tab"><%= link_to("ツイートと返信", "/users/index") %></li>
+            <li class="user-tab"><%= link_to("メディア", "/users/index") %></li>
+            <li class="user-tab active"><%= link_to("いいね!", "/users/#{@user.id}/likes") %></li>
+          </ul>
+        </div>
+        <div class="who-follow">
+          <span>Who to follow<span>
+        </div> 
+        <% @likes.each do |like| %>
+          <% post = Post.find_by(id: like.post_id) %>
+          <div class="posts-index-item">
+            <div class="post-left">
+              <img src="<%= "/user_images/#{post.user.image_name}" %>">
+            </div>
+            <div class="post-right">
+              <div class="post-user-name">
+                <%= link_to(post.user.name, "/users/#{post.user.id}") %>
+              </div>
+              <%= link_to(post.content, "/posts/#{post.id}") %>
+            </div>
+          </div>
+        <% end %>
+      </div>
+    </div>
   </div>
 </div>
+

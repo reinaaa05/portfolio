@@ -1,6 +1,6 @@
 <div class="main posts-index">
   <div class="index-container">
-<%#= -------サイドバー --------- %>
+<%#-------サイドバー --------- %>
     <div class="aside">
       <div class="aside-main">
         <div class="sub-title">
@@ -20,14 +20,20 @@
           <a href="/posts/new" ><input class="tweet" type="button"  value="Tweet"></a>
         </div>
         <div class="user-sub">
-          <div class="display-none">
+          <div class="display-none" id="display-none">
             <ul>
               <li><img src="<%= "/user_images/#{@current_user.image_name}" %>"><span><%= @current_user.name %><span></li>
-              <li><a href="/signup">既存のアカウントを追加</li>
-              <li><a href="/logout", {method: :post})><%= @current_user.name %>からログアウト</a></li>
+              <div class="signup-a">
+                <li><a href="/signup">既存のアカウントを追加</li>
+              </div>
+              <div class="login-a">
+                <li><a href="/logout" data-method="post"><%= @current_user.name %>からログアウト</a></li>
+              </div>
             </ul>
           </div>
-          <a href="#" class="display"><img src="<%= "/user_images/#{@current_user.image_name}" %>"><span><%= @current_user.name %><span></a> 
+          <div  class="display" id="display">
+            <img src="<%= "/user_images/#{@current_user.image_name}" %>"><span><%= @current_user.name %><span>
+          </div>
         </div>
       </div>
     </div>
@@ -87,3 +93,4 @@
     </div>
   </div>
 </div>
+

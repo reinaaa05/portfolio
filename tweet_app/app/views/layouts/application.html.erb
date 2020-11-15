@@ -10,10 +10,22 @@
 
   <body>
     <% if flash[:notice] %>
-      <div class="flash">
+      <div class="flash" id="flash">
       <%= flash[:notice] %>
       </div>
     <% end %>
+    <script>
+      $(function() {
+        setTimeout("$('.flash').fadeOut('slow')", 2000);
+
+        $('#display').click(function(){
+          $('#display-none').fadeIn(500);
+        });
+
+        });
+
+
+    </script>
     <%= yield %>
   </body>
 </html>
