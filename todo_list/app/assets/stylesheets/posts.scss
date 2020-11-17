@@ -1,0 +1,41 @@
+// Place all the styles related to the posts controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.main-wrapper {
+  height: 100vh;
+  width: 100vw;
+  background-image: linear-gradient(to bottom, #4C64D3, #CF2E92 30%, #F26939 60%, #FFDD83);
+  text-align: center;
+  padding:10vh;
+  opacity: 0.8;
+}
+
+.title h1 {
+  font-size: 50px;
+}
+
+.new-content {
+  text-align: center;
+  display: flex;
+  margin-left: 475px;
+  width: 20%;
+  margin: 0 auto;
+}
+.new-content textarea, .new-content button {
+  display: inline-block;
+  height: 30px;
+}
+
+.todo_list {
+  display: flex;
+  width: 20%;
+  margin: 0 auto;
+  padding: 10px 0 10px 10px;
+}
+
+.destroy {
+  background-color: aqua;
+  float: right;
+  display: inline-block;
+}
