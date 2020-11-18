@@ -1,6 +1,10 @@
 // Place all the styles related to the posts controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+* {
+  margin: 0;
+  padding: 0;
+}
 
 .main-wrapper {
   height: 100vh;
@@ -19,23 +23,38 @@
   text-align: center;
   display: flex;
   margin-left: 475px;
+  margin-bottom: 20px;
   width: 20%;
-  margin: 0 auto;
+  margin: 10px auto;
+
 }
 .new-content textarea, .new-content button {
   display: inline-block;
   height: 30px;
 }
 
-.todo_list {
-  display: flex;
-  width: 20%;
+.list-group {
   margin: 0 auto;
-  padding: 10px 0 10px 10px;
+  width: 20%;
+  background-color: beige;
+  display: block;
+  display: flex;
+  overflow: hidden;
 }
 
-.destroy {
-  background-color: aqua;
-  float: right;
+.check, .edit, .destroy {
   display: inline-block;
+  font-size: 20px;
+  width: 10%;
 }
+
+.content {
+  text-align: left;
+  display: inline-block;
+  width: 70%;
+  font-size: 25px;
+  padding-left: 5px;
+}
+
+
+

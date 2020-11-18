@@ -9,11 +9,13 @@
           <button type="submit" class="btn btn-secondary"><i class="fa fa-plus"></i></button>
         </div>
       <% end %>
-      <ul class="list-group">
         <% @post.each do |post| %>
-          <div class="todo_list">
-            <li><div class="post-content">
-              <%= post.content %>
+          <div class="list-group">
+            <div class="check">
+              <i class="fa fa-check-square-o"></i>
+            </div>
+            <div class="content">
+                <%= post.content %> 
             </div>
             <div class="edit">
               <%= link_to ("/posts/#{post.id}/edit") do %>
@@ -23,10 +25,18 @@
             <div class="destroy">
               <%= link_to("/posts/#{post.id}/destroy", method: :post) do %>
                 <i class="fa fa-trash-o"></i>
-              <% end %></li>
-            </div>  
-          </div>
+              <% end %>
+            </div> 
+          </div>  
         <% end %>
-      </ul>
+      <script>
+        $(function() {
+          $('.check').click(function() {
+            $(this).css('color', 'red');
+            var $contentIndex = $('.content').index($(this))
+            $('.content').eq($contentIndex).css('text-decoration', 'line-through');
+            })
+        });
+      </script>
     </div>
   </div>
