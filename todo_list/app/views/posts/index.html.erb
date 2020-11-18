@@ -9,12 +9,13 @@
           <button type="submit" class="btn btn-secondary"><i class="fa fa-plus"></i></button>
         </div>
       <% end %>
+      <div class="list-area">
         <% @post.each do |post| %>
           <div class="list-group">
             <div class="check">
               <i class="fa fa-check-square-o"></i>
             </div>
-            <div class="content">
+            <div class="contents">
                 <%= post.content %> 
             </div>
             <div class="edit">
@@ -29,13 +30,17 @@
             </div> 
           </div>  
         <% end %>
+      </div>
       <script>
         $(function() {
           $('.check').click(function() {
-            $(this).css('color', 'red');
-            var $contentIndex = $('.content').index($(this))
-            $('.content').eq($contentIndex).css('text-decoration', 'line-through');
-            })
+            $(this).toggleClass('active');
+            var listIndex = $('.check').index($(this));
+            $('.list-group').eq(listIndex).toggleClass('l-active')
+
+            var contentIndex = $('.check').index($(this));
+            $('.contents').eq(contentIndex).toggleClass('c-active');
+          })
         });
       </script>
     </div>

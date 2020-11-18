@@ -5134,3 +5134,1877 @@ Processing by PostsController#index as HTML
 Completed 200 OK in 530ms (Views: 522.9ms | ActiveRecord: 0.9ms)
 
 
+Started GET "/" for ::1 at 2020-11-18 21:03:51 +0900
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+Processing by HomeController#top as HTML
+  Rendering home/top.html.erb within layouts/application
+  Rendered home/top.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 1993ms (Views: 1974.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/index" for ::1 at 2020-11-18 21:03:58 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (1.0ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:12
+  Rendered posts/index.html.erb within layouts/application (73.0ms)
+Completed 200 OK in 985ms (Views: 940.6ms | ActiveRecord: 7.7ms)
+
+
+Started GET "/posts/index" for ::1 at 2020-11-18 21:04:21 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (7.7ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:12
+  Rendered posts/index.html.erb within layouts/application (399.9ms)
+Completed 200 OK in 1794ms (Views: 1746.8ms | ActiveRecord: 7.7ms)
+
+
+Started GET "/posts/index" for ::1 at 2020-11-18 21:05:34 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (1.0ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:12
+  Rendered posts/index.html.erb within layouts/application (31.6ms)
+Completed 200 OK in 882ms (Views: 861.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/posts/index" for ::1 at 2020-11-18 21:05:46 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (1.0ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:12
+  Rendered posts/index.html.erb within layouts/application (170.2ms)
+Completed 200 OK in 1770ms (Views: 1734.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/posts/index" for ::1 at 2020-11-18 21:15:08 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.9ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:12
+  Rendered posts/index.html.erb within layouts/application (42.7ms)
+Completed 200 OK in 824ms (Views: 806.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/posts/index" for ::1 at 2020-11-18 21:15:12 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.8ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:12
+  Rendered posts/index.html.erb within layouts/application (29.9ms)
+Completed 200 OK in 542ms (Views: 526.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/posts/index" for ::1 at 2020-11-18 21:16:20 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:12
+  Rendered posts/index.html.erb within layouts/application (7.3ms)
+Completed 200 OK in 367ms (Views: 359.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/posts/index" for ::1 at 2020-11-18 21:17:26 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (1.8ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:12
+  Rendered posts/index.html.erb within layouts/application (16.5ms)
+Completed 200 OK in 763ms (Views: 742.6ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/posts/index" for ::1 at 2020-11-18 21:17:58 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:12
+  Rendered posts/index.html.erb within layouts/application (10.8ms)
+Completed 200 OK in 579ms (Views: 571.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/posts/index" for ::1 at 2020-11-18 21:18:44 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.9ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:12
+  Rendered posts/index.html.erb within layouts/application (35.4ms)
+Completed 200 OK in 765ms (Views: 754.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/posts/index" for ::1 at 2020-11-18 21:18:49 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.9ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:12
+  Rendered posts/index.html.erb within layouts/application (49.3ms)
+Completed 200 OK in 924ms (Views: 905.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/posts/index" for ::1 at 2020-11-18 21:19:50 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.7ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:12
+  Rendered posts/index.html.erb within layouts/application (49.7ms)
+Completed 200 OK in 1104ms (Views: 1081.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/posts/index" for ::1 at 2020-11-18 21:28:28 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (2.0ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:12
+  Rendered posts/index.html.erb within layouts/application (19.2ms)
+Completed 200 OK in 18247ms (Views: 18229.7ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/posts/index" for ::1 at 2020-11-18 21:40:46 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (1.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:12
+  Rendered posts/index.html.erb within layouts/application (51.7ms)
+Completed 200 OK in 17137ms (Views: 17116.3ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/posts/index" for ::1 at 2020-11-18 21:41:54 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.8ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:12
+  Rendered posts/index.html.erb within layouts/application (49.4ms)
+Completed 200 OK in 793ms (Views: 770.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/posts/index" for ::1 at 2020-11-18 21:42:16 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.9ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:12
+  Rendered posts/index.html.erb within layouts/application (57.3ms)
+Completed 200 OK in 18600ms (Views: 18562.9ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/posts/17/destroy" for ::1 at 2020-11-18 21:43:07 +0900
+Processing by PostsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"wb02jaEYSiuZ5VK/cX4rSKbkIqXXux6EvI4263G4cbFxB3y+/87UMU8HeVHvFuUecbCjyMO0rF0yB/r0GElM9w==", "id"=>"17"}
+  [1m[36mPost Load (1.9ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:24
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:25
+  [1m[36mPost Destroy (5.5ms)[0m  [1m[31mDELETE FROM "posts" WHERE "posts"."id" = ?[0m  [["id", 17]]
+  ↳ app/controllers/posts_controller.rb:25
+  [1m[35m (14.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:25
+Redirected to http://localhost:3000/posts/index
+Completed 302 Found in 269ms (ActiveRecord: 22.1ms)
+
+
+Started GET "/posts/index" for ::1 at 2020-11-18 21:43:07 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (3.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+Started POST "/posts/17/destroy" for ::1 at 2020-11-18 21:43:08 +0900
+  ↳ app/views/posts/index.html.erb:12
+  Rendered posts/index.html.erb within layouts/application (345.7ms)
+Processing by PostsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"wb02jaEYSiuZ5VK/cX4rSKbkIqXXux6EvI4263G4cbFxB3y+/87UMU8HeVHvFuUecbCjyMO0rF0yB/r0GElM9w==", "id"=>"17"}
+  [1m[36mPost Load (2.2ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:24
+Completed 500 Internal Server Error in 63ms (ActiveRecord: 2.2ms)
+
+
+  
+NoMethodError (undefined method `destroy' for nil:NilClass):
+  
+app/controllers/posts_controller.rb:25:in `destroy'
+Started POST "/posts/17/destroy" for ::1 at 2020-11-18 21:43:10 +0900
+Processing by PostsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"wb02jaEYSiuZ5VK/cX4rSKbkIqXXux6EvI4263G4cbFxB3y+/87UMU8HeVHvFuUecbCjyMO0rF0yB/r0GElM9w==", "id"=>"17"}
+  [1m[36mPost Load (1.3ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:24
+Completed 500 Internal Server Error in 23ms (ActiveRecord: 1.3ms)
+
+
+  
+NoMethodError (undefined method `destroy' for nil:NilClass):
+  
+app/controllers/posts_controller.rb:25:in `destroy'
+Completed 200 OK in 3538ms (Views: 3516.1ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/posts/index" for ::1 at 2020-11-18 21:43:22 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (7.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:12
+  Rendered posts/index.html.erb within layouts/application (100.9ms)
+Completed 200 OK in 924ms (Views: 902.4ms | ActiveRecord: 7.5ms)
+
+
+Started POST "/posts/16/destroy" for ::1 at 2020-11-18 21:43:27 +0900
+Processing by PostsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"E+k4dQ8JYOut3u6MQkjwuFyvv5+kG2A43yYNmsac2iqjU3JGUd/+8Xs8xWLcID7ui/s+8rAU0uFRr8GFr23nbA==", "id"=>"16"}
+  [1m[36mPost Load (0.7ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:24
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:25
+  [1m[36mPost Destroy (5.5ms)[0m  [1m[31mDELETE FROM "posts" WHERE "posts"."id" = ?[0m  [["id", 16]]
+  ↳ app/controllers/posts_controller.rb:25
+  [1m[35m (5.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:25
+Redirected to http://localhost:3000/posts/index
+Completed 302 Found in 178ms (ActiveRecord: 12.0ms)
+
+
+Started GET "/posts/index" for ::1 at 2020-11-18 21:43:27 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.7ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:12
+  Rendered posts/index.html.erb within layouts/application (16.7ms)
+Completed 200 OK in 842ms (Views: 816.8ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/posts/create" for ::1 at 2020-11-18 21:43:32 +0900
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0ybtOtZoqzEW5hrOg6FzG6JiHm3DQ1rGz+CcBPSixlhjnKcJiL41K8AEMSAdyb1NdTafANdM6B9BaVAbnVP7Hg==", "content"=>"あああ"}
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:8
+  [1m[36mPost Create (3.6ms)[0m  [1m[32mINSERT INTO "posts" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "あああ"], ["created_at", "2020-11-18 12:43:32.995710"], ["updated_at", "2020-11-18 12:43:32.995710"]]
+  ↳ app/controllers/posts_controller.rb:8
+  [1m[35m (6.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:8
+Redirected to http://localhost:3000/posts/index
+Completed 302 Found in 194ms (ActiveRecord: 9.9ms)
+
+
+Started GET "/posts/index" for ::1 at 2020-11-18 21:43:33 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.9ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:12
+  Rendered posts/index.html.erb within layouts/application (36.6ms)
+Completed 200 OK in 709ms (Views: 697.3ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/posts/create" for ::1 at 2020-11-18 21:43:45 +0900
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/wLxnWzvZsQHwkRa6h0jQze5NmSt7+7KQm7BCXItZTJPuLuuMjn43tEgb7R0de0V4O23CbngXBPM5w0WG9xYdA==", "content"=>"卵"}
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:8
+  [1m[36mPost Create (3.8ms)[0m  [1m[32mINSERT INTO "posts" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "卵"], ["created_at", "2020-11-18 12:43:46.187464"], ["updated_at", "2020-11-18 12:43:46.187464"]]
+  ↳ app/controllers/posts_controller.rb:8
+  [1m[35m (8.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:8
+Redirected to http://localhost:3000/posts/index
+Completed 302 Found in 229ms (ActiveRecord: 12.4ms)
+
+
+Started GET "/posts/index" for ::1 at 2020-11-18 21:43:46 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (1.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:12
+  Rendered posts/index.html.erb within layouts/application (52.7ms)
+Completed 200 OK in 1184ms (Views: 1166.5ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/posts/index" for ::1 at 2020-11-18 21:47:05 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (2.0ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:12
+  Rendered posts/index.html.erb within layouts/application (514.7ms)
+Completed 200 OK in 18209ms (Views: 18063.1ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/posts/index" for ::1 at 2020-11-18 21:47:59 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (1.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:12
+  Rendered posts/index.html.erb within layouts/application (14.8ms)
+Completed 200 OK in 877ms (Views: 858.9ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/posts/index" for ::1 at 2020-11-18 21:48:03 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:12
+  Rendered posts/index.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 376ms (Views: 369.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/posts/index" for ::1 at 2020-11-18 21:56:44 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.9ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:12
+  Rendered posts/index.html.erb within layouts/application (97.1ms)
+Completed 200 OK in 863ms (Views: 845.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/posts/index" for ::1 at 2020-11-18 22:00:15 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (1.0ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:12
+  Rendered posts/index.html.erb within layouts/application (40.1ms)
+Completed 200 OK in 824ms (Views: 807.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/posts/index" for ::1 at 2020-11-18 22:04:23 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (4.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:12
+  Rendered posts/index.html.erb within layouts/application (83.1ms)
+Completed 200 OK in 18394ms (Views: 18353.1ms | ActiveRecord: 4.6ms)
+
+
+Started POST "/posts/create" for ::1 at 2020-11-18 22:05:25 +0900
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"KTauFW53xOSeHzU5w6LU6gnuUT7n3Tclac+IpNmTO4CZjOQmMKFa/kj9Htddyhq83rrQU/PShfznRkS7sGIGxg==", "content"=>"あああ"}
+  [1m[35m (0.7ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:8
+  [1m[36mPost Create (8.5ms)[0m  [1m[32mINSERT INTO "posts" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "あああ"], ["created_at", "2020-11-18 13:05:25.545887"], ["updated_at", "2020-11-18 13:05:25.545887"]]
+  ↳ app/controllers/posts_controller.rb:8
+  [1m[35m (13.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:8
+Redirected to http://localhost:3000/posts/index
+Completed 302 Found in 176ms (ActiveRecord: 22.3ms)
+
+
+Started GET "/posts/index" for ::1 at 2020-11-18 22:05:25 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (1.8ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:12
+  Rendered posts/index.html.erb within layouts/application (108.2ms)
+Completed 200 OK in 1181ms (Views: 1149.7ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/posts/index" for ::1 at 2020-11-18 22:06:40 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (4.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:12
+  Rendered posts/index.html.erb within layouts/application (63.5ms)
+Completed 200 OK in 17781ms (Views: 17750.0ms | ActiveRecord: 4.6ms)
+
+
+Started GET "/posts/index" for ::1 at 2020-11-18 22:07:29 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.8ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:12
+  Rendered posts/index.html.erb within layouts/application (213.1ms)
+Completed 200 OK in 16991ms (Views: 16970.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/posts/index" for ::1 at 2020-11-18 22:08:44 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.8ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:12
+  Rendered posts/index.html.erb within layouts/application (63.5ms)
+Completed 200 OK in 16206ms (Views: 16185.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/posts/index" for ::1 at 2020-11-18 22:09:28 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.7ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:12
+  Rendered posts/index.html.erb within layouts/application (38.1ms)
+Completed 200 OK in 895ms (Views: 880.3ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/posts/create" for ::1 at 2020-11-18 22:09:39 +0900
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"We5RLOPXvQff8YeoKdJNNBLzO9MxI70hO+zsLHs9+IPpVBsfvQEjHQkTrEa3uoNixae6viUsD/i1ZSAzEszFxQ==", "content"=>"KKB"}
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:8
+  [1m[36mPost Create (12.6ms)[0m  [1m[32mINSERT INTO "posts" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "KKB"], ["created_at", "2020-11-18 13:09:40.050929"], ["updated_at", "2020-11-18 13:09:40.050929"]]
+  ↳ app/controllers/posts_controller.rb:8
+  [1m[35m (7.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:8
+Redirected to http://localhost:3000/posts/index
+Completed 302 Found in 151ms (ActiveRecord: 20.6ms)
+
+
+Started GET "/posts/index" for ::1 at 2020-11-18 22:09:40 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (1.0ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:12
+  Rendered posts/index.html.erb within layouts/application (53.4ms)
+Completed 200 OK in 1216ms (Views: 1204.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/posts/index" for ::1 at 2020-11-18 22:12:16 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (1.0ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:12
+  Rendered posts/index.html.erb within layouts/application (58.9ms)
+Completed 200 OK in 16828ms (Views: 16798.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/posts/index" for ::1 at 2020-11-18 22:13:05 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.7ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:12
+  Rendered posts/index.html.erb within layouts/application (12.2ms)
+Completed 200 OK in 17690ms (Views: 17677.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/posts/index" for ::1 at 2020-11-18 22:15:53 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (1.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:12
+  Rendered posts/index.html.erb within layouts/application (34.5ms)
+Completed 200 OK in 17313ms (Views: 17296.1ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/posts/index" for ::1 at 2020-11-18 22:16:44 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.8ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:12
+  Rendered posts/index.html.erb within layouts/application (15.8ms)
+Completed 200 OK in 18041ms (Views: 18029.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/posts/index" for ::1 at 2020-11-18 22:17:49 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (1.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:12
+  Rendered posts/index.html.erb within layouts/application (17.8ms)
+Completed 200 OK in 16812ms (Views: 16792.8ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/posts/index" for ::1 at 2020-11-18 22:18:35 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (1.8ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:12
+  Rendered posts/index.html.erb within layouts/application (43.0ms)
+Completed 200 OK in 16658ms (Views: 16639.2ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/posts/index" for ::1 at 2020-11-18 22:19:08 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (1.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:12
+  Rendered posts/index.html.erb within layouts/application (235.9ms)
+Completed 200 OK in 17918ms (Views: 17898.6ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/posts/index" for ::1 at 2020-11-18 22:19:37 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (1.0ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:12
+  Rendered posts/index.html.erb within layouts/application (56.1ms)
+Completed 200 OK in 19773ms (Views: 19756.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/posts/index" for ::1 at 2020-11-18 22:20:05 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.7ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:12
+  Rendered posts/index.html.erb within layouts/application (17.2ms)
+Completed 200 OK in 24714ms (Views: 24696.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/posts/index" for ::1 at 2020-11-18 22:20:52 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (1.0ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:12
+  Rendered posts/index.html.erb within layouts/application (51.7ms)
+Completed 200 OK in 19174ms (Views: 19149.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/posts/index" for ::1 at 2020-11-18 22:21:34 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (8.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:12
+  Rendered posts/index.html.erb within layouts/application (62.9ms)
+Completed 200 OK in 17986ms (Views: 17961.6ms | ActiveRecord: 8.2ms)
+
+
+Started GET "/posts/index" for ::1 at 2020-11-18 22:22:15 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.7ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:12
+  Rendered posts/index.html.erb within layouts/application (12.2ms)
+Started GET "/posts/index" for ::1 at 2020-11-18 22:22:40 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (1.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:12
+  Rendered posts/index.html.erb within layouts/application (52.4ms)
+Completed 200 OK in 26372ms (Views: 26361.3ms | ActiveRecord: 0.7ms)
+
+
+Completed 200 OK in 17349ms (Views: 17327.5ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/posts/index" for ::1 at 2020-11-18 22:26:07 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (1.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:12
+  Rendered posts/index.html.erb within layouts/application (44.2ms)
+Completed 200 OK in 17347ms (Views: 17330.8ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/posts/index" for ::1 at 2020-11-18 22:27:19 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.7ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:12
+  Rendered posts/index.html.erb within layouts/application (36.1ms)
+Completed 200 OK in 802ms (Views: 779.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/posts/index" for ::1 at 2020-11-18 22:28:42 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (1.0ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:12
+  Rendered posts/index.html.erb within layouts/application (104.8ms)
+Completed 200 OK in 17762ms (Views: 17744.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/posts/index" for ::1 at 2020-11-18 22:29:20 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (1.0ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:12
+  Rendered posts/index.html.erb within layouts/application (20.5ms)
+Completed 200 OK in 17303ms (Views: 17281.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/posts/index" for ::1 at 2020-11-18 22:38:51 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (1.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:12
+  Rendered posts/index.html.erb within layouts/application (90.6ms)
+Completed 200 OK in 17088ms (Views: 17070.0ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/posts/index" for ::1 at 2020-11-18 22:39:20 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (1.0ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:12
+  Rendered posts/index.html.erb within layouts/application (51.8ms)
+Completed 200 OK in 18144ms (Views: 18126.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/posts/index" for ::1 at 2020-11-18 22:40:03 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (1.0ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:12
+  Rendered posts/index.html.erb within layouts/application (101.7ms)
+Completed 200 OK in 17553ms (Views: 17522.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/posts/index" for ::1 at 2020-11-18 22:40:35 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.8ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:12
+  Rendered posts/index.html.erb within layouts/application (91.8ms)
+Completed 200 OK in 18650ms (Views: 18621.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/posts/index" for ::1 at 2020-11-18 22:40:59 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:12
+  Rendered posts/index.html.erb within layouts/application (8.7ms)
+Completed 200 OK in 425ms (Views: 417.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/posts/index" for ::1 at 2020-11-18 22:41:29 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.8ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:12
+  Rendered posts/index.html.erb within layouts/application (82.7ms)
+Completed 200 OK in 18221ms (Views: 18202.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/posts/index" for ::1 at 2020-11-18 22:44:40 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (1.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:13
+  Rendered posts/index.html.erb within layouts/application (43.5ms)
+Completed 200 OK in 18572ms (Views: 18553.6ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/posts/index" for ::1 at 2020-11-18 22:45:48 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (1.0ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:13
+  Rendered posts/index.html.erb within layouts/application (122.0ms)
+Completed 200 OK in 18033ms (Views: 18009.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/posts/index" for ::1 at 2020-11-18 22:46:35 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.7ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:13
+  Rendered posts/index.html.erb within layouts/application (94.0ms)
+Completed 200 OK in 16204ms (Views: 16183.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/posts/index" for ::1 at 2020-11-18 22:47:26 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (1.0ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:13
+  Rendered posts/index.html.erb within layouts/application (54.1ms)
+Completed 200 OK in 17579ms (Views: 17558.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/posts/index" for ::1 at 2020-11-18 22:48:43 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (3.0ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:13
+  Rendered posts/index.html.erb within layouts/application (61.0ms)
+Completed 200 OK in 15321ms (Views: 15301.9ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/posts/index" for ::1 at 2020-11-18 22:49:15 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (1.0ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:13
+  Rendered posts/index.html.erb within layouts/application (52.3ms)
+Completed 200 OK in 18394ms (Views: 18381.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/posts/index" for ::1 at 2020-11-18 22:50:11 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (1.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:13
+  Rendered posts/index.html.erb within layouts/application (68.2ms)
+Completed 200 OK in 20417ms (Views: 20379.5ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/posts/index" for ::1 at 2020-11-18 22:51:19 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (1.7ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:13
+  Rendered posts/index.html.erb within layouts/application (55.7ms)
+Completed 200 OK in 16783ms (Views: 16761.9ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/posts/index" for ::1 at 2020-11-18 22:52:14 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (1.0ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:13
+  Rendered posts/index.html.erb within layouts/application (38.2ms)
+Completed 200 OK in 18699ms (Views: 18683.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/posts/index" for ::1 at 2020-11-18 22:53:06 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (1.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:13
+  Rendered posts/index.html.erb within layouts/application (86.8ms)
+Completed 200 OK in 17560ms (Views: 17533.2ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/posts/index" for ::1 at 2020-11-18 22:53:59 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (1.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:13
+  Rendered posts/index.html.erb within layouts/application (40.5ms)
+Completed 200 OK in 15266ms (Views: 15248.8ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/posts/index" for ::1 at 2020-11-18 22:54:31 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:13
+  Rendered posts/index.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 16589ms (Views: 16583.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/posts/index" for ::1 at 2020-11-18 22:54:58 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.9ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:13
+  Rendered posts/index.html.erb within layouts/application (50.5ms)
+Completed 200 OK in 17296ms (Views: 17269.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/posts/index" for ::1 at 2020-11-18 22:56:15 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (1.0ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:13
+  Rendered posts/index.html.erb within layouts/application (20.1ms)
+Completed 200 OK in 17541ms (Views: 17512.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/posts/index" for ::1 at 2020-11-18 22:57:16 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (1.7ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:13
+  Rendered posts/index.html.erb within layouts/application (59.1ms)
+Completed 200 OK in 18415ms (Views: 18393.0ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/posts/index" for ::1 at 2020-11-18 22:58:16 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (5.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:13
+  Rendered posts/index.html.erb within layouts/application (54.1ms)
+Completed 200 OK in 17476ms (Views: 17452.7ms | ActiveRecord: 5.6ms)
+
+
+Started GET "/posts/index" for ::1 at 2020-11-18 22:59:34 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (1.0ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:13
+  Rendered posts/index.html.erb within layouts/application (60.7ms)
+Completed 200 OK in 18145ms (Views: 18119.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/posts/index" for ::1 at 2020-11-18 23:00:02 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (3.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:13
+  Rendered posts/index.html.erb within layouts/application (46.8ms)
+Completed 200 OK in 695ms (Views: 687.9ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/posts/index" for ::1 at 2020-11-18 23:00:23 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.9ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:13
+  Rendered posts/index.html.erb within layouts/application (40.6ms)
+Completed 200 OK in 17223ms (Views: 17207.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/posts/index" for ::1 at 2020-11-18 23:01:06 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.9ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:13
+  Rendered posts/index.html.erb within layouts/application (215.4ms)
+Completed 200 OK in 17668ms (Views: 17643.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/posts/index" for ::1 at 2020-11-18 23:02:01 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.7ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:13
+  Rendered posts/index.html.erb within layouts/application (51.8ms)
+Completed 200 OK in 17848ms (Views: 17827.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/posts/index" for ::1 at 2020-11-18 23:02:38 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.7ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:13
+  Rendered posts/index.html.erb within layouts/application (37.1ms)
+Completed 200 OK in 16807ms (Views: 16790.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/posts/index" for ::1 at 2020-11-18 23:03:26 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.7ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:13
+  Rendered posts/index.html.erb within layouts/application (56.7ms)
+Completed 200 OK in 15788ms (Views: 15770.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/posts/index" for ::1 at 2020-11-18 23:04:45 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (1.0ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:13
+  Rendered posts/index.html.erb within layouts/application (53.1ms)
+Completed 200 OK in 15094ms (Views: 15076.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/posts/index" for ::1 at 2020-11-18 23:06:36 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.9ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:13
+  Rendered posts/index.html.erb within layouts/application (14.9ms)
+Completed 200 OK in 18564ms (Views: 18541.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/posts/index" for ::1 at 2020-11-18 23:07:13 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (1.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:13
+  Rendered posts/index.html.erb within layouts/application (51.1ms)
+Completed 200 OK in 17274ms (Views: 17257.6ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/posts/index" for ::1 at 2020-11-18 23:07:40 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.7ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:13
+  Rendered posts/index.html.erb within layouts/application (51.8ms)
+Completed 200 OK in 17631ms (Views: 17614.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/posts/index" for ::1 at 2020-11-18 23:08:13 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (1.0ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:13
+  Rendered posts/index.html.erb within layouts/application (35.6ms)
+Completed 200 OK in 17447ms (Views: 17420.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/posts/index" for ::1 at 2020-11-18 23:08:48 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (1.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:13
+  Rendered posts/index.html.erb within layouts/application (36.9ms)
+Completed 200 OK in 18022ms (Views: 18006.2ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/posts/index" for ::1 at 2020-11-18 23:09:30 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.7ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:13
+  Rendered posts/index.html.erb within layouts/application (13.3ms)
+Completed 200 OK in 17355ms (Views: 17337.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/posts/index" for ::1 at 2020-11-18 23:10:05 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (1.9ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:13
+  Rendered posts/index.html.erb within layouts/application (46.0ms)
+Completed 200 OK in 17877ms (Views: 17856.5ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/posts/index" for ::1 at 2020-11-18 23:10:40 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (2.8ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:13
+  Rendered posts/index.html.erb within layouts/application (100.3ms)
+Completed 200 OK in 18829ms (Views: 18791.5ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/posts/index" for ::1 at 2020-11-18 23:11:13 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.7ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:13
+  Rendered posts/index.html.erb within layouts/application (49.4ms)
+Completed 200 OK in 16420ms (Views: 16396.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/posts/index" for ::1 at 2020-11-18 23:11:58 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:13
+  Rendered posts/index.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 16600ms (Views: 16594.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/posts/index" for ::1 at 2020-11-18 23:12:26 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.8ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:13
+  Rendered posts/index.html.erb within layouts/application (42.4ms)
+Completed 200 OK in 17482ms (Views: 17465.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/posts/21/edit" for ::1 at 2020-11-18 23:13:01 +0900
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"21"}
+  [1m[36mPost Load (1.3ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 21], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:13
+  Rendering posts/edit.html.erb within layouts/application
+  Rendered posts/edit.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 785ms (Views: 712.7ms | ActiveRecord: 1.3ms)
+
+
+Started POST "/posts/21/update" for ::1 at 2020-11-18 23:13:08 +0900
+Processing by PostsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"2pEmjN0bobzN3zFepUc0oH3uZY1xMNuWlXCYMtS96ySCatUx0MnFdgd+UepwpW4lrQK0CF2MOmgN4frEZkso/g==", "content"=>"aaa", "id"=>"21"}
+  [1m[36mPost Load (0.9ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 21], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:17
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:19
+  [1m[36mPost Update (5.7ms)[0m  [1m[33mUPDATE "posts" SET "content" = ?, "updated_at" = ? WHERE "posts"."id" = ?[0m  [["content", "aaa"], ["updated_at", "2020-11-18 14:13:08.531596"], ["id", 21]]
+  ↳ app/controllers/posts_controller.rb:19
+  [1m[35m (15.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:19
+Redirected to http://localhost:3000/posts/index
+Completed 302 Found in 475ms (ActiveRecord: 22.6ms)
+
+
+Started GET "/posts/index" for ::1 at 2020-11-18 23:13:08 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (5.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:13
+  Rendered posts/index.html.erb within layouts/application (121.9ms)
+Started POST "/posts/21/update" for ::1 at 2020-11-18 23:13:09 +0900
+Processing by PostsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"2pEmjN0bobzN3zFepUc0oH3uZY1xMNuWlXCYMtS96ySCatUx0MnFdgd+UepwpW4lrQK0CF2MOmgN4frEZkso/g==", "content"=>"aaa", "id"=>"21"}
+  [1m[36mPost Load (3.3ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 21], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:17
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:19
+  [1m[35m (0.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:19
+Redirected to http://localhost:3000/posts/index
+Completed 302 Found in 167ms (ActiveRecord: 3.6ms)
+
+
+Started GET "/posts/index" for ::1 at 2020-11-18 23:13:10 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (1.7ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:13
+  Rendered posts/index.html.erb within layouts/application (40.3ms)
+Completed 200 OK in 1967ms (Views: 1940.3ms | ActiveRecord: 5.4ms)
+
+
+Completed 200 OK in 1071ms (Views: 1052.5ms | ActiveRecord: 1.7ms)
+
+
+Started POST "/posts/22/destroy" for ::1 at 2020-11-18 23:13:16 +0900
+Processing by PostsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"u45FtDnA3D8v32Eq6bvApgM6MzAU+L0Apiq6WVJST6sLNA+HZxZCJfk9SsR30w7w1G6yXQD3D9koo3ZGO6Ny7Q==", "id"=>"22"}
+  [1m[36mPost Load (1.4ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:24
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:25
+  [1m[36mPost Destroy (4.1ms)[0m  [1m[31mDELETE FROM "posts" WHERE "posts"."id" = ?[0m  [["id", 22]]
+  ↳ app/controllers/posts_controller.rb:25
+  [1m[35m (7.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:25
+Redirected to http://localhost:3000/posts/index
+Completed 302 Found in 180ms (ActiveRecord: 12.8ms)
+
+
+Started GET "/posts/index" for ::1 at 2020-11-18 23:13:16 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (1.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:13
+  Rendered posts/index.html.erb within layouts/application (36.4ms)
+Completed 200 OK in 792ms (Views: 780.0ms | ActiveRecord: 1.2ms)
+
+
+Started POST "/posts/create" for ::1 at 2020-11-18 23:13:33 +0900
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"puYwtQK0MRx3YqIwBQc8r0FyHA3cl8LI6lECjsaFNqQWXHqGXGKvBqGAid6bb/L5liadYMiYcBFk2M6Rr3QL4g==", "content"=>"できた"}
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:8
+  [1m[36mPost Create (10.6ms)[0m  [1m[32mINSERT INTO "posts" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "できた"], ["created_at", "2020-11-18 14:13:33.204679"], ["updated_at", "2020-11-18 14:13:33.204679"]]
+  ↳ app/controllers/posts_controller.rb:8
+  [1m[35m (17.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:8
+Redirected to http://localhost:3000/posts/index
+Completed 302 Found in 214ms (ActiveRecord: 28.6ms)
+
+
+Started GET "/posts/index" for ::1 at 2020-11-18 23:13:33 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (3.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:13
+  Rendered posts/index.html.erb within layouts/application (281.3ms)
+Started POST "/posts/create" for ::1 at 2020-11-18 23:13:35 +0900
+Completed 200 OK in 1436ms (Views: 1415.0ms | ActiveRecord: 3.6ms)
+
+
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"puYwtQK0MRx3YqIwBQc8r0FyHA3cl8LI6lECjsaFNqQWXHqGXGKvBqGAid6bb/L5liadYMiYcBFk2M6Rr3QL4g==", "content"=>"できた"}
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:8
+  [1m[36mPost Create (6.7ms)[0m  [1m[32mINSERT INTO "posts" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "できた"], ["created_at", "2020-11-18 14:13:35.478769"], ["updated_at", "2020-11-18 14:13:35.478769"]]
+  ↳ app/controllers/posts_controller.rb:8
+  [1m[35m (10.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:8
+Redirected to http://localhost:3000/posts/index
+Completed 302 Found in 202ms (ActiveRecord: 16.9ms)
+
+
+Started GET "/posts/index" for ::1 at 2020-11-18 23:13:35 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.7ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:13
+  Rendered posts/index.html.erb within layouts/application (56.5ms)
+Completed 200 OK in 883ms (Views: 863.6ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/posts/create" for ::1 at 2020-11-18 23:13:43 +0900
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+kezo5eRAAoUtWYu+ZXYBXjfLDdw+tK4ZGSXGGToMHZK/fmQyUeeEMJXTcBn/RZTr4utWmT1YGHq7VsHDRkNMA==", "content"=>"かな"}
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:8
+  [1m[36mPost Create (4.8ms)[0m  [1m[32mINSERT INTO "posts" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "かな"], ["created_at", "2020-11-18 14:13:43.789287"], ["updated_at", "2020-11-18 14:13:43.789287"]]
+  ↳ app/controllers/posts_controller.rb:8
+  [1m[35m (8.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:8
+Redirected to http://localhost:3000/posts/index
+Completed 302 Found in 158ms (ActiveRecord: 13.2ms)
+
+
+Started GET "/posts/index" for ::1 at 2020-11-18 23:13:43 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (1.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:13
+  Rendered posts/index.html.erb within layouts/application (12.2ms)
+Started POST "/posts/create" for ::1 at 2020-11-18 23:13:44 +0900
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+kezo5eRAAoUtWYu+ZXYBXjfLDdw+tK4ZGSXGGToMHZK/fmQyUeeEMJXTcBn/RZTr4utWmT1YGHq7VsHDRkNMA==", "content"=>"かな"}
+  [1m[35m (0.4ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:8
+  [1m[36mPost Create (7.4ms)[0m  [1m[32mINSERT INTO "posts" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "かな"], ["created_at", "2020-11-18 14:13:44.609442"], ["updated_at", "2020-11-18 14:13:44.609442"]]
+  ↳ app/controllers/posts_controller.rb:8
+  [1m[35m (11.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:8
+Redirected to http://localhost:3000/posts/index
+Completed 302 Found in 207ms (ActiveRecord: 19.1ms)
+
+
+Started GET "/posts/index" for ::1 at 2020-11-18 23:13:44 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (2.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:13
+  Rendered posts/index.html.erb within layouts/application (48.2ms)
+Completed 200 OK in 2187ms (Views: 2171.1ms | ActiveRecord: 1.1ms)
+
+
+Completed 200 OK in 1333ms (Views: 1313.0ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/posts/index" for ::1 at 2020-11-18 23:14:20 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (1.8ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:13
+  Rendered posts/index.html.erb within layouts/application (65.3ms)
+Completed 200 OK in 18316ms (Views: 18293.3ms | ActiveRecord: 1.8ms)
+
+
+Started POST "/posts/create" for ::1 at 2020-11-18 23:14:43 +0900
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"qM00lLFxB15T20vpsE3v9gnploSVi6gA8+qBO+bu/CIYd36n76eZRIU5YAcuJSGg3r0X6YGEGtl9Y00kjx/BZA==", "content"=>"ｚｚ"}
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:8
+  [1m[36mPost Create (5.8ms)[0m  [1m[32mINSERT INTO "posts" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "ｚｚ"], ["created_at", "2020-11-18 14:14:43.242737"], ["updated_at", "2020-11-18 14:14:43.242737"]]
+  ↳ app/controllers/posts_controller.rb:8
+  [1m[35m (9.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:8
+Redirected to http://localhost:3000/posts/index
+Completed 302 Found in 97ms (ActiveRecord: 15.9ms)
+
+
+Started GET "/posts/index" for ::1 at 2020-11-18 23:14:43 +0900
+Processing by PostsController#index as HTML
+Started POST "/posts/create" for ::1 at 2020-11-18 23:14:43 +0900
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (1.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:13
+  Rendered posts/index.html.erb within layouts/application (121.9ms)
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"qM00lLFxB15T20vpsE3v9gnploSVi6gA8+qBO+bu/CIYd36n76eZRIU5YAcuJSGg3r0X6YGEGtl9Y00kjx/BZA==", "content"=>"ｚｚ"}
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:8
+  [1m[36mPost Create (4.7ms)[0m  [1m[32mINSERT INTO "posts" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "ｚｚ"], ["created_at", "2020-11-18 14:14:43.974785"], ["updated_at", "2020-11-18 14:14:43.974785"]]
+  ↳ app/controllers/posts_controller.rb:8
+  [1m[35m (5.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:8
+Redirected to http://localhost:3000/posts/index
+Completed 302 Found in 195ms (ActiveRecord: 10.2ms)
+
+
+Started GET "/posts/index" for ::1 at 2020-11-18 23:14:44 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (1.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:13
+  Rendered posts/index.html.erb within layouts/application (25.5ms)
+Started POST "/posts/create" for ::1 at 2020-11-18 23:14:45 +0900
+Completed 200 OK in 1776ms (Views: 1765.0ms | ActiveRecord: 1.3ms)
+
+
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"qM00lLFxB15T20vpsE3v9gnploSVi6gA8+qBO+bu/CIYd36n76eZRIU5YAcuJSGg3r0X6YGEGtl9Y00kjx/BZA==", "content"=>"ｚｚ"}
+  [1m[35m (0.6ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:8
+  [1m[36mPost Create (6.4ms)[0m  [1m[32mINSERT INTO "posts" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "ｚｚ"], ["created_at", "2020-11-18 14:14:45.814740"], ["updated_at", "2020-11-18 14:14:45.814740"]]
+  ↳ app/controllers/posts_controller.rb:8
+  [1m[35m (10.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:8
+Redirected to http://localhost:3000/posts/index
+Completed 302 Found in 188ms (ActiveRecord: 17.8ms)
+
+
+Started GET "/posts/index" for ::1 at 2020-11-18 23:14:46 +0900
+Completed 200 OK in 1908ms (Views: 1890.9ms | ActiveRecord: 1.2ms)
+
+
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (1.0ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:13
+  Rendered posts/index.html.erb within layouts/application (252.4ms)
+Completed 200 OK in 1116ms (Views: 1090.0ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/posts/29/destroy" for ::1 at 2020-11-18 23:14:52 +0900
+Processing by PostsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"HUr7L5Nftv25/Wx8DRmQ6D9Ycru191DToR54PpiB/eKt8LEczYko528fR5KTcV6+6Azz1qH44govl7Qh8XDApA==", "id"=>"29"}
+  [1m[36mPost Load (1.4ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 29], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:24
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:25
+  [1m[36mPost Destroy (4.4ms)[0m  [1m[31mDELETE FROM "posts" WHERE "posts"."id" = ?[0m  [["id", 29]]
+  ↳ app/controllers/posts_controller.rb:25
+  [1m[35m (6.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:25
+Redirected to http://localhost:3000/posts/index
+Completed 302 Found in 139ms (ActiveRecord: 12.7ms)
+
+
+Started GET "/posts/index" for ::1 at 2020-11-18 23:14:52 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (1.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:13
+  Rendered posts/index.html.erb within layouts/application (38.9ms)
+Completed 200 OK in 754ms (Views: 742.3ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/posts/28/destroy" for ::1 at 2020-11-18 23:14:56 +0900
+Processing by PostsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"EDZ6AUQ/Njyk0tKfGAT1z5jLXAS9iqKMqjOtkxWZOwqgjDAyGumoJnIw+XGGbDuZT5/daamFEFUkumGMfGgGTA==", "id"=>"28"}
+  [1m[36mPost Load (1.4ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 28], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:24
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:25
+  [1m[36mPost Destroy (4.5ms)[0m  [1m[31mDELETE FROM "posts" WHERE "posts"."id" = ?[0m  [["id", 28]]
+  ↳ app/controllers/posts_controller.rb:25
+  [1m[35m (8.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:25
+Redirected to http://localhost:3000/posts/index
+Completed 302 Found in 168ms (ActiveRecord: 14.7ms)
+
+
+Started GET "/posts/index" for ::1 at 2020-11-18 23:14:57 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (1.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:13
+  Rendered posts/index.html.erb within layouts/application (22.8ms)
+Started POST "/posts/28/destroy" for ::1 at 2020-11-18 23:14:57 +0900
+Processing by PostsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"EDZ6AUQ/Njyk0tKfGAT1z5jLXAS9iqKMqjOtkxWZOwqgjDAyGumoJnIw+XGGbDuZT5/daamFEFUkumGMfGgGTA==", "id"=>"28"}
+  [1m[36mPost Load (1.0ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 28], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:24
+Completed 500 Internal Server Error in 61ms (ActiveRecord: 1.0ms)
+
+
+  
+NoMethodError (undefined method `destroy' for nil:NilClass):
+  
+app/controllers/posts_controller.rb:25:in `destroy'
+Started POST "/posts/28/destroy" for ::1 at 2020-11-18 23:14:58 +0900
+Started POST "/posts/28/destroy" for ::1 at 2020-11-18 23:14:59 +0900
+Completed 200 OK in 2527ms (Views: 2512.6ms | ActiveRecord: 1.1ms)
+
+
+Processing by PostsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"EDZ6AUQ/Njyk0tKfGAT1z5jLXAS9iqKMqjOtkxWZOwqgjDAyGumoJnIw+XGGbDuZT5/daamFEFUkumGMfGgGTA==", "id"=>"28"}
+  [1m[36mPost Load (10.7ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 28], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:24
+Completed 500 Internal Server Error in 58ms (ActiveRecord: 10.7ms)
+
+
+  
+NoMethodError (undefined method `destroy' for nil:NilClass):
+  
+app/controllers/posts_controller.rb:25:in `destroy'
+Processing by PostsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"EDZ6AUQ/Njyk0tKfGAT1z5jLXAS9iqKMqjOtkxWZOwqgjDAyGumoJnIw+XGGbDuZT5/daamFEFUkumGMfGgGTA==", "id"=>"28"}
+  [1m[36mPost Load (0.9ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 28], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:24
+Completed 500 Internal Server Error in 41ms (ActiveRecord: 0.9ms)
+
+
+  
+NoMethodError (undefined method `destroy' for nil:NilClass):
+  
+app/controllers/posts_controller.rb:25:in `destroy'
+Started GET "/posts/index" for ::1 at 2020-11-18 23:15:25 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (7.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:13
+  Rendered posts/index.html.erb within layouts/application (45.1ms)
+Completed 200 OK in 18577ms (Views: 18547.3ms | ActiveRecord: 7.2ms)
+
+
+Started GET "/posts/index" for ::1 at 2020-11-18 23:16:13 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (9.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:13
+  Rendered posts/index.html.erb within layouts/application (30.9ms)
+Completed 200 OK in 17341ms (Views: 17285.8ms | ActiveRecord: 9.5ms)
+
+
+Started POST "/posts/create" for ::1 at 2020-11-18 23:16:32 +0900
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"MJSXNQ1cktFb0VI+MyPXsHJJ4FzGAJ2Sx71oknyFRZuALt0GU4oMy40zedCtSxnmpR1hMdIPL0tJNKSNFXR43Q==", "content"=>""}
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:8
+  [1m[36mPost Create (5.3ms)[0m  [1m[32mINSERT INTO "posts" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", ""], ["created_at", "2020-11-18 14:16:32.858844"], ["updated_at", "2020-11-18 14:16:32.858844"]]
+  ↳ app/controllers/posts_controller.rb:8
+  [1m[35m (14.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:8
+Redirected to http://localhost:3000/posts/index
+Completed 302 Found in 167ms (ActiveRecord: 20.1ms)
+
+
+Started GET "/posts/index" for ::1 at 2020-11-18 23:16:33 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (4.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:13
+  Rendered posts/index.html.erb within layouts/application (37.6ms)
+Completed 200 OK in 1073ms (Views: 1056.8ms | ActiveRecord: 4.3ms)
+
+
+Started POST "/posts/create" for ::1 at 2020-11-18 23:16:39 +0900
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"YTc0jMj+FHfXQ81Fh3u+JByC8XraYKPxYgDCIF7RLhXRjX6/liiKbQGh5qsZE3Byy9ZwF85vESjsiQ4/NyATUw==", "content"=>"💤"}
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:8
+  [1m[36mPost Create (11.5ms)[0m  [1m[32mINSERT INTO "posts" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "💤"], ["created_at", "2020-11-18 14:16:40.074176"], ["updated_at", "2020-11-18 14:16:40.074176"]]
+  ↳ app/controllers/posts_controller.rb:8
+  [1m[35m (16.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:8
+Redirected to http://localhost:3000/posts/index
+Completed 302 Found in 154ms (ActiveRecord: 28.6ms)
+
+
+Started GET "/posts/index" for ::1 at 2020-11-18 23:16:40 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (1.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:13
+  Rendered posts/index.html.erb within layouts/application (39.6ms)
+Completed 200 OK in 739ms (Views: 723.4ms | ActiveRecord: 1.2ms)
+
+
+Started POST "/posts/create" for ::1 at 2020-11-18 23:16:44 +0900
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"HuvA3tBogRUAEYcWcpftOWvNfmU2VIib2IZHilIQFUiuUYrtjr4fD9bzrPjs/yNvvJn/CCJbOkJWD4uVO+EoDg==", "content"=>"あああ"}
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:8
+  [1m[36mPost Create (5.4ms)[0m  [1m[32mINSERT INTO "posts" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "あああ"], ["created_at", "2020-11-18 14:16:44.928864"], ["updated_at", "2020-11-18 14:16:44.928864"]]
+  ↳ app/controllers/posts_controller.rb:8
+  [1m[35m (7.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:8
+Redirected to http://localhost:3000/posts/index
+Completed 302 Found in 200ms (ActiveRecord: 12.7ms)
+
+
+Started GET "/posts/index" for ::1 at 2020-11-18 23:16:45 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.7ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:13
+  Rendered posts/index.html.erb within layouts/application (18.9ms)
+Completed 200 OK in 937ms (Views: 919.7ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/posts/26/destroy" for ::1 at 2020-11-18 23:16:58 +0900
+Processing by PostsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"3e0x4brhwAO0cJZmijNBq1x6YI+kdZftbpN2vkc8DAxtV3vS5DdeGWKSvYgUW4/9iy7h4rB6JTTgGrqhLs0xSg==", "id"=>"26"}
+  [1m[36mPost Load (1.2ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 26], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:24
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:25
+  [1m[36mPost Destroy (4.9ms)[0m  [1m[31mDELETE FROM "posts" WHERE "posts"."id" = ?[0m  [["id", 26]]
+  ↳ app/controllers/posts_controller.rb:25
+  [1m[35m (7.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:25
+Redirected to http://localhost:3000/posts/index
+Completed 302 Found in 174ms (ActiveRecord: 13.6ms)
+
+
+Started GET "/posts/index" for ::1 at 2020-11-18 23:16:59 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (1.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:13
+  Rendered posts/index.html.erb within layouts/application (19.3ms)
+Completed 200 OK in 795ms (Views: 778.9ms | ActiveRecord: 1.2ms)
+
+
+Started POST "/posts/23/destroy" for ::1 at 2020-11-18 23:17:02 +0900
+Processing by PostsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"YIbVqel/FqFaZjAiZWYhdnm8LGH2+v4+qeTwazmdqJ7QPJ+at6mIu4yEG8z7Du8gruitDOL1TOcnbTx0UGyV2A==", "id"=>"23"}
+  [1m[36mPost Load (1.0ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 23], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:24
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:25
+  [1m[36mPost Destroy (7.4ms)[0m  [1m[31mDELETE FROM "posts" WHERE "posts"."id" = ?[0m  [["id", 23]]
+  ↳ app/controllers/posts_controller.rb:25
+  [1m[35m (8.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:25
+Redirected to http://localhost:3000/posts/index
+Completed 302 Found in 201ms (ActiveRecord: 16.7ms)
+
+
+Started GET "/posts/index" for ::1 at 2020-11-18 23:17:02 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (1.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:13
+  Rendered posts/index.html.erb within layouts/application (53.0ms)
+Completed 200 OK in 1021ms (Views: 997.8ms | ActiveRecord: 1.4ms)
+
+
+Started POST "/posts/24/destroy" for ::1 at 2020-11-18 23:17:06 +0900
+Processing by PostsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"TTeMftUBaLXMK+l1e5uki3KsbLIMV5y1Mg+JM67vu/z9jcZNi9f2rxrJwpvl82rdpfjt3xhYLmy8hkUsxx6Gug==", "id"=>"24"}
+  [1m[36mPost Load (0.7ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 24], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:24
+  [1m[35m (0.5ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:25
+  [1m[36mPost Destroy (9.6ms)[0m  [1m[31mDELETE FROM "posts" WHERE "posts"."id" = ?[0m  [["id", 24]]
+  ↳ app/controllers/posts_controller.rb:25
+  [1m[35m (12.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:25
+Redirected to http://localhost:3000/posts/index
+Completed 302 Found in 165ms (ActiveRecord: 23.7ms)
+
+
+Started GET "/posts/index" for ::1 at 2020-11-18 23:17:06 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (1.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:13
+  Rendered posts/index.html.erb within layouts/application (46.0ms)
+Completed 200 OK in 811ms (Views: 783.3ms | ActiveRecord: 1.4ms)
+
+
+Started POST "/posts/30/destroy" for ::1 at 2020-11-18 23:17:09 +0900
+Processing by PostsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"5/WptfVQupIAkPUvnmWe37FOiXNPP5CIX1mzEAR7+rVXT+OGq4YkiNZy3sEADVCJZhoIHlswIlHR0H8PbYrH8w==", "id"=>"30"}
+  [1m[36mPost Load (0.9ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 30], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:24
+  [1m[35m (0.5ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:25
+  [1m[36mPost Destroy (5.2ms)[0m  [1m[31mDELETE FROM "posts" WHERE "posts"."id" = ?[0m  [["id", 30]]
+  ↳ app/controllers/posts_controller.rb:25
+  [1m[35m (7.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:25
+Redirected to http://localhost:3000/posts/index
+Completed 302 Found in 203ms (ActiveRecord: 13.7ms)
+
+
+Started GET "/posts/index" for ::1 at 2020-11-18 23:17:09 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (2.9ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:13
+  Rendered posts/index.html.erb within layouts/application (41.3ms)
+Completed 200 OK in 901ms (Views: 880.9ms | ActiveRecord: 2.9ms)
+
+
+Started POST "/posts/27/destroy" for ::1 at 2020-11-18 23:17:11 +0900
+Processing by PostsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"ccKtn219GDWY2/LMUKv2NBdOd/EVD3FxnMhNPQOyYTPBeOesM6uGL0452SLOwzhiwBr2nAEAw6gSQYEiakNcdQ==", "id"=>"27"}
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 27], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:24
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:25
+  [1m[36mPost Destroy (1.3ms)[0m  [1m[31mDELETE FROM "posts" WHERE "posts"."id" = ?[0m  [["id", 27]]
+  ↳ app/controllers/posts_controller.rb:25
+  [1m[35m (4.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:25
+Redirected to http://localhost:3000/posts/index
+Completed 302 Found in 57ms (ActiveRecord: 6.6ms)
+
+
+Started GET "/posts/index" for ::1 at 2020-11-18 23:17:11 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:13
+  Rendered posts/index.html.erb within layouts/application (15.5ms)
+Completed 200 OK in 347ms (Views: 338.1ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/posts/9/destroy" for ::1 at 2020-11-18 23:17:13 +0900
+Processing by PostsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"alPtMPzpl+ve5IuSNB+zgY3OD2suqsm5LlTi4XPKLyja6acDoj8J8QgGoHyqd33XWpqOBjqle2Cg3S7+GjsSbg==", "id"=>"9"}
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:24
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:25
+  [1m[36mPost Destroy (1.6ms)[0m  [1m[31mDELETE FROM "posts" WHERE "posts"."id" = ?[0m  [["id", 9]]
+  ↳ app/controllers/posts_controller.rb:25
+  [1m[35m (3.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:25
+Redirected to http://localhost:3000/posts/index
+Completed 302 Found in 44ms (ActiveRecord: 6.0ms)
+
+
+Started GET "/posts/index" for ::1 at 2020-11-18 23:17:13 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:13
+  Rendered posts/index.html.erb within layouts/application (11.4ms)
+Completed 200 OK in 288ms (Views: 283.5ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/posts/19/destroy" for ::1 at 2020-11-18 23:17:15 +0900
+Processing by PostsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"G1S9yOWkwM5TGGxCUYJmXCOPQ8tqi5hEW3ga+PjMRsur7vf7u3Je1IX6R6zP6qgK9NvCpn6EKp3V8dbnkT17jQ==", "id"=>"19"}
+  [1m[36mPost Load (1.0ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 19], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:24
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:25
+  [1m[36mPost Destroy (6.8ms)[0m  [1m[31mDELETE FROM "posts" WHERE "posts"."id" = ?[0m  [["id", 19]]
+  ↳ app/controllers/posts_controller.rb:25
+  [1m[35m (9.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:25
+Redirected to http://localhost:3000/posts/index
+Completed 302 Found in 184ms (ActiveRecord: 17.5ms)
+
+
+Started GET "/posts/index" for ::1 at 2020-11-18 23:17:15 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (2.0ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:13
+  Rendered posts/index.html.erb within layouts/application (23.6ms)
+Started POST "/posts/14/destroy" for ::1 at 2020-11-18 23:17:16 +0900
+Processing by PostsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"G1S9yOWkwM5TGGxCUYJmXCOPQ8tqi5hEW3ga+PjMRsur7vf7u3Je1IX6R6zP6qgK9NvCpn6EKp3V8dbnkT17jQ==", "id"=>"14"}
+  [1m[36mPost Load (0.9ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:24
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:25
+  [1m[36mPost Destroy (9.0ms)[0m  [1m[31mDELETE FROM "posts" WHERE "posts"."id" = ?[0m  [["id", 14]]
+  ↳ app/controllers/posts_controller.rb:25
+  [1m[35m (8.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:25
+Redirected to http://localhost:3000/posts/index
+Completed 302 Found in 221ms (ActiveRecord: 18.5ms)
+
+
+Started GET "/posts/index" for ::1 at 2020-11-18 23:17:17 +0900
+Completed 200 OK in 1189ms (Views: 1173.7ms | ActiveRecord: 2.0ms)
+
+
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (1.0ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:13
+  Rendered posts/index.html.erb within layouts/application (33.9ms)
+Completed 200 OK in 776ms (Views: 758.5ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/posts/20/destroy" for ::1 at 2020-11-18 23:17:19 +0900
+Processing by PostsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"qw9TwQiK0MpF3iBDaodQIGfmQAv4UovjGOAJpwrSIs8btRnyVlxO0JM8C6307552sLLBZuxdOTqWacW4YyMfiQ==", "id"=>"20"}
+  [1m[36mPost Load (0.7ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 20], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:24
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:25
+  [1m[36mPost Destroy (3.4ms)[0m  [1m[31mDELETE FROM "posts" WHERE "posts"."id" = ?[0m  [["id", 20]]
+  ↳ app/controllers/posts_controller.rb:25
+  [1m[35m (9.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:25
+Redirected to http://localhost:3000/posts/index
+Completed 302 Found in 160ms (ActiveRecord: 13.3ms)
+
+
+Started GET "/posts/index" for ::1 at 2020-11-18 23:17:20 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (1.0ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:13
+  Rendered posts/index.html.erb within layouts/application (58.4ms)
+Completed 200 OK in 880ms (Views: 865.7ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/posts/25/destroy" for ::1 at 2020-11-18 23:17:21 +0900
+Processing by PostsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"aGbSsm5L8mzo6+GFZsDV1w2w9vcJPSUkGkdneNfLyhjY3JiBMJ1sdj4Jymv4qBuB2uR3mh0yl/2Uzqtnvjr3Xg==", "id"=>"25"}
+  [1m[36mPost Load (1.0ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 25], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:24
+  [1m[35m (0.7ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:25
+  [1m[36mPost Destroy (4.1ms)[0m  [1m[31mDELETE FROM "posts" WHERE "posts"."id" = ?[0m  [["id", 25]]
+  ↳ app/controllers/posts_controller.rb:25
+  [1m[35m (11.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:25
+Redirected to http://localhost:3000/posts/index
+Completed 302 Found in 227ms (ActiveRecord: 16.8ms)
+
+
+Started GET "/posts/index" for ::1 at 2020-11-18 23:17:22 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (1.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:13
+  Rendered posts/index.html.erb within layouts/application (44.7ms)
+Completed 200 OK in 951ms (Views: 917.3ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/posts/32/destroy" for ::1 at 2020-11-18 23:17:25 +0900
+Processing by PostsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"4tRKuG9dsnoQe14yUMeRI9OnNXK5SYBhDebYXMNHuhFSbgCLMYssYMaZddzOr191BPO0H61GMriDbxRDqraHVw==", "id"=>"32"}
+  [1m[36mPost Load (0.9ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 32], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:24
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:25
+  [1m[36mPost Destroy (4.7ms)[0m  [1m[31mDELETE FROM "posts" WHERE "posts"."id" = ?[0m  [["id", 32]]
+  ↳ app/controllers/posts_controller.rb:25
+  [1m[35m (8.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:25
+Redirected to http://localhost:3000/posts/index
+Completed 302 Found in 178ms (ActiveRecord: 14.5ms)
+
+
+Started GET "/posts/index" for ::1 at 2020-11-18 23:17:25 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (1.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:13
+  Rendered posts/index.html.erb within layouts/application (23.9ms)
+Completed 200 OK in 759ms (Views: 744.3ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/posts/21/destroy" for ::1 at 2020-11-18 23:17:28 +0900
+Processing by PostsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"v3nP2m5DlJB097OQL7wU5Qg1pglL9vnpR5jBGBqylhkPw4XpMJUKiqIVmH6x1Nqz32EnZF/5SzDJEQ0Hc0OrXw==", "id"=>"21"}
+  [1m[36mPost Load (0.9ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 21], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:24
+  [1m[35m (0.4ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:25
+  [1m[36mPost Destroy (3.4ms)[0m  [1m[31mDELETE FROM "posts" WHERE "posts"."id" = ?[0m  [["id", 21]]
+  ↳ app/controllers/posts_controller.rb:25
+  [1m[35m (8.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:25
+Redirected to http://localhost:3000/posts/index
+Completed 302 Found in 177ms (ActiveRecord: 12.9ms)
+
+
+Started GET "/posts/index" for ::1 at 2020-11-18 23:17:29 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (1.0ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:13
+  Rendered posts/index.html.erb within layouts/application (29.1ms)
+Completed 200 OK in 820ms (Views: 806.3ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/posts/31/destroy" for ::1 at 2020-11-18 23:17:31 +0900
+Processing by PostsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"BxyUNkwjuJ+Sv/XTKj1sYW5iFx9V8Vu7NQaPnsP96Ya3pt4FEvUmhURd3j20VaI3uTaWckH+6WK7j0OBqgzUwA==", "id"=>"31"}
+  [1m[36mPost Load (0.9ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:24
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:25
+  [1m[36mPost Destroy (5.4ms)[0m  [1m[31mDELETE FROM "posts" WHERE "posts"."id" = ?[0m  [["id", 31]]
+  ↳ app/controllers/posts_controller.rb:25
+  [1m[35m (5.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:25
+Redirected to http://localhost:3000/posts/index
+Completed 302 Found in 165ms (ActiveRecord: 12.2ms)
+
+
+Started GET "/posts/index" for ::1 at 2020-11-18 23:17:31 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.9ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:13
+  Rendered posts/index.html.erb within layouts/application (36.1ms)
+Completed 200 OK in 860ms (Views: 836.9ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/posts/create" for ::1 at 2020-11-18 23:18:02 +0900
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Uak4w+wAX4cR4n0XqQDb8oUNauoKtQYfyiDcnU1Vhs7hE3LwstbBnccAVvk3aBWkUlnrhx66tMZEqRCCJKS7iA==", "content"=>"ハイドロ"}
+  [1m[35m (0.6ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:8
+  [1m[36mPost Create (3.7ms)[0m  [1m[32mINSERT INTO "posts" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "ハイドロ"], ["created_at", "2020-11-18 14:18:02.832385"], ["updated_at", "2020-11-18 14:18:02.832385"]]
+  ↳ app/controllers/posts_controller.rb:8
+  [1m[35m (7.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:8
+Redirected to http://localhost:3000/posts/index
+Completed 302 Found in 229ms (ActiveRecord: 12.2ms)
+
+
+Started GET "/posts/index" for ::1 at 2020-11-18 23:18:03 +0900
+Started POST "/posts/create" for ::1 at 2020-11-18 23:18:03 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (2.9ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:13
+  Rendered posts/index.html.erb within layouts/application (58.1ms)
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Uak4w+wAX4cR4n0XqQDb8oUNauoKtQYfyiDcnU1Vhs7hE3LwstbBnccAVvk3aBWkUlnrhx66tMZEqRCCJKS7iA==", "content"=>"ハイドロ"}
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:8
+  [1m[36mPost Create (7.4ms)[0m  [1m[32mINSERT INTO "posts" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "ハイドロ"], ["created_at", "2020-11-18 14:18:03.675622"], ["updated_at", "2020-11-18 14:18:03.675622"]]
+  ↳ app/controllers/posts_controller.rb:8
+  [1m[35m (5.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:8
+Redirected to http://localhost:3000/posts/index
+Completed 302 Found in 172ms (ActiveRecord: 12.8ms)
+
+
+Started GET "/posts/index" for ::1 at 2020-11-18 23:18:03 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (2.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:13
+  Rendered posts/index.html.erb within layouts/application (68.7ms)
+Started POST "/posts/create" for ::1 at 2020-11-18 23:18:05 +0900
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Uak4w+wAX4cR4n0XqQDb8oUNauoKtQYfyiDcnU1Vhs7hE3LwstbBnccAVvk3aBWkUlnrhx66tMZEqRCCJKS7iA==", "content"=>"ハイドロ"}
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:8
+  [1m[36mPost Create (4.9ms)[0m  [1m[32mINSERT INTO "posts" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "ハイドロ"], ["created_at", "2020-11-18 14:18:07.014387"], ["updated_at", "2020-11-18 14:18:07.014387"]]
+  ↳ app/controllers/posts_controller.rb:8
+Started POST "/posts/create" for ::1 at 2020-11-18 23:18:07 +0900
+  [1m[35m (8.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:8
+Redirected to http://localhost:3000/posts/index
+Completed 302 Found in 371ms (ActiveRecord: 14.0ms)
+
+
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Uak4w+wAX4cR4n0XqQDb8oUNauoKtQYfyiDcnU1Vhs7hE3LwstbBnccAVvk3aBWkUlnrhx66tMZEqRCCJKS7iA==", "content"=>"ハイドロ"}
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:8
+  [1m[36mPost Create (4.0ms)[0m  [1m[32mINSERT INTO "posts" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "ハイドロ"], ["created_at", "2020-11-18 14:18:08.700796"], ["updated_at", "2020-11-18 14:18:08.700796"]]
+  ↳ app/controllers/posts_controller.rb:8
+  [1m[35m (6.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:8
+Redirected to http://localhost:3000/posts/index
+Completed 302 Found in 309ms (ActiveRecord: 10.3ms)
+
+
+Started GET "/posts/index" for ::1 at 2020-11-18 23:18:09 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.9ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:13
+  Rendered posts/index.html.erb within layouts/application (29.3ms)
+Completed 200 OK in 46919ms (Views: 46884.3ms | ActiveRecord: 2.9ms)
+
+
+Completed 200 OK in 46489ms (Views: 46471.4ms | ActiveRecord: 2.4ms)
+
+
+Completed 200 OK in 44819ms (Views: 44795.9ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/posts/36/destroy" for ::1 at 2020-11-18 23:19:07 +0900
+Processing by PostsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"hPQkJB2T5XCS9VYU5AlejLbCROcpa1Mo0i7oLBJVcrY0Tm4XQ0V7akQXffp6YZDaYZbFij1k4fFcpyQze6RP8A==", "id"=>"36"}
+  [1m[36mPost Load (1.6ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 36], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:24
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:25
+  [1m[36mPost Destroy (3.1ms)[0m  [1m[31mDELETE FROM "posts" WHERE "posts"."id" = ?[0m  [["id", 36]]
+  ↳ app/controllers/posts_controller.rb:25
+  [1m[35m (11.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:25
+Redirected to http://localhost:3000/posts/index
+Completed 302 Found in 122ms (ActiveRecord: 16.1ms)
+
+
+Started GET "/posts/index" for ::1 at 2020-11-18 23:19:07 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.8ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:13
+  Rendered posts/index.html.erb within layouts/application (23.4ms)
+Completed 200 OK in 805ms (Views: 788.7ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/posts/35/destroy" for ::1 at 2020-11-18 23:19:19 +0900
+Processing by PostsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"tUYZfoAOOIZXj2duok1mNcCk4FGxIFPW3OfZs8WO8lYF/FNN3timnIFtTIA8JahjF/BhPKUv4Q9SbhWsrH/PEA==", "id"=>"35"}
+  [1m[36mPost Load (0.9ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 35], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:24
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:25
+  [1m[36mPost Destroy (4.7ms)[0m  [1m[31mDELETE FROM "posts" WHERE "posts"."id" = ?[0m  [["id", 35]]
+  ↳ app/controllers/posts_controller.rb:25
+  [1m[35m (9.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:25
+Redirected to http://localhost:3000/posts/index
+Completed 302 Found in 235ms (ActiveRecord: 15.0ms)
+
+
+Started GET "/posts/index" for ::1 at 2020-11-18 23:19:20 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.7ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:13
+  Rendered posts/index.html.erb within layouts/application (21.6ms)
+Completed 200 OK in 894ms (Views: 880.5ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/posts/create" for ::1 at 2020-11-18 23:19:34 +0900
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JTpGz6dd4CHyvKbMaXZAjB6McYHrHud2jReL2M0WvUWVgAz8+Yt+OyRejSL3Ho7aydjw7P8RVa8DnkfHpOeAAw==", "content"=>"フルグラ"}
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:8
+  [1m[36mPost Create (4.5ms)[0m  [1m[32mINSERT INTO "posts" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "フルグラ"], ["created_at", "2020-11-18 14:19:34.647584"], ["updated_at", "2020-11-18 14:19:34.647584"]]
+  ↳ app/controllers/posts_controller.rb:8
+  [1m[35m (10.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:8
+Redirected to http://localhost:3000/posts/index
+Completed 302 Found in 156ms (ActiveRecord: 15.4ms)
+
+
+Started GET "/posts/index" for ::1 at 2020-11-18 23:19:34 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.9ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:13
+  Rendered posts/index.html.erb within layouts/application (19.9ms)
+Completed 200 OK in 764ms (Views: 743.9ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/posts/34/destroy" for ::1 at 2020-11-18 23:19:37 +0900
+Processing by PostsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"e4ptETzzcnTZ5huT4DNWuDjNN9+JGQG7WIHQlfxz+dnLMCciYiXsbg8EMH1+W5ju75m2sp0Ws2LWCByKlYLEnw==", "id"=>"34"}
+  [1m[36mPost Load (0.8ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 34], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:24
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:25
+  [1m[36mPost Destroy (3.6ms)[0m  [1m[31mDELETE FROM "posts" WHERE "posts"."id" = ?[0m  [["id", 34]]
+  ↳ app/controllers/posts_controller.rb:25
+  [1m[35m (11.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:25
+Redirected to http://localhost:3000/posts/index
+Completed 302 Found in 226ms (ActiveRecord: 16.1ms)
+
+
+Started GET "/posts/index" for ::1 at 2020-11-18 23:19:38 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (1.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:13
+  Rendered posts/index.html.erb within layouts/application (42.3ms)
+Completed 200 OK in 775ms (Views: 750.8ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/posts/create" for ::1 at 2020-11-18 23:19:54 +0900
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"I6oLcWX6IY20DwjhBg5xTkJoeYHClfmwhxRAOcw+HsCTEEFCOyy/l2LtIw+YZr8YlTz47NaaS2kJnYwmpc8jhg==", "content"=>"うがい薬"}
+  [1m[35m (1.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:8
+  [1m[36mPost Create (9.8ms)[0m  [1m[32mINSERT INTO "posts" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "うがい薬"], ["created_at", "2020-11-18 14:19:55.242064"], ["updated_at", "2020-11-18 14:19:55.242064"]]
+  ↳ app/controllers/posts_controller.rb:8
+  [1m[35m (12.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:8
+Redirected to http://localhost:3000/posts/index
+Completed 302 Found in 191ms (ActiveRecord: 23.3ms)
+
+
+Started GET "/posts/index" for ::1 at 2020-11-18 23:19:55 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (1.9ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:13
+  Rendered posts/index.html.erb within layouts/application (46.3ms)
+Completed 200 OK in 1022ms (Views: 993.1ms | ActiveRecord: 1.9ms)
+
+
+Started POST "/posts/create" for ::1 at 2020-11-18 23:20:03 +0900
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Rh9Gl4HHPp4waqMph0eJuNu8zn8Q5x3r2eyzz1CYXRT2pQyk3xGghOaIiMcZL0fuDOhPEgTorzJXZX/QOWlgUg==", "content"=>"排水溝ネット"}
+  [1m[35m (0.4ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:8
+  [1m[36mPost Create (5.6ms)[0m  [1m[32mINSERT INTO "posts" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "排水溝ネット"], ["created_at", "2020-11-18 14:20:03.645962"], ["updated_at", "2020-11-18 14:20:03.645962"]]
+  ↳ app/controllers/posts_controller.rb:8
+  [1m[35m (10.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:8
+Redirected to http://localhost:3000/posts/index
+Completed 302 Found in 115ms (ActiveRecord: 16.5ms)
+
+
+Started GET "/posts/index" for ::1 at 2020-11-18 23:20:03 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.9ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:13
+  Rendered posts/index.html.erb within layouts/application (19.5ms)
+Completed 200 OK in 704ms (Views: 689.3ms | ActiveRecord: 0.9ms)
+
+
