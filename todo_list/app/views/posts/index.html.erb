@@ -1,47 +1,47 @@
-  <div class="main-wrapper">
-    <div class="container">
-      <div class="title">
-        <h1>Todo List</h1>
+<div class="main-wrapper">
+  <div class="container">
+    <div class="title">
+      <h1>Todo List</h1>
+    </div>
+    <%= form_tag("/posts/create") do %>
+      <div class="new-content">
+        <input name="content">
+        <button type="submit" class="btn btn-secondary"><i class="fa fa-plus"></i></button>
       </div>
-      <%= form_tag("/posts/create") do %>
-        <div class="new-content">
-          <input name="content">
-          <button type="submit" class="btn btn-secondary"><i class="fa fa-plus"></i></button>
-        </div>
+    <% end %>
+    <div class="list-area">
+      <% @post.each do |post| %>
+        <div class="list-group">
+          <div class="check">
+            <i class="fa fa-check-square-o"></i>
+          </div>
+          <div class="contents">
+              <%= post.content %> 
+          </div>
+          <div class="edit">
+            <%= link_to ("/posts/#{post.id}/edit") do %>
+              <i class="fa fa-pencil-square-o"></i>
+            <% end %>
+          </div>
+          <div class="destroy">
+            <%= link_to("/posts/#{post.id}/destroy", method: :post) do %>
+              <i class="fa fa-trash-o"></i>
+            <% end %>
+          </div> 
+        </div>  
       <% end %>
-      <div class="list-area">
-        <% @post.each do |post| %>
-          <div class="list-group">
-            <div class="check">
-              <i class="fa fa-check-square-o"></i>
-            </div>
-            <div class="contents">
-                <%= post.content %> 
-            </div>
-            <div class="edit">
-              <%= link_to ("/posts/#{post.id}/edit") do %>
-                <i class="fa fa-pencil-square-o"></i>
-              <% end %>
-            </div>
-            <div class="destroy">
-              <%= link_to("/posts/#{post.id}/destroy", method: :post) do %>
-                <i class="fa fa-trash-o"></i>
-              <% end %>
-            </div> 
-          </div>  
-        <% end %>
-      </div>
-      <script>
-        $(function() {
-          $('.check').click(function() {
-            $(this).toggleClass('active');
-            var listIndex = $('.check').index($(this));
-            $('.list-group').eq(listIndex).toggleClass('l-active')
-
-            var contentIndex = $('.check').index($(this));
-            $('.contents').eq(contentIndex).toggleClass('c-active');
-          })
-        });
-      </script>
     </div>
   </div>
+</div>
+
+<script>
+$(function() {
+  $('.check').click(function() {
+    $(this).toggleClass('active');
+    var listIndex = $('.check').index($(this));
+    $('.list-group').eq(listIndex).toggleClass('l-active')
+    var contentIndex = $('.check').index($(this));
+    $('.contents').eq(contentIndex).toggleClass('c-active');
+  })
+});
+</script>

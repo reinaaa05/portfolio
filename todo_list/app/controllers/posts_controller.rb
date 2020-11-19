@@ -6,7 +6,7 @@ class PostsController < ApplicationController
   def create
     @post = Post.new(content: params[:content])
     @post.save
-    redirect_to("/posts/index")
+    redirect_to("/")
   end
 
   def edit
@@ -17,13 +17,13 @@ class PostsController < ApplicationController
     @post = Post.find_by(id: params[:id])
     @post.content = params[:content]
     @post.save
-    redirect_to("/posts/index")
+    redirect_to("/")
   end
   
   def destroy
     @post = Post.find_by(id: params[:id])
     @post.destroy
-    redirect_to("/posts/index")
+    redirect_to("/")
   end
 
 end
