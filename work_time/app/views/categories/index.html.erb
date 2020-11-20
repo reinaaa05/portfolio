@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Business content</h1>
+
+<table class='table table-striped table-hover'>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @categories.each do |category| %>
+      <tr>
+        <td><%= link_to category.name, category, class: 'widelink'%></td>
+<!--<td><%= link_to 'Show', category %></td>
+        <td><%= link_to 'Edit', edit_category_path(category) %></td>
+        <td><%= link_to 'Destroy', category, method: :delete, data: { confirm: 'Are you sure?' } %></td>-->
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+<div class="btn">
+  <%= link_to 'New Content', new_category_path, class: 'btn btn-info' %>
+  <%= link_to 'Show Works', works_path, class:"btn btn-primary" %>
+</div>
