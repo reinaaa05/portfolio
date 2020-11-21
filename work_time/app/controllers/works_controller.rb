@@ -4,11 +4,15 @@ class WorksController < ApplicationController
   # GET /works
   # GET /works.json
   def index
-    if params[:date_key]
-      @works = Work.where('category_id LIKE ?', "%#{params[:date_key]}%")
-    else
-      @works = Work.all
-    end
+    @works = Work.all
+     # パラメータとして名前か性別を受け取っている場合は絞って検索する
+  if params[:date].present?
+    @works = @works.get_by_date params[:date]
+  end
+    if params[:category_id].present?
+    @works = @works.get_by_category_id params[:category_id]
+  end
+  
   end
 
   # GET /works/1
@@ -75,4 +79,6 @@ class WorksController < ApplicationController
     def work_params
       params.require(:work).permit(:date, :category_id, :count)
     end
+
+  
 end
