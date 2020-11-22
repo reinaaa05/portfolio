@@ -15063,3 +15063,1112 @@ Processing by WorksController#index as HTML
 Completed 200 OK in 255ms (Views: 236.4ms | ActiveRecord: 2.6ms)
 
 
+Started GET "/works?utf8=%E2%9C%93&date=&category_id=%E4%BE%A1%E6%A0%BC%E3%83%A1%E3%83%B3%E3%83%86%E3%83%8A%E3%83%B3%E3%82%B9&commit=Search" for ::1 at 2020-11-22 16:50:47 +0900
+Processing by WorksController#index as HTML
+  Parameters: {"utf8"=>"✓", "date"=>"", "category_id"=>"価格メンテナンス", "commit"=>"Search"}
+  Rendering works/index.html.erb within layouts/application
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/works/index.html.erb:8
+  [1m[36mWork Load (0.8ms)[0m  [1m[34mSELECT "works".* FROM "works"[0m
+  ↳ app/views/works/index.html.erb:24
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:27
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:27
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:27
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:27
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:27
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:27
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:27
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT SUM("works"."count") FROM "works"[0m
+  ↳ app/views/works/index.html.erb:35
+  Rendered works/index.html.erb within layouts/application (53.4ms)
+Completed 200 OK in 300ms (Views: 293.5ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/works?utf8=%E2%9C%93&date=&category_id=%E4%BE%A1%E6%A0%BC%E3%83%A1%E3%83%B3%E3%83%86%E3%83%8A%E3%83%B3%E3%82%B9&commit=Search" for ::1 at 2020-11-22 16:51:10 +0900
+Processing by WorksController#index as HTML
+  Parameters: {"utf8"=>"✓", "date"=>"", "category_id"=>"価格メンテナンス", "commit"=>"Search"}
+  Rendering works/index.html.erb within layouts/application
+  [1m[36mWork Load (0.2ms)[0m  [1m[34mSELECT "works".* FROM "works"[0m
+  ↳ app/views/works/index.html.erb:25
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:28
+  [1m[36mCategory Load (0.5ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:28
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:28
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:28
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:28
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:28
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:28
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT SUM("works"."count") FROM "works"[0m
+  ↳ app/views/works/index.html.erb:36
+  Rendered works/index.html.erb within layouts/application (36.3ms)
+Completed 200 OK in 236ms (Views: 230.2ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/works?utf8=%E2%9C%93&name_key=&category_key=11&commit=Search" for ::1 at 2020-11-22 16:51:14 +0900
+Processing by WorksController#index as HTML
+  Parameters: {"utf8"=>"✓", "name_key"=>"", "category_key"=>"11", "commit"=>"Search"}
+  Rendering works/index.html.erb within layouts/application
+  [1m[36mWork Load (0.3ms)[0m  [1m[34mSELECT "works".* FROM "works" WHERE (date LIKE '%%') AND (category_id LIKE '%11%')[0m
+  ↳ app/views/works/index.html.erb:25
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT SUM("works"."count") FROM "works" WHERE (date LIKE '%%') AND (category_id LIKE '%11%')[0m
+  ↳ app/views/works/index.html.erb:36
+  Rendered works/index.html.erb within layouts/application (15.1ms)
+Completed 200 OK in 208ms (Views: 202.5ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/works?utf8=%E2%9C%93&name_key=&category_key=10&commit=Search" for ::1 at 2020-11-22 16:51:18 +0900
+Processing by WorksController#index as HTML
+  Parameters: {"utf8"=>"✓", "name_key"=>"", "category_key"=>"10", "commit"=>"Search"}
+  Rendering works/index.html.erb within layouts/application
+  [1m[36mWork Load (0.4ms)[0m  [1m[34mSELECT "works".* FROM "works" WHERE (date LIKE '%%') AND (category_id LIKE '%10%')[0m
+  ↳ app/views/works/index.html.erb:25
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:28
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:28
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:28
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT SUM("works"."count") FROM "works" WHERE (date LIKE '%%') AND (category_id LIKE '%10%')[0m
+  ↳ app/views/works/index.html.erb:36
+  Rendered works/index.html.erb within layouts/application (62.9ms)
+Completed 200 OK in 411ms (Views: 404.7ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/works?utf8=%E2%9C%93&name_key=&category_key=10&commit=Search" for ::1 at 2020-11-22 16:52:43 +0900
+Processing by WorksController#index as HTML
+  Parameters: {"utf8"=>"✓", "name_key"=>"", "category_key"=>"10", "commit"=>"Search"}
+  Rendering works/index.html.erb within layouts/application
+  [1m[36mWork Load (0.7ms)[0m  [1m[34mSELECT "works".* FROM "works" WHERE (date LIKE '%%') AND (.category.name LIKE '%10%')[0m
+  ↳ app/views/works/index.html.erb:25
+  Rendered works/index.html.erb within layouts/application (7.3ms)
+Completed 500 Internal Server Error in 42ms (ActiveRecord: 0.7ms)
+
+
+  
+ActionView::Template::Error (SQLite3::SQLException: near ".": syntax error: SELECT "works".* FROM "works" WHERE (date LIKE '%%') AND (.category.name LIKE '%10%')):
+    22:   </thead>
+    23: 
+    24:   <tbody>
+    25:     <% @works.each do |work| %>
+    26:       <tr>
+    27:         <td><%= link_to work.date, work, class: 'widelink' %></td>
+    28:         <td><%= link_to work.category.name, work, class: 'widelink' %></td>
+  
+app/views/works/index.html.erb:25:in `_app_views_works_index_html_erb__990642729_118524540'
+Started GET "/works?utf8=%E2%9C%93&name_key=&category_key=10&commit=Search" for ::1 at 2020-11-22 16:53:42 +0900
+Processing by WorksController#index as HTML
+  Parameters: {"utf8"=>"✓", "name_key"=>"", "category_key"=>"10", "commit"=>"Search"}
+  Rendering works/index.html.erb within layouts/application
+  [1m[36mWork Load (0.4ms)[0m  [1m[34mSELECT "works".* FROM "works" WHERE (date LIKE '%%') AND (category_id LIKE '%10%')[0m
+  ↳ app/views/works/index.html.erb:25
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:28
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:28
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:28
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT SUM("works"."count") FROM "works" WHERE (date LIKE '%%') AND (category_id LIKE '%10%')[0m
+  ↳ app/views/works/index.html.erb:36
+  Rendered works/index.html.erb within layouts/application (53.2ms)
+Completed 200 OK in 241ms (Views: 230.5ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/works" for ::1 at 2020-11-22 16:53:46 +0900
+Processing by WorksController#index as HTML
+  Rendering works/index.html.erb within layouts/application
+  [1m[36mWork Load (0.4ms)[0m  [1m[34mSELECT "works".* FROM "works"[0m
+  ↳ app/views/works/index.html.erb:25
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:28
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:28
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:28
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:28
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:28
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:28
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:28
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT SUM("works"."count") FROM "works"[0m
+  ↳ app/views/works/index.html.erb:36
+  Rendered works/index.html.erb within layouts/application (32.9ms)
+Completed 200 OK in 224ms (Views: 216.3ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/works" for ::1 at 2020-11-22 17:00:10 +0900
+Processing by WorksController#index as HTML
+  Rendering works/index.html.erb within layouts/application
+  [1m[36mWork Load (0.4ms)[0m  [1m[34mSELECT "works".* FROM "works"[0m
+  ↳ app/views/works/index.html.erb:25
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:28
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:28
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:28
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:28
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:28
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:28
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:28
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT SUM("works"."count") FROM "works"[0m
+  ↳ app/views/works/index.html.erb:36
+  Rendered works/index.html.erb within layouts/application (69.1ms)
+Completed 200 OK in 247ms (Views: 236.3ms | ActiveRecord: 4.2ms)
+
+
+Started GET "/works" for ::1 at 2020-11-22 17:00:13 +0900
+Processing by WorksController#index as HTML
+  Rendering works/index.html.erb within layouts/application
+  [1m[36mWork Load (0.2ms)[0m  [1m[34mSELECT "works".* FROM "works"[0m
+  ↳ app/views/works/index.html.erb:25
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:28
+  [1m[36mCategory Load (0.5ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:28
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:28
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:28
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:28
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:28
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:28
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT SUM("works"."count") FROM "works"[0m
+  ↳ app/views/works/index.html.erb:36
+  Rendered works/index.html.erb within layouts/application (32.3ms)
+Completed 200 OK in 203ms (Views: 197.7ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/works?utf8=%E2%9C%93&name_key=2020-11&category_key=%E4%BE%A1%E6%A0%BC%E3%83%A1%E3%83%B3%E3%83%86%E3%83%8A%E3%83%B3%E3%82%B9&commit=Search" for ::1 at 2020-11-22 17:00:19 +0900
+Processing by WorksController#index as HTML
+  Parameters: {"utf8"=>"✓", "name_key"=>"2020-11", "category_key"=>"価格メンテナンス", "commit"=>"Search"}
+  Rendering works/index.html.erb within layouts/application
+  [1m[36mCategory Load (0.7ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE (category_id LIKE '%価格メンテナンス%')[0m
+  ↳ app/views/works/index.html.erb:25
+  Rendered works/index.html.erb within layouts/application (7.3ms)
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 0.7ms)
+
+
+  
+ActionView::Template::Error (SQLite3::SQLException: no such column: category_id: SELECT "categories".* FROM "categories" WHERE (category_id LIKE '%価格メンテナンス%')):
+    22:   </thead>
+    23: 
+    24:   <tbody>
+    25:     <% @works.each do |work| %>
+    26:       <tr>
+    27:         <td><%= link_to work.date, work, class: 'widelink' %></td>
+    28:         <td><%= link_to work.category.name, work, class: 'widelink' %></td>
+  
+app/views/works/index.html.erb:25:in `_app_views_works_index_html_erb__990642729_115835000'
+Started GET "/works?utf8=%E2%9C%93&name_key=2020-11&category_key=10&commit=Search" for ::1 at 2020-11-22 17:00:33 +0900
+Processing by WorksController#index as HTML
+  Parameters: {"utf8"=>"✓", "name_key"=>"2020-11", "category_key"=>"10", "commit"=>"Search"}
+  Rendering works/index.html.erb within layouts/application
+  [1m[36mCategory Load (1.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE (category_id LIKE '%10%')[0m
+  ↳ app/views/works/index.html.erb:25
+  Rendered works/index.html.erb within layouts/application (22.1ms)
+Completed 500 Internal Server Error in 41ms (ActiveRecord: 1.1ms)
+
+
+  
+ActionView::Template::Error (SQLite3::SQLException: no such column: category_id: SELECT "categories".* FROM "categories" WHERE (category_id LIKE '%10%')):
+    22:   </thead>
+    23: 
+    24:   <tbody>
+    25:     <% @works.each do |work| %>
+    26:       <tr>
+    27:         <td><%= link_to work.date, work, class: 'widelink' %></td>
+    28:         <td><%= link_to work.category.name, work, class: 'widelink' %></td>
+  
+app/views/works/index.html.erb:25:in `_app_views_works_index_html_erb__990642729_119956900'
+Started GET "/works?utf8=%E2%9C%93&name_key=2020-11&category_key=10&commit=Search" for ::1 at 2020-11-22 17:00:57 +0900
+Processing by WorksController#index as HTML
+  Parameters: {"utf8"=>"✓", "name_key"=>"2020-11", "category_key"=>"10", "commit"=>"Search"}
+  Rendering works/index.html.erb within layouts/application
+  [1m[36mWork Load (0.4ms)[0m  [1m[34mSELECT "works".* FROM "works" WHERE (date LIKE '%2020-11%') AND (category_id LIKE '%10%')[0m
+  ↳ app/views/works/index.html.erb:25
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:28
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:28
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT SUM("works"."count") FROM "works" WHERE (date LIKE '%2020-11%') AND (category_id LIKE '%10%')[0m
+  ↳ app/views/works/index.html.erb:36
+  Rendered works/index.html.erb within layouts/application (32.5ms)
+Completed 200 OK in 205ms (Views: 193.4ms | ActiveRecord: 3.2ms)
+
+
+  [1m[36mCategory Load (1.3ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" LIMIT ?[0m  [["LIMIT", 11]]
+Started GET "/works?utf8=%E2%9C%93&name_key=2020-11&category_key=10&commit=Search" for 127.0.0.1 at 2020-11-22 17:05:39 +0900
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+Processing by WorksController#index as HTML
+  Parameters: {"utf8"=>"✓", "name_key"=>"2020-11", "category_key"=>"10", "commit"=>"Search"}
+  Rendering works/index.html.erb within layouts/application
+  [1m[36mWork Load (0.6ms)[0m  [1m[34mSELECT "works".* FROM "works" WHERE (date LIKE '%2020-11%') AND (category_id LIKE '%10%')[0m
+  ↳ app/views/works/index.html.erb:25
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:28
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:28
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT SUM("works"."count") FROM "works" WHERE (date LIKE '%2020-11%') AND (category_id LIKE '%10%')[0m
+  ↳ app/views/works/index.html.erb:36
+  Rendered works/index.html.erb within layouts/application (69.8ms)
+Completed 200 OK in 997ms (Views: 970.8ms | ActiveRecord: 6.1ms)
+
+
+Started GET "/works?utf8=%E2%9C%93&name_key=2020-11&year=10&commit=Search" for 127.0.0.1 at 2020-11-22 17:05:50 +0900
+Processing by WorksController#index as HTML
+  Parameters: {"utf8"=>"✓", "name_key"=>"2020-11", "year"=>"10", "commit"=>"Search"}
+  Rendering works/index.html.erb within layouts/application
+  [1m[36mWork Load (1.1ms)[0m  [1m[34mSELECT "works".* FROM "works" WHERE (date LIKE '%2020-11%') AND (category_id LIKE '%%')[0m
+  ↳ app/views/works/index.html.erb:25
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:28
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:28
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:28
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT SUM("works"."count") FROM "works" WHERE (date LIKE '%2020-11%') AND (category_id LIKE '%%')[0m
+  ↳ app/views/works/index.html.erb:36
+  Rendered works/index.html.erb within layouts/application (18.2ms)
+Completed 200 OK in 201ms (Views: 195.7ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/works?utf8=%E2%9C%93&name_key=2020-11&year=12&commit=Search" for 127.0.0.1 at 2020-11-22 17:06:01 +0900
+Processing by WorksController#index as HTML
+  Parameters: {"utf8"=>"✓", "name_key"=>"2020-11", "year"=>"12", "commit"=>"Search"}
+  Rendering works/index.html.erb within layouts/application
+  [1m[36mWork Load (0.7ms)[0m  [1m[34mSELECT "works".* FROM "works" WHERE (date LIKE '%2020-11%') AND (category_id LIKE '%%')[0m
+  ↳ app/views/works/index.html.erb:25
+  [1m[36mCategory Load (1.5ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:28
+  [1m[36mCategory Load (0.8ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:28
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:28
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT SUM("works"."count") FROM "works" WHERE (date LIKE '%2020-11%') AND (category_id LIKE '%%')[0m
+  ↳ app/views/works/index.html.erb:36
+  Rendered works/index.html.erb within layouts/application (163.8ms)
+Completed 200 OK in 359ms (Views: 351.2ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/works" for 127.0.0.1 at 2020-11-22 17:06:06 +0900
+Processing by WorksController#index as HTML
+  Rendering works/index.html.erb within layouts/application
+  [1m[36mWork Load (0.9ms)[0m  [1m[34mSELECT "works".* FROM "works"[0m
+  ↳ app/views/works/index.html.erb:25
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:28
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:28
+  [1m[36mCategory Load (5.5ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:28
+  [1m[36mCategory Load (0.7ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:28
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:28
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:28
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:28
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT SUM("works"."count") FROM "works"[0m
+  ↳ app/views/works/index.html.erb:36
+  Rendered works/index.html.erb within layouts/application (141.6ms)
+Completed 200 OK in 326ms (Views: 314.7ms | ActiveRecord: 8.1ms)
+
+
+Started GET "/works?utf8=%E2%9C%93&name_key=&year=12&commit=Search" for 127.0.0.1 at 2020-11-22 17:06:09 +0900
+Processing by WorksController#index as HTML
+  Parameters: {"utf8"=>"✓", "name_key"=>"", "year"=>"12", "commit"=>"Search"}
+  Rendering works/index.html.erb within layouts/application
+  [1m[36mWork Load (0.9ms)[0m  [1m[34mSELECT "works".* FROM "works" WHERE (date LIKE '%%') AND (category_id LIKE '%%')[0m
+  ↳ app/views/works/index.html.erb:25
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:28
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:28
+  [1m[36mCategory Load (0.5ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:28
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:28
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:28
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:28
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:28
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT SUM("works"."count") FROM "works" WHERE (date LIKE '%%') AND (category_id LIKE '%%')[0m
+  ↳ app/views/works/index.html.erb:36
+  Rendered works/index.html.erb within layouts/application (135.4ms)
+Completed 200 OK in 339ms (Views: 332.3ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/works?utf8=%E2%9C%93&name_key=&year=10&commit=Search" for 127.0.0.1 at 2020-11-22 17:06:10 +0900
+Processing by WorksController#index as HTML
+  Parameters: {"utf8"=>"✓", "name_key"=>"", "year"=>"10", "commit"=>"Search"}
+  Rendering works/index.html.erb within layouts/application
+  [1m[36mWork Load (0.5ms)[0m  [1m[34mSELECT "works".* FROM "works" WHERE (date LIKE '%%') AND (category_id LIKE '%%')[0m
+  ↳ app/views/works/index.html.erb:25
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:28
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:28
+  [1m[36mCategory Load (0.8ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:28
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:28
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:28
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:28
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:28
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT SUM("works"."count") FROM "works" WHERE (date LIKE '%%') AND (category_id LIKE '%%')[0m
+  ↳ app/views/works/index.html.erb:36
+  Rendered works/index.html.erb within layouts/application (134.5ms)
+Completed 200 OK in 349ms (Views: 343.3ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/works?utf8=%E2%9C%93&name_key=&year=12&commit=Search" for 127.0.0.1 at 2020-11-22 17:06:13 +0900
+Processing by WorksController#index as HTML
+  Parameters: {"utf8"=>"✓", "name_key"=>"", "year"=>"12", "commit"=>"Search"}
+  Rendering works/index.html.erb within layouts/application
+  [1m[36mWork Load (0.8ms)[0m  [1m[34mSELECT "works".* FROM "works" WHERE (date LIKE '%%') AND (category_id LIKE '%%')[0m
+  ↳ app/views/works/index.html.erb:25
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:28
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:28
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:28
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:28
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:28
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:28
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:28
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT SUM("works"."count") FROM "works" WHERE (date LIKE '%%') AND (category_id LIKE '%%')[0m
+  ↳ app/views/works/index.html.erb:36
+  Rendered works/index.html.erb within layouts/application (136.3ms)
+Completed 200 OK in 331ms (Views: 325.0ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/works?utf8=%E2%9C%93&name_key=&year=10&commit=Search" for 127.0.0.1 at 2020-11-22 17:06:15 +0900
+Processing by WorksController#index as HTML
+  Parameters: {"utf8"=>"✓", "name_key"=>"", "year"=>"10", "commit"=>"Search"}
+  Rendering works/index.html.erb within layouts/application
+  [1m[36mWork Load (0.7ms)[0m  [1m[34mSELECT "works".* FROM "works" WHERE (date LIKE '%%') AND (category_id LIKE '%%')[0m
+  ↳ app/views/works/index.html.erb:25
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:28
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:28
+  [1m[36mCategory Load (0.5ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:28
+  [1m[36mCategory Load (0.5ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:28
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:28
+  [1m[36mCACHE Category Load (0.1ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:28
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:28
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT SUM("works"."count") FROM "works" WHERE (date LIKE '%%') AND (category_id LIKE '%%')[0m
+  ↳ app/views/works/index.html.erb:36
+  Rendered works/index.html.erb within layouts/application (167.4ms)
+Completed 200 OK in 383ms (Views: 374.4ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/works?utf8=%E2%9C%93&name_key=&year=14&commit=Search" for 127.0.0.1 at 2020-11-22 17:06:20 +0900
+Processing by WorksController#index as HTML
+  Parameters: {"utf8"=>"✓", "name_key"=>"", "year"=>"14", "commit"=>"Search"}
+  Rendering works/index.html.erb within layouts/application
+  [1m[36mWork Load (1.1ms)[0m  [1m[34mSELECT "works".* FROM "works" WHERE (date LIKE '%%') AND (category_id LIKE '%%')[0m
+  ↳ app/views/works/index.html.erb:25
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:28
+  [1m[36mCategory Load (0.9ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:28
+  [1m[36mCategory Load (0.5ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:28
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:28
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:28
+  [1m[36mCACHE Category Load (0.1ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:28
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:28
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT SUM("works"."count") FROM "works" WHERE (date LIKE '%%') AND (category_id LIKE '%%')[0m
+  ↳ app/views/works/index.html.erb:36
+  Rendered works/index.html.erb within layouts/application (164.9ms)
+Completed 200 OK in 372ms (Views: 362.1ms | ActiveRecord: 3.8ms)
+
+
+Started GET "/works?utf8=%E2%9C%93&name_key=&year=14&commit=Search" for ::1 at 2020-11-22 17:09:38 +0900
+Processing by WorksController#index as HTML
+  Parameters: {"utf8"=>"✓", "name_key"=>"", "year"=>"14", "commit"=>"Search"}
+  Rendering works/index.html.erb within layouts/application
+  [1m[36mWork Load (0.4ms)[0m  [1m[34mSELECT "works".* FROM "works" WHERE (date LIKE '%%') AND (category_id LIKE '%%')[0m
+  ↳ app/views/works/index.html.erb:25
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:28
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:28
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:28
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:28
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:28
+  [1m[36mCACHE Category Load (0.1ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:28
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:28
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT SUM("works"."count") FROM "works" WHERE (date LIKE '%%') AND (category_id LIKE '%%')[0m
+  ↳ app/views/works/index.html.erb:36
+  Rendered works/index.html.erb within layouts/application (64.0ms)
+Completed 200 OK in 237ms (Views: 231.7ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/works?utf8=%E2%9C%93&name_key=2020-11&Category_key=10&commit=Search" for ::1 at 2020-11-22 17:09:42 +0900
+Processing by WorksController#index as HTML
+  Parameters: {"utf8"=>"✓", "name_key"=>"2020-11", "Category_key"=>"10", "commit"=>"Search"}
+  Rendering works/index.html.erb within layouts/application
+  [1m[36mWork Load (0.3ms)[0m  [1m[34mSELECT "works".* FROM "works" WHERE (date LIKE '%2020-11%') AND (category_id LIKE '%%')[0m
+  ↳ app/views/works/index.html.erb:25
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:28
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:28
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:28
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT SUM("works"."count") FROM "works" WHERE (date LIKE '%2020-11%') AND (category_id LIKE '%%')[0m
+  ↳ app/views/works/index.html.erb:36
+  Rendered works/index.html.erb within layouts/application (34.8ms)
+Completed 200 OK in 202ms (Views: 196.6ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/works" for ::1 at 2020-11-22 17:09:45 +0900
+Processing by WorksController#index as HTML
+  Rendering works/index.html.erb within layouts/application
+  [1m[36mWork Load (0.3ms)[0m  [1m[34mSELECT "works".* FROM "works"[0m
+  ↳ app/views/works/index.html.erb:25
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:28
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:28
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:28
+  [1m[36mCategory Load (0.7ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:28
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:28
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:28
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:28
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("works"."count") FROM "works"[0m
+  ↳ app/views/works/index.html.erb:36
+  Rendered works/index.html.erb within layouts/application (51.0ms)
+Completed 200 OK in 229ms (Views: 223.2ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/works?utf8=%E2%9C%93&name_key=&Category_key=12&commit=Search" for ::1 at 2020-11-22 17:09:47 +0900
+Processing by WorksController#index as HTML
+  Parameters: {"utf8"=>"✓", "name_key"=>"", "Category_key"=>"12", "commit"=>"Search"}
+  Rendering works/index.html.erb within layouts/application
+  [1m[36mWork Load (0.5ms)[0m  [1m[34mSELECT "works".* FROM "works" WHERE (date LIKE '%%') AND (category_id LIKE '%%')[0m
+  ↳ app/views/works/index.html.erb:25
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:28
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:28
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:28
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:28
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:28
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:28
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:28
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT SUM("works"."count") FROM "works" WHERE (date LIKE '%%') AND (category_id LIKE '%%')[0m
+  ↳ app/views/works/index.html.erb:36
+  Rendered works/index.html.erb within layouts/application (51.7ms)
+Completed 200 OK in 225ms (Views: 219.1ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/works?utf8=%E2%9C%93&name_key=&Category_key=12&commit=Search" for ::1 at 2020-11-22 17:09:50 +0900
+Processing by WorksController#index as HTML
+  Parameters: {"utf8"=>"✓", "name_key"=>"", "Category_key"=>"12", "commit"=>"Search"}
+  Rendering works/index.html.erb within layouts/application
+  [1m[36mWork Load (0.6ms)[0m  [1m[34mSELECT "works".* FROM "works" WHERE (date LIKE '%%') AND (category_id LIKE '%%')[0m
+  ↳ app/views/works/index.html.erb:25
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:28
+  [1m[36mCategory Load (0.5ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:28
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:28
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:28
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:28
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:28
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:28
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT SUM("works"."count") FROM "works" WHERE (date LIKE '%%') AND (category_id LIKE '%%')[0m
+  ↳ app/views/works/index.html.erb:36
+  Rendered works/index.html.erb within layouts/application (69.6ms)
+Completed 200 OK in 285ms (Views: 273.5ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/works?utf8=%E2%9C%93&name_key=&Category_key=12&commit=Search" for ::1 at 2020-11-22 17:10:03 +0900
+Processing by WorksController#index as HTML
+  Parameters: {"utf8"=>"✓", "name_key"=>"", "Category_key"=>"12", "commit"=>"Search"}
+  Rendering works/index.html.erb within layouts/application
+  [1m[36mWork Load (0.4ms)[0m  [1m[34mSELECT "works".* FROM "works" WHERE (date LIKE '%%') AND (category_id LIKE '%%')[0m
+  ↳ app/views/works/index.html.erb:25
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:28
+  [1m[36mCategory Load (0.8ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:28
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:28
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:28
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:28
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:28
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:28
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT SUM("works"."count") FROM "works" WHERE (date LIKE '%%') AND (category_id LIKE '%%')[0m
+  ↳ app/views/works/index.html.erb:36
+  Rendered works/index.html.erb within layouts/application (53.2ms)
+Completed 200 OK in 252ms (Views: 246.2ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/works" for ::1 at 2020-11-22 17:10:05 +0900
+Processing by WorksController#index as HTML
+  Rendering works/index.html.erb within layouts/application
+  [1m[36mWork Load (0.3ms)[0m  [1m[34mSELECT "works".* FROM "works"[0m
+  ↳ app/views/works/index.html.erb:25
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:28
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:28
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:28
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:28
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:28
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:28
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:28
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("works"."count") FROM "works"[0m
+  ↳ app/views/works/index.html.erb:36
+  Rendered works/index.html.erb within layouts/application (50.2ms)
+Completed 200 OK in 216ms (Views: 210.7ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/works?utf8=%E2%9C%93&name_key=&Category_id=12&commit=Search" for ::1 at 2020-11-22 17:10:08 +0900
+Processing by WorksController#index as HTML
+  Parameters: {"utf8"=>"✓", "name_key"=>"", "Category_id"=>"12", "commit"=>"Search"}
+  Rendering works/index.html.erb within layouts/application
+  [1m[36mWork Load (0.3ms)[0m  [1m[34mSELECT "works".* FROM "works" WHERE (date LIKE '%%') AND (category_id LIKE '%%')[0m
+  ↳ app/views/works/index.html.erb:25
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:28
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:28
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:28
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:28
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:28
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:28
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:28
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT SUM("works"."count") FROM "works" WHERE (date LIKE '%%') AND (category_id LIKE '%%')[0m
+  ↳ app/views/works/index.html.erb:36
+  Rendered works/index.html.erb within layouts/application (53.8ms)
+Completed 200 OK in 229ms (Views: 222.0ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/works?utf8=%E2%9C%93&name_key=&Category_id=12&commit=Search" for ::1 at 2020-11-22 17:10:35 +0900
+Processing by WorksController#index as HTML
+  Parameters: {"utf8"=>"✓", "name_key"=>"", "Category_id"=>"12", "commit"=>"Search"}
+  Rendering works/index.html.erb within layouts/application
+  [1m[36mWork Load (0.3ms)[0m  [1m[34mSELECT "works".* FROM "works" WHERE (date LIKE '%%') AND (category_id LIKE '%%')[0m
+  ↳ app/views/works/index.html.erb:25
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:28
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:28
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:28
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:28
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:28
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:28
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:28
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT SUM("works"."count") FROM "works" WHERE (date LIKE '%%') AND (category_id LIKE '%%')[0m
+  ↳ app/views/works/index.html.erb:36
+  Rendered works/index.html.erb within layouts/application (54.7ms)
+Completed 200 OK in 237ms (Views: 230.8ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/works?utf8=%E2%9C%93&name_key=2020-11&Category_key=10&commit=Search" for ::1 at 2020-11-22 17:10:37 +0900
+Processing by WorksController#index as HTML
+  Parameters: {"utf8"=>"✓", "name_key"=>"2020-11", "Category_key"=>"10", "commit"=>"Search"}
+  Rendering works/index.html.erb within layouts/application
+  [1m[36mWork Load (0.4ms)[0m  [1m[34mSELECT "works".* FROM "works" WHERE (date LIKE '%2020-11%') AND (category_id LIKE '%%')[0m
+  ↳ app/views/works/index.html.erb:25
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:28
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:28
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:28
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT SUM("works"."count") FROM "works" WHERE (date LIKE '%2020-11%') AND (category_id LIKE '%%')[0m
+  ↳ app/views/works/index.html.erb:36
+  Rendered works/index.html.erb within layouts/application (24.4ms)
+Completed 200 OK in 193ms (Views: 187.3ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/works?utf8=%E2%9C%93&name_key=&Category_key=10&commit=Search" for ::1 at 2020-11-22 17:10:41 +0900
+Processing by WorksController#index as HTML
+  Parameters: {"utf8"=>"✓", "name_key"=>"", "Category_key"=>"10", "commit"=>"Search"}
+  Rendering works/index.html.erb within layouts/application
+  [1m[36mWork Load (0.4ms)[0m  [1m[34mSELECT "works".* FROM "works" WHERE (date LIKE '%%') AND (category_id LIKE '%%')[0m
+  ↳ app/views/works/index.html.erb:25
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:28
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:28
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:28
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:28
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:28
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:28
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:28
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT SUM("works"."count") FROM "works" WHERE (date LIKE '%%') AND (category_id LIKE '%%')[0m
+  ↳ app/views/works/index.html.erb:36
+  Rendered works/index.html.erb within layouts/application (48.9ms)
+Completed 200 OK in 244ms (Views: 238.4ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/works?utf8=%E2%9C%93&name_key=&Category_key=10&commit=Search" for ::1 at 2020-11-22 17:10:41 +0900
+Processing by WorksController#index as HTML
+  Parameters: {"utf8"=>"✓", "name_key"=>"", "Category_key"=>"10", "commit"=>"Search"}
+  Rendering works/index.html.erb within layouts/application
+  [1m[36mWork Load (0.5ms)[0m  [1m[34mSELECT "works".* FROM "works" WHERE (date LIKE '%%') AND (category_id LIKE '%%')[0m
+  ↳ app/views/works/index.html.erb:25
+  [1m[36mCategory Load (0.5ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:28
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:28
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:28
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:28
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:28
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:28
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:28
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT SUM("works"."count") FROM "works" WHERE (date LIKE '%%') AND (category_id LIKE '%%')[0m
+  ↳ app/views/works/index.html.erb:36
+  Rendered works/index.html.erb within layouts/application (55.0ms)
+Completed 200 OK in 240ms (Views: 233.4ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/works?utf8=%E2%9C%93&name_key=&Category_key=10&commit=Search" for ::1 at 2020-11-22 17:10:42 +0900
+Processing by WorksController#index as HTML
+  Parameters: {"utf8"=>"✓", "name_key"=>"", "Category_key"=>"10", "commit"=>"Search"}
+  Rendering works/index.html.erb within layouts/application
+  [1m[36mWork Load (0.4ms)[0m  [1m[34mSELECT "works".* FROM "works" WHERE (date LIKE '%%') AND (category_id LIKE '%%')[0m
+  ↳ app/views/works/index.html.erb:25
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:28
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:28
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:28
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:28
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:28
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:28
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:28
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT SUM("works"."count") FROM "works" WHERE (date LIKE '%%') AND (category_id LIKE '%%')[0m
+  ↳ app/views/works/index.html.erb:36
+  Rendered works/index.html.erb within layouts/application (65.5ms)
+Completed 200 OK in 241ms (Views: 231.9ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/works?utf8=%E2%9C%93&name_key=&Category_key=10&commit=Search" for ::1 at 2020-11-22 17:15:19 +0900
+Processing by WorksController#index as HTML
+  Parameters: {"utf8"=>"✓", "name_key"=>"", "Category_key"=>"10", "commit"=>"Search"}
+  Rendering works/index.html.erb within layouts/application
+  [1m[36mWork Load (0.4ms)[0m  [1m[34mSELECT "works".* FROM "works" WHERE (date LIKE '%%') AND (category_id LIKE '%%')[0m
+  ↳ app/views/works/index.html.erb:30
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:33
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:33
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:33
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:33
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:33
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:33
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:33
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT SUM("works"."count") FROM "works" WHERE (date LIKE '%%') AND (category_id LIKE '%%')[0m
+  ↳ app/views/works/index.html.erb:41
+  Rendered works/index.html.erb within layouts/application (49.8ms)
+Completed 200 OK in 240ms (Views: 233.8ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/works/21" for ::1 at 2020-11-22 17:15:21 +0900
+Processing by WorksController#show as HTML
+  Parameters: {"id"=>"21"}
+  [1m[36mWork Load (0.3ms)[0m  [1m[34mSELECT  "works".* FROM "works" WHERE "works"."id" = ? LIMIT ?[0m  [["id", 21], ["LIMIT", 1]]
+  ↳ app/controllers/works_controller.rb:80
+  Rendering works/show.html.erb within layouts/application
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/views/works/show.html.erb:10
+  Rendered works/show.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 168ms (Views: 159.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/works" for ::1 at 2020-11-22 17:15:24 +0900
+Processing by WorksController#index as HTML
+  Rendering works/index.html.erb within layouts/application
+  [1m[36mWork Load (0.3ms)[0m  [1m[34mSELECT "works".* FROM "works"[0m
+  ↳ app/views/works/index.html.erb:30
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:33
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:33
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:33
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:33
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:33
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:33
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:33
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("works"."count") FROM "works"[0m
+  ↳ app/views/works/index.html.erb:41
+  Rendered works/index.html.erb within layouts/application (50.4ms)
+Completed 200 OK in 218ms (Views: 211.7ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/works?utf8=%E2%9C%93&name_key=&category_key=10&commit=Search" for ::1 at 2020-11-22 17:15:32 +0900
+Processing by WorksController#index as HTML
+  Parameters: {"utf8"=>"✓", "name_key"=>"", "category_key"=>"10", "commit"=>"Search"}
+  Rendering works/index.html.erb within layouts/application
+  [1m[36mWork Load (0.4ms)[0m  [1m[34mSELECT "works".* FROM "works" WHERE (date LIKE '%%') AND (category_id LIKE '%10%')[0m
+  ↳ app/views/works/index.html.erb:30
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:33
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:33
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:33
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT SUM("works"."count") FROM "works" WHERE (date LIKE '%%') AND (category_id LIKE '%10%')[0m
+  ↳ app/views/works/index.html.erb:41
+  Rendered works/index.html.erb within layouts/application (32.2ms)
+Completed 200 OK in 195ms (Views: 190.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/works?utf8=%E2%9C%93&name_key=2020-11&category_key=10&commit=Search" for ::1 at 2020-11-22 17:15:37 +0900
+Processing by WorksController#index as HTML
+  Parameters: {"utf8"=>"✓", "name_key"=>"2020-11", "category_key"=>"10", "commit"=>"Search"}
+  Rendering works/index.html.erb within layouts/application
+  [1m[36mWork Load (0.6ms)[0m  [1m[34mSELECT "works".* FROM "works" WHERE (date LIKE '%2020-11%') AND (category_id LIKE '%10%')[0m
+  ↳ app/views/works/index.html.erb:30
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:33
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:33
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT SUM("works"."count") FROM "works" WHERE (date LIKE '%2020-11%') AND (category_id LIKE '%10%')[0m
+  ↳ app/views/works/index.html.erb:41
+  Rendered works/index.html.erb within layouts/application (29.9ms)
+Completed 200 OK in 189ms (Views: 182.7ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/works" for ::1 at 2020-11-22 17:15:56 +0900
+Processing by WorksController#index as HTML
+  Rendering works/index.html.erb within layouts/application
+  [1m[36mWork Load (0.3ms)[0m  [1m[34mSELECT "works".* FROM "works"[0m
+  ↳ app/views/works/index.html.erb:30
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:33
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:33
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:33
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:33
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:33
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:33
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:33
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT SUM("works"."count") FROM "works"[0m
+  ↳ app/views/works/index.html.erb:41
+  Rendered works/index.html.erb within layouts/application (53.2ms)
+Completed 200 OK in 203ms (Views: 198.3ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/works/new" for ::1 at 2020-11-22 17:16:00 +0900
+Processing by WorksController#new as HTML
+  Rendering works/new.html.erb within layouts/application
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/works/_form.html.erb:24
+  Rendered works/_form.html.erb (63.5ms)
+  Rendered works/new.html.erb within layouts/application (67.1ms)
+Completed 200 OK in 219ms (Views: 214.6ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/works" for ::1 at 2020-11-22 17:16:16 +0900
+Processing by WorksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"mfFXPiypEoTIxQEYFODPRgGLwBe5VV7612YSVRpwlBHlCrfs7C2MsCbYS/neKbLSruAejWdyf1HaxuxlbVD3Gw==", "work"=>{"date(1i)"=>"2020", "date(2i)"=>"11", "date(3i)"=>"22", "category_id"=>"12", "count"=>"20"}, "commit"=>"Submit"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/works_controller.rb:43
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/works_controller.rb:43
+  [1m[36mWork Create (2.4ms)[0m  [1m[32mINSERT INTO "works" ("date", "category_id", "count", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["date", "2020-11-22"], ["category_id", 12], ["count", 20], ["created_at", "2020-11-22 08:16:16.329366"], ["updated_at", "2020-11-22 08:16:16.329366"]]
+  ↳ app/controllers/works_controller.rb:43
+  [1m[35m (2.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/works_controller.rb:43
+Redirected to http://localhost:3000/works/27
+Completed 302 Found in 45ms (ActiveRecord: 5.8ms)
+
+
+Started GET "/works/27" for ::1 at 2020-11-22 17:16:16 +0900
+Processing by WorksController#show as HTML
+  Parameters: {"id"=>"27"}
+  [1m[36mWork Load (0.4ms)[0m  [1m[34mSELECT  "works".* FROM "works" WHERE "works"."id" = ? LIMIT ?[0m  [["id", 27], ["LIMIT", 1]]
+  ↳ app/controllers/works_controller.rb:80
+  Rendering works/show.html.erb within layouts/application
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/views/works/show.html.erb:10
+  Rendered works/show.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 207ms (Views: 192.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/works" for ::1 at 2020-11-22 17:16:17 +0900
+Processing by WorksController#index as HTML
+  Rendering works/index.html.erb within layouts/application
+  [1m[36mWork Load (0.4ms)[0m  [1m[34mSELECT "works".* FROM "works"[0m
+  ↳ app/views/works/index.html.erb:30
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:33
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:33
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:33
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:33
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:33
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:33
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:33
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:33
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("works"."count") FROM "works"[0m
+  ↳ app/views/works/index.html.erb:41
+  Rendered works/index.html.erb within layouts/application (72.2ms)
+Completed 200 OK in 240ms (Views: 232.8ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/works/new" for ::1 at 2020-11-22 17:16:21 +0900
+Processing by WorksController#new as HTML
+  Rendering works/new.html.erb within layouts/application
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/works/_form.html.erb:24
+  Rendered works/_form.html.erb (9.5ms)
+  Rendered works/new.html.erb within layouts/application (14.3ms)
+Completed 200 OK in 197ms (Views: 192.3ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/works" for ::1 at 2020-11-22 17:16:31 +0900
+Processing by WorksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"V8ZXR12tM3ObpMPkw0HpLUcYszFgeTBt+2jHopVHHpgrPbeVnSmtR3W5iQUJiJS56HNtq75eEcb2yDmS4md9kg==", "work"=>{"date(1i)"=>"2020", "date(2i)"=>"2", "date(3i)"=>"5", "category_id"=>"14", "count"=>"22"}, "commit"=>"Submit"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/works_controller.rb:43
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/works_controller.rb:43
+  [1m[36mWork Create (1.2ms)[0m  [1m[32mINSERT INTO "works" ("date", "category_id", "count", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["date", "2020-02-05"], ["category_id", 14], ["count", 22], ["created_at", "2020-11-22 08:16:31.307156"], ["updated_at", "2020-11-22 08:16:31.307156"]]
+  ↳ app/controllers/works_controller.rb:43
+  [1m[35m (5.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/works_controller.rb:43
+Redirected to http://localhost:3000/works/28
+Completed 302 Found in 49ms (ActiveRecord: 6.8ms)
+
+
+Started GET "/works/28" for ::1 at 2020-11-22 17:16:31 +0900
+Processing by WorksController#show as HTML
+  Parameters: {"id"=>"28"}
+  [1m[36mWork Load (0.3ms)[0m  [1m[34mSELECT  "works".* FROM "works" WHERE "works"."id" = ? LIMIT ?[0m  [["id", 28], ["LIMIT", 1]]
+  ↳ app/controllers/works_controller.rb:80
+  Rendering works/show.html.erb within layouts/application
+  [1m[36mCategory Load (0.5ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/works/show.html.erb:10
+  Rendered works/show.html.erb within layouts/application (10.6ms)
+Completed 200 OK in 192ms (Views: 183.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/works" for ::1 at 2020-11-22 17:16:32 +0900
+Processing by WorksController#index as HTML
+  Rendering works/index.html.erb within layouts/application
+  [1m[36mWork Load (0.3ms)[0m  [1m[34mSELECT "works".* FROM "works"[0m
+  ↳ app/views/works/index.html.erb:30
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:33
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:33
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:33
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:33
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:33
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:33
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:33
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:33
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:33
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT SUM("works"."count") FROM "works"[0m
+  ↳ app/views/works/index.html.erb:41
+  Rendered works/index.html.erb within layouts/application (70.9ms)
+Completed 200 OK in 237ms (Views: 230.6ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/works?utf8=%E2%9C%93&name_key=2020-11&category_key=12&commit=Search" for ::1 at 2020-11-22 17:16:38 +0900
+Processing by WorksController#index as HTML
+  Parameters: {"utf8"=>"✓", "name_key"=>"2020-11", "category_key"=>"12", "commit"=>"Search"}
+  Rendering works/index.html.erb within layouts/application
+  [1m[36mWork Load (0.5ms)[0m  [1m[34mSELECT "works".* FROM "works" WHERE (date LIKE '%2020-11%') AND (category_id LIKE '%12%')[0m
+  ↳ app/views/works/index.html.erb:30
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:33
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:33
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT SUM("works"."count") FROM "works" WHERE (date LIKE '%2020-11%') AND (category_id LIKE '%12%')[0m
+  ↳ app/views/works/index.html.erb:41
+  Rendered works/index.html.erb within layouts/application (21.1ms)
+Completed 200 OK in 190ms (Views: 184.8ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/works?utf8=%E2%9C%93&name_key=2020-11&category_key=13&commit=Search" for ::1 at 2020-11-22 17:16:44 +0900
+Processing by WorksController#index as HTML
+  Parameters: {"utf8"=>"✓", "name_key"=>"2020-11", "category_key"=>"13", "commit"=>"Search"}
+  Rendering works/index.html.erb within layouts/application
+  [1m[36mWork Load (0.4ms)[0m  [1m[34mSELECT "works".* FROM "works" WHERE (date LIKE '%2020-11%') AND (category_id LIKE '%13%')[0m
+  ↳ app/views/works/index.html.erb:30
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT SUM("works"."count") FROM "works" WHERE (date LIKE '%2020-11%') AND (category_id LIKE '%13%')[0m
+  ↳ app/views/works/index.html.erb:41
+  Rendered works/index.html.erb within layouts/application (13.4ms)
+Completed 200 OK in 175ms (Views: 169.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/works" for ::1 at 2020-11-22 17:16:50 +0900
+Processing by WorksController#index as HTML
+  Rendering works/index.html.erb within layouts/application
+  [1m[36mWork Load (0.4ms)[0m  [1m[34mSELECT "works".* FROM "works"[0m
+  ↳ app/views/works/index.html.erb:30
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:33
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:33
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:33
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:33
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:33
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:33
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:33
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:33
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:33
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT SUM("works"."count") FROM "works"[0m
+  ↳ app/views/works/index.html.erb:41
+  Rendered works/index.html.erb within layouts/application (67.4ms)
+Completed 200 OK in 214ms (Views: 208.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/works?utf8=%E2%9C%93&name_key=2020-02&category_key=13&commit=Search" for ::1 at 2020-11-22 17:17:02 +0900
+Processing by WorksController#index as HTML
+  Parameters: {"utf8"=>"✓", "name_key"=>"2020-02", "category_key"=>"13", "commit"=>"Search"}
+  Rendering works/index.html.erb within layouts/application
+  [1m[36mWork Load (0.4ms)[0m  [1m[34mSELECT "works".* FROM "works" WHERE (date LIKE '%2020-02%') AND (category_id LIKE '%13%')[0m
+  ↳ app/views/works/index.html.erb:30
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/views/works/index.html.erb:33
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT SUM("works"."count") FROM "works" WHERE (date LIKE '%2020-02%') AND (category_id LIKE '%13%')[0m
+  ↳ app/views/works/index.html.erb:41
+  Rendered works/index.html.erb within layouts/application (19.0ms)
+Completed 200 OK in 189ms (Views: 182.7ms | ActiveRecord: 1.2ms)
+
+
