@@ -21,7 +21,7 @@
   <div class='form-group'>
     <%= form.label :category_id, class: 'col-sm-2 control-label' %>
     <div class='col-sm-10'>
-      <%= form.select :category_id, Category.all.map{|o| [o.name, o.id]} %>
+    <%= form.select :category_id, Category.all.map{|o| [o.name, o.id]} %>
     </div>
   </div>
 
