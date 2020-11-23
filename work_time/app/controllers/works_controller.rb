@@ -6,7 +6,7 @@ class WorksController < ApplicationController
   # GET /works.json
   def index
     if params[:name_key] || params[:category_key]
-      @works = Work.where('date LIKE ?', "%#{params[:name_key]}%").where('category_id LIKE ?', "%#{params[:category_key]}%")
+      @works = Work.where('user_id LIKE ?', "%#{params[:name_key]}%").where('date LIKE ?', "%#{params[:date_key]}%").where('category_id LIKE ?', "%#{params[:category_key]}%")
     else
       @works = Work.all
     end
@@ -39,7 +39,7 @@ class WorksController < ApplicationController
   # POST /works.json
   def create
     @work = Work.new(work_params)
-
+    @work.user_id = current_user.id
     respond_to do |format|
       if @work.save
         format.html { redirect_to @work, notice: 'Work was successfully created.' }
@@ -54,23 +54,32 @@ class WorksController < ApplicationController
   # PATCH/PUT /works/1
   # PATCH/PUT /works/1.json
   def update
-    respond_to do |format|
-      if @work.update(work_params)
-        format.html { redirect_to @work, notice: 'Work was successfully updated.' }
-        format.json { render :show, status: :ok, location: @work }
-      else
-        format.html { render :edit }
-        format.json { render json: @work.errors, status: :unprocessable_entity }
+    if @article.user_id == current_user.id
+      respond_to do |format|
+        if @work.update(work_params)
+          format.html { redirect_to @work, notice: 'Work was successfully updated.' }
+          format.json { render :show, status: :ok, location: @work }
+        else
+          format.html { render :edit }
+          format.json { render json: @work.errors, status: :unprocessable_entity }
+        end
       end
+    else
+      redirect_to @article, notice: "You don't have permission."
     end
   end
 
   # DELETE /works/1
   # DELETE /works/1.json
   def destroy
-    @work.destroy
+    if @article.user_id == current_user.id
+       @work.destroy
+       msg = "Article was successfully destroyed."
+       else
+         msg = "You don't have permission."
+       end
     respond_to do |format|
-      format.html { redirect_to works_url, notice: 'Work was successfully destroyed.' }
+      format.html { redirect_to works_url, notice: msg }
       format.json { head :no_content }
     end
   end
