@@ -5,7 +5,7 @@ class WorksController < ApplicationController
   # GET /works
   # GET /works.json
   def index
-    if params[:name_key] || params[:category_key]
+    if params[:name_key] || params[:date_key] || params[:category_key]
       @works = Work.where('user_id LIKE ?', "%#{params[:name_key]}%").where('date LIKE ?', "%#{params[:date_key]}%").where('category_id LIKE ?', "%#{params[:category_key]}%")
     else
       @works = Work.all

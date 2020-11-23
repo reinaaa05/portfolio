@@ -3,16 +3,15 @@
 <h1>Works</h1>
 <%= form_tag('/works', method: 'get') do %>
   <%= label_tag(:name_key, 'Search name:') %>
-  <%= text_field_tag(:name_key) %>
+  <%= select_tag :name_key,
+  options_for_select(
+    User.all.map {|o| [ "#{o.name}" , o.id ] }) %>
   <%= label_tag(:date_key, 'Search date:') %>
   <%= text_field_tag(:date_key) %>
   <%= label_tag(:category_key, 'Search category:') %>
-  <select name="category_key">
-    <option value="10">出品</option>
-    <option value="12">価格メンテナンス</option>
-    <option value="13">在庫メンテナンス</option>
-    <option value="14">発送</option>
-  </select>
+  <%= select_tag :category_key,
+  options_for_select(
+    Category.all.map {|c| [ "#{c.name}" , c.id ] }, include_blank: true) %>
   <%= submit_tag('Search') %> <%= link_to 'Clear', works_path %>
   <% end %>
   
