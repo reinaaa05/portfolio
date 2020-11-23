@@ -29,6 +29,7 @@
   <tbody>
     <% @works.each do |work| %>
       <tr>
+        <td><%= work.user_id %></td>
         <td><%= link_to work.date, work, class: 'widelink' %></td>
         <td><%= link_to work.category.name, work, class: 'widelink' %></td>
         <td><%= link_to work.count, work, class: 'widelink' %></td>
