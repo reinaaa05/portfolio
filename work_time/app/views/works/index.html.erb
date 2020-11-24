@@ -2,13 +2,15 @@
 
 <h1>Works</h1>
 <%= form_tag('/works', method: 'get') do %>
-  <%= label_tag(:name_key, 'Search name:') %>
+  <%= label_tag(:name_key, '名前　　:') %>
   <%= select_tag :name_key,
   options_for_select(
     User.all.map {|o| [ "#{o.name}" , o.id ] }),include_blank: true %>
-  <%= label_tag(:date_key, 'Search date:') %>
+<br>
+  <%= label_tag(:date_key, '日付　　:') %>
   <%= text_field_tag(:date_key) %>
-  <%= label_tag(:category_key, 'Search category:') %>
+<br>
+  <%= label_tag(:category_key, '仕事内容:') %>
   <%= select_tag :category_key,
   options_for_select(
     Category.all.map {|c| [ "#{c.name}" , c.id ] }),include_blank: true  %>
