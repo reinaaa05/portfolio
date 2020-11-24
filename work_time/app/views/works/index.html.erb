@@ -5,13 +5,13 @@
   <%= label_tag(:name_key, 'Search name:') %>
   <%= select_tag :name_key,
   options_for_select(
-    User.all.map {|o| [ "#{o.name}" , o.id ] }) %>
+    User.all.map {|o| [ "#{o.name}" , o.id ] }),include_blank: true %>
   <%= label_tag(:date_key, 'Search date:') %>
   <%= text_field_tag(:date_key) %>
   <%= label_tag(:category_key, 'Search category:') %>
   <%= select_tag :category_key,
   options_for_select(
-    Category.all.map {|c| [ "#{c.name}" , c.id ] }, include_blank: true) %>
+    Category.all.map {|c| [ "#{c.name}" , c.id ] }),include_blank: true  %>
   <%= submit_tag('Search') %> <%= link_to 'Clear', works_path %>
   <% end %>
   
