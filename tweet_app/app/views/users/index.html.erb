@@ -9,6 +9,9 @@
         <div class="user-right">
           <%= link_to(user.name, "/users/#{user.id}") %>
         </div>
+        <div class="follow">
+          <%= render template: ‘relationships/follow_botton’, user: @user %>
+        </div>
       </div>
     <% end %>
   </div>

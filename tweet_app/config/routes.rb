@@ -1,4 +1,10 @@
 Rails.application.routes.draw do
+  resources :relationships, only: [:create, :destroy]
+  resources :users do
+    member do
+     get :following, :followers
+    end
+  end
   post "likes/:post_id/create" => "likes#create"
   post "likes/:post_id/destroy" => "likes#destroy"
   
