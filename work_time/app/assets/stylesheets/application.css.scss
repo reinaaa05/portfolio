@@ -36,3 +36,13 @@
   .nav-rigth {
     float: right;
   }
+
+  #sigin, #signup ,#setting{
+    color: white;
+    height: auto;
+    line-height: auto;
+    opacity: 0.5;
+    display: inline-block;
+    padding: 15px;
+    cursor: pointer;
+  }
