@@ -11,11 +11,13 @@ class ArticlesController < ApplicationController
   # GET /articles/1
   # GET /articles/1.json
   def show
+    @picture = @article.pictures.all
   end
 
   # GET /articles/new
   def new
     @article = Article.new
+    @picture = @article.pictures.build
   end
 
   # GET /articles/1/edit
@@ -29,6 +31,9 @@ class ArticlesController < ApplicationController
     @article.user_id = current_user.id
     respond_to do |format|
       if @article.save
+        params[:pictures]['photo'].each do |a|
+          @picture = @article.pictures.create!(:photo => a)
+       end
         format.html { redirect_to @article, notice: 'Article was successfully created.' }
         format.json { render :show, status: :created, location: @article }
       else
@@ -79,6 +84,6 @@ class ArticlesController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def article_params
-      params.require(:article).permit(:user_id, :image, :body)
+      params.require(:article).permit(:user_id,:article_id, :photo,:photo,:body)
     end
 end

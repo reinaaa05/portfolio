@@ -11,10 +11,19 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= form.label :image %>
-    <%= form.file_field :image %>
-  </div>
+  <%= form.fields_for :picture do |p| %>
+    <div class="field">
+      <%= p.label :photo %><br>
+      <%= p.file_field :photo, :multiple => true, name: "pictures[photo][]" %>
+    </div>
+  <% end %>
+
+  <%= form.fields_for :picture do |p| %>
+    <div class="field">
+      <%= p.label :photo %><br>
+      <%= p.file_field :photo, :multiple => true, name: "pictures[photo][]" %>
+    </div>
+  <% end %>
 
   <div class="field">
     <%= form.label :body %>
