@@ -5,9 +5,11 @@
   <%= @article.user.name %>
 </p>
 
-<% @picture.each do |p| %>
-  <%= image_tag p.photo_url %>
-<% end %>
+<p>
+  <strong>Image:</strong>
+  <%= @article.image %>
+</p>
+
 <p>
   <strong>Body:</strong>
   <%= @article.body %>

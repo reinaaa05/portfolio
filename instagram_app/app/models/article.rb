@@ -1,7 +1,8 @@
 class Article < ApplicationRecord
   belongs_to :user
   mount_uploader :image, ImagesUploader
-  
-  has_many :pictures
-  accepts_nested_attributes_for :pictures
+  mount_uploader :image2, ImagesUploader
+  mount_uploader :image3, ImagesUploader
+  mount_uploader :image4, ImagesUploader
+  mount_uploader :image5, ImagesUploader
 end
