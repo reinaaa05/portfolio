@@ -6,19 +6,31 @@
     <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  
   </head>
 
   <body>
-    <% if user_signed_in? %>
-      <img src=<%= current_user.image %> class = "icon_image">
-      <%= current_user.name %></strong>.
-      <%= link_to "Settings", edit_user_registration_path %> |
-      <%= link_to "Logout", destroy_user_session_path, method: :delete %>
-    <% else %>
-      <%= link_to "Sign up", new_user_registration_path, :class => 'navbar-link' %> |
-      <%= link_to "Login", new_user_session_path, :class => 'navbar-link' %>
-    <% end %>
+    <header>
+      <% if user_signed_in? %>
+        <div class="header-left">
+          <img src=<%= current_user.image %> class = "icon_image">
+          <%= current_user.name %>
+          <%= link_to "Settings", edit_user_registration_path %> |
+          <%= link_to "Logout", destroy_user_session_path, method: :delete %>
+          <% else %>
+          <%= link_to "Sign up", new_user_registration_path, :class => 'navbar-link' %> |
+          <%= link_to "Login", new_user_session_path, :class => 'navbar-link' %>
+          <% end %>
+        </div>
+      <div class="header-right">
+        <a class="fa fa-home" hreh="articles_path" ></a>
+        <a class="fa fa-heart-o" hreh="users_path" ></a>
+        <a class="fa fa-address-book" hreh="users_path" ></a>
+        <a class="fa fa-user-circle" hreh="users_path" ></a>
+      </div>
+    </header>
     <p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>
     <%= yield %>

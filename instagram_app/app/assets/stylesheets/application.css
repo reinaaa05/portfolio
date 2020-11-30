@@ -13,3 +13,41 @@
  *= require_tree .
  *= require_self
  */
+ @import "font-awesome-sprockets";
+ @import "font-awesome";
+ 
+ header {
+   height: 8vh;
+   top:0;
+   width: 100%;
+   border-bottom: 2px solid lightgray;
+   display:flex;
+  justify-content:space-between;
+
+ }
+
+ .header-left {
+   padding: 1vh 10vw;
+   
+ }
+
+ .header-right {
+   padding: 1vh 10vw ;
+   font-size: 30px;
+   height: 8vh;
+ }
+
+ .header-right a {
+   padding: 10px;
+ }
+
+ .container{
+   margin: 5vh;
+   width: 100%;
+ }
+
+ ul, li {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}

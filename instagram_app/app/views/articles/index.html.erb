@@ -1,32 +1,54 @@
-<div class="article.index">
-  <div="container">
+<div class="article_index">
+  <div class="container">
     <p id="notice"><%= notice %></p>
-
-    <h1>Articles</h1>
-    <% @articles.each do |article| %>
-      <div class="name">
-        <%= article.user.name %>
-      </div>
-      <div class="picture">
-        <ul>
-          <li><%= image_tag article.image.to_s %></li>
-          <li><%= image_tag article.image2.to_s %></li>
-          <li><%= image_tag article.image3.to_s %></li>
-          <li><%= image_tag article.image4.to_s %></li>
-          <li><%= image_tag article.image5.to_s %></li>
-        </ul>
-      <div class="article_body">
-        <%= article.body %>
-      </div>
-=begin
-      <%= link_to 'Show', article %>
-      <% if user_signed_in? && article.user_id == current_user.id %>
-        <%= link_to 'Edit', edit_article_path(article) %>
-        <%= link_to 'Destroy', article, method: :delete, data: { confirm: 'Are you sure?' } %>
+    <div class="article-main">
+      <% @articles.each do |article| %>
+        <div class="article-post">
+          <div class="name">
+            <img src=<%= article.user.image %> class = "icon_image2">
+            <%= article.user.name %>
+          </div>
+          <div class="change-btn-wrapper">
+            <div class="change-btn prev-btn"><i class="fa fa-arrow-left" ></i></div>
+            <div class="change-btn next-btn"><i class="fa fa-arrow-right"></i></div>
+          </div>
+          <div class="picture">
+            <ul>
+              <li class="slide active"><%= image_tag article.image.to_s , :size => '500x300'%></li>
+              <li class="slide"><%= image_tag article.image2.to_s %></li>
+              <li class="slide"><%= image_tag article.image3.to_s %></li>
+              <li class="slide"><%= image_tag article.image4.to_s %></li>
+              <li class="slide"><%= image_tag article.image5.to_s %></li>
+            </ul>
+          </div>
+          <div class="article_body">
+            <%= article.body %>
+          </div>
+        </div>
       <% end %>
-    <% end %>
-    <br>
-=end
-    <%= link_to 'New Article', new_article_path %>
+    </div>
+    <div class="new-article">
+      <%= link_to 'New Article', new_article_path %>
+      <p class="test">aaa</p>
+    </div>
   </div>
 </div>
+
+<script>
+$(function(){
+  ('.change-btn').click(function() {
+    var $displaySlide = $('.active');
+
+    $displaySlide.removeClass('active');
+
+    if($(this).hasClass('next-btn')) {
+      $displaySlide.next().addClass('active');
+    } else {
+      $displaySlide.prev().addClass('active');
+    }
+  });
+  $('.test').css('color','red');
+}
+
+});
+</script>
