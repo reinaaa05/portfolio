@@ -27,12 +27,14 @@
           <%= link_to "Login", new_user_session_path, :class => 'navbar-link' %>
           <% end %>
         </div>
-      <div class="header-right">
-        <a class="fa fa-home" hreh="articles_path" ></a>
-        <a class="fa fa-heart-o" hreh="users_path" ></a>
-        <a class="fa fa-address-book" hreh="users_path" ></a>
-        <a class="fa fa-user-circle" hreh="users_path" ></a>
-      </div>
+        <% if user_signed_in? %>
+        <div class="header-right">
+          <a class="fa fa-home" hreh="articles_path" ></a>
+          <a class="fa fa-heart-o" hreh="users_path" ></a>
+          <a class="fa fa-address-book" hreh="users_path" ></a>
+          <a class="fa fa-user-circle" hreh="users_path" ></a>
+        </div>
+      <% end %>
     </header>
     <p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>
@@ -47,9 +49,9 @@ $(function() {
   $('.picture').slick({
     dots: true,
     fade: true,
-
-    prevArrow: '<button class="slide-arrow prev-arrow"></button>',
-    nextArrow: '<button class="slide-arrow next-arrow"></button>'
+    arrows: true,
+    prevArrow:'<div class="prev"></div>',
+    nextArrow:'<div class="next"></div>',
   });
 
 });

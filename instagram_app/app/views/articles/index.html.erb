@@ -3,6 +3,11 @@
     <p id="notice"><%= notice %></p>
     <div class="article-container">
       <div class="user-index">
+        <ul>
+          <% @users.each do |user| %>
+            <li><%= user.name %></li>
+          <% end %>
+        </ul>
       </div>
       <div class="article-main">
         <% @articles.each do |article| %>
@@ -11,7 +16,7 @@
               <img src=<%= article.user.image %> class = "icon_image2">
               <%= article.user.name %>
             </div>
-            <div class="picture">
+            <div class="picture arrows">
               <div class="slide"><%= image_tag article.image.to_s , :size => '800x600'%></div>
               <div class="slide"><%= image_tag article.image2.to_s, :size => '800x600' %></div>
               <div class="slide"><%= image_tag article.image3.to_s, :size => '800x600' %></div>
@@ -26,8 +31,9 @@
             <div class="article_body">
               <%= article.body %>
             </div>
-            <td><%= link_to 'Edit', edit_article_path(article) %>
-            <%= link_to 'Destroy', article, method: :delete, data: { confirm: 'Are you sure?' } %>
+
+<%#            <%= link_to 'Edit', edit_article_path(article) %>
+<%#              <%= link_to 'Destroy', article, method: :delete, data: { confirm: 'Are you sure?' } %> 
           </div>
         <% end %>
         <div class="new-article">

@@ -22,9 +22,11 @@
   background-color: white;
   overflow: hidden;
   box-shadow: 0 2px 6px #c1ced7;
+  margin-bottom: 5vh;
 }
 
 .name {
+  padding: 10px;
   border-bottom: 1px solid lightgray;
   width: 100%;
 }
@@ -49,4 +51,41 @@
 }
 .article_body {
   padding: 10px 20px;
+}
+
+//スライドの矢印//
+.picture.arrows{
+	position: relative;
+}
+.picture.arrows .prev{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	margin: auto;
+	width: 30px;
+	height: 30px;
+	background-color: rgba(255,255,255,0.8);
+	background-image: url(http://keylopment.com/_cms/wp-content/themes/keylopment/images/common/anchor-prev.png);
+	background-position: center center;
+	background-repeat: no-repeat;
+  background-size: 5px auto;
+  border-radius: 100px;
+	z-index: 1;
+}
+.picture.arrows .next{
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	width: 30px;
+	height: 30px;
+	background-color: rgba(255,255,255,0.8);
+	background-image: url(http://keylopment.com/_cms/wp-content/themes/keylopment/images/common/anchor-next.png);
+	background-position: center center;
+	background-repeat: no-repeat;
+  background-size: 7px auto;
+  border-radius: 100px;
+	z-index: 1;
 }
