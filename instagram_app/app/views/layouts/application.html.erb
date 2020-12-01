@@ -5,10 +5,13 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+   
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css">
-  
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
@@ -22,9 +25,6 @@
           <% else %>
           <%= link_to "Sign up", new_user_registration_path, :class => 'navbar-link' %> |
           <%= link_to "Login", new_user_session_path, :class => 'navbar-link' %>
-          <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-          <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
-          <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
           <% end %>
         </div>
       <div class="header-right">
@@ -44,30 +44,13 @@
 $(function() {
 
  
+  $('.picture').slick({
+    dots: true,
+    fade: true,
 
-  $('.change-btn').click(function() {
-    var $displaySlide = $('.active');
-    
-    $displaySlide.removeClass('active');
-    
-    if($(this).hasClass('next-btn')) {
-      $displaySlide.next().addClass('active');
-    } else {
-      $displaySlide.prev().addClass('active');
-    }
-    
-    var slideIndex = $('.slide').index($('.active'));
-  
-    $('.change-btn').show();
-  
-    if (slideIndex == 0) {
-      $('.prev-btn').hide();
-    } else if (slideIndex == 3) {
-      $('.next-btn').hide();
-    }
+    prevArrow: '<button class="slide-arrow prev-arrow"></button>',
+    nextArrow: '<button class="slide-arrow next-arrow"></button>'
   });
-
-  $("#hoge").css("color","red");
 
 });
 </script>

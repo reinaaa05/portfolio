@@ -19,19 +19,20 @@
  header {
    height: 8vh;
    top:0;
-   width: 100%;
+   width: 90%;
    border-bottom: 2px solid lightgray;
    display:flex;
   justify-content:space-between;
-
  }
 
  .header-left {
+   display:flex;
    padding: 1vh 10vw;
    
  }
 
  .header-right {
+  display:flex;
    padding: 1vh 10vw ;
    font-size: 30px;
    height: 8vh;
@@ -42,7 +43,7 @@
  }
 
  .container{
-   margin: 5vh;
+   margin-top: 5vh;
    width: 100%;
  }
 

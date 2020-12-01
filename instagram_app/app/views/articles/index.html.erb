@@ -1,37 +1,40 @@
 <div class="article_index">
   <div class="container">
     <p id="notice"><%= notice %></p>
-    <div class="article-main">
-      <% @articles.each do |article| %>
-        <div class="article-post">
-          <div class="name">
-            <img src=<%= article.user.image %> class = "icon_image2">
-            <%= article.user.name %>
+    <div class="article-container">
+      <div class="user-index">
+      </div>
+      <div class="article-main">
+        <% @articles.each do |article| %>
+          <div class="article-post">
+            <div class="name">
+              <img src=<%= article.user.image %> class = "icon_image2">
+              <%= article.user.name %>
+            </div>
+            <div class="picture">
+              <div class="slide"><%= image_tag article.image.to_s , :size => '800x600'%></div>
+              <div class="slide"><%= image_tag article.image2.to_s, :size => '800x600' %></div>
+              <div class="slide"><%= image_tag article.image3.to_s, :size => '800x600' %></div>
+              <div class="slide"><%= image_tag article.image4.to_s, :size => '800x600' %></div>
+              <div class="slide"><%= image_tag article.image5.to_s, :size => '800x600' %></div>
+            </div>
+            <div class="article-icon">
+            <a class="fa fa-heart-o" hreh="users_path" ></a>
+            <a class="fa fa-comment-o" hreh="users_path" ></a>
+            <a class="fa fa-paper-plane-o" hreh="users_path" ></a>
           </div>
-          <div class="change-btn-wrapper">
-            <div class="change-btn prev-btn"><i class="fa fa-arrow-left" ></i></div>
-            <div class="change-btn next-btn"><i class="fa fa-arrow-right"></i></div>
+            <div class="article_body">
+              <%= article.body %>
+            </div>
+            <td><%= link_to 'Edit', edit_article_path(article) %>
+            <%= link_to 'Destroy', article, method: :delete, data: { confirm: 'Are you sure?' } %>
           </div>
-          <div class="picture">
-            <ul>
-              <li class="slide active"><%= image_tag article.image.to_s , :size => '500x300'%></li>
-              <li class="slide"><%= image_tag article.image2.to_s, :size => '500x300' %></li>
-              <li class="slide"><%= image_tag article.image3.to_s, :size => '500x300' %></li>
-              <li class="slide"><%= image_tag article.image4.to_s, :size => '500x300' %></li>
-              <li class="slide"><%= image_tag article.image5.to_s, :size => '500x300' %></li>
-            </ul>
-          </div>
-          <div class="article_body">
-            <%= article.body %>
-          </div>
+        <% end %>
+        <div class="new-article">
+          <%= link_to 'New Article', new_article_path %>
         </div>
-      <% end %>
+      </div>
     </div>
-    <div class="new-article">
-      <%= link_to 'New Article', new_article_path %>
-    </div>
-    <h1>Ajax#index</h1>
-<p id="hoge">赤色になるよ</p>
   </div>
 </div>
 

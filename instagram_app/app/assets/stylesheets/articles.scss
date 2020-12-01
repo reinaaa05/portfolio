@@ -2,11 +2,23 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+.article-container{
+  display: flex;
+  width: 100%;
+}
+
+.user-index {
+  width: 30%;
+  margin-left:10vw ;
+}
+
+.article-main {
+  width: 60%;
+  padding-left:5vw ;
+}
 
 .article-post {
-  width: 30%;
-  margin: 20px auto;
-  padding: 20px 30px;
+  width: 70%;
   background-color: white;
   overflow: hidden;
   box-shadow: 0 2px 6px #c1ced7;
@@ -15,36 +27,26 @@
 .name {
   border-bottom: 1px solid lightgray;
   width: 100%;
-  margin-bottom: 20px;
 }
 
-.picture {
-  text-align: center;
+.slide img{
+  width: 100%;
+  margin: 0 auto;
+  display: block;
 }
 
-.slide {
-  display:none;
+
+.article-icon {
+  padding-left: 10px;
+}
+.article-icon a {
+ padding: 5px;
+ font-size: 20px;
 }
 
-.active {
-  display:block;
+.article-icon a:hover {
+  pointer-events: none; 
 }
-
-.prev-btn {
-  color: rgb(151, 135, 135);
-  font-size: large;
-  cursor: pointer;
-  float: left;
-  position: relative;
-  top: 13vh;
-  display: none;
-}
-
-.next-btn {
-  color: rgb(151, 135, 135);
-  font-size: large;
-  cursor: pointer;
-  float: right;
-  position: relative;
-  top: 13vh;
+.article_body {
+  padding: 10px 20px;
 }
