@@ -15,10 +15,10 @@
           <div class="picture">
             <ul>
               <li class="slide active"><%= image_tag article.image.to_s , :size => '500x300'%></li>
-              <li class="slide"><%= image_tag article.image2.to_s %></li>
-              <li class="slide"><%= image_tag article.image3.to_s %></li>
-              <li class="slide"><%= image_tag article.image4.to_s %></li>
-              <li class="slide"><%= image_tag article.image5.to_s %></li>
+              <li class="slide"><%= image_tag article.image2.to_s, :size => '500x300' %></li>
+              <li class="slide"><%= image_tag article.image3.to_s, :size => '500x300' %></li>
+              <li class="slide"><%= image_tag article.image4.to_s, :size => '500x300' %></li>
+              <li class="slide"><%= image_tag article.image5.to_s, :size => '500x300' %></li>
             </ul>
           </div>
           <div class="article_body">
@@ -29,26 +29,9 @@
     </div>
     <div class="new-article">
       <%= link_to 'New Article', new_article_path %>
-      <p class="test">aaa</p>
     </div>
+    <h1>Ajax#index</h1>
+<p id="hoge">赤色になるよ</p>
   </div>
 </div>
 
-<script>
-$(function(){
-  ('.change-btn').click(function() {
-    var $displaySlide = $('.active');
-
-    $displaySlide.removeClass('active');
-
-    if($(this).hasClass('next-btn')) {
-      $displaySlide.next().addClass('active');
-    } else {
-      $displaySlide.prev().addClass('active');
-    }
-  });
-  $('.test').css('color','red');
-}
-
-});
-</script>
