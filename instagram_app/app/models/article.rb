@@ -5,4 +5,8 @@ class Article < ApplicationRecord
   mount_uploader :image3, ImagesUploader
   mount_uploader :image4, ImagesUploader
   mount_uploader :image5, ImagesUploader
+
+  def user
+    return User.find_by(id: self.user_id)
+  end
 end

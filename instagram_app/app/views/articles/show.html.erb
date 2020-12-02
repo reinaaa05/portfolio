@@ -1,21 +1,30 @@
-<p id="notice"><%= notice %></p>
+<div class="article_show">
+  <div class="container">
+    <div class="show-main">
+      <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>User:</strong>
-  <%= @article.user.name %>
-</p>
+      <div class="name">
+        <img src=<%= @article.user.image %> class = "icon_image2">
+        <%= @article.user.name %>
+      </div>
 
-<p>
-  <strong>Image:</strong>
-  <%= @article.image %>
-</p>
+      <div class="picture arrows">
+        <div class="slide"><%= image_tag @article.image.to_s , :size => '400x400'%></div>
+        <div class="slide"><%= image_tag @article.image2.to_s, :size => '400x400' %></div>
+        <div class="slide"><%= image_tag @article.image3.to_s, :size => '400x400' %></div>
+        <div class="slide"><%= image_tag @article.image4.to_s, :size => '400x400' %></div>
+        <div class="slide"><%= image_tag @article.image5.to_s, :size => '400x400' %></div>
+      </div>
 
-<p>
-  <strong>Body:</strong>
-  <%= @article.body %>
-</p>
-
-<% if user_signed_in? && @article.user_id == current_user.id %>
-    <%= link_to 'Edit', edit_article_path(@article) %> |
-<% end %>
-<%= link_to 'Back', articles_path %>
+      <div class="article_body">
+        <%= @article.body %>
+      </div>
+      <div class="link">
+        <% if user_signed_in? && @article.user_id == current_user.id %>
+            <%= link_to 'Edit', edit_article_path(@article) %> |
+        <% end %>
+        <%= link_to 'Back', articles_path %>
+      </div>
+    </div>
+  </div>
+</div>

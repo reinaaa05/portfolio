@@ -27,7 +27,7 @@
   background-color: white;
   overflow: hidden;
   box-shadow: 0 2px 6px #c1ced7;
-  margin-bottom: 5vh;
+	margin-bottom: 5vh;
 }
 
 .name {
@@ -95,3 +95,16 @@
 	z-index: 1;
 }
 
+//article_show//
+.show-main {
+	margin: 0 auto;
+	width: 40%;
+  background-color: white;
+  overflow: hidden;
+	box-shadow: 0 2px 6px #c1ced7;
+	height: 100;
+}
+
+.link {
+	padding: 10px;
+}
