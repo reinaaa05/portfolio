@@ -29,10 +29,10 @@
         </div>
         <% if user_signed_in? %>
         <div class="header-right">
-          <a class="fa fa-home" hreh="articles_path" ></a>
-          <a class="fa fa-heart-o" hreh="users_path" ></a>
-          <a class="fa fa-address-book" hreh="users_path" ></a>
-          <a class="fa fa-user-circle" hreh="users_path" ></a>
+          <a href="/articles" class="fa fa-home"  ></a>
+          <a href="users_path" class="fa fa-heart-o"></a>
+          <a href="/users" class="fa fa-address-book"  ></a>
+          <a href="/users/<%= current_user.id %>" class="fa fa-user-circle"></a>
         </div>
       <% end %>
     </header>
