@@ -1,0 +1,122 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+ @import "font-awesome-sprockets";
+ @import "font-awesome";
+ @import 'bootstrap-sprockets';
+ @import 'bootstrap';
+
+ a {
+  color: black;
+  text-decoration: none;
+  &:hover {
+    background-color:rgba(219,219,219,0.5);
+    border-radius: 100px;
+    text-decoration: none;
+  }
+}
+
+ header {
+   height: 8vh;
+   top:0;
+   width: 95%;
+   border-bottom: 2px solid lightgray;
+   display:flex;
+   justify-content:space-between;
+ }
+
+ .header-left {
+   margin: 1vh 10vw;
+   
+ }
+
+ .header-right {
+   padding: 1vh 10vw ;
+   font-size: 30px;
+   height: 8vh;
+ }
+
+ .header-right a {
+   padding: 10px;
+ }
+
+ .container{
+   margin-top: 1vh;
+   width: 100%;
+ }
+
+ ul, li {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+//slick//
+.pisture {
+  display: none;
+}
+.picture.slick-initialized {
+  display: block;
+}
+
+//user_show//
+.user {
+  width: 70%;
+  margin: 0 auto;
+  height: auto;
+  border-bottom: 2px solid lightgray;
+  padding: 1vh 5vw;
+  display: flex;
+}
+
+.user h2 {
+  padding: 0 15px;
+}
+.icon_image3 {
+  width: 150px;
+  height: 150px;
+  border-radius: 100px;
+  object-fit: cover;
+  //タテヨコ比を変えないままトリミング
+}
+
+.setting a {
+  font-size: 30px;
+  color: rgb(163, 150, 150);
+  position: relative;
+  bottom: 30px;
+  left:130px;
+}
+
+.profile {
+  font-size: 10px;
+  float: right;
+  display: inline;
+  margin: 100px;
+}
+
+//タイル型レイアウト//
+.grid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 6%;
+  margin-bottom: 50px;
+}
+
+.user_article {
+  width: 70%;
+  margin: 1vh auto;
+}

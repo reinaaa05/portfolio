@@ -1,0 +1,26 @@
+<div class="main user-show">
+  <div class="container">
+    <div class="user">
+      <div class="show-icon">
+        <h2><%= @user.name %></h2>
+        <img src="<%= @user.image %>" class = "icon_image3">
+        <div class="setting">
+          <a href="/users/edit#notifications" class="edit-notification__link"><i class="fa fa-plus-circle"></i></a>
+        </div> 
+      </div>
+      <div class="profile">
+        <p><%= @user.profile %></p>
+      </div>
+    </div>
+    <div class="user_article grid">
+      <% @user.articles.each do |article| %>
+        <div class="user_article">
+          <a href="/articles/<%= article.id %>"><%= image_tag article.image.to_s, :size => '250x250' %></a>
+        </div>
+      <% end %>
+    </div>
+    <div class="new-article">
+      <%= link_to 'New Article', new_article_path %>
+     </div>
+  </div>
+</div>

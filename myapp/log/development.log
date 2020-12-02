@@ -1,0 +1,118 @@
+Started GET "/" for ::1 at 2020-11-27 10:13:40 +0900
+Started GET "/" for ::1 at 2020-11-27 10:13:40 +0900
+Started GET "/" for ::1 at 2020-11-27 10:14:36 +0900
+Processing by Rails::WelcomeController#index as HTML
+  Rendering C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/railties-5.2.4.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/railties-5.2.4.4/lib/rails/templates/rails/welcome/index.html.erb (12.0ms)
+Completed 200 OK in 72ms (Views: 56.1ms | ActiveRecord: 0.0ms)
+
+
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ bin/rails:4
+  [1m[35m (5.3ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  ↳ bin/rails:4
+  [1m[35m (4.4ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ bin/rails:4
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+Migrating to CreateMemos (20201127011713)
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:4
+  [1m[35m (2.6ms)[0m  [1m[35mCREATE TABLE "memos" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "body" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20201127011713_create_memos.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20201127011713"]]
+  ↳ bin/rails:4
+  [1m[35m (4.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:4
+  [1m[36mActiveRecord::InternalMetadata Load (2.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:4
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:4
+  [1m[36mActiveRecord::InternalMetadata Create (2.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2020-11-27 01:17:42.647647"], ["updated_at", "2020-11-27 01:17:42.647647"]]
+  ↳ bin/rails:4
+  [1m[35m (7.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:4
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+Started GET "/" for ::1 at 2020-11-27 10:18:15 +0900
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+Processing by Rails::WelcomeController#index as HTML
+  Rendering C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/railties-5.2.4.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/railties-5.2.4.4/lib/rails/templates/rails/welcome/index.html.erb (3.0ms)
+Completed 200 OK in 49ms (Views: 36.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/memos" for ::1 at 2020-11-27 10:18:26 +0900
+Processing by MemosController#index as HTML
+  Rendering memos/index.html.erb within layouts/application
+  [1m[36mMemo Load (0.7ms)[0m  [1m[34mSELECT "memos".* FROM "memos"[0m
+  ↳ app/views/memos/index.html.erb:15
+  Rendered memos/index.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 1045ms (Views: 1018.2ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/memos/new" for 127.0.0.1 at 2020-11-27 10:18:29 +0900
+Processing by MemosController#new as HTML
+  Rendering memos/new.html.erb within layouts/application
+  Rendered memos/_form.html.erb (116.5ms)
+  Rendered memos/new.html.erb within layouts/application (126.7ms)
+Completed 200 OK in 228ms (Views: 212.0ms | ActiveRecord: 3.2ms)
+
+
+Started POST "/memos" for 127.0.0.1 at 2020-11-27 10:18:35 +0900
+Processing by MemosController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+0XyXOGKR7W1XYksSOPO4Dm4yjyNz6IgneGHCuaBjyQkYqZLsjFsakDBZyPrwAfDgKFY12YJeu76NcWDZJDVeQ==", "memo"=>{"title"=>"a", "body"=>"a"}, "commit"=>"Create Memo"}
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/memos_controller.rb:30
+  [1m[36mMemo Create (4.0ms)[0m  [1m[32mINSERT INTO "memos" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "a"], ["body", "a"], ["created_at", "2020-11-27 01:18:35.191692"], ["updated_at", "2020-11-27 01:18:35.191692"]]
+  ↳ app/controllers/memos_controller.rb:30
+  [1m[35m (5.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/memos_controller.rb:30
+Redirected to http://localhost:3000/memos/1
+Completed 302 Found in 184ms (ActiveRecord: 9.7ms)
+
+
+Started GET "/memos/1" for 127.0.0.1 at 2020-11-27 10:18:35 +0900
+Processing by MemosController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMemo Load (0.7ms)[0m  [1m[34mSELECT  "memos".* FROM "memos" WHERE "memos"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/memos_controller.rb:67
+  Rendering memos/show.html.erb within layouts/application
+  Rendered memos/show.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 161ms (Views: 125.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/memos" for 127.0.0.1 at 2020-11-27 10:18:38 +0900
+Processing by MemosController#index as HTML
+  Rendering memos/index.html.erb within layouts/application
+  [1m[36mMemo Load (0.5ms)[0m  [1m[34mSELECT "memos".* FROM "memos"[0m
+  ↳ app/views/memos/index.html.erb:15
+  Rendered memos/index.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 95ms (Views: 90.1ms | ActiveRecord: 0.5ms)
+
+
+Started DELETE "/memos/1" for 127.0.0.1 at 2020-11-27 10:18:48 +0900
+Processing by MemosController#destroy as HTML
+  Parameters: {"authenticity_token"=>"4Esk3yn16a3z4yQxy8107az/b9mTD+uk+AUKeBUoplBZDwfuWpeC9xG3cTMEeEDhstZUsu/Ao1WGUqUJl4PTfw==", "id"=>"1"}
+  [1m[36mMemo Load (0.6ms)[0m  [1m[34mSELECT  "memos".* FROM "memos" WHERE "memos"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/memos_controller.rb:67
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/memos_controller.rb:57
+  [1m[36mMemo Destroy (1.5ms)[0m  [1m[31mDELETE FROM "memos" WHERE "memos"."id" = ?[0m  [["id", 1]]
+  ↳ app/controllers/memos_controller.rb:57
+  [1m[35m (9.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/memos_controller.rb:57
+Redirected to http://localhost:3000/memos
+Completed 302 Found in 110ms (ActiveRecord: 11.6ms)
+
+
+Started GET "/memos" for 127.0.0.1 at 2020-11-27 10:18:48 +0900
+Processing by MemosController#index as HTML
+  Rendering memos/index.html.erb within layouts/application
+  [1m[36mMemo Load (0.8ms)[0m  [1m[34mSELECT "memos".* FROM "memos"[0m
+  ↳ app/views/memos/index.html.erb:15
+  Rendered memos/index.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 130ms (Views: 122.6ms | ActiveRecord: 0.8ms)
+
+
