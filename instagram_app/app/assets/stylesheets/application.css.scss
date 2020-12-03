@@ -17,7 +17,6 @@
  @import "font-awesome";
  @import 'bootstrap-sprockets';
  @import 'bootstrap';
-
  a {
   color: black;
   text-decoration: none;
@@ -31,7 +30,7 @@
  header {
    height: 8vh;
    top:0;
-   width: 95%;
+   width: 85%;
    border-bottom: 2px solid lightgray;
    display:flex;
    justify-content:space-between;
@@ -72,9 +71,13 @@
 }
 
 //user_show//
-.user {
-  width: 70%;
+.show-main-wrapper {
+  width: 50%;
   margin: 0 auto;
+  border: 1px solid lightgray;
+}
+
+.user {
   height: auto;
   border-bottom: 2px solid lightgray;
   padding: 1vh 5vw;
@@ -92,7 +95,7 @@
   //タテヨコ比を変えないままトリミング
 }
 
-.setting a {
+.setting i {
   font-size: 30px;
   color: rgb(163, 150, 150);
   position: relative;
@@ -101,22 +104,69 @@
 }
 
 .profile {
+  color: darkgrey;
   font-size: 10px;
   float: right;
   display: inline;
   margin: 100px;
+  width: 300px;
 }
 
 //タイル型レイアウト//
 .grid {
   display: grid;
-  gap: 20px;
+  gap: 13px;
   grid-template-columns: repeat(3, 1fr);
   margin-top: 6%;
   margin-bottom: 50px;
+  padding: 5px;
 }
 
 .user_article {
-  width: 70%;
   margin: 1vh auto;
+}
+
+.user_article img {
+  box-shadow: 0 3px 8px #c1ced7;
+}
+
+.user_article img:hover {
+  opacity: 0.8;
+}
+
+//モーダル//
+.login-modal-wrapper, .signup-modal-wrapper, .setting-modal-wrapper {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 100;
+ display: none;
+}
+
+.model {
+  position: absolute;
+  top: 15%;
+  left: 34%;
+  background-color: #e6ecf0;
+  padding: 20px 0 40px;
+  border-radius: 10px;
+  width: 450px;
+  height: auto;
+  text-align: center;
+}
+
+.field_image {
+  margin: 10px 6vw;
+ 
+}
+
+.fa-times {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  color: rgba(128, 128, 128, 0.46);
+  cursor: pointer;
 }

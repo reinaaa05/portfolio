@@ -44,7 +44,6 @@
 <script>
 $(function() {
 
- 
   $('.picture').slick({
     dots: true,
     fade: true,
@@ -52,6 +51,15 @@ $(function() {
     prevArrow:'<div class="prev"></div>',
     nextArrow:'<div class="next"></div>',
   });
+
+  $('.setting').click(function(){
+    $('#setting-modal').fadeIn();
+  });
+
+  $('.close-modal').click(function() {
+   $('#setting-modal').fadeOut();
+  });
+
 
 });
 </script>
