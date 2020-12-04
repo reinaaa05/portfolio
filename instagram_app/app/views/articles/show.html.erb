@@ -15,6 +15,16 @@
         <div class="slide"><%= image_tag @article.image4.to_s, :size => '300x400' %></div>
         <div class="slide"><%= image_tag @article.image5.to_s, :size => '300x400' %></div>
       </div>
+      <% if Like.find_by(user_id: current_user.id, article_id: @article.id) %>
+          <%= link_to("/likes/#{@article.id}/destroy", {method: "post"}) do %>
+          <span class="fa fa-heart like-btn-unlike"></span>
+          <% end %>
+        <% else %>
+          <%= link_to("/likes/#{@article.id}/create", {method: "post"}) do %>
+          <span class="fa fa-heart like-btn"></span>
+          <% end %>
+        <% end %>
+        <%= @likes_count %>
 
       <div class="article_body">
         <%= @article.body %>

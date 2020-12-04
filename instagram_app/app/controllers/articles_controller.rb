@@ -14,6 +14,7 @@ class ArticlesController < ApplicationController
   def show
     @article = Article.find_by(id: params[:id])
     @user = User.find_by(id: @article.user_id)
+    @likes_count = Like.where(article_id: @article.id).count
   end
 
   # GET /articles/new
