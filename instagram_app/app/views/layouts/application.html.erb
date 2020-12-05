@@ -29,7 +29,7 @@
         <% if user_signed_in? %>
         <div class="header-right">
           <a href="/articles" class="fa fa-home"  ></a>
-          <a href="users_path" class="fa fa-heart-o"></a>
+          <a href="users/<%= current_user.id %>/likes" class="fa fa-heart-o"></a>
           <a href="/users" class="fa fa-address-book"  ></a>
           <a href="/users/<%= current_user.id %>" class="fa fa-user-circle"></a>
         </div>
