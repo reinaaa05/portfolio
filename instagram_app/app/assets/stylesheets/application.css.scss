@@ -20,6 +20,7 @@
  a {
   color: black;
   text-decoration: none;
+  padding: 10px;
   &:hover {
     background-color:rgba(219,219,219,0.5);
     border-radius: 100px;
@@ -31,14 +32,14 @@
    height: 8vh;
    top:0;
    width: 85%;
+   margin: 0 auto;
    border-bottom: 2px solid lightgray;
    display:flex;
    justify-content:space-between;
  }
 
  .header-left {
-   margin: 1vh 10vw;
-   
+   margin: 1vh 10vw; 
  }
 
  .header-right {
@@ -49,6 +50,23 @@
 
  .header-right a {
    padding: 10px;
+ }
+
+ .not-login {
+   display: flex;
+   margin: 20px 0 0 10px;
+ }
+
+ .signup, .login {
+   padding: 20px;
+   color: black;
+   text-decoration: none;
+   &:hover {
+     background-color:rgba(219,219,219,0.5);
+     border-radius: 100px;
+     text-decoration: none;
+     cursor: pointer;
+   }
  }
 
  .container{
@@ -169,4 +187,17 @@
   right: 12px;
   color: rgba(128, 128, 128, 0.46);
   cursor: pointer;
+}
+
+//user-likes// 
+.main user-show {
+  height: 100%;
+}
+.articles-likes-item {
+	margin: 20px 0 20px 750px;
+	width: 600px;
+  background-color: white;
+  overflow: hidden;
+	box-shadow: 0 2px 6px #c1ced7;
+	height: 550px;
 }

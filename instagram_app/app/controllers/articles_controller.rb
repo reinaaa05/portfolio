@@ -15,6 +15,8 @@ class ArticlesController < ApplicationController
     @article = Article.find_by(id: params[:id])
     @user = User.find_by(id: @article.user_id)
     @likes_count = Like.where(article_id: @article.id).count
+    @comments = @article.comments
+    @comment = Comment.new
   end
 
   # GET /articles/new
@@ -83,6 +85,6 @@ class ArticlesController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def article_params
-      params.require(:article).permit(:user_id, :image, :image2,:image3,:image4,:image5, :body)
+      params.require(:article).permit(:user_id, :image, :image2,:image3,:image4,:image5, :body, :content)
     end
 end

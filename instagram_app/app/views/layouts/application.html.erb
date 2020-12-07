@@ -21,19 +21,102 @@
           <a href="/users/<%= current_user.id %>"><img src=<%= current_user.image %> class = "icon_image">
           <%= current_user.name %></a>
           <%= link_to "Logout", destroy_user_session_path, method: :delete %>
-        <% else %>
-          <%= link_to "Sign up", new_user_registration_path, :class => 'navbar-link' %> |
-          <%= link_to "Login", new_user_session_path, :class => 'navbar-link' %>
-        <% end %>
+      <% else %>
+        <div class="not-login">
+          <div class="signup">
+            Sign up
+          </div>
+          <div class="login">
+            Login
+          </div>
         </div>
-        <% if user_signed_in? %>
+      <% end %>
+        </div>
+      <% if user_signed_in? %>
         <div class="header-right">
           <a href="/articles" class="fa fa-home"  ></a>
-          <a href="users/<%= current_user.id %>/likes" class="fa fa-heart-o"></a>
+          <a href="/users/<%= current_user.id %>/likes" class="fa fa-heart-o"></a>
           <a href="/users" class="fa fa-address-book"  ></a>
           <a href="/users/<%= current_user.id %>" class="fa fa-user-circle"></a>
         </div>
       <% end %>
+      <!-- サインインモーダル -->
+      <div class="signup-modal-wrapper" id="signup-modal">
+        <div class="model">
+          <div class="close-modal">
+            <i class="fa fa-2x fa-times"></i>
+          </div>
+          <div id="signup-form">
+            <h2>新規登録</h2>
+            <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+              <%= render "devise/shared/error_messages", resource: resource %>
+  
+              <div class="field">
+                <%= f.label :email %><br />
+                <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+              </div>
+  
+              <div class="field">
+                <%= f.label :name %><br />
+                <%= f.text_field :name %>
+              </div>
+  
+              <div class="field">
+                <%= f.label :password %>
+                <% if @minimum_password_length %>
+                <em>(<%= @minimum_password_length %> characters minimum)</em>
+                <% end %><br />
+                <%= f.password_field :password, autocomplete: "new-password" %>
+              </div>
+  
+              <div class="field">
+                <%= f.label :password_confirmation %><br />
+                <%= f.password_field :password_confirmation, autocomplete: "new-password" %>
+              </div>
+  
+              <div class="actions">
+                <%= f.submit "Sign up" %>
+              </div>
+            <% end %>
+            <%= render "devise/shared/links" %>
+          </div>
+        </div>
+      </div>
+      <!--ログインモーダル -->
+      <div class="login-modal-wrapper" id="login-modal">
+        <div class="model">
+          <div class="close-modal">
+            <i class="fa fa-2x fa-times"></i>
+          </div>
+          <div id="login-form">
+            <h2>ログイン</h2>
+              <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+                <div class="field">
+                  <%= f.label :email %><br />
+                  <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+                </div>
+
+                <div class="field">
+                  <%= f.label :password %><br />
+                  <%= f.password_field :password, autocomplete: "current-password" %>
+                </div>
+
+                <% if devise_mapping.rememberable? %>
+                  <div class="field">
+                    <%= f.check_box :remember_me %>
+                    <%= f.label :remember_me %>
+                  </div>
+                <% end %>
+
+                <div class="actions">
+                  <%= f.submit "Log in" %>
+                </div>
+              <% end %> 
+
+              <%= render "devise/shared/links" %>
+          </div>
+        </div>
+      </div>
     </header>
     <p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>
@@ -52,12 +135,22 @@ $(function() {
     nextArrow:'<div class="next"></div>',
   });
 
+  $('.signup').click(function(){
+    $('#signup-modal').fadeIn();
+  });
+
+  $('.login').click(function(){
+    $('#login-modal').fadeIn();
+  });
+
   $('.setting').click(function(){
     $('#setting-modal').fadeIn();
   });
 
   $('.close-modal').click(function() {
-   $('#setting-modal').fadeOut();
+    $('#signup-modal').fadeOut();
+    $('#login-modal').fadeOut();
+    $('#setting-modal').fadeOut();
   });
 
 

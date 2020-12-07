@@ -13,8 +13,7 @@
         <% @articles.each do |article| %>
           <div class="article-post">
             <div class="name">
-              <img src=<%= article.user.image %> class = "icon_image2">
-              <%= article.user.name %>
+              <img src=<%= article.user.image %> class = "icon_image2"><%= link_to(article.user.name, "/articles/#{article.id}") %>
             </div>
             <div class="picture arrows">
               <div class="slide"><%= image_tag article.image.to_s , :size => '300x400'%></div>
@@ -24,16 +23,23 @@
               <div class="slide"><%= image_tag article.image5.to_s, :size => '300x400' %></div>
             </div>
             <div class="article-icon">
-            <a class="fa fa-heart-o" hreh="users_path" ></a>
-            <a class="fa fa-comment-o" hreh="users_path" ></a>
-            <a class="fa fa-paper-plane-o" hreh="users_path" ></a>
-          </div>
+            <div class="likes-btn">
+              <% if Like.find_by(user_id: current_user.id, article_id: article.id) %>
+              <%= link_to("/likes/#{article.id}/destroy", {method: "post"}) do %>
+                <span class="fa fa-heart like-btn-unlike"></span>
+                <% end %>
+              <% else %>
+                <%= link_to("/likes/#{article.id}/create", {method: "post"}) do %>
+                <span class="fa fa-heart like-btn"></span>
+                <% end %>
+              <% end %>
+            </div>
+              <a class="fa fa-comment-o" hreh="users_path" ></a>
+              <a class="fa fa-paper-plane-o" hreh="users_path" ></a>
+            </div>
             <div class="article_body">
               <%= article.body %>
             </div>
-
-<%#            <%= link_to 'Edit', edit_article_path(article) %>
-<%#              <%= link_to 'Destroy', article, method: :delete, data: { confirm: 'Are you sure?' } %> 
           </div>
         <% end %>
         <div class="new-article">

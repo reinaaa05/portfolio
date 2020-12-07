@@ -5,7 +5,8 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable
 
   mount_uploader :image, ImageUploader
-
+  has_many :articles, dependent: :destroy
+  has_many :comments
   def articles
     return Article.where(user_id: self.id)
   end
