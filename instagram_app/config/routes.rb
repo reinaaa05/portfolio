@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
-  resources :pictures
-  resources :articles
+  resources :articles  do
+    resources :comments, only: [:create]
+  end
   devise_for :users
   get 'welcome/index'
   root 'welcome#index'
@@ -9,6 +10,6 @@ Rails.application.routes.draw do
   get "users/:id/likes" => "users#likes"
   post "likes/:article_id/create" => "likes#create"
   post "likes/:article_id/destroy" => "likes#destroy"
-  resources :comments, only: [:create]
+  
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
