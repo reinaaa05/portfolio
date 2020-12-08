@@ -1,5 +1,5 @@
 class ArticlesController < ApplicationController
-  before_action :authenticate_user!, only: [:new, :create, :edit, :update, :destroy]
+  before_action :authenticate_user!
   before_action :set_article, only: [:show, :edit, :update, :destroy]
 
   # GET /articles
@@ -85,6 +85,6 @@ class ArticlesController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def article_params
-      params.require(:article).permit(:user_id, :image, :image2,:image3,:image4,:image5, :body, :content)
+      params.require(:article).permit(:user_id, :image, :image2,:image3,:image4,:image5, :body)
     end
 end

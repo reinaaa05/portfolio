@@ -1,6 +1,6 @@
 class Article < ApplicationRecord
   belongs_to :user
-  has_many :comments
+  has_many :comments, dependent: :destroy
   mount_uploader :image, ImagesUploader
   mount_uploader :image2, ImagesUploader
   mount_uploader :image3, ImagesUploader

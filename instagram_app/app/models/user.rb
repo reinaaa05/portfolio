@@ -6,7 +6,7 @@ class User < ApplicationRecord
 
   mount_uploader :image, ImageUploader
   has_many :articles, dependent: :destroy
-  has_many :comments
+  has_many :comments, dependent: :destroy
   def articles
     return Article.where(user_id: self.id)
   end
