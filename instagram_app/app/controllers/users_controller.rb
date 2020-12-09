@@ -2,6 +2,11 @@ class UsersController < ApplicationController
 
   def index
     @users = User.all
+    if params[:name_key]
+      @users = User.where('name LIKE ?', "%#{params[:name_key]}%")
+    else
+      @users = User.all
+    end
   end
 
   def show

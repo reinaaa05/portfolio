@@ -80,6 +80,11 @@
         <div class="profile">
           <p><%= @user.profile %></p>
         </div>
+        <div class="post-new">
+          <%= link_to ("/articles/new") do %>
+            <span class="fa fa-pencil-square-o"></span>
+          <% end %>
+        </div>
       </div>
       <div class="user_article grid">
         <% @user.articles.each do |article| %>

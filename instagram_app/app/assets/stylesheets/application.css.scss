@@ -129,6 +129,12 @@
   margin: 100px;
   width: 300px;
 }
+.post-new {
+  font-size:25px;
+  position: relative;
+  top: 20vh;
+  left:5vw;
+}
 
 //タイル型レイアウト//
 .grid {
@@ -200,4 +206,20 @@
   overflow: hidden;
 	box-shadow: 0 2px 6px #c1ced7;
 	height: 550px;
+}
+
+//index// 
+.user-index {
+  width: 350px;
+	margin: 0 200px;
+}
+
+.user-list li {
+	font-size: 20px;
+	padding: 10px;
+	border-bottom: 1px solid lightgray;
+}
+
+.user-search {
+  padding: 30px 0;
 }

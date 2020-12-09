@@ -153,6 +153,19 @@ $(function() {
     $('#setting-modal').fadeOut();
   });
 
+  $('.comment-show').click(function() {
+    var $comennt = $(this).find('.comennt');
+    if($comennt.hasClass('open')) {
+      $comennt.removeClass('open');
+      $comennt.slideUp();
+      $(this).find('span').text('+');
+      
+    } else {
+      $comennt.addClass('open'); 
+      $comennt.slideDown();
+      $(this).find('span').text('-');
+    }
+  });
 
 });
 </script>

@@ -7,6 +7,11 @@ class ArticlesController < ApplicationController
   def index
     @articles = Article.all
     @users = User.all
+    if params[:body_key]
+      @articles = Article.where('body LIKE ?', "%#{params[:body_key]}%")
+    else
+      @articles = Article.all
+    end
   end
 
   # GET /articles/1
