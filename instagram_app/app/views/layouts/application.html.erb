@@ -126,7 +126,7 @@
 
 <script>
 $(function() {
-
+<!--slide -->
   $('.picture').slick({
     dots: true,
     fade: true,
@@ -134,7 +134,7 @@ $(function() {
     prevArrow:'<div class="prev"></div>',
     nextArrow:'<div class="next"></div>',
   });
-
+<!--モーダル -->
   $('.signup').click(function(){
     $('#signup-modal').fadeIn();
   });
@@ -152,7 +152,7 @@ $(function() {
     $('#login-modal').fadeOut();
     $('#setting-modal').fadeOut();
   });
-
+  <!--コメント -->
   $('.comment-show').click(function() {
     var $comennt = $(this).find('.comennt');
     if($comennt.hasClass('open')) {
@@ -165,6 +165,21 @@ $(function() {
       $comennt.slideDown();
       $(this).find('span').text('-');
     }
+  });
+  <!-- article-body -->
+  var itemHeights = []; //
+  $(function(){
+    $(".body-text").each(function(){ //ターゲット(縮めるアイテム)
+      var thisHeight = $(this).height(); //ターゲットの高さを取得
+      itemHeights.push(thisHeight); //それぞれの高さを配列に入れる
+      $(this).addClass("is-hide"); //CSSで指定した高さにする
+    });
+  });
+  
+  $(".readmore-btn").click(function(){
+    var index = $(this).index(".readmore-btn"); //トリガーが何個目か
+    var addHeight = itemHeights[index]; //個数に対応する高さを取得
+    $(this).fadeOut().addClass("is-show").next().animate({height: addHeight},200).removeClass("is-hide"); //高さを元に戻す
   });
 
 });

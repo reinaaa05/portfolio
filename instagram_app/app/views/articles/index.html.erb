@@ -53,7 +53,10 @@
               </div>
             </div>
             <div class="article_body">
-              <%= article.body %>
+              <span class="readmore-btn">続きを読む</span>
+              <div class="body-text">
+                <p><%= simple_format(article.body) %></p>
+              </div>
             </div>
           </div>
         <% end %>
