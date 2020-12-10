@@ -27,9 +27,11 @@
         <% end %>
         <%= @likes_count %>
       </div>
-
       <div class="article_body">
-        <%= @article.body %>
+        <span class="readmore-btn"></span>
+        <div class="body-text">
+          <p><%= simple_format(@article.body) %></p>
+        </div>
       </div>
       <div class="comment-show">
         <p>コメント一覧</p>

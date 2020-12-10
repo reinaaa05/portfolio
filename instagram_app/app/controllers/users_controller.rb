@@ -1,5 +1,5 @@
 class UsersController < ApplicationController
-
+  before_action :authenticate_user!
   def index
     @users = User.all
     if params[:name_key]
@@ -20,4 +20,7 @@ class UsersController < ApplicationController
     @article = Article.all
   end
   
+  def after_sign_in_path_for
+    articles_path
+end
 end

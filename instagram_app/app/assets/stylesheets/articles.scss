@@ -54,8 +54,20 @@
 }
 .readmore-btn {
   cursor: pointer;
- 
+  color: lightgray;
+  position: absolute;
+  top: 25px;
+  left:130px;
+  z-index: 10;
 }
+
+.readmore-btn::after {
+  content: "続きを読む" /*クリック前のボタンのラベル*/
+}
+.readmore-btn .fa {
+  margin-right: .5em;
+}
+
 .body-text {
   position: relative;
   overflow: hidden;
@@ -76,6 +88,16 @@
   height: 20px; /*グラデーションで隠す高さ*/
   background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,0.9) 50%, rgba(255,255,255,0.9) 50%, #fff 100%);
   background: linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,0.9) 50%, rgba(255,255,255,0.9) 50%, #fff 100%);
+}
+.readmore-btn.is-show + .body-text::before {
+  display: none;
+}
+
+.readmore-btn.is-show {
+  bottom: -2em;
+}
+.readmore-btn.is-show::after {
+  content: "閉じる" /*クリック後にボタンのラベルを変える*/
 }
 .readmore-btn.is-show + .body-text::before {
   display: none;
