@@ -16,174 +16,115 @@
 
   <body>
     <header>
-      <% if user_signed_in? %>
-        <div class="header-left">
-          <a href="/users/<%= current_user.id %>"><img src=<%= current_user.image %> class = "icon_image">
-          <%= current_user.name %></a>
-          <%= link_to "Logout", destroy_user_session_path, method: :delete %>
-      <% else %>
-        <div class="not-login">
-          <div class="signup">
-            Sign up
+      <div class="header-main">
+        <% if user_signed_in? %>
+          <div class="header-left">
+            <a href="/users/<%= current_user.id %>"><img src=<%= current_user.image %> class = "icon_image">
+            <%= current_user.name %></a>
+        <% else %>
+          <div class="not-login">
+            <div class="signup">
+              Sign up
+            </div>
+            <div class="login">
+              Login
+            </div>
           </div>
-          <div class="login">
-            Login
+        <% end %>
           </div>
-        </div>
-      <% end %>
-        </div>
-      <% if user_signed_in? %>
-        <div class="header-right">
-          <a href="/articles" class="fa fa-home"  ></a>
-          <a href="/users/<%= current_user.id %>/likes" class="fa fa-heart-o"></a>
-          <a href="/users" class="fa fa-address-book"  ></a>
-          <a href="/users/<%= current_user.id %>" class="fa fa-user-circle"></a>
-        </div>
-      <% end %>
-      <!-- サインインモーダル -->
-      <div class="signup-modal-wrapper" id="signup-modal">
-        <div class="model">
-          <div class="close-modal">
-            <i class="fa fa-2x fa-times"></i>
-          </div>
-          <div id="signup-form">
-            <h2>新規登録</h2>
-            <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
-              <%= render "devise/shared/error_messages", resource: resource %>
-  
-              <div class="field">
-                <%= f.label :email %><br />
-                <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
-              </div>
-  
-              <div class="field">
-                <%= f.label :name %><br />
-                <%= f.text_field :name %>
-              </div>
-  
-              <div class="field">
-                <%= f.label :password %>
-                <% if @minimum_password_length %>
-                <em>(<%= @minimum_password_length %> characters minimum)</em>
-                <% end %><br />
-                <%= f.password_field :password, autocomplete: "new-password" %>
-              </div>
-  
-              <div class="field">
-                <%= f.label :password_confirmation %><br />
-                <%= f.password_field :password_confirmation, autocomplete: "new-password" %>
-              </div>
-  
-              <div class="actions">
-                <%= f.submit "Sign up" %>
-              </div>
+        <% if user_signed_in? %>
+          <div class="header-right">
+            <a href="/articles" class="fa fa-home"  ></a>
+            <a href="/users/<%= current_user.id %>/likes" class="fa fa-heart-o"></a>
+            <a href="/users" class="fa fa-address-book"  ></a>
+            <a href="/users/<%= current_user.id %>" class="fa fa-user-circle"></a>
+            <%= link_to  destroy_user_session_path, method: :delete do %>
+              <span class="fa fa-share-square-o"></span>
             <% end %>
-            <%= render "devise/shared/links" %>
           </div>
-        </div>
-      </div>
-      <!--ログインモーダル -->
-      <div class="login-modal-wrapper" id="login-modal">
-        <div class="model">
-          <div class="close-modal">
-            <i class="fa fa-2x fa-times"></i>
-          </div>
-          <div id="login-form">
-            <h2>ログイン</h2>
-              <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+        <% end %>
+        <!-- サインインモーダル -->
+        <div class="signup-modal-wrapper" id="signup-modal">
+          <div class="model">
+            <div class="close-modal">
+              <i class="fa fa-2x fa-times"></i>
+            </div>
+            <div id="signup-form">
+              <h2>新規登録</h2>
+              <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+                <%= render "devise/shared/error_messages", resource: resource %>
+    
                 <div class="field">
                   <%= f.label :email %><br />
                   <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
                 </div>
-
+    
                 <div class="field">
-                  <%= f.label :password %><br />
-                  <%= f.password_field :password, autocomplete: "current-password" %>
+                  <%= f.label :name %><br />
+                  <%= f.text_field :name %>
                 </div>
-
-                <% if devise_mapping.rememberable? %>
-                  <div class="field">
-                    <%= f.check_box :remember_me %>
-                    <%= f.label :remember_me %>
-                  </div>
-                <% end %>
-
+    
+                <div class="field">
+                  <%= f.label :password %>
+                  <% if @minimum_password_length %>
+                  <em>(<%= @minimum_password_length %> characters minimum)</em>
+                  <% end %><br />
+                  <%= f.password_field :password, autocomplete: "new-password" %>
+                </div>
+    
+                <div class="field">
+                  <%= f.label :password_confirmation %><br />
+                  <%= f.password_field :password_confirmation, autocomplete: "new-password" %>
+                </div>
+    
                 <div class="actions">
-                  <%= f.submit "Log in" %>
+                  <%= f.submit "Sign up" %>
                 </div>
-              <% end %> 
-
+              <% end %>
               <%= render "devise/shared/links" %>
+            </div>
+          </div>
+        </div>
+        <!--ログインモーダル -->
+        <div class="login-modal-wrapper" id="login-modal">
+          <div class="model">
+            <div class="close-modal">
+              <i class="fa fa-2x fa-times"></i>
+            </div>
+            <div id="login-form">
+              <h2>ログイン</h2>
+                <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+                  <div class="field">
+                    <%= f.label :email %><br />
+                    <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+                  </div>
+
+                  <div class="field">
+                    <%= f.label :password %><br />
+                    <%= f.password_field :password, autocomplete: "current-password" %>
+                  </div>
+
+                  <% if devise_mapping.rememberable? %>
+                    <div class="field">
+                      <%= f.check_box :remember_me %>
+                      <%= f.label :remember_me %>
+                    </div>
+                  <% end %>
+
+                  <div class="actions">
+                    <%= f.submit "Log in" %>
+                  </div>
+                <% end %> 
+
+                <%= render "devise/shared/links" %>
+            </div>
           </div>
         </div>
       </div>
     </header>
-    <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
+      <p class="notice"><%= notice %></p>
+      <p class="alert"><%= alert %></p>
     <%= yield %>
   </body>
 </html>
 
-<script>
-$(function() {
-<!--slide -->
-  $('.picture').slick({
-    dots: true,
-    fade: true,
-    arrows: true,
-    prevArrow:'<div class="prev"></div>',
-    nextArrow:'<div class="next"></div>',
-  });
-<!--モーダル -->
-  $('.signup').click(function(){
-    $('#signup-modal').fadeIn();
-  });
-
-  $('.login').click(function(){
-    $('#login-modal').fadeIn();
-  });
-
-  $('.setting').click(function(){
-    $('#setting-modal').fadeIn();
-  });
-
-  $('.close-modal').click(function() {
-    $('#signup-modal').fadeOut();
-    $('#login-modal').fadeOut();
-    $('#setting-modal').fadeOut();
-  });
-  <!--コメント -->
-  $('.comment-show').click(function() {
-    var $comennt = $(this).find('.comennt');
-    if($comennt.hasClass('open')) {
-      $comennt.removeClass('open');
-      $comennt.slideUp();
-      $(this).find('span').text('+');
-      
-    } else {
-      $comennt.addClass('open'); 
-      $comennt.slideDown();
-      $(this).find('span').text('-');
-    }
-  });
-  <!-- article-body -->
-  var itemHeights = [];
-var returnHeight;
-  $(".body-text").each(function(){ //ターゲット(縮めるアイテム)
-    var thisHeight = $(this).height(); //ターゲットの高さを取得
-    itemHeights.push(thisHeight); //それぞれの高さを配列に入れる
-    $(this).addClass("is-hide"); //CSSで指定した高さにする
-    returnHeight = $(this).height(); //is-hideの高さを取得
-  });
-
-$(".readmore-btn").click(function(){ //トリガーをクリックしたら
-  if(!$(this).hasClass("is-show")) {
-    var index = $(this).index(".readmore-btn"); //トリガーが何個目か
-    var addHeight = itemHeights[index]; //個数に対応する高さを取得
-    $(this).addClass("is-show").next().animate({height: addHeight},200).removeClass("is-hide"); //高さを元に戻す
-  } else {
-    $(this).removeClass("is-show").next().animate({height: returnHeight},200).addClass("is-hide"); //高さを制限する
-  }
-});
-});
-</script>

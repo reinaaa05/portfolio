@@ -11,8 +11,10 @@
         <div class="body-search">
         <%= form_tag('/articles', method: 'get') do %>
           <%= text_field_tag(:body_key) %>
-          <%= submit_tag('Search') %> <%= link_to 'Clear', articles_path %>
-          <% end %>
+          <div class="search-btn">
+            <%= submit_tag('Search') %> <%= link_to 'Clear', articles_path %>
+          </div>
+        <% end %>
           <br>
         </div>
       </div>
