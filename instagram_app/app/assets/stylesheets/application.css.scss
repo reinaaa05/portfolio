@@ -21,8 +21,7 @@ body {
   background-color: #dedede;
 	background-image:
 	 linear-gradient(#ecebeb 50%, transparent 50%, transparent);
-	background-size: 10px 10px;
-
+  background-size: 10px 10px;
 }
 
 @keyframes huerotator {
@@ -96,7 +95,7 @@ body {
  }
 
  .container{
-   margin-top: 10vh;
+   padding-top: 10vh;
    width: 60%;
  }
 

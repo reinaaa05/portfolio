@@ -1,3 +1,28 @@
 // Place all the styles related to the welcome controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.welcome {
+  background-image: url("/books-read_M5HR9G12HZ.jpg");
+  background-size: cover;
+  background-color: #0bd;
+  background-blend-mode: hard-light;
+  min-height: 100vh;
+  z-index: 100;
+  height: auto;
+}
+
+.welcome-main {
+font-weight: bold;
+text-align: center;
+padding-top: 100px;
+font-family: 'Vollkorn', serif;
+}
+
+.welcome-main h1 {
+  font-size: 70px;
+
+}
+
+.welcome-main p {
+  font-size: 20px;
+}
