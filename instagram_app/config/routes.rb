@@ -10,6 +10,7 @@ Rails.application.routes.draw do
   get "users/:id/likes" => "users#likes"
   post "likes/:article_id/create" => "likes#create"
   post "likes/:article_id/destroy" => "likes#destroy"
-  
+  post 'follow/:id' => 'relationships#follow', as: 'follow' 
+  post 'unfollow/:id' => 'relationships#unfollow', as: 'unfollow' 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
