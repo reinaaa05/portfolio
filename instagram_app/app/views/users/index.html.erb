@@ -1,28 +1,28 @@
 <div class="user_index">
   <div class="container">
     <div class="user-index">
+      <div class="followr-user">
+        <h2>ユーザー一覧</h2>
+        <ul class="user-list">
+          <% if user_signed_in? %>
+            <% User.all.where.not(id: current_user.id).each do |user| %>
+              <li><a href="/users/<%= user.id %>"><img src="<%= user.image %>"  class="icon_image2">     <%= user.name %></a>
+              <% if current_user.following?(user) %>
+                <%= link_to 'フォロー中', unfollow_path(user.id), method: :POST , class: "following-btn" %>
+              <% else %>
+                <%= link_to 'フォローする', follow_path(user.id), method: :POST, class: "followerd-btn" %>
+              <% end %>
+              </li>
+            <% end %>
+          <% end %>
+        </ul>
+      </div>
       <div class="user-search">
       <%= form_tag('/users', method: 'get') do %>
         <%= text_field_tag(:name_key) %>
         <%= submit_tag('Search') %> <%= link_to 'Clear', users_path %>
         <% end %>
         <br>
-      </div>
-      <div class="followr-user">
-        <h2>ユーザー一覧画面</h2>
-        <ul class="user-list">
-          <% if user_signed_in? %>
-            <% User.all.where.not(id: current_user.id).each do |user| %>
-              <li><a href="/users/<%= user.id %>"><img src="<%= user.image %>"  class = "icon_image2">     <%= user.name %></a>
-              <% if current_user.following?(user) %>
-                <%= link_to 'フォロー外す', unfollow_path(user.id), method: :POST %>
-              <% else %>
-                <%= link_to 'フォローする', follow_path(user.id), method: :POST %>
-              <% end %>
-              </li>
-            <% end %>
-          <% end %>
-        </ul>
       </div>
     </div>
   </div>

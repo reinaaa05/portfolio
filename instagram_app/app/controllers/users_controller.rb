@@ -19,5 +19,17 @@ class UsersController < ApplicationController
     @likes = Like.where(user_id: @user.id)
     @article = Article.all
   end
-  
+
+  def following
+    @user  = User.find(params[:id])
+    @users = @user.following_user
+    render("users/index")
+  end
+
+  def followers
+    @user  = User.find(params[:id])
+    @users = @user.follower_user
+    redirect_to("users/index")
+  end
+
 end

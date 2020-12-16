@@ -5,13 +5,13 @@ class ArticlesController < ApplicationController
   # GET /articles
   # GET /articles.json
   def index
-    @articles = Article.all
-    @users = User.all
     if params[:body_key]
       @articles = Article.where('body LIKE ?', "%#{params[:body_key]}%")
     else
       @articles = Article.all
     end
+    @articles = Article.where(user_id: [current_user.id, *current_user.following_user_ids]).order(created_at: :desc)
+    @users = User.all
   end
 
   # GET /articles/1

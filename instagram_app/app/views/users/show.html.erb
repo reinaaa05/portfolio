@@ -109,28 +109,10 @@
         <%= link_to 'New Article', new_article_path %>
      </div>
      <div class="followr-index">
-      <h3>フォロー一覧</h3>
-        <% @user.following_user.where.not(id: current_user.id).each do |user| %>
-          <p>
-            <a href="/users/<%= user.id %>"><img src="<%= user.image %>"  class = "icon_image2">     <%= user.name %></a>
-            <% if current_user.following?(user) %>
-              <%= link_to 'フォロー外す', unfollow_path(user.id), method: :POST %>
-            <% else %>
-              <%= link_to 'フォローする', follow_path(user.id), method: :POST %>
-            <% end %>
-          </p>
-        <% end %>
-      <h3>フォロワー一覧</h3>
-        <% @user.follower_user.where.not(id: current_user.id).each do |user| %>
-          <p>
-            <a href="/users/<%= user.id %>"><img src="<%= user.image %>"  class = "icon_image2">     <%= user.name %></a>
-            <% if current_user.following?(user) %>
-              <%= link_to 'フォロー外す', unfollow_path(user.id), method: :POST %>
-            <% else %>
-              <%= link_to 'フォローする', follow_path(user.id), method: :POST %>
-            <% end %>
-          </p>
-        <% end %>
+      <a href="/users/<%= current_user.id %>/following">フォロー一覧</a>
+
+      <a href="/users/<%= current_user.id %>/followers">フォロワー一覧</a>
+
       </div>
     </div>
   </div>
