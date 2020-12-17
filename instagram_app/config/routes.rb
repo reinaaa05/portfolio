@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   devise_for :users
   get 'welcome/index'
   root 'welcome#index'
+  get "/articles/search" => "articles#search"
   get "/users" => "users#index"
   get "users/:id" => "users#show"
   get "users/:id/likes" => "users#likes"

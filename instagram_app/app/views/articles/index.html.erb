@@ -2,22 +2,6 @@
   <div class="container">
     <p id="notice"><%= notice %></p>
     <div class="article-container">
-      <div class="user-index">
-        <ul class="user-list">
-          <% User.all.where.not(id: current_user.id).each do |user| %>
-            <li><a href="/users/<%= user.id %>"><img src="<%= user.image %>"  class = "icon_image2">     <%= user.name %></a></li>
-          <% end %>
-        </ul>
-        <div class="body-search">
-        <%= form_tag('/articles', method: 'get') do %>
-          <%= text_field_tag(:body_key) %>
-          <div class="search-btn">
-            <%= submit_tag('Search') %> <%= link_to 'Clear', articles_path %>
-          </div>
-        <% end %>
-          <br>
-        </div>
-      </div>
       <div class="article-main">
         <% @articles.each do |article| %>
           <div class="article-post">
@@ -65,6 +49,15 @@
         <div class="new-article">
           <%= link_to 'New Article', new_article_path %>
         </div>
+      </div>
+      <div class="body-search">
+      <%= form_tag('/articles', method: 'get') do %>
+        <%= text_field_tag(:body_key) %>
+        <div class="search-btn">
+          <%= submit_tag('Search') %> <%= link_to 'Clear', articles_path %>
+        </div>
+      <% end %>
+        <br>
       </div>
     </div>
   </div>

@@ -4,7 +4,7 @@
       <div class="user">
         <div class="show-icon">
           <h2 ><%= @user.name %></h2>
-          <img src="<%= @user.image %>" class = "icon_image3">
+          <img src="<%= @user.image %>" class="icon_image3">
           <div class="setting">
             <i class="fa fa-plus-circle"></i>
           </div> 
@@ -77,26 +77,28 @@
             </div>
           </div>
         </div>
-        <div class="profile">
-          <p><%= simple_format(@user.profile) %></p>
+        
+        <div class="follow">
+          <a  href="/users/<%= current_user.id %>/following"><%= "フォロー #{@user.follower.count}" %>人</a>
+          <a  href="/users/<%= current_user.id %>/followers"><%= "フォロワー #{@user.followed.count}" %>人</a>
+          </div>
+          <div class="follow-now">
+          <% unless @user == current_user %>
+            <% if current_user.following?(@user) %>
+              <%= link_to 'フォロー中', unfollow_path(@user.id), method: :POST, class: "following-btn"%>
+            <% else %>
+              <%= link_to 'フォローする', follow_path(@user.id), method: :POST , class: "followerd-btn"%>
+            <% end %>
+          <% end %>
         </div>
         <div class="post-new">
           <%= link_to ("/articles/new") do %>
             <span class="fa fa-pencil-square-o"></span>
           <% end %>
         </div>
-      </div>
-      <div class="follow">
-        <p><%= "フォロー数: #{@user.follower.count}" %></p>
-        <p><%= "フォロワー数: #{@user.followed.count}" %></p>
-        <% unless @user == current_user %>
-          <% if current_user.following?(@user) %>
-            <%= link_to 'フォロー外す', unfollow_path(@user.id), method: :POST %>
-          <% else %>
-            <%= link_to 'フォローする', follow_path(@user.id), method: :POST %>
-          <% end %>
-        <% end %>
-        <p></p>
+        <div class="profile">
+          <%= simple_format(@user.profile,class: "profole-p") %>
+        </div>
       </div>
       <div class="user_article grid">
         <% @user.articles.each do |article| %>
@@ -109,9 +111,9 @@
         <%= link_to 'New Article', new_article_path %>
      </div>
      <div class="followr-index">
-      <a href="/users/<%= current_user.id %>/following">フォロー一覧</a>
+ 
 
-      <a href="/users/<%= current_user.id %>/followers">フォロワー一覧</a>
+
 
       </div>
     </div>

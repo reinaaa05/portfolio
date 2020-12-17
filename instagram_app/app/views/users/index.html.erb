@@ -2,11 +2,12 @@
   <div class="container">
     <div class="user-index">
       <div class="followr-user">
-        <h2>ユーザー一覧</h2>
+        <h3>ユーザー一覧</h3>
         <ul class="user-list">
           <% if user_signed_in? %>
             <% User.all.where.not(id: current_user.id).each do |user| %>
               <li><a href="/users/<%= user.id %>"><img src="<%= user.image %>"  class="icon_image2">     <%= user.name %></a>
+
               <% if current_user.following?(user) %>
                 <%= link_to 'フォロー中', unfollow_path(user.id), method: :POST , class: "following-btn" %>
               <% else %>

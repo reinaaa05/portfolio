@@ -5,11 +5,6 @@ class ArticlesController < ApplicationController
   # GET /articles
   # GET /articles.json
   def index
-    if params[:body_key]
-      @articles = Article.where('body LIKE ?', "%#{params[:body_key]}%")
-    else
-      @articles = Article.all
-    end
     @articles = Article.where(user_id: [current_user.id, *current_user.following_user_ids]).order(created_at: :desc)
     @users = User.all
   end
@@ -22,6 +17,14 @@ class ArticlesController < ApplicationController
     @likes_count = Like.where(article_id: @article.id).count
     @comments = @article.comments
     @comment = Comment.new
+  end
+
+  def search
+    if params[:body_key] || params[:name_key]
+      @articles = Article.where('body LIKE ?', "%#{params[:body_key]}%").where('name LIKE ?', "%#{params[:name_key]}%")
+    else
+      @articles = Article.all
+    end
   end
 
   # GET /articles/new

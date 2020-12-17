@@ -4,8 +4,7 @@
       <p id="notice"><%= notice %></p>
 
       <div class="name">
-        <img src=<%= @article.user.image %> class="icon_image2">
-        <%= @article.user.name %>
+        <a href="/users/<%= @user.id %>"><img src="<%= @article.user.image %>"  class="icon_image2">     <%= @article.user.name %></a>
       </div>
 
       <div class="picture arrows">
