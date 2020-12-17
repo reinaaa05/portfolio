@@ -1,0 +1,66 @@
+<div class="article_index">
+  <div class="container">
+    <p id="notice"><%= notice %></p>
+    <div class="article-container">
+      <div class="article-main">
+        <% @articles.each do |article| %>
+          <div class="article-post">
+            <div class="name">
+              <img src=<%= article.user.image %> class = "icon_image2"><%= link_to(article.user.name, "/articles/#{article.id}") %>
+            </div>
+            <div class="picture arrows">
+              <div class="slide"><%= image_tag article.image.to_s , :size => '300x400'%></div>
+              <div class="slide"><%= image_tag article.image2.to_s, :size => '300x400' %></div>
+              <div class="slide"><%= image_tag article.image3.to_s, :size => '300x400' %></div>
+              <div class="slide"><%= image_tag article.image4.to_s, :size => '300x400' %></div>
+              <div class="slide"><%= image_tag article.image5.to_s, :size => '300x400' %></div>
+            </div>
+            <div class="article-icon">
+              <div class="likes-btn">
+                <% if Like.find_by(user_id: current_user.id, article_id: article.id) %>
+                <%= link_to("/likes/#{article.id}/destroy", {method: "post"}) do %>
+                  <span class="fa fa-heart like-btn-unlike"></span>
+                  <% end %>
+                <% else %>
+                  <%= link_to("/likes/#{article.id}/create", {method: "post"}) do %>
+                  <span class="fa fa-heart like-btn"></span>
+                  <% end %>
+                <% end %>
+              </div>
+              <div class="comment-btn">
+                <%= link_to("/articles/#{article.id}") do %>
+                  <span class="fa fa-comment-o"></span>
+                <% end %>
+              </div>
+              <div class="message-btn">
+                <%= link_to("/articles/#{article.id}") do %>
+                  <span class="fa fa-paper-plane-o"></span>
+                <% end %>
+              </div>
+            </div>
+            <div class="article_body">
+              <span class="readmore-btn"></span>
+              <div class="body-text">
+                <p><%= simple_format(article.body) %></p>
+              </div>
+            </div>
+          </div>
+        <% end %>
+        <div class="new-article">
+          <%= link_to 'New Article', new_article_path %>
+        </div>
+      </div>
+      <div class="body-search">
+      <%= form_tag('/articles', method: 'get') do %>
+        <%= text_field_tag(:body_key) %>
+        <div class="search-btn">
+          <%= submit_tag('Search') %> <%= link_to 'Clear', articles_path %>
+          <%= submit_tag('Search') %> <%= link_to 'Clear', users_path %>
+        </div>
+      <% end %>
+        <br>
+      </div>
+    </div>
+  </div>
+</div>
+

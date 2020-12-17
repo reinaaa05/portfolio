@@ -1,0 +1,38 @@
+<div class="main user-show">
+  <div class="container">
+    <div class="likes-article">
+      <% @likes.each do |like| %>
+        <% article = Article.find_by(id: like.article_id) %>
+        <div class="article-post">
+          <div class="name">
+            <img src="<%= @user.image %>" class = "icon_image2"><%= link_to(article.user.name, "/articles/#{article.id}") %>
+          </div>
+          <div class="picture arrows">
+            <div class="slide"><%= image_tag article.image.to_s, :size => '300x40H0'%></div>
+            <div class="slide"><%= image_tag article.image2.to_s, :size => '300x400'%></div>
+            <div class="slide"><%= image_tag article.image3.to_s, :size => '300x400'%></div>
+            <div class="slide"><%= image_tag article.image4.to_s, :size => '300x400'%></div>
+            <div class="slide"><%= image_tag article.image5.to_s, :size => '300x400'%></div>
+          </div>
+          <div class="likes-btn">
+            <% if Like.find_by(user_id: current_user.id, article_id: article.id) %>
+            <%= link_to("/likes/#{article.id}/destroy", {method: "post"}) do %>
+              <span class="fa fa-heart like-btn-unlike"></span>
+              <% end %>
+            <% else %>
+              <%= link_to("/likes/#{article.id}/create", {method: "post"}) do %>
+              <span class="fa fa-heart like-btn"></span>
+              <% end %>
+            <% end %>
+          </div>
+          <div class="article_body">
+            <span class="readmore-btn"></span>
+            <div class="body-text">
+              <p><%= simple_format(article.body) %></p>
+            </div>
+          </div> 
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>
