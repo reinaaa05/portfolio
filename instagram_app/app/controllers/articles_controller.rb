@@ -20,11 +20,13 @@ class ArticlesController < ApplicationController
   end
 
   def search
-    if params[:body_key] || params[:name_key]
-      @articles = Article.where('body LIKE ?', "%#{params[:body_key]}%").where('name LIKE ?', "%#{params[:name_key]}%")
+    @article = Article.all
+    if params[:body_key]
+      @articles = Article.where('body LIKE ?', "%#{params[:body_key]}%")
     else
       @articles = Article.all
     end
+    render 'search'
   end
 
   # GET /articles/new

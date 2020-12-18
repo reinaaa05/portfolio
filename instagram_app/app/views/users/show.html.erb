@@ -79,8 +79,8 @@
         </div>
         
         <div class="follow">
-          <a  href="/users/<%= current_user.id %>/following"><%= "フォロー #{@user.follower.count}" %>人</a>
-          <a  href="/users/<%= current_user.id %>/followers"><%= "フォロワー #{@user.followed.count}" %>人</a>
+          <a  href="/users/<%= @user.id %>/following"><%= "フォロー #{@user.follower.count}" %>人</a>
+          <a  href="/users/<%= @user.id %>/followers"><%= "フォロワー #{@user.followed.count}" %>人</a>
           </div>
           <div class="follow-now">
           <% unless @user == current_user %>
@@ -109,12 +109,7 @@
       </div>
       <div class="new-article">
         <%= link_to 'New Article', new_article_path %>
-     </div>
-     <div class="followr-index">
- 
-
-
-
+      </div>
       </div>
     </div>
   </div>

@@ -31,7 +31,6 @@
   opacity: 0.8;
   border-radius: 4px;
   text-align: center;
-  box-shadow: 0 2px 6px #c1ced7;
   background-color: #3aacad;
   font-size: 15px;
   padding-bottom: 0.5em;
@@ -52,9 +51,10 @@
   opacity: 0.8;
   border-radius: 4px;
   text-align: center;
+  box-shadow: 0 2px 6px #c1ced7;
   background-color: #ecebeb ;
   font-size: 15px;
-  padding-bottom: 5em;
+  padding-bottom: 0.5em;
   &:hover, &.action {
     width: 9vw;
     text-decoration: none;
@@ -64,6 +64,15 @@
     box-shadow: 0 2px 6px #c1ced7;
     background-color: #ecebeb ;
   }
+}
+
+.back {
+  margin-left: 40%;
+  margin-top: 1em;
+}
+
+.back a:hover {
+  border-radius: 4px;
 }
 
 .user-search {

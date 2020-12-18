@@ -5,7 +5,7 @@
         <% article = Article.find_by(id: like.article_id) %>
         <div class="article-post">
           <div class="name">
-            <img src="<%= @user.image %>" class = "icon_image2"><%= link_to(article.user.name, "/articles/#{article.id}") %>
+            <img src="<%= article.user.image %>" class = "icon_image2"><%= link_to(article.user.name, "/articles/#{article.id}") %>
           </div>
           <div class="picture arrows">
             <div class="slide"><%= image_tag article.image.to_s, :size => '300x40H0'%></div>

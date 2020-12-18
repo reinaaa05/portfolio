@@ -50,15 +50,6 @@
           <%= link_to 'New Article', new_article_path %>
         </div>
       </div>
-      <div class="body-search">
-      <%= form_tag('/articles', method: 'get') do %>
-        <%= text_field_tag(:body_key) %>
-        <div class="search-btn">
-          <%= submit_tag('Search') %> <%= link_to 'Clear', articles_path %>
-        </div>
-      <% end %>
-        <br>
-      </div>
     </div>
   </div>
 </div>

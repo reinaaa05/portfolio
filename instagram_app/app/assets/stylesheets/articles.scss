@@ -2,12 +2,6 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.article-container{
-  display: flex;
-  width: 100%;
-  margin-left: 5vw;
-}
-
 .article-post {
 	width: 600px;
   background-color: white;
@@ -93,7 +87,9 @@
 }
 
 .body-search {
-  margin: 10vh 3vw;
+  width: 100%;
+  margin-bottom: 2em;
+  text-align: center;
 }
 
 //article_show//
@@ -169,14 +165,15 @@
 //article-form//
 .new-article-area {
   width: 100%;
-  margin: 10px auto;
+  margin: 1em auto;
 }
 
 .new-article {
   width: 20%;
-  margin: 10px auto;
-  padding: 10px;
+  margin: 3em auto;
+  padding: 1em;
   border: 1px solid lightgray;
+  background-color: #ecebeb;
 }
 
 

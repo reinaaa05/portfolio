@@ -4,7 +4,7 @@
       <div class="followr-user">
         <h3>フォロワー一覧</h3>
         <ul class="user-list">
-          <% @user.follower_user.where.not(id: current_user.id).each do |user| %>
+          <% @user.follower_user.each do |user| %>
             <li>
               <a href="/users/<%= user.id %>"><img src="<%= user.image %>"  class = "icon_image2">     <%= user.name %></a>
               <% if current_user.following?(user) %>
@@ -16,6 +16,9 @@
           <% end %>
         </ul>
       </div>
+    </div>
+    <div class="back">
+      <a class="btn btn-default" href="/users/<%= @user.id %>">Back</a>
     </div>
   </div>
 </div>

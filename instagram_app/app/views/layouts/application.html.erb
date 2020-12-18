@@ -39,6 +39,7 @@
             <a href="/users/<%= current_user.id %>/likes" class="fa fa-heart-o"></a>
             <a href="/users" class="fa fa-address-book"  ></a>
             <a href="/users/<%= current_user.id %>" class="fa fa-user-circle"></a>
+            <a href="/articles/search" class="fa fa-search" ></a>
             <%= link_to  destroy_user_session_path, method: :delete do %>
               <span class="fa fa-share-square-o"></span>
             <% end %>

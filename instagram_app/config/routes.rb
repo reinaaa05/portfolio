@@ -1,11 +1,13 @@
 Rails.application.routes.draw do
   resources :articles  do
     resources :comments, only: [:create,:destroy, :index]
+    get 'search', :on => :collection
   end
+ 
+
   devise_for :users
   get 'welcome/index'
   root 'welcome#index'
-  get "/articles/search" => "articles#search"
   get "/users" => "users#index"
   get "users/:id" => "users#show"
   get "users/:id/likes" => "users#likes"
