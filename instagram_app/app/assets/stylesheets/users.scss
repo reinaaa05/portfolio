@@ -143,9 +143,9 @@
 
 .profile p{
   width: 15vw;
-  height: 15vh;
+  height: auto;
   color: #888888;
-  font-size: 15px;
+  font-size: 2vh;
   margin: 8vh 2vw 0;
   box-shadow: 0 1px 3px #c1ced7;
   padding: 1em;
@@ -161,9 +161,10 @@
   display: flex;
   position: relative;
   top:8vh;
-  left: 3vw;
+  left: 1vw;
   height: 3em;
   font-weight: bold;
+  font-size: 0.75vw;
 }
 
 .follow-now {

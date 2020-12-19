@@ -38,11 +38,14 @@
         <div class="comennt">
           <ul class="comment-list">
             <% @comments.each do |comment| %>
-                <li><a href="/users/<%= @user.id %>"><img src=<%= comment.user.image %> class="icon_image2">
-                <%= comment.user.name %>
-                <%= comment.content %></a></li>
+              <li><a href="/users/<%= @user.id %>"><img src=<%= comment.user.image %> class="icon_image2">
+              <%= comment.user.name %>
+              <%= comment.content %></a>
+              <% if current_user.id? %>
+                <%=link_to "削除", article_comment_path(@article, comment), method: :delete %></li> 
+              <% end %>          
             <% end %>
-          </ul>
+          </ul> 
         </div>
       </div>
       <div class="comment-new">

@@ -1,7 +1,6 @@
 document.addEventListener("turbolinks:load"
 , function () {
   $(function() {
-
   //slide//
     $('.picture').slick({
       dots: true,

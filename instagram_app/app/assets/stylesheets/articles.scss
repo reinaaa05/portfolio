@@ -39,8 +39,8 @@
   cursor: pointer;
   color: lightgray;
   position: absolute;
-  top: 25px;
-  left:130px;
+  top: 3vh;
+  left:15vw;
   z-index: 10;
 }
 
@@ -48,7 +48,7 @@
   content: "続きを読む" /*クリック前のボタンのラベル*/
 }
 .readmore-btn .fa {
-  margin-right: .5em;
+  margin-right: 5em;
 }
 
 .body-text {

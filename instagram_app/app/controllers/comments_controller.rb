@@ -18,10 +18,9 @@ class CommentsController < ApplicationController
   end
 
   def destroy
-    @article = Article.find(params[:article_id])
     @comment = Comment.find(params[:id])
     @comment.destroy
-    redirect_to request.referer
+    redirect_to articles_path
   end
 
   private
