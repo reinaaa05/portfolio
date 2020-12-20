@@ -85,9 +85,9 @@
           <div class="follow-now">
           <% unless @user == current_user %>
             <% if current_user.following?(@user) %>
-              <%= link_to 'フォロー中', unfollow_path(@user.id), method: :POST, class: "following-btn"%>
+              <%= link_to 'フォロー中', unfollow_path(@user.id), method: :POST, class: "following-btn-show"%>
             <% else %>
-              <%= link_to 'フォローする', follow_path(@user.id), method: :POST , class: "followerd-btn"%>
+              <%= link_to 'フォローする', follow_path(@user.id), method: :POST , class: "followerd-btn-show"%>
             <% end %>
           <% end %>
         </div>

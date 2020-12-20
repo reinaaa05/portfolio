@@ -89,7 +89,7 @@
 .grid {
   display: grid;
   gap: 13px;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit,minmax(240px, 1fr));
   margin-top: 6%;
   margin-bottom: 50px;
   padding: 5px;
@@ -118,8 +118,9 @@
 .user {
   height: auto;
   border-bottom: 1px solid black;
-  padding: 1vh 5vw;
+  padding: 1vh 2vw;
   display: flex;
+  justify-content:space-between;
 }
 
 .user h2 {
@@ -141,20 +142,22 @@
   left:130px;
 }
 
-.profile p{
+.profile {
   width: 15vw;
   height: auto;
+  max-height: 18vh;
   color: #888888;
-  font-size: 2vh;
-  margin: 8vh 2vw 0;
+  font-size: 0.5em;
+  margin-top: 8vh;
   box-shadow: 0 1px 3px #c1ced7;
   padding: 1em;
   background-color: #ecebeb ;
+  overflow-wrap : break-word;
 }
 .post-new {
   font-size:25px;
   position: relative;
-  top: 20vh;
+  top: 23vh;
   }
 
 .follow {
@@ -170,5 +173,47 @@
 .follow-now {
   position: relative;
   top: 20vh;
-  width: 1vw;
+  left: -10vw;
+  white-space: nowrap;
+}
+
+.following-btn-show {
+  width: 10vw;
+  height: 4.5vh;
+  color: white;
+  opacity: 0.8;
+  border-radius: 4px;
+  text-align: center;
+  background-color: #3aacad;
+  font-size: 15px;
+  padding-bottom: 0.5em;
+  &:hover, &.action {
+    width: 9vw;
+    color: white;
+    text-decoration: none;
+    opacity: 1;
+    background-color: #3aacad;
+    border-radius: 4px;
+  }
+}
+
+.followerd-btn-show {
+  width: 10vw;
+  height: 4.5vh;
+  opacity: 0.8;
+  border-radius: 4px;
+  text-align: center;
+  box-shadow: 0 2px 6px #c1ced7;
+  background-color: #ecebeb ;
+  font-size: 15px;
+  padding-bottom: 0.5em;
+  &:hover, &.action {
+    width: 9vw;
+    text-decoration: none;
+    opacity: 1;
+    border-radius: 4px;
+    text-align: center;
+    box-shadow: 0 2px 6px #c1ced7;
+    background-color: #ecebeb ;
+  }
 }

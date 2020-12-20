@@ -82,6 +82,8 @@ body {
    padding: 0.2em;
  }
 
+
+
  .signup, .login {
    padding: 20px;
    color: black;
@@ -103,6 +105,15 @@ body {
   list-style-type: none;
   padding: 0;
   margin: 0;
+}
+
+
+.menu-icon {
+  color: black;
+  float: right;
+  font-size: 25px;
+  padding: 2vh 4vw;
+  display: none;
 }
 
 //slick//
@@ -159,7 +170,7 @@ body {
   left: 0;
   background-color: rgba(0, 0, 0, 0.6);
   z-index: 100;
- display: none;
+  display: none;
 }
 
 .model {
@@ -187,3 +198,71 @@ body {
   cursor: pointer;
 }
 
+@media all and (max-width: 1000px) {
+  .header-right {
+    display: none;
+  }
+  
+  .menu-icon {
+    display: block;
+  }
+
+  .container {
+    width: 80%;
+  }
+
+  .article-post {
+    max-width: 600px;
+  }
+
+  .profile  {
+    width: auto;
+  }
+
+
+  .follow-now {
+    position: relative;
+    top: 2vh;
+    width: 6vw;
+    white-space: nowrap;
+  }
+}
+
+
+@media all and (max-width: 670px) {
+
+  .header-right {
+    display: none;
+  }
+  
+  .menu-icon {
+    display: block;
+  }
+
+  .header-main {
+    width: 80%;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  .follow{
+    width: 4vw;
+  }
+
+  .article-post {
+    width: 100%;
+  }
+  .profile  {
+    width: auto;
+  }
+
+  .follow-now {
+    position: relative;
+    top: 2vh;
+    width: 4vw;
+    white-space: nowrap;
+  }
+
+}
