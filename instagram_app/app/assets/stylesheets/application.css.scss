@@ -82,7 +82,9 @@ body {
    padding: 0.2em;
  }
 
-
+ .list-group-small {
+  display: none;
+}
 
  .signup, .login {
    padding: 20px;
@@ -113,7 +115,6 @@ body {
   float: right;
   font-size: 25px;
   padding: 2vh 4vw;
-  display: none;
 }
 
 //slick//
@@ -203,12 +204,9 @@ body {
     display: none;
   }
   
-  .menu-icon {
-    display: block;
-  }
 
   .container {
-    width: 80%;
+    width: 100%;
   }
 
   .article-post {
@@ -234,15 +232,12 @@ body {
   .header-right {
     display: none;
   }
-  
-  .menu-icon {
-    display: block;
-  }
 
   .header-main {
-    width: 80%;
+    width: 100%;
   }
 
+ 
   .container {
     width: 100%;
   }
@@ -263,6 +258,10 @@ body {
     top: 2vh;
     width: 4vw;
     white-space: nowrap;
+  }
+
+  .user-index{
+    display: block;
   }
 
 }

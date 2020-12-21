@@ -62,4 +62,15 @@ document.addEventListener("turbolinks:load"
     }
   });
   });
+
+  //header model max-width670px
+  $('#menu-icon').click(function(){
+    $('#list-group-small').fadeIn();
+  });
+
+
+  $('#menu-icon').click(function() {
+    $('#list-group-small').fadeOut();
+  });
+
 })
