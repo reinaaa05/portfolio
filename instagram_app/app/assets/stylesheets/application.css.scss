@@ -48,7 +48,7 @@ body {
 }
 
  header {
-   height: 8vh;
+   height: 5em;
    top:0;
    width: 100%;
    margin: 0 auto;
@@ -68,23 +68,20 @@ body {
  }
  
  .header-left {
-   font-size: large;
+   font-size: 2rem;
    padding: 0.5em 0.5em 0.5em 0;
+   white-space: nowrap;
  }
  .header-right {
-  font-size: 25px;
+  font-size: 2.5rem;
   padding: 0.5em 0 0.5em 0.5em;
+  white-space: nowrap;
 }
-
 
  .not-login {
    display: flex;
    padding: 0.2em;
  }
-
- .list-group-small {
-  display: none;
-}
 
  .signup, .login {
    padding: 20px;
@@ -174,6 +171,7 @@ body {
   display: none;
 }
 
+
 .model {
   position: absolute;
   top: 5%;
@@ -181,7 +179,7 @@ body {
   background-color: #e6ecf0;
   padding: 20px 0 40px;
   border-radius: 10px;
-  width: 450px;
+  width: 25vw;
   height: auto;
   text-align: center;
 }
@@ -200,9 +198,7 @@ body {
 }
 
 @media all and (max-width: 1000px) {
-  .header-right {
-    display: none;
-  }
+
   
 
   .container {
@@ -216,22 +212,33 @@ body {
   .profile  {
     width: auto;
   }
-
-
-  .follow-now {
+  
+  .followr-user {
+    width: 80%;
+  }
+  
+  .following-btn, .followerd-btn {
+   position: relative;
+   left: -30px; 
+   width: 200px;
+   &:hover, &.action {
     position: relative;
-    top: 2vh;
-    width: 6vw;
-    white-space: nowrap;
+    left: -30px; 
+    width: 200px;
+   }
+  }
+
+  .user-search {
+    width: 100%;
+  }
+
+  .model {
+    width: 20em;
   }
 }
 
 
 @media all and (max-width: 670px) {
-
-  .header-right {
-    display: none;
-  }
 
   .header-main {
     width: 100%;
@@ -264,4 +271,26 @@ body {
     display: block;
   }
 
+  .model {
+    width: 20em;
+  }
+  
+  .followr-user {
+    width: 100%;
+  }
+  
+  .following-btn, .followerd-btn {
+   position: relative;
+   left: -30px; 
+   width: 200px;
+   &:hover, &.action {
+    position: relative;
+    left: -30px; 
+    width: 200px;
+   }
+  }
+
+  .user-search {
+    width: 100%;
+  }
 }

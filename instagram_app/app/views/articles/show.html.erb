@@ -8,11 +8,21 @@
       </div>
 
       <div class="picture arrows">
+      <% if @article.image.file.present? %>
         <div class="slide"><%= image_tag @article.image.to_s , :size => '300x400'%></div>
+      <% end %>
+      <% if @article.image2.file.present? %>
         <div class="slide"><%= image_tag @article.image2.to_s, :size => '300x400' %></div>
+      <% end %>
+      <% if @article.image3.file.present? %>
         <div class="slide"><%= image_tag @article.image3.to_s, :size => '300x400' %></div>
+      <% end %>
+      <% if @article.image4.file.present? %>
         <div class="slide"><%= image_tag @article.image4.to_s, :size => '300x400' %></div>
+      <% end %>
+      <% if @article.image5.file.present? %>
         <div class="slide"><%= image_tag @article.image5.to_s, :size => '300x400' %></div>
+      <% end %>
       </div>
       <div class="likes-btn">
         <% if Like.find_by(user_id: current_user.id, article_id: @article.id) %>
@@ -41,7 +51,7 @@
               <li><a href="/users/<%= @user.id %>"><img src=<%= comment.user.image %> class="icon_image2">
               <%= comment.user.name %>
               <%= comment.content %></a>
-              <% if current_user.id? %>
+              <% if user_signed_in? && comment.user_id == current_user.id %>
                 <%=link_to "削除", article_comment_path(@article, comment), method: :delete %></li> 
               <% end %>          
             <% end %>

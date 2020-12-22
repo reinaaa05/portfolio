@@ -1,6 +1,13 @@
-<div class="user_index">
+<div class="user_indexs">
   <div class="container">
     <div class="user-index">
+      <div class="user-search">
+      <%= form_tag('/users', method: 'get') do %>
+        <%= text_field_tag(:name_key) %>
+        <%= submit_tag('Search') %> <%= link_to 'Clear', users_path %>
+        <% end %>
+        <br>
+      </div>
       <div class="followr-user">
         <h3>ユーザー一覧</h3>
         <ul class="user-list">
@@ -17,13 +24,6 @@
             <% end %>
           <% end %>
         </ul>
-      </div>
-      <div class="user-search">
-      <%= form_tag('/users', method: 'get') do %>
-        <%= text_field_tag(:name_key) %>
-        <%= submit_tag('Search') %> <%= link_to 'Clear', users_path %>
-        <% end %>
-        <br>
       </div>
     </div>
   </div>

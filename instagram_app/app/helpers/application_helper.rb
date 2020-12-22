@@ -5,6 +5,7 @@ module ApplicationHelper
   
   def resource
       @resource ||= User.new
+      @resources || User.find_by(id: params[:id])
   end
   
   def devise_mapping

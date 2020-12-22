@@ -4,12 +4,10 @@
 }
 
 //index// 
-.user-index {
-  display: flex;
-}
 
 .followr-user {
-  width: 40%;
+  width:60%;
+  margin: 0 auto;
 }
 
 .followr-user h3 {
@@ -18,9 +16,10 @@
 }
 
 .user-list li {
-	font-size: 20px;
-	padding: 10px;
+  font-size: 1.5em;
+  padding: 1em;
   border-bottom: 1px solid black;
+  white-space: nowrap;
 }
 
 .following-btn {
@@ -67,7 +66,7 @@
 }
 
 .back {
-  margin-left: 40%;
+  text-align: center;
   margin-top: 1em;
 }
 
@@ -76,8 +75,9 @@
 }
 
 .user-search {
-  width: 40%;
-  margin:100px;
+  width: 100%;
+  margin:1vh;
+  text-align: center;
 }
 
 
@@ -90,9 +90,7 @@
   display: grid;
   gap: 13px;
   grid-template-columns: repeat(auto-fit,minmax(240px, 1fr));
-  margin-top: 6%;
-  margin-bottom: 50px;
-  padding: 5px;
+  margin: 6% 0;
 }
 
 .user_article {
@@ -216,4 +214,8 @@
     box-shadow: 0 2px 6px #c1ced7;
     background-color: #ecebeb ;
   }
+
+
+
+  
 }

@@ -1,6 +1,7 @@
 class UsersController < ApplicationController
   before_action :authenticate_user!
   def index
+    @resource = User.find_by(id: params[:id])
     @users = User.all
     if params[:name_key]
       @users = User.where('name LIKE ?', "%#{params[:name_key]}%")
