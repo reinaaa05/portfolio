@@ -199,72 +199,30 @@ body {
 
 @media all and (max-width: 1000px) {
 
-  
-
-  .container {
-    width: 100%;
-  }
-
-  .article-post {
-    max-width: 600px;
-  }
-
-  .profile  {
-    width: auto;
-  }
-  
-  .followr-user {
-    width: 80%;
-  }
-  
-  .following-btn, .followerd-btn {
-   position: relative;
-   left: -30px; 
-   width: 200px;
-   &:hover, &.action {
-    position: relative;
-    left: -30px; 
-    width: 200px;
-   }
-  }
-
-  .user-search {
-    width: 100%;
-  }
-
-  .model {
-    width: 20em;
-  }
-}
-
-
-@media all and (max-width: 670px) {
-
   .header-main {
-    width: 100%;
+    width: 90%;
   }
 
+  .header-right , .header-left{
+    font-size: 3rem;
+  }
+  .icon_image {
+    width:  3rem;
+    height: 3rem;
+    border-radius: 100px;
+    object-fit: cover;
+  }
  
   .container {
     width: 100%;
   }
-
-  .follow{
-    width: 4vw;
+  .article-container, .likes-article {
+    width: 80%;
+    margin: 0 auto;
   }
 
   .article-post {
     width: 100%;
-  }
-  .profile  {
-    width: auto;
-  }
-
-  .follow-now {
-    position: relative;
-    top: 2vh;
-    width: 4vw;
-    white-space: nowrap;
   }
 
   .user-index{
@@ -290,7 +248,100 @@ body {
    }
   }
 
+  .user_article {
+    width: 100%;
+  }
+  .grid {
+    display: grid;
+    gap: 5px;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 6% 0;
+  }
+
+  .show-main-wrapper {
+    width: 90%;
+    margin-top:10em ;
+  }
+
   .user-search {
     width: 100%;
   }
+
+  .profile {
+    width: 40vw;
+    height: auto;
+    max-height: 10vh;
+    color: #888888;
+    font-size: 1em;
+    box-shadow: 0 1px 3px #c1ced7;
+    padding: 1.5em;
+    background-color: #ecebeb ;
+    overflow-wrap : break-word;
+    position: relative;
+    top:-3vh;
+  }
+  .post-new {
+    position: relative;
+    top:10vh;
+    left: -10vw;
+    }
+  
+  .follow {
+    position: relative;
+    top:2vh;
+    width: auto;
+    font-weight: bold;
+    font-size: 2rem;
+    white-space: nowrap;
+  }
+  
+  .follow-now {
+    position: relative;
+    top: 10vh;
+    left: -15vw;
+    width: 20vw;
+    white-space: nowrap;
+  }
+  
+  .following-btn-show {
+    width: 20vw;
+    height: 4.5vh;
+    color: white;
+    opacity: 0.8;
+    border-radius: 4px;
+    text-align: center;
+    background-color: #3aacad;
+    font-size: 15px;
+    padding-bottom: 0.5em;
+    &:hover, &.action {
+      width: 9vw;
+      color: white;
+      text-decoration: none;
+      opacity: 1;
+      background-color: #3aacad;
+      border-radius: 4px;
+    }
+  }
+  
+  .followerd-btn-show {
+    width: 20vw;
+    height: 4.5vh;
+    opacity: 0.8;
+    border-radius: 4px;
+    text-align: center;
+    box-shadow: 0 2px 6px #c1ced7;
+    background-color: #ecebeb ;
+    font-size: 15px;
+    padding-bottom: 0.5em;
+    &:hover, &.action {
+      width: 9vw;
+      text-decoration: none;
+      opacity: 1;
+      border-radius: 4px;
+      text-align: center;
+      box-shadow: 0 2px 6px #c1ced7;
+      background-color: #ecebeb ;
+    }
+  }
+  
 }

@@ -20,11 +20,11 @@ class ArticlesController < ApplicationController
   end
 
   def search
-    @article = Article.all
+    @article = Article.all.order(created_at: :desc)
     if params[:body_key]
       @articles = Article.where('body LIKE ?', "%#{params[:body_key]}%")
     else
-      @articles = Article.all
+      @articles = Article.all.order(created_at: :desc)
     end
     render 'search'
   end

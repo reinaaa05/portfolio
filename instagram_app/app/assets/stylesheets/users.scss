@@ -89,7 +89,7 @@
 .grid {
   display: grid;
   gap: 13px;
-  grid-template-columns: repeat(auto-fit,minmax(240px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   margin: 6% 0;
 }
 
@@ -107,8 +107,8 @@
 
 //user_show//
 .show-main-wrapper {
-  width: 100%;
-  margin: 0 auto;
+  width: 60%;
+  margin: 5em auto;
   border: 1px solid black;
   background-color:#EEEEEE;
 }
@@ -165,7 +165,6 @@
   left: 1vw;
   height: 3em;
   font-weight: bold;
-  font-size: 0.75vw;
 }
 
 .follow-now {

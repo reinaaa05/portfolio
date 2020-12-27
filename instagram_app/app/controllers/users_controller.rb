@@ -12,7 +12,7 @@ class UsersController < ApplicationController
 
   def show
     @user = User.find_by(id: params[:id])
-    @articles = Article.all
+    @articles = @user.articles.all.order(created_at: :desc)
   end
 
   def likes
