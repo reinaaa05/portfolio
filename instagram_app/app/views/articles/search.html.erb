@@ -16,19 +16,19 @@
             </div>
             <div class="picture arrows">
               <% if article.image.file.present? %>
-                <div class="slide"><%= image_tag article.image.to_s , :size => '300x400'%></div>
+                <div class="slide"><a href="/articles/<%= article.id %>"><%= image_tag article.image.to_s, :size => '600x500' %></a></div>
               <% end %>
               <% if article.image2.file.present? %>
-                <div class="slide"><%= image_tag article.image2.to_s, :size => '300x400' %></div>
+                <div class="slide"><a href="/articles/<%= article.id %>"><%= image_tag article.image2.to_s, :size => '600x500' %></a></div>
               <% end %>
               <% if article.image3.file.present? %>
-                <div class="slide"><%= image_tag article.image3.to_s, :size => '300x400' %></div>
+                <div class="slide"><a href="/articles/<%= article.id %>"><%= image_tag article.image3.to_s, :size => '600x500' %></a></div>
               <% end %>
               <% if article.image4.file.present? %>
-                <div class="slide"><%= image_tag article.image4.to_s, :size => '300x400' %></div>
+                <div class="slide"><a href="/articles/<%= article.id %>"><%= image_tag article.image4.to_s, :size => '600x500' %></a></div>
               <% end %>
               <% if article.image5.file.present? %>
-                <div class="slide"><%= image_tag article.image5.to_s, :size => '300x400' %></div>
+                <div class="slide"><a href="/articles/<%= article.id %>"><%= image_tag article.image5.to_s, :size => '600x500' %></a></div>
               <% end %>
             </div>
             <div class="article-icon">

@@ -184,11 +184,6 @@ body {
   text-align: center;
 }
 
-.field_image {
-  margin: 10px 6vw;
- 
-}
-
 .fa-times {
   position: absolute;
   top: 12px;
@@ -198,17 +193,43 @@ body {
 }
 
 @media all and (max-width: 1000px) {
+body {
+  width: 1000px;
+  height: 1000px;
+  object-position: 100% 100% 
+}
 
+//welcome//
+.welcome {
+  background-image: url("/camera.jpg") !important;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-color: none;
+  background-blend-mode: hard-light;
+  min-height: 92vh;
+  z-index: 100;
+}
+
+  //header//
+
+  header {
+    height: 7em;
+  }
   .header-main {
     width: 90%;
   }
 
-  .header-right , .header-left{
-    font-size: 3rem;
+  .header-right , .header-left, .not-login{
+    font-size: 4rem;
+  }
+
+  .header-right a{
+    margin-left: 2rem;
   }
   .icon_image {
-    width:  3rem;
-    height: 3rem;
+    width: 5rem;
+    height: 5rem;
     border-radius: 100px;
     object-fit: cover;
   }
@@ -216,23 +237,49 @@ body {
   .container {
     width: 100%;
   }
-  .article-container, .likes-article {
-    width: 80%;
+
+  //article//
+  .article-container, .likes-article, .article_show {
+    width: 75%;
     margin: 0 auto;
   }
 
   .article-post {
     width: 100%;
   }
+ .name, .like-btn-unlike, .like-btn{
+   font-size: 3rem;
+ }
 
+ .readmore-btn {
+   font-size: 2erm;
+ }
+
+ .body-text p  , .comment-list li , .comment-show p {
+  font-size: 2rem;
+  line-height: 3rem;
+ }
+
+ .comment-show span {
+  position:absolute;
+  top:-1vh;
+   font-size: 3rem;
+ }
+
+ .readmore-btn {
+  position: absolute;
+  top: 1vh;
+  left:25vw;
+}
+
+
+
+//user//
+ 
   .user-index{
     display: block;
   }
 
-  .model {
-    width: 20em;
-  }
-  
   .followr-user {
     width: 100%;
   }
@@ -251,6 +298,7 @@ body {
   .user_article {
     width: 100%;
   }
+  
   .grid {
     display: grid;
     gap: 5px;
@@ -268,17 +316,21 @@ body {
   }
 
   .profile {
-    width: 40vw;
+    width: 60vw;
     height: auto;
     max-height: 10vh;
     color: #888888;
-    font-size: 1em;
     box-shadow: 0 1px 3px #c1ced7;
     padding: 1.5em;
     background-color: #ecebeb ;
     overflow-wrap : break-word;
     position: relative;
     top:-3vh;
+  }
+
+  .profile p {
+    font-size: 2rem;
+    line-height: 2.5rem;
   }
   .post-new {
     position: relative;
@@ -343,5 +395,65 @@ body {
       background-color: #ecebeb ;
     }
   }
+//user-index//
+
+.followr-user {
+  width:70%;
+  margin: 0 auto;
+}
+
+.user-list li {
+  font-size: 2em;
+}
+
+.following-btn {
+  width: 20vw;
+  height: 2.5vh;
+  &:hover, &.action {
+    width: 20vw;
+  }
+}
+
+.followerd-btn {
+    width: 20vw;
+    height: 2.5vh;
+    &:hover, &.action {
+      width: 20vw;
+    }
+  }
+
+  .back {
+    text-align: center;
+    margin-top: 1em;
+    width: 10wv;
+  }
   
+  //モーダル//
+  .model {
+    position: absolute;
+    top: 5%;
+    left: 20%;
+    width: 60vw;
+  }
+
+  .field {
+    font-size: 3rem;
+    margin: 1rem;
+  }
+ .submit{
+    width: 20rem;
+    height: 8rem;
+    font-size: 3rem;
+  }
+
+  .text {
+    font-size: 3rem;
+  }
+
+  .image, .image-file{
+    font-size: 2rem;
+    width: 30vw;
+    margin: 1rem auto;
+  }
+
 }

@@ -72,8 +72,8 @@
                 </div>
 
                 <div class="field_image">
-                  <%= f.label :image %><br/>
-                  <%= f.file_field :image %>
+                  <%= f.label :image , class:"image-file"%><br/>
+                  <%= f.file_field :image, class:"image" %>
                 </div>
     
                 <div class="field">
@@ -90,7 +90,7 @@
                 </div>
     
                 <div class="actions">
-                  <%= f.submit "Sign up" %>
+                  <%= f.submit "Sign up", class:"submit" %>
                 </div>
               <% end %>
               <%= render "devise/shared/links" %>
@@ -124,7 +124,7 @@
                   <% end %>
 
                   <div class="actions">
-                    <%= f.submit "Log in" %>
+                    <%= f.submit "Log in" , class:"submit"%>
                   </div>
                 <% end %> 
 

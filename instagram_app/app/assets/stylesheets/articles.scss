@@ -13,6 +13,7 @@
 
 .name {
   padding: 10px;
+  margin-left: 1em;
   width: 100%;
 }
 
@@ -30,7 +31,8 @@
 //body//
 .article_body {
   position: relative;
-  margin-left: 1em;
+  margin-left: 2em;
+  height: auto;
 }
 .article_body + .article_body {
   margin-top: 20px;
