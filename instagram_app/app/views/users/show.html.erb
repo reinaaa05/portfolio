@@ -16,22 +16,22 @@
           </div>
           <div id="setting-form">
             <h2>Edit <%= resource_name.to_s.humanize %></h2>
-            <%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
-              <%= render "devise/shared/error_messages", resource: resource %>
+            <%= form_for(resources, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
+              <%= render "devise/shared/error_messages", resources: resources %>
 
               <div class="field">
                 <%= f.label :email %><br />
-                <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+                <%= f.email_field :email, autofocus: true, autocomplete: "email" , class:"submit"%>
               </div>
 
               <div class="field">
                 <%= f.label :name %><br />
-                <%= f.text_field :name %>
+                <%= f.text_field :name , class:"submit"%>
               </div>
 
               <div class="field">
                 <%= f.label :profile %><br />
-                <%= f.text_area :profile %>
+                <%= f.text_area :profile , class:"submit-p"%>
               </div>
 
               <div class="field_image">
@@ -40,8 +40,8 @@
               </div>
               
 
-              <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
-                <div>Currently waiting confirmation for: <%= resource.unconfirmed_email %></div>
+              <% if devise_mapping.confirmable? && resources.pending_reconfirmation? %>
+                <div>Currently waiting confirmation for: <%= resources.unconfirmed_email %></div>
               <% end %>
 
               <div class="field">
@@ -101,10 +101,6 @@
           <a href="/articles/<%= article.id %>"><%= image_tag article.image.to_s, :size => '250x250' %></a>
         </div>
       <% end %>
-    </div>
-    <div class="new-article">
-      <%= link_to 'New Article', new_article_path %>
-    </div>
     </div>
   </div>
 </div>

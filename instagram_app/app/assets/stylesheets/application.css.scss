@@ -174,14 +174,24 @@ body {
 
 .model {
   position: absolute;
-  top: 5%;
+  top: 3%;
   left: 34%;
   background-color: #e6ecf0;
   padding: 20px 0 40px;
   border-radius: 10px;
-  width: 25vw;
+  width: 50rem;
   height: auto;
   text-align: center;
+}
+
+.submit-p {
+  width: 35rem;
+  height: 15rem;
+}
+
+.image-file, .image {
+  width: 25rem;
+  margin: 0.5rem auto;
 }
 
 .fa-times {
@@ -246,6 +256,7 @@ body {
 
   .article-post {
     width: 100%;
+    overflow: hidden;
   }
  .name, .like-btn-unlike, .like-btn{
    font-size: 3rem;
@@ -256,9 +267,10 @@ body {
  }
 
  .body-text p  , .comment-list li , .comment-show p {
-  font-size: 2rem;
+  font-size: 3rem;
   line-height: 3rem;
  }
+ 
 
  .comment-show span {
   position:absolute;
@@ -288,6 +300,7 @@ body {
    position: relative;
    left: -30px; 
    width: 200px;
+   height: auto;
    &:hover, &.action {
     position: relative;
     left: -30px; 
@@ -433,16 +446,27 @@ body {
     position: absolute;
     top: 5%;
     left: 20%;
-    width: 60vw;
+    width: 70rem;
+  }
+
+  .body-text::before {
+    height: 10px;
   }
 
   .field {
     font-size: 3rem;
     margin: 1rem;
   }
+
  .submit{
     width: 20rem;
     height: 8rem;
+    font-size: 3rem;
+  }
+
+  .submit-p{
+    width: 60rem;
+    height: 20rem;
     font-size: 3rem;
   }
 
@@ -451,9 +475,22 @@ body {
   }
 
   .image, .image-file{
-    font-size: 2rem;
     width: 30vw;
     margin: 1rem auto;
   }
+
+  //new-article//
+  .new-article {
+    margin-top: 10rem;
+    width: 40rem;
+    height: 80rem;
+  }
+
+  .file-photo {
+    width: 40rem;
+    height: auto;
+    font-size: 2rem;
+  }
+  
 
 }
