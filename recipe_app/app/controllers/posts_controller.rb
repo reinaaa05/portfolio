@@ -6,6 +6,8 @@ class PostsController < ApplicationController
   # GET /posts.json
   def index
     @posts = Post.all
+    @post = Post.find_by(id: params[:id])
+    @material = Material.all
   end
 
   # GET /posts/1
@@ -16,6 +18,7 @@ class PostsController < ApplicationController
   # GET /posts/new
   def new
     @post = Post.new
+    @post.materials.build
   end
 
   # GET /posts/1/edit
@@ -79,6 +82,6 @@ class PostsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def post_params
-      params.require(:post).permit(:user_id, :name, :posts_image, :content, :point)
+      params.require(:post).permit(:user_id, :name, :posts_image, :content, :point, materials_attributes: [:id, :name, :amount, :_destroy])
     end
 end

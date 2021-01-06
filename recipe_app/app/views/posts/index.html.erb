@@ -19,7 +19,8 @@
       <tr>
         <td><%= post.user.name %></td>
         <td><%= post.name %></td>
-        <td><%= post.posts_image %></td>
+        <td><%= image_tag post.posts_image.to_s %></td>
+
         <td><%= post.content %></td>
         <td><%= post.point %></td>
         <td><%= link_to 'Show', post %></td>
@@ -31,6 +32,7 @@
     <% end %>
   </tbody>
 </table>
+<td><%= @material.name %></td>
 
 <br>
 
