@@ -7,12 +7,16 @@ class PostsController < ApplicationController
   def index
     @posts = Post.all
     @post = Post.find_by(id: params[:id])
-    @material = Material.all
+    
   end
 
   # GET /posts/1
   # GET /posts/1.json
   def show
+    @post = Post.find_by(id: params[:id])
+    def set_material
+      @post = Post.includes(:materials).find(params[:id])
+    end
   end
 
   # GET /posts/new

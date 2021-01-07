@@ -16,6 +16,14 @@
 </p>
 
 <p>
+  <strong>Name:</strong>
+  <%= @post.materials do |material| %>
+    <%= material.name %>
+    <%= material.amount %>
+  <% end %>
+</p>
+
+<p>
   <strong>Content:</strong>
   <%= @post.content %>
 </p>
