@@ -14,15 +14,14 @@ class PostsController < ApplicationController
   # GET /posts/1.json
   def show
     @post = Post.find_by(id: params[:id])
-    def set_material
-      @post = Post.includes(:materials).find(params[:id])
-    end
+
   end
 
   # GET /posts/new
   def new
     @post = Post.new
-    @post.materials.build
+    @food = @post.foods.build
+    @recipe = @post.recipes.build
   end
 
   # GET /posts/1/edit
@@ -86,6 +85,6 @@ class PostsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def post_params
-      params.require(:post).permit(:user_id, :name, :posts_image, :content, :point, materials_attributes: [:id, :name, :amount, :_destroy])
+      params.require(:post).permit(:user_id, :name, :posts_image, :content, :point, foods_attributes: [:id, :m_name, :m_amount, :_destroy], recipes_attributes: [:id, :process, :process_image, :_destroy])
     end
 end

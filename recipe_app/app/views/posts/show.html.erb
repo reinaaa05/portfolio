@@ -1,38 +1,84 @@
-<p id="notice"><%= notice %></p>
-
-<p>
-  <strong>User:</strong>
-  <%= @post.user.name %>
-</p>
-
-<p>
-  <strong>Name:</strong>
-  <%= @post.name %>
-</p>
-
-<p>
-  <strong>Posts image:</strong>
-  <%= @post.posts_image %>
-</p>
-
-<p>
-  <strong>Name:</strong>
-  <%= @post.materials do |material| %>
-    <%= material.name %>
-    <%= material.amount %>
-  <% end %>
-</p>
-
-<p>
-  <strong>Content:</strong>
-  <%= @post.content %>
-</p>
-
-<p>
-  <strong>Point:</strong>
-  <%= @post.point %>
-</p>
-<% if user_signed_in? && @post.user_id == current_user.id %>
-  <%= link_to 'Edit', edit_post_path(@post) %> |
-<% end %>
-<%= link_to 'Back', posts_path %>
+<div class="container">
+  <div class="post-mainwrapper">
+    <p id="notice"><%= notice %></p>
+    <div class="aside">
+      <ul class="list-group">
+        <li class="list-group-item">マイページ</li>
+        <li class="list-group-item">いいね</li>
+        <li class="list-group-item">ランキング</li>
+        <li class="list-group-item">検索</li>
+        <li class="list-group-item">ユーザー一覧</li>
+      </ul>
+    </div>
+    <div class="main-area">
+      <div class="post-show">
+        <div class="post-top">
+          <div class="show-left">
+            <div class="show-post_name">
+              <h2><%= @post.name %><h2>
+            </div>
+            <div class="show-posts_image">
+              <%= image_tag @post.posts_image.to_s, :size => '400x300' %>
+            </div>
+          </div>
+          <div class="show-right">
+            <div class="show-likes_icon">
+              <span>お気に入りに登録<i class="fa fa-heart"></i></span>
+            </div>
+            <div class="show-post_content">
+              <%= simple_format(@post.content) %>
+            </div>
+            <div class="show-user_name">
+              <%= image_tag @post.user.user_image.to_s, class:"user_image" %>
+              <span><%= @post.user.name %></span>
+            </div>
+            <div class="show-link">
+              <div class="show-comment">
+                <a href="#">コメント○○件</a>
+              </div>
+              <div class="show-likes">
+                <a href="#">いいね〇人</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="show-material">
+          <table class="table table-striped">
+            <tr><h3>材料</h3><h3></h3></tr>
+          <tr>
+            <% @post.foods.each do |food| %>
+              <td><%= food.m_name %></td>
+              <td><%= food.m_amount %></td>
+              </tr>
+            <% end %>
+          </table>
+        </div>
+        <div class="show-recipe">
+          <h3>作り方<h3>
+          <% num = 0 %>
+          <div class="show-process grid-show">
+            <% @post.recipes.each do |recipe| %>
+              <div class="process-image">
+                <% num += 1 %>
+                <p><%= num %></p>
+                <%= image_tag recipe.process_image.to_s, :size => '250x250' %>
+                <p><%= recipe.process %></p>
+              </div>
+            <% end %>
+          </div>
+        </div>
+        <div class="show-point">
+          <h3>コツ・ポイント</h3>
+          <span><%= @post.point %></span>
+        </div>
+        <div class="show-post_id">
+          <span>レシピID<%= @post.id %></span>
+        </div>
+      </div>
+        <% if user_signed_in? && @post.user_id == current_user.id %>
+          <%= link_to 'Edit', edit_post_path(@post) %> |
+        <% end %>
+        <%= link_to 'Back', posts_path %>
+    </div>
+  </div>
+</div>

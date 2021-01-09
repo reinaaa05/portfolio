@@ -1,11 +1,10 @@
 class Post < ApplicationRecord
 mount_uploader :posts_image, ImagesUploader
   belongs_to :user
-  has_many :materials, inverse_of: :post
-  accepts_nested_attributes_for :materials, allow_destroy: true, update_only: true
-  def material
-    return Material.find_by(id: self.materials_id)
-  end
+  has_many :foods, inverse_of: :post
+  accepts_nested_attributes_for :foods, allow_destroy: true, update_only: true
+  has_many :recipes, inverse_of: :post
+  accepts_nested_attributes_for :recipes, allow_destroy: true, update_only: true
   
   def user
     return User.find_by(id: self.user_id)

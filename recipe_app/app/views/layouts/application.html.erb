@@ -5,20 +5,29 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
-    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
-  <% if user_signed_in? %>
-    <%= image_tag current_user.user_image.to_s %>
-    <%= link_to "Settings", edit_user_registration_path %> |
-    <%= link_to "Logout", destroy_user_session_path, method: :delete %>
-  <% else %>
-    <%= link_to "Sign up", new_user_registration_path, :class => 'navbar-link' %> |
-    <%= link_to "Login", new_user_session_path, :class => 'navbar-link' %>
-  <% end %>
+  <header>
+    <div class="header_main">
+      <div class="header-center">
+        <h1>Cookong Recipe</h1>
+      </div>
+      <div class="header_right">
+        <% if user_signed_in? %>
+          <%= image_tag current_user.user_image.to_s, class:"user_image" %>
+          <%= current_user.name %>
+          <%= link_to "Settings", edit_user_registration_path %> |
+          <%= link_to "Logout", destroy_user_session_path, method: :delete %>
+        <% else %>
+          <%= link_to "Sign up", new_user_registration_path, :class => 'navbar-link' %> |
+          <%= link_to "Login", new_user_session_path, :class => 'navbar-link' %>
+        <% end %>
+      </div>
+    </div>
+  </header>
     <p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>
     <%= yield %>

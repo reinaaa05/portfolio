@@ -1,3 +1,176 @@
 // Place all the styles related to the posts controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+
+
+.post-mainwrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center
+}
+
+.aside {
+  width: 20%;
+  padding-top: 3rem;
+  padding-right: 2rem;
+  font-size: 1.5rem;
+}
+
+.list-group-item {
+  padding: 2rem;
+  font-size: 1.5rem;
+}
+
+.main-area {
+  width: 60%;
+}
+
+//post-index//
+
+.label li {
+  border: 1px solid lightgray;
+  padding :2rem;
+  font-size: 1rem;
+}
+
+
+
+//タイル型//
+.grid {
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 6% 0;
+  overflow: hidden;
+}
+
+.recipe-image {
+font-size:2rem;
+font-weight: bold;
+text-align: center;
+}
+
+.recipe-image img {
+  border-radius: 50px;
+}
+
+//index-fa heart//
+.recipe-image span {
+  position: relative;
+  top: -27rem;
+  left:8rem;
+  font-size:3rem;
+  color: #c83e36;
+}
+
+.recipe_image {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 100px;
+  object-fit: cover;
+}
+
+//post-show//
+.post-mainwrapper h3 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+.post-show {
+  margin-top: 2rem;
+  padding-left: 2rem;
+  font-size: 1.5rem;
+  border: 3px solid lightgrey;
+} 
+
+.post-top {
+  display: flex;
+}
+
+.show-post_name {
+  font-weight: bold;
+  padding: 1rem;
+}
+
+.show-posts_image {
+padding:1rem;
+}
+.show-right {
+ width: 50%;
+ padding: 2rem;
+}
+
+.show-likes_icon i{
+
+  color: #c83e36;
+  font-size: 2rem;
+}
+
+.show-likes_icon {
+  position: relative;
+left: 20rem;
+  padding: 2rem;
+  font-size: 1.5rem;
+}
+//紹介文//
+.show-post_content {
+  padding: 10px;
+}
+//ユーザー名//
+.show-user_name  {
+  font-size: 2rem;
+  padding: 10px;
+  padding-bottom: 0.5rem;
+}
+
+//リンクタグ//
+.show-link {
+  margin-top: 10px;
+  display: flex;
+}
+.show-comment, .show-likes {
+  margin: 10px;
+  padding: 0.5rem;
+  text-align: center;
+  background-color: rgba(237, 220,188,0.5);
+  border-radius: 50px;
+  width: 13rem;
+  text-decoration: none;
+  color: black;
+}
+
+//材料//
+.show-material {
+  margin-top: 1rem;
+  width: 50%;
+}
+
+.show-recipe {
+  margin-top: 2rem;
+}
+//タイル型//
+.grid-show {
+  padding-left: 1rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 1% 0;
+  overflow: hidden;
+}
+
+.process-image p {
+  padding: 1rem;
+  font-size: 1.5rem;
+  font-weight: normal;
+}
+
+.show-post_id {
+  text-align: right;
+  padding: 0 5rem 5rem 0;
+}
+
+.show-point {
+  margin-bottom: 2rem;
+}
+
+
+
+
