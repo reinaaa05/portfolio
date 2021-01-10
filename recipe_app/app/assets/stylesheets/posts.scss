@@ -3,7 +3,7 @@
 // You can use Sass (SCSS) here: https://sass-lang.com/
 
 
-.post-mainwrapper {
+.mainwrapper {
   width: 100%;
   display: flex;
   justify-content: center
@@ -13,11 +13,10 @@
   width: 20%;
   padding-top: 3rem;
   padding-right: 2rem;
-  font-size: 1.5rem;
 }
 
 .list-group-item {
-  padding: 2rem;
+  line-height: 3rem;
   font-size: 1.5rem;
 }
 
@@ -32,8 +31,6 @@
   padding :2rem;
   font-size: 1rem;
 }
-
-
 
 //タイル型//
 .grid {
@@ -100,7 +97,6 @@ padding:1rem;
 }
 
 .show-likes_icon i{
-
   color: #c83e36;
   font-size: 2rem;
 }
@@ -138,6 +134,11 @@ left: 20rem;
   color: black;
 }
 
+.show-comment a:hover, .show-likes a:hover {
+  text-decoration: none;
+}
+
+
 //材料//
 .show-material {
   margin-top: 1rem;
@@ -149,18 +150,22 @@ left: 20rem;
 }
 //タイル型//
 .grid-show {
-  padding-left: 1rem;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit,minmax(250px, 1fr));
   margin: 1% 0;
   overflow: hidden;
+
 }
 
 .process-image p {
   padding: 1rem;
   font-size: 1.5rem;
   font-weight: normal;
+  width: 250px;
 }
+
+
+
 
 .show-post_id {
   text-align: right;

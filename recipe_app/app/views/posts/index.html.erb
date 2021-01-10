@@ -1,14 +1,14 @@
 <div class="container">
-  <div class="post-mainwrapper">
+  <div class="mainwrapper">
     <p id="notice"><%= notice %></p>
     <div class="aside">
       <ul class="list-group">
-        <li class="list-group-item">マイページ</li>
+        <li class="list-group-item"><a href="/users/<%= current_user.id %>">マイページ</a></li>
         <li class="list-group-item">いいね</li>
         <li class="list-group-item">ランキング</li>
         <li class="list-group-item">検索</li>
-        <li class="list-group-item">ユーザー一覧</li>
-    </ul>
+        <li class="list-group-item"><a href="/users">ユーザー一覧</a></li>
+      </ul>
     </div>
     <div class="main-area">
       <div class="post-inde grid">

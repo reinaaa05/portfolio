@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_01_08_003451) do
+ActiveRecord::Schema.define(version: 2021_01_10_080447) do
 
   create_table "articles", force: :cascade do |t|
     t.integer "user_id"
@@ -25,6 +25,13 @@ ActiveRecord::Schema.define(version: 2021_01_08_003451) do
   create_table "foods", force: :cascade do |t|
     t.string "m_name"
     t.string "m_amount"
+    t.integer "post_id"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "likes", force: :cascade do |t|
+    t.integer "user_id"
     t.integer "post_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
@@ -67,6 +74,7 @@ ActiveRecord::Schema.define(version: 2021_01_08_003451) do
     t.string "name"
     t.string "user_image"
     t.text "content"
+    t.string "icon_image"
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end

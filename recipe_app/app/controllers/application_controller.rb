@@ -10,6 +10,8 @@ def configure_permitted_parameters
   devise_parameter_sanitizer.permit(:account_update, keys: [:user_image])
   devise_parameter_sanitizer.permit(:sign_up, keys: [:content])
   devise_parameter_sanitizer.permit(:account_update, keys: [:content])
+  devise_parameter_sanitizer.permit(:sign_up, keys: [:icon_image])
+  devise_parameter_sanitizer.permit(:account_update, keys: [:icon_image])
 end
 
 end
