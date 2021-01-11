@@ -1,13 +1,13 @@
 <div class="container">
   <div class="mainwrapper">
-    <p id="notice"><%= notice %></p>
     <div class="aside">
       <ul class="list-group">
-      <li class="list-group-item"><a href="/users/<%= current_user.id %>">マイページ</a></li>
-      <li class="list-group-item">いいね</li>
-      <li class="list-group-item">ランキング</li>
-      <li class="list-group-item">検索</li>
-      <li class="list-group-item"><a href="/users">ユーザー一覧</a></li>
+        <li class="list-group-item"><a href="/posts/">ホーム</a></li>
+        <li class="list-group-item"><a href="/users/<%= current_user.id %>">マイページ</a></li>
+        <li class="list-group-item"><a href="/users/<%= current_user.id %>/likes">いいね</a></li>
+        <li class="list-group-item"><a href="/posts/ranking">ランキング</a></li>
+        <li class="list-group-item">検索</li>
+        <li class="list-group-item"><a href="/users">ユーザー一覧</a></li>
       </ul>
     </div>
     <div class="main-area">
@@ -23,7 +23,15 @@
           </div>
           <div class="show-right">
             <div class="show-likes_icon">
-              <span>お気に入りに登録<i class="fa fa-heart"></i></span>
+              <% if Like.find_by(user_id:current_user.id,post_id:@post.id) %>
+                <%= link_to("/likes/#{@post.id}/destroy",{method: "post"}) do %>
+                <span>お気に入りに登録<i class="fa fa-heart unlike-btn"></i></span>
+                <% end %> 
+              <% else %>
+                <%= link_to("/likes/#{@post.id}/create",{method: "post"}) do %>
+                <span>お気に入りに登録<i class="far fa-heart show-like-btn"></i></span>
+                <% end %> 
+              <% end %>
             </div>
             <div class="show-post_content">
               <%= simple_format(@post.content) %>
@@ -37,7 +45,7 @@
                 <a href="#">コメント○○件</a>
               </div>
               <div class="show-likes">
-                <a href="#">いいね〇人</a>
+                <a href="#">いいね<%= @likes_count %>人</a>
               </div>
             </div>
           </div>

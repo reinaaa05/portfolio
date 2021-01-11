@@ -36,35 +36,30 @@
 .grid {
   padding: 1rem;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit,minmax(250px, 1fr));
   margin: 6% 0;
   overflow: hidden;
 }
 
 .recipe-image {
-font-size:2rem;
-font-weight: bold;
 text-align: center;
 }
 
 .recipe-image img {
   border-radius: 50px;
 }
-
-//index-fa heart//
-.recipe-image span {
-  position: relative;
-  top: -27rem;
-  left:8rem;
-  font-size:3rem;
-  color: #c83e36;
+.recipe-image p {
+  font-size:2rem;
+  font-weight: bold;
+  margin-top: 1rem;
 }
 
-.recipe_image {
-  width: 5rem;
-  height: 5rem;
-  border-radius: 100px;
-  object-fit: cover;
+//いいね//
+.recipe-image span {
+  font-size:4rem;
+  position: relative;
+  top:-270px;
+  left:100px;
 }
 
 //post-show//
@@ -95,15 +90,25 @@ padding:1rem;
  width: 50%;
  padding: 2rem;
 }
+//いいね//
+.show-likes_icon span{
+  font-size: 2.5rem;
+}
 
-.show-likes_icon i{
-  color: #c83e36;
-  font-size: 2rem;
+.show-like-btn {
+  color:lightgray;
+}
+.like-btn {
+  color:white;
+}
+
+.unlike-btn {
+  color: #ff2581;
 }
 
 .show-likes_icon {
   position: relative;
-left: 20rem;
+  left: 15rem;
   padding: 2rem;
   font-size: 1.5rem;
 }
@@ -164,9 +169,6 @@ left: 20rem;
   width: 250px;
 }
 
-
-
-
 .show-post_id {
   text-align: right;
   padding: 0 5rem 5rem 0;
@@ -176,6 +178,39 @@ left: 20rem;
   margin-bottom: 2rem;
 }
 
+//ranking//
+.post-rank-content {
+  width: 70%;
+}
+//ranking 親要素//
+.post-rank {
+  display: flex;
+  justify-content: flex-end;
+  border: 2px solid lightgray;
+  padding: 1rem;
+}
+
+.ranking-left p {
+  font-size: 2rem;
+  font-weight: bold;
+}
 
 
+.ranking-right {
+  margin-top: 5rem;
+}
 
+.ranking-right p {
+  font-size: 3rem;
+  margin-bottom: 4rem;
+}
+
+//likes//
+.ranking-likes span {
+  font-size: 4rem;
+  margin: 2rem;
+}
+
+.like-btn-ranking {
+  color: lightgray;
+}

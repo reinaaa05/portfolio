@@ -1,8 +1,12 @@
 Rails.application.routes.draw do
-  resources :posts
+  resources :posts do
+    resources :comments, only: [:create]
+    get 'ranking', :on => :collection
+  end
   devise_for :users
   get 'welcome/index'
   root "welcome#index"
+  get "posts/ranking" => "posts#ranking"
   get "users" => "users#index"
   get "users/:id" => "users#show"
   get "users/:id/likes" => "users#likes"

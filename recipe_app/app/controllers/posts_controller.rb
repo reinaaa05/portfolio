@@ -6,15 +6,13 @@ class PostsController < ApplicationController
   # GET /posts.json
   def index
     @posts = Post.all
-    @post = Post.find_by(id: params[:id])
     
   end
 
   # GET /posts/1
   # GET /posts/1.json
   def show
-    @post = Post.find_by(id: params[:id])
-
+    @likes_count = Like.where(post_id:@post.id).count
   end
 
   # GET /posts/new
@@ -77,6 +75,11 @@ class PostsController < ApplicationController
       end
   end
 
+  def ranking
+    @posts = Post.all.order(created_at: :desc)
+    render 'ranking'
+  end
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_post
@@ -85,6 +88,6 @@ class PostsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def post_params
-      params.require(:post).permit(:user_id, :name, :posts_image, :content, :point, foods_attributes: [:id, :m_name, :m_amount, :_destroy], recipes_attributes: [:id, :process, :process_image, :_destroy])
+      params.require(:post).permit(:user_id, :name, :posts_image, :content, :point, :comment, foods_attributes: [:id, :m_name, :m_amount, :_destroy], recipes_attributes: [:id, :process, :process_image, :_destroy])
     end
 end

@@ -1,11 +1,11 @@
 <div class="container">
   <div class="mainwrapper">
-    <p id="notice"><%= notice %></p>
     <div class="aside">
       <ul class="list-group">
+        <li class="list-group-item"><a href="/posts/">ホーム</a></li>
         <li class="list-group-item"><a href="/users/<%= current_user.id %>">マイページ</a></li>
-        <li class="list-group-item">いいね</li>
-        <li class="list-group-item">ランキング</li>
+        <li class="list-group-item"><a href="/users/<%= current_user.id %>/likes">いいね</a></li>
+        <li class="list-group-item"><a href="/posts/ranking">ランキング</a></li>
         <li class="list-group-item">検索</li>
         <li class="list-group-item"><a href="/users">ユーザー一覧</a></li>
       </ul>
@@ -14,9 +14,17 @@
       <div class="post-inde grid">
         <% @posts.each do |post| %>
           <div class="recipe-image">
-            <a href="posts/<%= post.id %>"><%= image_tag post.posts_image.to_s, :size => '250x250' %></a>
+            <a href="/posts/<%= post.id %>"><%= image_tag post.posts_image.to_s, :size => '250x250' %></a>
             <p><%= post.name %></p>
-            <span class="fa fa-heart"></span>
+            <% if Like.find_by(user_id:current_user.id,post_id:post.id) %>
+              <%= link_to("/likes/#{post.id}/destroy",{method: "post"}) do %>
+                <span class="fa fa-heart unlike-btn"></span>
+              <% end %> 
+            <% else %>
+              <%= link_to("/likes/#{post.id}/create",{method: "post"}) do %>
+                <span class="far fa-heart like-btn"></span>
+              <% end %> 
+            <% end %>  
           </div>
         <% end %>
       </div>
