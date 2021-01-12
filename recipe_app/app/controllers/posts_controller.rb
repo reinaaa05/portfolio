@@ -13,6 +13,8 @@ class PostsController < ApplicationController
   # GET /posts/1.json
   def show
     @likes_count = Like.where(post_id:@post.id).count
+    @comments = @post.comments
+    @comment = Comment.new
   end
 
   # GET /posts/new

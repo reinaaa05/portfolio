@@ -69,6 +69,7 @@ text-align: center;
 }
 .post-show {
   margin-top: 2rem;
+  margin-bottom: 5rem;
   padding-left: 2rem;
   font-size: 1.5rem;
   border: 3px solid lightgrey;
@@ -95,8 +96,8 @@ padding:1rem;
   font-size: 2.5rem;
 }
 
-.show-like-btn {
-  color:lightgray;
+.gray-like-btn {
+  color:rgba(180, 176, 176, 0.836);
 }
 .like-btn {
   color:white;
@@ -179,38 +180,79 @@ padding:1rem;
 }
 
 //ranking//
-.post-rank-content {
+.post-index {
   width: 70%;
+  margin-left: 5rem;
+  margin-bottom: 5rem;
 }
 //ranking 親要素//
-.post-rank {
+.recipe-list {
   display: flex;
   justify-content: flex-end;
   border: 2px solid lightgray;
   padding: 1rem;
 }
 
-.ranking-left p {
+.recipe-list >:last-child {
+  margin-left: auto;
+}
+
+.recipe-left p {
   font-size: 2rem;
   font-weight: bold;
 }
 
-
-.ranking-right {
+.recipe-right {
   margin-top: 5rem;
+  margin-left: 5rem;
+  overflow:hidden;
 }
 
-.ranking-right p {
-  font-size: 3rem;
-  margin-bottom: 4rem;
+.recipe-right p {
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
 }
 
-//likes//
-.ranking-likes span {
+.recipe-likes span {
   font-size: 4rem;
   margin: 2rem;
 }
 
-.like-btn-ranking {
-  color: lightgray;
+//likes//
+.recipe-list {
+  display: flex;
+  border: 2px solid lightgray;
+  padding: 1rem;
+}
+
+
+//コメント//
+.comment-grid {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0 4rem 0 2rem;
+}
+
+.comment-main {
+  border: 1px solid lightgray;
+  padding: 1rem;
+  margin: 1rem;
+  font-size: rem;
+}
+
+.comment-main span, .comment-main p {
+  font-size: 2rem;
+}
+
+.comment-content img {
+  width: 20rem;
+  height: 20rem;
+  margin: 0.5rem;
+}
+
+//コメント欄//
+.comment-new {
+  margin: 0 0 0 auto;
+  width: 25em;
 }

@@ -10,4 +10,6 @@ mount_uploader :posts_image, ImagesUploader
   def user
     return User.find_by(id: self.user_id)
   end
+
+ 
 end

@@ -5,7 +5,7 @@
         <li class="list-group-item"><a href="/posts/">ホーム</a></li>
         <li class="list-group-item"><a href="/users/<%= current_user.id %>">マイページ</a></li>
         <li class="list-group-item"><a href="/users/<%= current_user.id %>/likes">いいね</a></li>
-        <li class="list-group-item"><a href="/posts/ranking">ランキング</a></li>
+        <li class="list-group-item"><%= link_to("ランキング",ranking_posts_path) %></li>
         <li class="list-group-item">検索</li>
         <li class="list-group-item"><a href="/users">ユーザー一覧</a></li>
       </ul>
@@ -29,7 +29,7 @@
                 <% end %> 
               <% else %>
                 <%= link_to("/likes/#{@post.id}/create",{method: "post"}) do %>
-                <span>お気に入りに登録<i class="far fa-heart show-like-btn"></i></span>
+                <span>お気に入りに登録<i class="far fa-heart gray-like-btn"></i></span>
                 <% end %> 
               <% end %>
             </div>
@@ -42,6 +42,7 @@
             </div>
             <div class="show-link">
               <div class="show-comment">
+
                 <a href="#">コメント○○件</a>
               </div>
               <div class="show-likes">
@@ -82,11 +83,44 @@
         <div class="show-post_id">
           <span>レシピID: <%= @post.id %></span>
         </div>
-      </div>
+        <div class="comment">
+          <h3>コメント</h3>
+          <div class="comment-grid">
+            <% @comments.each do |c| %>
+              <div class="comment-main">
+                <div class="comment-name">
+                  <a href="/users/<% @post.user.id %>"> <%= image_tag c.user.user_image.to_s, class:"user_image" %>
+                  <span><%= c.user.name %></span></a>
+                </div>
+                <div class="comment-content">
+                  <%= image_tag c.cook_image.to_s%>
+                  <p><%= c.content %></P>
+                </div>
+                <% if user_signed_in? && c.user_id == current_user.id %>
+                  <%=link_to "削除", post_comment_path(@post, c), method: :delete %>
+              <% end %>   
+              </div>
+            <% end %>
+          </div>
+        </div>
+        <div class="comment-new">
+          <%= form_for [@post, @comment] do |form| %>
+            <div class="field">
+              <%= form.label :画像 %><br />
+              <%= form.file_field :cook_image %>
+            </div>
+            <div class="field">
+              <%= form.label :コメント %><br />
+              <%= form.text_field :content %>
+               <%= form.submit "コメントする" %>
+            </div>
+          <% end %>
+        </div>
         <% if user_signed_in? && @post.user_id == current_user.id %>
           <%= link_to 'Edit', edit_post_path(@post) %> |
         <% end %>
         <%= link_to 'Back', posts_path %>
+      </div>
     </div>
   </div>
 </div>

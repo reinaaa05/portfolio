@@ -5,7 +5,7 @@
         <li class="list-group-item"><a href="/posts/">ホーム</a></li>
         <li class="list-group-item"><a href="/users/<%= current_user.id %>">マイページ</a></li>
         <li class="list-group-item"><a href="/users/<%= current_user.id %>/likes">いいね</a></li>
-        <li class="list-group-item"><a href="/posts/ranking">ランキング</a></li>
+        <li class="list-group-item"><%= link_to("ランキング",ranking_posts_path) %></li>
         <li class="list-group-item">検索</li>
         <li class="list-group-item"><a href="/users">ユーザー一覧</a></li>
       </ul>
