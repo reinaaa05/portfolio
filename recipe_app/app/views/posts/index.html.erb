@@ -6,25 +6,32 @@
         <li class="list-group-item"><a href="/users/<%= current_user.id %>">マイページ</a></li>
         <li class="list-group-item"><a href="/users/<%= current_user.id %>/likes">いいね</a></li>
         <li class="list-group-item"><%= link_to("ランキング",ranking_posts_path) %></li>
-        <li class="list-group-item">検索</li>
+        <li class="list-group-item"><%= link_to("検索",search_posts_path) %></li>
         <li class="list-group-item"><a href="/users">ユーザー一覧</a></li>
       </ul>
     </div>
     <div class="main-area">
-      <div class="post-inde grid">
+      <div class="post-index">
         <% @posts.each do |post| %>
-          <div class="recipe-image">
-            <a href="/posts/<%= post.id %>"><%= image_tag post.posts_image.to_s, :size => '250x250' %></a>
-            <p><%= post.name %></p>
-            <% if Like.find_by(user_id:current_user.id,post_id:post.id) %>
-              <%= link_to("/likes/#{post.id}/destroy",{method: "post"}) do %>
-                <span class="fa fa-heart unlike-btn"></span>
+          <div class="recipe-list">
+            <div class="recipe-left">
+              <a href="/posts/<%= post.id %>"><%= image_tag post.posts_image.to_s, :size => '250x250' %></a>
+            </div>
+            <div class="recipe-right">
+              <a href="/posts/<%= post.id %>"><%= post.name %></a>
+              <p><%= post.content %></p>
+            </div>
+            <div class="recipe-likes">
+              <% if Like.find_by(user_id:current_user.id,post_id:post.id) %>
+                <%= link_to("/likes/#{post.id}/destroy",{method: "post"}) do %>
+                  <span class="fa fa-heart unlike-btn"></span>
+                <% end %> 
+              <% else %>
+                <%= link_to("/likes/#{post.id}/create",{method: "post"}) do %>
+                  <span class="far fa-heart like-btn"></span>
+                <% end %> 
               <% end %> 
-            <% else %>
-              <%= link_to("/likes/#{post.id}/create",{method: "post"}) do %>
-                <span class="far fa-heart like-btn"></span>
-              <% end %> 
-            <% end %>  
+            </div>
           </div>
         <% end %>
       </div>

@@ -208,9 +208,10 @@ padding:1rem;
   overflow:hidden;
 }
 
-.recipe-right p {
+.recipe-right a {
   font-size: 2.5rem;
-  margin-bottom: 3rem;
+  display: block;
+  margin-bottom: 2rem;
 }
 
 .recipe-likes span {
@@ -223,6 +224,7 @@ padding:1rem;
   display: flex;
   border: 2px solid lightgray;
   padding: 1rem;
+  margin-bottom: 2rem;
 }
 
 
@@ -251,8 +253,14 @@ padding:1rem;
   margin: 0.5rem;
 }
 
+
+
 //コメント欄//
 .comment-new {
-  margin: 0 0 0 auto;
+  margin: 0 1rem 0 auto;
   width: 25em;
+  border: 1px solid lightgray;
+  padding: 1rem;
 }
+
+//search// 

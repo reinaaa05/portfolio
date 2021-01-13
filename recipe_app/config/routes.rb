@@ -2,6 +2,7 @@ Rails.application.routes.draw do
   resources :posts do
     resources :comments, only: [:create,:destroy]
     get 'ranking', :on => :collection
+    get 'search', :on => :collection
   end
   devise_for :users
   get 'welcome/index'

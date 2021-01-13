@@ -82,6 +82,15 @@ class PostsController < ApplicationController
     render 'ranking'
   end
 
+  def search
+    if params[:name_key]
+      @posts = Post.where('name LIKE ?', "%#{params[:name_key]}%")
+    else
+      @posts = Post.all.order(created_at: :desc)
+    end
+    render 'search'
+  end
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_post
