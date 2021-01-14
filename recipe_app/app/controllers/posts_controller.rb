@@ -83,8 +83,12 @@ class PostsController < ApplicationController
   end
 
   def search
-    if params[:name_key]
-      @posts = Post.joins(:foods).where('m_name LIKE ?', "%#{params[:name_key]}%")
+    
+    if params[:keyword]
+      keywords = params[:keyword].split(/[[:blank:]]+/).select(&:present?)
+      keywords.each do |keyword|
+        @posts = Post.joins(:foods).where(["name LIKE ? OR content LIKE ? OR m_name LIKE ?", "%#{keyword}%", "%#{keyword}%", "%#{keyword}%"])
+      end
     else
       @posts = Post.all.order(created_at: :desc)
     end
