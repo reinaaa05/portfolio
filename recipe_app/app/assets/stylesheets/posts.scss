@@ -201,11 +201,11 @@ padding:1rem;
   font-size: 2rem;
   font-weight: bold;
 }
-
 .recipe-right {
   margin-top: 5rem;
   margin-left: 5rem;
   overflow:hidden;
+  font-size: 1rem;
 }
 
 .recipe-right a {
@@ -213,6 +213,13 @@ padding:1rem;
   display: block;
   margin-bottom: 2rem;
 }
+
+.recipe-right p {
+  font-size: 1.5em;
+  margin-bottom: 1rem;
+}
+
+
 
 .recipe-likes span {
   font-size: 4rem;

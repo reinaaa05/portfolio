@@ -15,6 +15,7 @@ class PostsController < ApplicationController
     @likes_count = Like.where(post_id:@post.id).count
     @comments = @post.comments
     @comment = Comment.new
+    @comment_count = Comment.where(post_id:@post.id).count
   end
 
   # GET /posts/new
@@ -92,9 +93,8 @@ class PostsController < ApplicationController
         keywords = params[:keyword].split(/[[:blank:]]+/).select(&:present?)
         notkeywords = params[:notkeyword].split(/[[:blank:]]+/).select(&:present?)
         keywords.each do |keyword|
-          @posts = Post.joins(:foods).where(["name LIKE ? OR content LIKE ? OR m_name LIKE ?", "%#{keyword}%", "%#{keyword}%", "%#{keyword}%"]).uniq
           notkeywords.each do |notkeyword|
-          @posts = Post.joins(:foods).where(["name LIKE ? OR content LIKE ? OR m_name LIKE ?", "%#{keyword}%", "%#{keyword}%", "%#{keyword}%"]).where.not(["name LIKE ? OR content LIKE ? OR m_name LIKE ?", "%#{notkeyword}%", "%#{notkeyword}%", "%#{notkeyword}%"]).uniq
+          @posts = Post.joins(:foods).where(["name LIKE ? OR content LIKE ? OR foods.m_name LIKE ?", "%#{keyword}%", "%#{keyword}%", "%#{keyword}%"]).where.not(["name LIKE ? OR content LIKE ? OR foods.m_name LIKE ?", "%#{notkeyword}%", "%#{notkeyword}%", "%#{notkeyword}%"]).uniq
           end
         end
       else
