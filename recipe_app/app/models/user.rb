@@ -7,6 +7,7 @@ class User < ApplicationRecord
   mount_uploader :icon_image, ImagesUploader
   has_many :comments
   
+  
   def posts
     return Post.where(user_id: self.id)
   end
