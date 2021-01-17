@@ -2,15 +2,20 @@
 // present in this directory. You're encouraged to place your actual application logic in
 // a relevant structure within app/javascript and only use these pack files to reference
 // that code so it'll be compiled.
-//= require bootstrap-sprockets
 //= require rails-ujs
-//= require activestorage
-//= require jquery
-//= require turbolinks
-//= require cocoon
 //= require jquery
 //= require jquery_ujs
+//= require cropper.min.js
+//= require jquery-cropper.min.js
+//= require activestorage
+//= require turbolinks
+//= require cocoon
 //= require_tree .
+//= require popper
+//= require bootstrap-sprockets
+
+
+
 import Rails from "@rails/ujs"
 import Turbolinks from "turbolinks"
 import * as ActiveStorage from "@rails/activestorage"

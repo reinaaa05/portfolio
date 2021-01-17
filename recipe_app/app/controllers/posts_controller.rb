@@ -84,21 +84,46 @@ class PostsController < ApplicationController
   end
 
   def search
-    if params[:id_keyword]
+    @posts = Post.all.order(created_at: :desc)
+    if params[:id_keyword].present?
       @posts = Post.where(id: params[:id_keyword] )
     else
       @posts = Post.all.order(created_at: :desc)
     end
-    if params[:keyword] 
-        keywords = params[:keyword].split(/[[:blank:]]+/).select(&:present?)
-        notkeywords = params[:notkeyword].split(/[[:blank:]]+/).select(&:present?)
-        keywords.each do |keyword|
-          notkeywords.each do |notkeyword|
-          @posts = Post.joins(:foods).where(["name LIKE ? OR content LIKE ? OR foods.m_name LIKE ?", "%#{keyword}%", "%#{keyword}%", "%#{keyword}%"]).where.not(["name LIKE ? OR content LIKE ? OR foods.m_name LIKE ?", "%#{notkeyword}%", "%#{notkeyword}%", "%#{notkeyword}%"]).uniq
-          end
+
+    
+    if params[:keyword].present?
+      keywords = params[:keyword].split(/[[:blank:]]+/).select(&:present?) # 空白で分割
+      @posts = [] 
+      keywords.each do |keyword|
+        next if keyword == "" 
+        @posts += Post.joins(:foods).where(["name LIKE ? OR content LIKE ? OR m_name LIKE ?", "%#{keyword}%", "%#{keyword}%", "%#{keyword}%"])
+      end 
+      @posts.uniq!
+      if params[:notkeyword].present?
+        notkeywords = params[:notkeyword].split(/[[:blank:]]+/)
+        minus_posts = [] 
+        notkeywords.each do |notkeyword|
+          next if notkeyword == "" 
+          minus_posts += Post.joins(:foods).where(["name LIKE ? OR content LIKE ? OR m_name LIKE ?", "%#{notkeyword}%", "%#{notkeyword}%", "%#{notkeyword}%"])
         end
-      else
-        @posts = Post.all.order(created_at: :desc)
+        minus_posts.each do |minus_post| 
+          @posts.delete(minus_post) 
+        end 
+    else
+          if params[:notkeyword].present?
+      notkeywords = params[:notkeyword].split(/[[:blank:]]+/)
+      minus_posts = [] 
+      notkeywords.each do |notkeyword|
+        next if notkeyword == "" 
+        minus_posts += Post.joins(:foods).where(["name LIKE ? OR content LIKE ? OR m_name LIKE ?", "%#{notkeyword}%", "%#{notkeyword}%", "%#{notkeyword}%"])
+      end
+      minus_posts.each do |minus_post| 
+        @posts.delete(minus_post) 
+      end 
+    end
+      end
+
     end
 
     render 'search'
