@@ -92,15 +92,15 @@ class PostsController < ApplicationController
     end
 
     
-    if params[:keyword].present?
-      keywords = params[:keyword].split(/[[:blank:]]+/).select(&:present?) # 空白で分割
+    if params[:keyword]
+      keywords = params[:keyword].split(/[[:blank:]]+/) # 空白で分割
       @posts = [] 
       keywords.each do |keyword|
         next if keyword == "" 
         @posts += Post.joins(:foods).where(["name LIKE ? OR content LIKE ? OR m_name LIKE ?", "%#{keyword}%", "%#{keyword}%", "%#{keyword}%"])
       end 
       @posts.uniq!
-      if params[:notkeyword].present?
+      if params[:notkeyword]
         notkeywords = params[:notkeyword].split(/[[:blank:]]+/)
         minus_posts = [] 
         notkeywords.each do |notkeyword|
@@ -110,23 +110,16 @@ class PostsController < ApplicationController
         minus_posts.each do |minus_post| 
           @posts.delete(minus_post) 
         end 
+      end
     else
-          if params[:notkeyword].present?
-      notkeywords = params[:notkeyword].split(/[[:blank:]]+/)
-      minus_posts = [] 
-      notkeywords.each do |notkeyword|
-        next if notkeyword == "" 
-        minus_posts += Post.joins(:foods).where(["name LIKE ? OR content LIKE ? OR m_name LIKE ?", "%#{notkeyword}%", "%#{notkeyword}%", "%#{notkeyword}%"])
+      if params[:notkeyword]
+        notkeywords = params[:notkeyword].split(/[[:blank:]]+/)
+        notkeywords.each do |notkeyword|
+          next if notkeyword.blank?
+        @posts = @posts.joins(:foods).where.not(["name LIKE ? OR content LIKE ? OR m_name LIKE ?", "%#{notkeyword}%", "%#{notkeyword}%", "%#{notkeyword}%"]).uniq
+        end
       end
-      minus_posts.each do |minus_post| 
-        @posts.delete(minus_post) 
-      end 
     end
-      end
-
-    end
-
-    render 'search'
   end
 
   private

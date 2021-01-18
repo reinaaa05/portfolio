@@ -10,9 +10,5 @@ mount_uploader :posts_image, ImagesUploader
   def user
     return User.find_by(id: self.user_id)
   end
-
-  scope :get_by_name, ->(name) {
-  where("name like ?", "%#{name}%")
-}
  
 end
