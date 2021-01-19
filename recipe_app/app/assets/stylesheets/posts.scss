@@ -70,13 +70,14 @@ text-align: center;
 .post-show {
   margin-top: 2rem;
   margin-bottom: 5rem;
-  padding-left: 2rem;
+  padding: 0 2rem;
   font-size: 1.5rem;
   border: 3px solid lightgrey;
 } 
 
 .post-top {
   display: flex;
+  border-bottom:1px solid lightgray
 }
 
 .show-post_name {
@@ -146,12 +147,12 @@ padding:1rem;
 
 
 //材料//
-.show-material {
+.show-foods {
   margin-top: 1rem;
   width: 50%;
 }
 
-.show-recipe {
+.show-recipes {
   margin-top: 2rem;
 }
 //タイル型//
@@ -270,4 +271,41 @@ padding:1rem;
   padding: 1rem;
 }
 
-//search// 
+//post-new// 
+.post-new {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.new-name, .new-image {
+  margin: 2rem;
+
+}
+
+.new-content {
+  margin: 5rem;
+}
+
+.nested-fields {
+  display: flex;
+}
+
+.remove {
+  margin-left: 2rem;
+  border:1px solid black;
+  width: 5rem;
+}
+
+.links {
+  margin: 2rem;
+  border:1px solid black;
+  width: 5rem;
+  float:right;
+}
+
+.prosess-form {
+  margin: 2rem 0;
+}
+
+
+

@@ -8,7 +8,7 @@ class User < ApplicationRecord
   has_many :comments
   attr_accessor :x, :y, :width, :height
   has_one_attached :icon_image
-  
+
   def posts
     return Post.where(user_id: self.id)
   end
