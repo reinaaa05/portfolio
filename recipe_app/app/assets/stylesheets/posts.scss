@@ -277,35 +277,19 @@ padding:1rem;
   margin: 0 auto;
 }
 
-.new-name, .new-image {
-  margin: 2rem;
-
-}
-
-.new-content {
-  margin: 5rem;
-}
-
-.nested-fields {
-  display: flex;
-}
-
-.remove {
-  margin-left: 2rem;
-  border:1px solid black;
-  width: 5rem;
+.field-posts_image {
+  float: right;
 }
 
 .links {
-  margin: 2rem;
-  border:1px solid black;
+  background-color:lightgray;
+  border: 1px solid gray;
   width: 5rem;
-  float:right;
+  text-align: center;
+  margin: 1rem;
 }
 
-.prosess-form {
-  margin: 2rem 0;
-}
+
 
 
 
