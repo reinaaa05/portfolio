@@ -53,3 +53,18 @@
  textarea {
    height: 150px;
  }
+
+ .error {
+   font-size: 12px;
+   font-weight: bold;
+   color: tomato;
+ }
+
+ .command{
+  font-size: 12px;
+ }
+
+ h3 {
+   font-size: 13px;
+   padding-top: 25px;
+ }

@@ -1,4 +1,5 @@
 class Post < ApplicationRecord
-  validaites :title, presence:true, length {minmum: 3, messege: 'Too short to post!' }
-  validaites :body, presence: true
+  has_many :comments, dependent: :destroy
+  validates :title, presence: true, length: { minimum: 3, messege: 'Too short to post!' }
+  validates :body, presence: true
 end
