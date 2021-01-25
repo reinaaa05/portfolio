@@ -11,13 +11,13 @@
 
 .aside {
   width: 20%;
-  padding-top: 3rem;
-  padding-right: 2rem;
+  padding-top: 2rem;
+  padding-right: 1.5rem;
 }
 
 .list-group-item {
-  line-height: 3rem;
-  font-size: 1.5rem;
+  line-height: 2rem;
+  font-size:1.5rem;
 }
 
 .main-area {
@@ -28,7 +28,7 @@
 
 .label li {
   border: 1px solid lightgray;
-  padding :2rem;
+  padding :1.5rem;
   font-size: 1rem;
 }
 
@@ -49,29 +49,24 @@ text-align: center;
   border-radius: 50px;
 }
 .recipe-image p {
-  font-size:2rem;
+  font-size:1.5rem;
   font-weight: bold;
   margin-top: 1rem;
 }
 
 //いいね//
 .recipe-image span {
-  font-size:4rem;
+  font-size:3rem;
   position: relative;
   top:-270px;
   left:100px;
 }
 
 //post-show//
-.post-mainwrapper h3 {
-  font-size: 2rem;
-  font-weight: bold;
-}
 .post-show {
-  margin-top: 2rem;
+  margin-top: 1.5rem;
   margin-bottom: 5rem;
-  padding: 0 2rem;
-  font-size: 1.5rem;
+  padding: 0 1.5rem;
   border: 3px solid lightgrey;
 } 
 
@@ -91,36 +86,37 @@ padding:1rem;
 .show-right {
  width: 50%;
  padding: 2rem;
+ margin-top: 3rem;
 }
 //いいね//
 .show-likes_icon span{
-  font-size: 2.5rem;
+  font-size: 2rem;
 }
 
-.gray-like-btn {
-  color:rgba(180, 176, 176, 0.836);
+.show-likes_icon {
+  position: relative;
+  left: 5rem;
+  padding: 1.5rem;
+  font-size:1rem;
 }
+
 .like-btn {
-  color:white;
+  color:rgba(180, 176, 176, 0.836);
 }
 
 .unlike-btn {
   color: #ff2581;
 }
 
-.show-likes_icon {
-  position: relative;
-  left: 15rem;
-  padding: 2rem;
-  font-size: 1.5rem;
-}
+
 //紹介文//
 .show-post_content {
+  font-size: 2rem;
   padding: 10px;
 }
 //ユーザー名//
 .show-user_name  {
-  font-size: 2rem;
+  font-size:1.5rem;
   padding: 10px;
   padding-bottom: 0.5rem;
 }
@@ -131,8 +127,9 @@ padding:1rem;
   display: flex;
 }
 .show-comment, .show-likes {
-  margin: 10px;
+  margin: 5px;
   padding: 0.5rem;
+  font-size:1.5rem;
   text-align: center;
   background-color: rgba(237, 220,188,0.5);
   border-radius: 50px;
@@ -145,6 +142,13 @@ padding:1rem;
   text-decoration: none;
 }
 
+//post_id//
+.show-post_id {
+  text-align: right;
+  padding: 2rem;
+}
+
+
 
 //材料//
 .show-foods {
@@ -153,12 +157,14 @@ padding:1rem;
 }
 
 .show-recipes {
-  margin-top: 2rem;
+  margin-top: 1.5rem;
+  border-top: 1px solid lightgray;
+  border-bottom: 1px solid lightgray;
 }
 //タイル型//
 .grid-show {
   display: grid;
-  grid-template-columns: repeat(auto-fit,minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit,minmax(200px, 1fr));
   margin: 1% 0;
   overflow: hidden;
 
@@ -166,18 +172,15 @@ padding:1rem;
 
 .process-image p {
   padding: 1rem;
-  font-size: 1.5rem;
+  font-size:1rem;
   font-weight: normal;
   width: 250px;
 }
 
-.show-post_id {
-  text-align: right;
-  padding: 0 5rem 5rem 0;
-}
-
 .show-point {
-  margin-bottom: 2rem;
+  padding: 1rem 0; 
+  font-size: 1rem;
+  border-bottom: 1px solid lightgray;
 }
 
 //ranking//
@@ -199,7 +202,7 @@ padding:1rem;
 }
 
 .recipe-left p {
-  font-size: 2rem;
+  font-size:1rem;
   font-weight: bold;
 }
 .recipe-right {
@@ -210,9 +213,9 @@ padding:1rem;
 }
 
 .recipe-right a {
-  font-size: 2.5rem;
+  font-size: 2rem;
   display: block;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
 }
 
 .recipe-right p {
@@ -223,8 +226,8 @@ padding:1rem;
 
 
 .recipe-likes span {
-  font-size: 4rem;
-  margin: 2rem;
+  font-size: 3rem;
+  margin: 1.5rem;
 }
 
 //likes//
@@ -232,43 +235,60 @@ padding:1rem;
   display: flex;
   border: 2px solid lightgray;
   padding: 1rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
 }
 
 
 //コメント//
+.plus {
+  font-size: 25px;
+  position: relative;
+  top:-1.5em;
+  left:95%;
+  cursor: pointer;
+}
+
+.answer {
+  display: none;
+}
 .comment-grid {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  padding: 0 4rem 0 2rem;
 }
 
 .comment-main {
   border: 1px solid lightgray;
-  padding: 1rem;
   margin: 1rem;
   font-size: rem;
 }
 
 .comment-main span, .comment-main p {
-  font-size: 2rem;
+  font-size:1rem;
 }
 
 .comment-content img {
-  width: 20rem;
-  height: 20rem;
-  margin: 0.5rem;
+  width: 15rem;
+  height: 15rem;
+}
+
+.user_image-comment {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 100px;
+  object-fit: cover;
+  margin: 1rem;
 }
 
 
 
 //コメント欄//
 .comment-new {
-  margin: 0 1rem 0 auto;
-  width: 25em;
-  border: 1px solid lightgray;
+  border-top: 1px solid lightgray;
+  border-bottom: 1px solid lightgray;
   padding: 1rem;
+  margin-bottom: 1rem;
+  display: flex;
 }
 
 //post-new// 

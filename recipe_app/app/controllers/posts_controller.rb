@@ -116,7 +116,7 @@ class PostsController < ApplicationController
         notkeywords = params[:notkeyword].split(/[[:blank:]]+/)
         notkeywords.each do |notkeyword|
           next if notkeyword.blank?
-        @posts = Post.joins(:foods).where.not(["name LIKE ? OR content LIKE ? OR m_name LIKE ?", "%#{notkeyword}%", "%#{notkeyword}%", "%#{notkeyword}%"]).uniq
+        @posts = Post.joins(foods).where.not(["post.name LIKE ? OR post.content LIKE ? OR foods.m_name LIKE ?", "%#{notkeyword}%", "%#{notkeyword}%", "%#{notkeyword}%"]).references(:foods).uniq
         end
       else
         @posts = Post.all

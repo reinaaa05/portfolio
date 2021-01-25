@@ -19,7 +19,7 @@
               <h2><%= @post.name %><h2>
             </div>
             <div class="show-posts_image">
-              <%= image_tag @post.posts_image.to_s, :size => '400x300' %>
+              <%= image_tag @post.posts_image.to_s, :size => '300x300' %>
             </div>
           </div>
           <div class="show-right">
@@ -30,7 +30,7 @@
                 <% end %> 
               <% else %>
                 <%= link_to("/likes/#{@post.id}/create",{method: "post"}) do %>
-                <span>お気に入りに登録<i class="far fa-heart gray-like-btn"></i></span>
+                <span>お気に入りに登録<i class="far fa-heart like-btn"></i></span>
                 <% end %> 
               <% end %>
             </div>
@@ -43,7 +43,6 @@
             </div>
             <div class="show-link">
               <div class="show-comment">
-
                 <a href="#">コメント<%= @comment_count %>件</a>
               </div>
               <div class="show-likes">
@@ -67,55 +66,75 @@
           </table>
         </div>
         <div class="show-recipes">
-          <h3>作り方<h3>
+          <h4>作り方</h4>
           <% num = 0 %>
           <div class="show-process grid-show">
             <% @post.recipes.each do |recipe| %>
               <div class="process-image">
                 <% num += 1 %>
                 <p><%= num %></p>
-                <%= image_tag recipe.process_image.to_s, :size => '250x250' %>
+                <%= image_tag recipe.process_image.to_s, :size => '200x200' %>
                 <p><%= recipe.process %></p>
               </div>
             <% end %>
           </div>
         </div>
         <div class="show-point">
-          <h3>コツ・ポイント</h3>
+          <h4>コツ・ポイント</h4>
           <span><%= @post.point %></span>
         </div>
         <div class="comment">
-          <h3>コメント</h3>
-          <div class="comment-grid">
-            <% @comments.each do |c| %>
-              <div class="comment-main">
-                <div class="comment-name">
-                  <a href="/users/<% @post.user.id %>"> <%= image_tag c.user.user_image.to_s, class:"user_image" %>
-                  <span><%= c.user.name %></span></a>
+          <h4>コメント</h4>
+          <span class="plus">+</span>
+          <div class="answer">
+            <div class="comment-grid">
+              <% @comments.each do |c| %>
+                <div class="comment-main">
+                  <div class="comment-name">
+                    <a href="/users/<% @post.user.id %>"> <%= image_tag c.user.user_image.to_s, class:"user_image-comment" %>
+                    <span><%= c.user.name %></span></a>
+                  </div>
+                  <div class="comment-content">
+                    <%= image_tag c.cook_image.to_s %>
+                    <p><%= c.content %></P>
+                  </div>
+                  <% if user_signed_in? && c.user_id == current_user.id %>
+                    <%=link_to "削除", post_comment_path(@post, c), method: :delete %>
+                  <% end %>   
                 </div>
-                <div class="comment-content">
-                  <%= image_tag c.cook_image.to_s%>
-                  <p><%= c.content %></P>
+              <% end %>
+            </div>
+            <div class="comment-new">
+              <%= form_for [@post, @comment] do |form| %>
+                <div class="field">
+                  <%= form.label :画像 %><br />
+                  <%= form.file_field :cook_image, id: :cook_image %>
+                  <%= image_tag @comment.cook_image.to_s, id: :cook_img_prev , :size => '150x150'%>
+                  <script type="text/javascript">
+                    $(function() {
+                    function readURL(input) {
+                      if (input.files && input.files[0]) {
+                        var reader = new FileReader();
+                        reader.onload = function (e) {
+                          $('#cook_img_prev').attr('src', e.target.result);
+                        }
+                        reader.readAsDataURL(input.files[0]);
+                      }
+                    }
+                    $("#cook_image").change(function(){
+                      readURL(this);
+                    });
+                    });
+                    </script>
                 </div>
-                <% if user_signed_in? && c.user_id == current_user.id %>
-                  <%=link_to "削除", post_comment_path(@post, c), method: :delete %>
-              <% end %>   
-              </div>
-            <% end %>
+                <div class="field">
+                  <%= form.label :コメント %><br />
+                  <%= form.text_field :content %>
+                  <%= form.submit "コメントする" %>
+                </div>
+              <% end %>
+            </div>
           </div>
-        </div>
-        <div class="comment-new">
-          <%= form_for [@post, @comment] do |form| %>
-            <div class="field">
-              <%= form.label :画像 %><br />
-              <%= form.file_field :cook_image %>
-            </div>
-            <div class="field">
-              <%= form.label :コメント %><br />
-              <%= form.text_field :content %>
-               <%= form.submit "コメントする" %>
-            </div>
-          <% end %>
         </div>
         <% if user_signed_in? && @post.user_id == current_user.id %>
           <%= link_to 'Edit', edit_post_path(@post) ,class: "btn btn-success"%> 

@@ -163,5 +163,21 @@ $(function() {
     $('#user-setting-modal').fadeOut();
   });
 
+  <!--コメント欄-->
+  $('.plus').click(function() {
+    var $answer = $('.comment').find('.answer');
+    if($answer.hasClass('open')) { 
+      $answer.removeClass('open');
+      $answer.slideUp();
+      $('.comment').find('.plus').text('+');
+      
+    } else {
+      $answer.addClass('open'); 
+      $answer.slideDown();
+      $('.comment').find('span').text('-');    
+    }
+  });
+
+
 });
 </script>
