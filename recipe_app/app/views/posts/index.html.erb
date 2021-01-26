@@ -8,6 +8,7 @@
         <li class="list-group-item"><%= link_to("ランキング",ranking_posts_path) %></li>
         <li class="list-group-item"><%= link_to("検索",search_posts_path) %></li>
         <li class="list-group-item"><a href="/users">ユーザー一覧</a></li>
+        <li class="list-group-item"><%= link_to "ログアウト", destroy_user_session_path, method: :delete %></li>
       </ul>
     </div>
     <div class="main-area">
@@ -15,7 +16,7 @@
         <% @posts.each do |post| %>
           <div class="recipe-list">
             <div class="recipe-left">
-              <a href="/posts/<%= post.id %>"><%= image_tag post.posts_image.to_s, :size => '250x250' %></a>
+              <a href="/posts/<%= post.id %>"><%= image_tag post.posts_image.to_s, :size => '200x200' %></a>
             </div>
             <div class="recipe-right">
               <a href="/posts/<%= post.id %>"><%= post.name %></a>

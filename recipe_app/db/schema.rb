@@ -40,16 +40,6 @@ ActiveRecord::Schema.define(version: 2021_01_17_015337) do
     t.index ["blob_id", "variation_digest"], name: "index_active_storage_variant_records_uniqueness", unique: true
   end
 
-  create_table "articles", force: :cascade do |t|
-    t.integer "user_id"
-    t.string "name"
-    t.string "posts_image"
-    t.text "content"
-    t.text "point"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-  end
-
   create_table "comments", force: :cascade do |t|
     t.string "content"
     t.string "cook_image"
@@ -71,14 +61,6 @@ ActiveRecord::Schema.define(version: 2021_01_17_015337) do
 
   create_table "likes", force: :cascade do |t|
     t.integer "user_id"
-    t.integer "post_id"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-  end
-
-  create_table "materials", force: :cascade do |t|
-    t.string "name"
-    t.string "amount"
     t.integer "post_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false

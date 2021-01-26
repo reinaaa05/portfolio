@@ -10,39 +10,35 @@
       </ul>
     </div>
   <% end %>
-
-  <div class="field">
-    <%= form.label :タイトル %><br>
-    <%= form.text_field :name %>
-  </div>
-
-  <div class="field-posts_image">
-    <%= form.label :画像 %>
-    <%= form.file_field :posts_image, id: :posts_image %>
-    <%= image_tag @post.posts_image.to_s, id: :post_img_prev, :size => '250x250'%>
-    <script type="text/javascript">
-    $(function() {
-      function readURL(input) {
-        if (input.files && input.files[0]) {
-          var reader = new FileReader();
-          reader.onload = function (e) {
-            $('#post_img_prev').attr('src', e.target.result);
+  <div class="new-top">
+    <div class="new-left">
+      <%= form.label :タイトル %><br>
+      <%= form.text_field :name %><br>
+      <%= form.label :紹介文,class:"new-content" %><br>
+      <%= form.text_area :content %>
+    </div>
+    <div class="new-right">
+      <%= form.label :画像 %>
+      <%= form.file_field :posts_image, id: :posts_image %>
+      <%= image_tag @post.posts_image.to_s, id: :post_img_prev, :size => '200x200'%>
+      <script type="text/javascript">
+      $(function() {
+        function readURL(input) {
+          if (input.files && input.files[0]) {
+            var reader = new FileReader();
+            reader.onload = function (e) {
+              $('#post_img_prev').attr('src', e.target.result);
+            }
+            reader.readAsDataURL(input.files[0]);
           }
-          reader.readAsDataURL(input.files[0]);
         }
-      }
-      $("#posts_image").change(function(){
-        readURL(this);
-      });
-      });
-      </script>
+        $("#posts_image").change(function(){
+          readURL(this);
+        });
+        });
+        </script>
+    </div>
   </div>
-
-  <div class="field">
-    <%= form.label :紹介文 %><br>
-    <%= form.text_area :content %>
-  </div>
-
   <div class="foods">
     <%= form.fields_for :foods do |f| %>
       <%= f.label "材料・分量" %>
@@ -54,19 +50,16 @@
   </div>
 
   <div class="recipes">
-  <%= form.fields_for :recipes do |f| %>
-    <%= f.label "作り方" %>
-    <%= render "recipe_fields", f: f %>
-  <% end %>
-  <div class="links">
-    <%= link_to_add_association "追加", form, :recipes %>
+    <%= form.fields_for :recipes do |f| %>
+      <%= f.label "作り方" %>
+      <%= render "recipe_fields", f: f %>
+    <% end %>
+    <div class="links">
+      <%= link_to_add_association "追加", form, :recipes %>
+    </div>
   </div>
-</div>
-
-
-
-  <div class="field">
-    <%= form.label :コツ・ポイント %>
+  <div class="point">
+    <%= form.label :コツ・ポイント %><br>
     <%= form.text_area :point %>
   </div>
 

@@ -174,7 +174,7 @@ padding:1rem;
   padding: 1rem;
   font-size:1rem;
   font-weight: normal;
-  width: 250px;
+  width: 200px;
 }
 
 .show-point {
@@ -219,7 +219,6 @@ padding:1rem;
 }
 
 .recipe-right p {
-  font-size: 1.5em;
   margin-bottom: 1rem;
 }
 
@@ -263,7 +262,7 @@ padding:1rem;
   font-size: rem;
 }
 
-.comment-main span, .comment-main p {
+.comment-main span, .comment-main  {
   font-size:1rem;
 }
 
@@ -295,10 +294,8 @@ padding:1rem;
 .post-new {
   width: 50%;
   margin: 0 auto;
-}
-
-.field-posts_image {
-  float: right;
+  padding: 3rem;
+  border: 3px solid lightgray;
 }
 
 .links {
@@ -307,6 +304,32 @@ padding:1rem;
   width: 5rem;
   text-align: center;
   margin: 1rem;
+}
+
+//post-new// 
+.new-top {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+  padding-bottom: 2rem;
+}
+.new-content {
+  margin-top: 3rem;
+}
+
+.foods {
+  padding: 2rem 0;
+  border-top: 1px solid lightgray;
+  border-bottom: 1px solid lightgray;
+}
+
+.recipes {
+  padding: 2rem 0;
+  border-bottom: 1px solid lightgray;
+}
+
+.point {
+  padding: 2rem 0;
 }
 
 
