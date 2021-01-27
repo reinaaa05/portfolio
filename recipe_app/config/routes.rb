@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
   resources :posts do
+    collection do
+      post :confirm
+    end
     resources :comments, only: [:create,:destroy]
     get 'ranking', :on => :collection
     get 'search', :on => :collection

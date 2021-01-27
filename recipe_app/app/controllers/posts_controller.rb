@@ -23,6 +23,13 @@ class PostsController < ApplicationController
     @post = Post.new
     @food = @post.foods.build
     @recipe = @post.recipes.build
+    @post.user_id = current_user.id
+  end
+
+  def confirm
+    @post = Post.new(post_params)
+    @post.user_id = current_user.id
+    render :new if @post.invalid?
   end
 
   # GET /posts/1/edit
@@ -32,17 +39,10 @@ class PostsController < ApplicationController
   # POST /posts
   # POST /posts.json
   def create
-    @post = Post.new(post_params)
+    @post = User.new(post_params)
     @post.user_id = current_user.id
-    respond_to do |format|
-      if @post.save
-        format.html { redirect_to @post, notice: '作成しました' }
-        format.json { render :show, status: :created, location: @post }
-      else
-        format.html { render :new }
-        format.json { render json: @post.errors, status: :unprocessable_entity }
-      end
-    end
+    render :new and return if params[:back] || !@post.save
+    redirect_to @post
   end
 
   # PATCH/PUT /posts/1
@@ -116,10 +116,9 @@ class PostsController < ApplicationController
         notkeywords = params[:notkeyword].split(/[[:blank:]]+/)
         notkeywords.each do |notkeyword|
           next if notkeyword.blank?
-        @posts = Post.joins(:foods).where.not(["name LIKE ? OR content LIKE ? OR foods.m_name LIKE ?", "%#{notkeyword}%", "%#{notkeyword}%", "%#{notkeyword}%"]).uniq
+        @posts = Post.joins(:foods).where.not("foods.m_name LIKE ?", "%#{notkeyword}%").where.not("name LIKE ?", "%#{notkeyword}%").where.not("content LIKE ?", "%#{notkeyword}%").uniq
         end
-      else
-        @posts = Post.all
+
       end
     end
   end
