@@ -23,13 +23,15 @@ class PostsController < ApplicationController
     @post = Post.new
     @food = @post.foods.build
     @recipe = @post.recipes.build
-    @post.user_id = current_user.id
   end
 
   def confirm
-    @post = Post.new(post_params)
-    @post.user_id = current_user.id
-    render :new if @post.invalid?
+    @post = Post.find_or_initialize_by(id: params[:id])
+    @post.assign_attributes(post_params)
+    target_render = @post.new_record? ? :new : :edit
+    target_render = :confirm if @post.valid?
+    @post.save
+    render target_render
   end
 
   # GET /posts/1/edit
@@ -38,13 +40,15 @@ class PostsController < ApplicationController
 
   # POST /posts
   # POST /posts.json
-  def create
-    @post = User.new(post_params)
-    @post.user_id = current_user.id
-    render :new and return if params[:back] || !@post.save
-    redirect_to @post
-  end
 
+  def create
+    @post = Post.new(posts_params)
+    if @post.save
+      redirect_to posts_path
+    else
+      render :new, @post
+    end
+  end
   # PATCH/PUT /posts/1
   # PATCH/PUT /posts/1.json
   def update
