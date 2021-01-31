@@ -1,0 +1,58 @@
+<div class="container">
+  <div class="mainwrapper">
+    <div class="aside">
+      <ul class="list-group">
+        <li class="list-group-item"><a href="/posts/">ホーム</a></li>
+        <li class="list-group-item"><a href="/users/<%= current_user.id %>">マイページ</a></li>
+        <li class="list-group-item"><a href="/users/<%= current_user.id %>/likes">いいね</a></li>
+        <li class="list-group-item"><%= link_to("ランキング",ranking_posts_path) %></li>
+        <li class="list-group-item"><%= link_to("検索",search_posts_path) %></li>
+        <li class="list-group-item"><a href="/users">ユーザー一覧</a></li>
+        <li class="list-group-item"><%= link_to "ログアウト", destroy_user_session_path, method: :delete %></li>
+      </ul>
+    </div>
+    <div class="main-area">
+      <div class="search">
+      <%= form_tag('/posts/search', method: 'get') do %>
+        <%= label_tag(:keyword, '料理名・材料名') %>
+        <%= text_field_tag(:keyword) %><br>
+        <%= label_tag(:notkeyword, '　　　　　　　') %>
+        <%= text_field_tag(:notkeyword) %>
+        <%= submit_tag('Search') %> <%= link_to 'Clear','/posts/search' %>
+        <%= label_tag(:id_keyword, "レシピID検索") %>
+        <%= text_field_tag(:id_keyword) %>
+        <%= submit_tag('Search') %> <%= link_to 'Clear','/posts/search' %>
+      <% end %>
+      </div>
+      <div class="post-index">
+        <% @posts.each do |post| %>
+          <div class="recipe-list">
+            <div class="recipe-left">
+              <a href="/posts/<%= post.id %>"><%= image_tag post.posts_image.to_s, :size => '200x200' %></a>
+            </div>
+            <div class="recipe-right">
+              <a href="/posts/<%= post.id %>"><%= post.name %></a>
+              <p><%= post.content %></p>
+              <% post.foods.each do |food| %>
+                <%= food.m_name %>
+              <% end %>
+            </div>
+            <div class="recipe-likes">
+              <% if Like.find_by(user_id:current_user.id,post_id:post.id) %>
+                <%= link_to("/likes/#{post.id}/destroy",{method: "post"}) do %>
+                  <span class="fa fa-heart unlike-btn"></span>
+                <% end %> 
+              <% else %>
+                <%= link_to("/likes/#{post.id}/create",{method: "post"}) do %>
+                  <span class="far fa-heart like-btn"></span>
+                <% end %> 
+              <% end %> 
+            </div>
+          </div>
+        <% end %>
+      </div>
+      <%= link_to 'New Post', new_post_path %>
+    </div>
+  </div>
+</div>
+

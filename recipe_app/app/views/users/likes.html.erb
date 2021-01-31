@@ -1,0 +1,44 @@
+<div class="container">
+  <div class="mainwrapper">
+    <div class="aside">
+      <ul class="list-group">
+        <li class="list-group-item"><a href="/posts/">ホーム</a></li>
+        <li class="list-group-item"><a href="/users/<%= current_user.id %>">マイページ</a></li>
+        <li class="list-group-item"><a href="/users/<%= current_user.id %>/likes">いいね</a></li>
+        <li class="list-group-item"><%= link_to("ランキング",ranking_posts_path) %></li>
+        <li class="list-group-item"><%= link_to("検索",search_posts_path) %></li>
+        <li class="list-group-item"><a href="/users">ユーザー一覧</a></li>
+        <li class="list-group-item"><%= link_to "ログアウト", destroy_user_session_path, method: :delete %></li>
+      </ul>
+    </div>
+    <div class="main-area">
+      <div class="post-index">
+        <% @likes.each do |like| %>
+        <% post = Post.find_by(id: like.post_id) %>
+        <% @likes_count = Like.where(post_id: post.id).count %>
+          <div class="recipe-list">
+            <div class="recipe-left">
+              <a href="/posts/<%= post.id %>"><%= image_tag post.posts_image.to_s, :size => '200x200' %></a>
+            </div>
+            <div class="recipe-right">
+              <a href="/posts/<%= post.id %>"><%= post.name %></a>
+              <p><%= post.content %></p>
+              <h6><%= @likes_count %>人がいいねしています </h6>
+            </div>
+            <div class="recipe-likes">
+              <% if Like.find_by(user_id:current_user.id,post_id:post.id) %>
+                <%= link_to("/likes/#{post.id}/destroy",{method: "post"}) do %>
+                  <span class="fa fa-heart unlike-btn"></span>
+                <% end %> 
+              <% else %>
+                <%= link_to("/likes/#{post.id}/create",{method: "post"}) do %>
+                  <span class="far fa-heart like-btn"></span>
+                <% end %> 
+              <% end %> 
+            </div>
+          </div>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>

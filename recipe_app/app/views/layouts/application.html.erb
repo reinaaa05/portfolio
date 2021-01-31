@@ -24,66 +24,12 @@
           <%= current_user.name %></a>
         <% else %>
         <div class="signup">
-          <span>Sign up</span>
+          <%= link_to("Sign up",new_user_registration_path) %>
         </div>
         <div class="login">
           <span>Login</span>
         </div>
         <% end %>
-      </div>
-    </div>
-<!-- サインインモーダル -->
-    <div class="signup-modal-wrapper" id="signup-modal">
-      <div class="modal-main">
-        <div class="close-modal">
-          <i class="fa fa-2x fa-times"></i>
-        </div>
-        <div id="signup-form">
-          <h2>新規登録</h2>
-          <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
-            <%= render "devise/shared/error_messages", resource: resource %>
-            <div class="field">
-              <%= f.label :name %><br />
-              <%= f.text_field :name %>
-            </div>
-
-            <div class="field">
-              <%= f.label :email %><br />
-              <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
-            </div>
-
-            <div class="field">
-              <%= f.label :image %><br/>
-              <div class="image">
-                <%= f.file_field :user_image %>
-              </div>
-            </div>
-            
-            <div class="field">
-              <%= f.label :content %><br />
-              <%= f.text_area :content %>
-            </div>
-
-            <div class="field">
-              <%= f.label :password %>
-              <% if @minimum_password_length %>
-              <em>(<%= @minimum_password_length %> characters minimum)</em>
-              <% end %><br />
-              <%= f.password_field :password, autocomplete: "new-password" %>
-            </div>
-
-            <div class="field">
-              <%= f.label :password_confirmation %><br />
-              <%= f.password_field :password_confirmation, autocomplete: "new-password" %>
-            </div>
-
-            <div class="actions">
-              <%= f.submit "Sign up" %>
-            </div>
-          <% end %>
-
-          <%= render "devise/shared/links" %>
-        </div>
       </div>
     </div>
 <!-- ログインモーダル -->
@@ -133,10 +79,6 @@
 <!-- jQuery -->
 <script>
 $(function() { 
-  $('.signup').click(function(){
-    $('#signup-modal').fadeIn();
-  });
-
   $('.login').click(function(){
     $('#login-modal').fadeIn();
   });
@@ -150,7 +92,6 @@ $(function() {
   });
 
   $('.close-modal').click(function() {
-    $('#signup-modal').fadeOut();
     $('#login-modal').fadeOut();
     $('#setting-modal').fadeOut();
     $('#user-setting-modal').fadeOut();

@@ -1,0 +1,40 @@
+<%= form_with(model: @post, local: true) do |form| %>
+  <%= @post.name %>
+  <%= simple_format(@post.content) %>
+  <%= image_tag @post.posts_image.to_s, :size => '300x300' %>
+  <div class="show-foods">
+  <table class="table table-striped">
+    <tr><th>材料</th><th>分量</th></tr>
+    <tr>
+    <% @post.foods.each do |food| %>
+      <td><%= food.m_name %></td>
+      <td><%= food.m_amount %></td>
+    </tr>
+    <% end %>
+  </table>
+</div>
+<div class="show-recipes">
+  <h4>作り方</h4>
+  <% num = 0 %>
+  <div class="show-process grid-show">
+    <% @post.recipes.each do |recipe| %>
+      <div class="process-image">
+        <% num += 1 %>
+        <p><%= num %></p>
+        <%= image_tag recipe.process_image.to_s, :size => '200x200' %>
+        <p><%= recipe.process %></p>
+      </div>
+    <% end %>
+  </div>
+</div>
+  <div class="show-point">
+    <h4>コツ・ポイント</h4>
+    <span><%= @post.point %></span>
+  </div>
+  <div class="actions">
+    <%= form.submit '投稿画面に戻る', name: 'back' %>
+  </div>
+  <div class="actions">
+    <%= form.submit '投稿する' %>
+  </div>
+<% end %>

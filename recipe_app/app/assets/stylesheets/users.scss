@@ -1,0 +1,28 @@
+// Place all the styles related to the Users controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+//user-index//
+.user-index {
+  width: 35%;
+  margin-left: 2rem;
+}
+
+.user-index p {
+  margin-left: 2rem;
+}
+
+.user-list  {
+  border-top: 2px solid lightgray;
+}
+
+.user-list li {
+  border-bottom: 2px solid lightgray;
+  padding: 1rem;
+  font-size: 2rem;
+}
+
+//user-likes//
+.recipe-right h6 {
+  color: rgb(133, 131, 131);
+}
