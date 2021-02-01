@@ -34,13 +34,19 @@
  .header_main {
    width: 80%;
    display: flex;
-   justify-content: space-between;
    margin: 0 auto;
  }
 
-.header_center{
-  width: 100%;
-  margin: 0 auto;
+ .header_main >:last-child {
+  margin-left: auto;
+}
+
+ .flex-column {
+  display: none;
+}
+
+.menu {
+  display: none;
 }
 
 .header_right {
@@ -93,7 +99,10 @@
   text-align: center;
 }
 
-
+.field-image {
+  width: 50%;
+  margin: 0 auto;
+}
 
 //閉じるボタン//
 .fa-times {
@@ -102,3 +111,40 @@
   cursor: pointer;
 }
 
+//icon_imageプレビュー画像//
+.field-password {
+  text-align: center;
+  margin-top: 2rem;
+} 
+
+
+//スマホ用//
+
+@media all and (max-width: 1000px) {
+  //header// 
+  .header_main {
+    width: 100%;
+  }
+
+  //サイドメニュー//
+.aside {
+  display: none;
+}
+
+.menu{
+  display: block;
+  font-size: 2rem;
+}
+
+.flex-column {
+  width: 30%;
+  display: block;
+  background-color: white;
+  border: 2px solid lightgray;
+}
+
+.nav-item {
+  border-bottom: 1px solid lightgray;
+}
+
+}

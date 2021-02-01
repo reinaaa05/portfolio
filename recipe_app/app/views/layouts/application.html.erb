@@ -15,8 +15,11 @@
   <body>
   <header>
     <div class="header_main">
+      <div class="header-left">
+        <span class="fa fa-bars menu"></span>
+      </div>
       <div class="header-center">
-        <h1>Cookong Recipe</h1>
+        <h2>Cooking Recipe</h2>
       </div>
       <div class="header_right">
         <% if user_signed_in? %>
@@ -70,6 +73,29 @@
   </div>
 
   </header>
+    <ul class="nav flex-column">
+      <li class="nav-item">
+        <a class="nav-link active" href="/posts/">ホーム</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/users/<%= current_user.id %>">マイページ</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/users/<%= current_user.id %>/likes">いいね</a>
+      </li>
+      <li class="nav-item">
+        <%= link_to("ランキング",ranking_posts_path,class: "nav-link") %>
+      </li>
+      <li class="nav-item">
+        <%= link_to("検索",search_posts_path,class: "nav-link") %>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/users">ユーザー一覧</a>
+      </li>
+      <li class="nav-item">
+        <%= link_to("ログアウト", destroy_user_session_path,class: "nav-link") %>
+      </li>
+    </ul>
     <p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>
     <%= yield %>
@@ -87,14 +113,14 @@ $(function() {
     $('#setting-modal').fadeIn();
   });
 
-  $('.user-setting').click(function(){
-    $('#user-setting-modal').fadeIn();
+  $('.icon_image').click(function(){
+    $('#icon_image-setting-modal').fadeIn();
   });
 
   $('.close-modal').click(function() {
     $('#login-modal').fadeOut();
     $('#setting-modal').fadeOut();
-    $('#user-setting-modal').fadeOut();
+    $('#icon_image-setting-modal').fadeOut();
   });
 
   <!--コメント欄-->

@@ -116,9 +116,9 @@ padding:1rem;
 }
 //ユーザー名//
 .show-user_name  {
-  font-size:1.5rem;
+  font-size:2rem;
   padding: 10px;
-  padding-bottom: 0.5rem;
+  padding-bottom: 1rem;
 }
 
 //リンクタグ//
@@ -202,7 +202,7 @@ padding:1rem;
 }
 
 .recipe-left p {
-  font-size:1rem;
+  font-size:1.5rem;
   font-weight: bold;
 }
 .recipe-right {
@@ -332,6 +332,15 @@ padding:1rem;
   padding: 2rem 0;
 }
 
+//search// 
+.search {
+  display: flex;
+  margin:2rem 5rem;
+}
+
+.search-id {
+  margin-left: 1rem;
+}
 
 
 

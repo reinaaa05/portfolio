@@ -12,18 +12,21 @@
       </ul>
     </div>
     <div class="main-area">
-      <div class="search">
       <%= form_tag('/posts/search', method: 'get') do %>
-        <%= label_tag(:keyword, '料理名・材料名') %>
-        <%= text_field_tag(:keyword) %><br>
-        <%= label_tag(:notkeyword, '　　　　　　　') %>
-        <%= text_field_tag(:notkeyword) %>
-        <%= submit_tag('Search') %> <%= link_to 'Clear','/posts/search' %>
-        <%= label_tag(:id_keyword, "レシピID検索") %>
-        <%= text_field_tag(:id_keyword) %>
-        <%= submit_tag('Search') %> <%= link_to 'Clear','/posts/search' %>
+        <div class="search">
+          <div class="search-name">
+            <%= label_tag(:keyword, '料理名・材料名') %><br>
+            <%= text_field_tag :keyword, '', placeholder:'含む' %><br>
+            <%= text_field_tag :notkeyword, '',  placeholder:'含まない' %>
+            <%= submit_tag('Search') %> <%= link_to 'Clear','/posts/search' %>
+          </div>
+          <div class="search-id">
+            <%= label_tag(:id_keyword, "レシピID検索") %><br>
+            <%= text_field_tag(:id_keyword) %>
+            <%= submit_tag('Search') %> <%= link_to 'Clear','/posts/search' %>
+          </div>
+        </div>
       <% end %>
-      </div>
       <div class="post-index">
         <% @posts.each do |post| %>
           <div class="recipe-list">
