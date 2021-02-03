@@ -16,7 +16,7 @@
         <% @posts.each do |post| %>
           <div class="recipe-list">
             <div class="recipe-left">
-              <a href="/posts/<%= post.id %>"><%= image_tag post.posts_image.to_s, :size => '200x200' %></a>
+              <a href="/posts/<%= post.id %>"><%= image_tag post.posts_image.to_s, class:'posts_image' %></a>
             </div>
             <div class="recipe-right">
               <a href="/posts/<%= post.id %>"><%= post.name %></a>

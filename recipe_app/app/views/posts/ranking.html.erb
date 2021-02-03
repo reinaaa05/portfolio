@@ -20,7 +20,7 @@
             <div class="recipe-left">
               <% num += 1 %>
               <p><%= num %>位</p>
-              <a href="/posts/<%= post.id %>"><%= image_tag post.posts_image.to_s, :size => '200x200' %></a>
+              <a href="/posts/<%= post.id %>"><%= image_tag post.posts_image.to_s, :size => '200x200', class:'posts_image' %></a>
             </div>
             <div class="recipe-right">
             <a href="/posts/<%= post.id %>"><%= post.name %></a>

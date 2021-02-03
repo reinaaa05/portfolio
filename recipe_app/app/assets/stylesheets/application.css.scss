@@ -41,11 +41,8 @@
   margin-left: auto;
 }
 
- .flex-column {
-  display: none;
-}
 
-.menu {
+.sidemenu {
   display: none;
 }
 
@@ -77,7 +74,7 @@
 }
 
 //モーダル//
-.login-modal-wrapper, .setting-modal-wrapper, .user-setting-modal-wrapper {
+.login-modal-wrapper, .setting-modal-wrapper, .user-setting-modal-wrapper,.sidemenu-modal-wrapper {
   position: fixed;
   top: 0;
   right: 0;
@@ -126,25 +123,122 @@
     width: 100%;
   }
 
+  .sidemenu{
+    display: block;
+    font-size: 3rem;
+    line-height: 7rem;
+    margin: 0 2rem;
+  }
+
+  .header-center h2{
+    font-size: 2rem;
+  }
+
+  .user_image {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 100px;
+    object-fit: cover;
+}
+
+
+  .header_right {
+    margin-right: 1rem;
+  }
+
   //サイドメニュー//
 .aside {
   display: none;
 }
 
-.menu{
-  display: block;
-  font-size: 2rem;
-}
-
 .flex-column {
-  width: 30%;
+  width: 60%;
   display: block;
   background-color: white;
   border: 2px solid lightgray;
+  margin: 3rem auto;
+  line-height: 4rem;
+  text-align: center;
+}
+
+//閉じるボタン//
+.fa-times {
+  position: relative;
+  top:5rem;
+  left: 34rem;
+  cursor: pointer;
+  color: white;
 }
 
 .nav-item {
   border-bottom: 1px solid lightgray;
 }
+
+//メインエリア//
+.main-area {
+  width: 100%;
+}
+
+//post-index// 
+.post-index {
+  width: 100%;
+  margin: 0.5rem;
+}
+
+.posts_image {
+  width: 100px;
+  height: 100px;
+}
+
+.recipe-likes span {
+  font-size: 2rem;
+}
+
+.recipe-right {
+  margin:0  2rem;
+  overflow:hidden;
+  font-size: 0.75rem;
+}
+
+.recipe-right a {
+  font-size: 1rem;
+  display: block;
+  margin-bottom: 1.5rem;
+  font-weight: bold;
+}
+
+.recipe-right p {
+  margin-bottom: 1rem;
+  font-size: 0.75rem;
+}
+
+//post-show//
+
+.post-top {
+  display: block;
+}
+
+.show-post_name {
+  padding: 1px;
+}
+
+.show-posts_image {
+  padding: 1px;
+}
+
+.posts_image-show {
+  width: 100%;
+  height: 250px;
+}
+
+.show-right {
+  width: 100%;
+  padding: 1px;
+  margin-top: 1rem;
+ }
+
+
+
+
 
 }
