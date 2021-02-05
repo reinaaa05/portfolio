@@ -18,28 +18,28 @@
             <div class="show-post_name">
               <h2><%= @post.name %><h2>
             </div>
+            <div class="show-likes_icon">
+            <% if Like.find_by(user_id:current_user.id,post_id:@post.id) %>
+              <%= link_to("/likes/#{@post.id}/destroy",{method: "post"}) do %>
+              <span>お気に入りに登録<i class="fa fa-heart unlike-btn"></i></span>
+              <% end %> 
+            <% else %>
+              <%= link_to("/likes/#{@post.id}/create",{method: "post"}) do %>
+              <span>お気に入りに登録<i class="far fa-heart like-btn"></i></span>
+              <% end %> 
+            <% end %>
+          </div>
             <div class="show-posts_image">
               <%= image_tag @post.posts_image.to_s, :size => '300x300',class:'posts_image-show' %>
             </div>
           </div>
           <div class="show-right">
-            <div class="show-likes_icon">
-              <% if Like.find_by(user_id:current_user.id,post_id:@post.id) %>
-                <%= link_to("/likes/#{@post.id}/destroy",{method: "post"}) do %>
-                <span>お気に入りに登録<i class="fa fa-heart unlike-btn"></i></span>
-                <% end %> 
-              <% else %>
-                <%= link_to("/likes/#{@post.id}/create",{method: "post"}) do %>
-                <span>お気に入りに登録<i class="far fa-heart like-btn"></i></span>
-                <% end %> 
-              <% end %>
-            </div>
-            <div class="show-post_content">
-              <%= simple_format(@post.content) %>
-            </div>
             <div class="show-user_name">
               <%= image_tag @post.user.user_image.to_s, class:"user_image" %>
               <span><%= @post.user.name %></span>
+            </div>
+            <div class="show-post_content">
+              <%= simple_format(@post.content) %>
             </div>
             <div class="show-link">
               <div class="show-comment">
@@ -73,7 +73,9 @@
               <div class="process-image">
                 <% num += 1 %>
                 <p><%= num %></p>
-                <%= image_tag recipe.process_image.to_s, :size => '200x200' %>
+                <% if recipe.process_image.file.present? %>
+                  <%= image_tag recipe.process_image.to_s, :size => '200x200' %>
+                <% end %>
                 <p><%= recipe.process %></p>
               </div>
             <% end %>

@@ -18,12 +18,14 @@
         <% @likes_count = Like.where(post_id: post.id).count %>
           <div class="recipe-list">
             <div class="recipe-left">
-              <a href="/posts/<%= post.id %>"><%= image_tag post.posts_image.to_s, :size => '200x200' %></a>
+              <a href="/posts/<%= post.id %>"><%= image_tag post.posts_image.to_s, :size => '200x200', class:'posts_image' %></a>
             </div>
             <div class="recipe-right">
               <a href="/posts/<%= post.id %>"><%= post.name %></a>
               <p><%= post.content %></p>
-              <h6><%= @likes_count %>人がいいねしています </h6>
+              <% post.foods.each do |food| %>
+                <%= food.m_name %>
+              <% end %>
             </div>
             <div class="recipe-likes">
               <% if Like.find_by(user_id:current_user.id,post_id:post.id) %>

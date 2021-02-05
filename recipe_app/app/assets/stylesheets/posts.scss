@@ -32,17 +32,8 @@
   font-size: 1rem;
 }
 
-//タイル型//
-.grid {
-  padding: 1rem;
-  display: grid;
-  grid-template-columns: repeat(auto-fit,minmax(250px, 1fr));
-  margin: 6% 0;
-  overflow: hidden;
-}
-
 .recipe-image {
-text-align: center;
+  text-align: center;
 }
 
 .recipe-image img {
@@ -77,18 +68,9 @@ text-align: center;
 
 .show-post_name {
   font-weight: bold;
-  padding: 1rem;
+  padding-left: 1rem;
 }
 
-.show-posts_image {
-padding:1rem;
-}
-
-.show-right {
- width: 50%;
- padding: 2rem;
- margin-top: 3rem;
-}
 //いいね//
 .show-likes_icon span{
   font-size: 2rem;
@@ -96,8 +78,8 @@ padding:1rem;
 
 .show-likes_icon {
   position: relative;
-  left: 5rem;
-  padding: 1.5rem;
+  top:-5rem;
+  left: 50rem;
   font-size:1rem;
 }
 
@@ -109,6 +91,14 @@ padding:1rem;
   color: #ff2581;
 }
 
+.show-right {
+ width: 50%;
+ margin: 15rem auto 0;
+}
+
+.posts_image-show {
+  margin-bottom: 1rem;
+}
 
 //紹介文//
 .show-post_content {
@@ -122,11 +112,14 @@ padding:1rem;
   padding-bottom: 1rem;
 }
 
+
+
 //リンクタグ//
 .show-link {
   margin-top: 10px;
   display: flex;
 }
+
 .show-comment, .show-likes {
   margin: 5px;
   padding: 0.5rem;
@@ -168,12 +161,11 @@ padding:1rem;
   grid-template-columns: repeat(auto-fit,minmax(200px, 1fr));
   margin: 1% 0;
   overflow: hidden;
-
 }
 
 .process-image p {
   padding: 1rem;
-  font-size:1rem;
+  font-size:1.5rem;
   font-weight: normal;
   width: 200px;
 }
@@ -201,6 +193,12 @@ padding:1rem;
 .recipe-list >:last-child {
   margin-left: auto;
 }
+
+.posts_image{
+  width: 200px;
+  height: 200px;
+}
+
 
 .recipe-right {
   margin-top: 5rem;
@@ -329,14 +327,8 @@ padding:1rem;
 
 //search// 
 .search {
+  width: 70%;
   display: flex;
   margin:2rem 5rem;
+  justify-content: space-between;
 }
-
-.search-id {
-  margin-left: 1rem;
-}
-
-
-
-

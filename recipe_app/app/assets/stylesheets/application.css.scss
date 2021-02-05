@@ -91,7 +91,7 @@
   margin:1rem auto;
   padding-bottom: 3rem;
   border-radius: 10px;
-  width: 50rem;
+  width: 40rem;
   height: auto;
   text-align: center;
 }
@@ -104,7 +104,7 @@
 //閉じるボタン//
 .fa-times {
   position: relative;
-  left: 23rem;
+  left: 19rem;
   cursor: pointer;
 }
 
@@ -164,11 +164,17 @@
 //閉じるボタン//
 .fa-times {
   position: relative;
+  left: 19rem;
+}
+
+.sidemenu-close {
+  position: relative;
   top:5rem;
   left: 34rem;
-  cursor: pointer;
   color: white;
 }
+
+
 
 .nav-item {
   border-bottom: 1px solid lightgray;
@@ -209,7 +215,7 @@
 
 .recipe-right p {
   margin-bottom: 1rem;
-  font-size: 0.75rem;
+  font-size: 1rem;
 }
 
 //post-show//
@@ -218,12 +224,17 @@
   display: block;
 }
 
-.show-post_name {
-  padding: 1px;
+.show-post_name h2{
+  font-size: 2rem;
 }
 
-.show-posts_image {
-  padding: 1px;
+.show-likes_icon span{
+  font-size: 1.75rem;
+}
+
+.show-likes_icon {
+  position: relative;
+  left: 19rem;
 }
 
 .posts_image-show {
@@ -233,10 +244,76 @@
 
 .show-right {
   width: 100%;
-  padding: 1px;
-  margin-top: 1rem;
+  margin: 1rem auto;
  }
 
+ .show-user_name, .show-post_content, .show-link {
+   font-size: 1rem;
+ }
+
+ .show-foods {
+  margin-top: 1rem;
+  width: 100%;
+}
+
+//タイル型//
+.process-image {
+margin: 0 auto;
+}
+
+.process-image p {
+  padding: 1rem;
+  font-size:1.5rem;
+  font-weight: normal;
+  width: 200px;
+}
+
+//post-search// 
+.search {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background-color: red;
+}
+
+//user-show//
+
+.user-show-right {
+  font-size: 1rem;
+  width: 12rem;
+  height: 3rem;
+}
+
+.setting {
+  position: relative;
+  top: -5rem;
+  left: 10rem;
+}
+
+.user-show-content {
+  margin-bottom: 1rem;
+}
+
+
+//user-show//タイル型
+//画像サイズ//
+.show-user {
+  width: 120px;
+  height: 120px;
+}
+
+.grid {
+  border-top: 1px solid lightgray ;
+  display: grid;
+  gap: 3px;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 1%;
+  padding-top: 1rem;
+}
+
+.item {
+  text-align: center;
+}
 
 
 
