@@ -188,7 +188,7 @@
 //post-index// 
 .post-index {
   width: 100%;
-  margin: 0.5rem;
+  margin: 0;
 }
 
 .posts_image {
@@ -271,9 +271,11 @@ margin: 0 auto;
 //post-search// 
 .search {
   width: 100%;
+  margin:0 auto 1rem;
   display: flex;
-  justify-content: space-between;
-  background-color: red;
+}
+.search-name , .search-id{
+  width: 40%;
 }
 
 //user-show//
@@ -311,8 +313,8 @@ margin: 0 auto;
   padding-top: 1rem;
 }
 
-.item {
-  text-align: center;
+.item p {
+  font-size: 1rem;
 }
 
 
