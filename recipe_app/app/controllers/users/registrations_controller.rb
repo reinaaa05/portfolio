@@ -9,6 +9,7 @@ class Users::RegistrationsController < Devise::RegistrationsController
   #   super
   # end
 
+
   # POST /resource
   def create
     @user = User.new(sign_up_params)
@@ -16,17 +17,12 @@ class Users::RegistrationsController < Devise::RegistrationsController
     super
   end
   
-  def confirm 
-    @user = User.new(sign_up_params)
-    if @user.valid?
-      render :action => 'confirm'
-    else
-     render :action => 'new'
-    end
+  def confirm
   end
 
   def complete
   end
+
 
   def after_sign_up_path_for(resource)
     users_sign_up_complete_path(resource)

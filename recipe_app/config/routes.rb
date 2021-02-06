@@ -5,20 +5,20 @@ Rails.application.routes.draw do
     get 'search', :on => :collection
   end
 
-  resources :users
   devise_for :users, controllers: {
     registrations: 'users/registrations',
-    sessions: 'users/sessions'   
   }
 
   devise_scope :user do
     post 'users/sign_up/confirm', to: 'users/registrations#confirm'
     get 'users/sign_up/complete', to: 'users/registrations#complete'
-    get 'sign_out', to: 'users/sessions#destroy' 
+
   end
   get 'welcome/index'
   root "welcome#index"
   get "posts/ranking" => "posts#ranking"
+  get "users" => "users#index"
+  get "users/:id" => "users#show"
   get "users/:id/likes" => "users#likes"
   post "likes/:post_id/create" => "likes#create"
   post "likes/:post_id/destroy" => "likes#destroy"

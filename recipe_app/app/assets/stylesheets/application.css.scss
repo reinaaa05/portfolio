@@ -272,8 +272,9 @@ margin: 0 auto;
 .search {
   width: 100%;
   margin:0 auto 1rem;
-  display: flex;
+  justify-content:space-between
 }
+
 .search-name , .search-id{
   width: 40%;
 }
