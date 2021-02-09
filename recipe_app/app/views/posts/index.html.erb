@@ -1,25 +1,17 @@
 <div class="container">
   <div class="mainwrapper">
     <div class="aside">
-      <ul class="list-group">
-        <li class="list-group-item"><a href="/posts/">ホーム</a></li>
-        <li class="list-group-item"><a href="/users/<%= current_user.id %>">マイページ</a></li>
-        <li class="list-group-item"><a href="/users/<%= current_user.id %>/likes">いいね</a></li>
-        <li class="list-group-item"><%= link_to("ランキング",ranking_posts_path) %></li>
-        <li class="list-group-item"><%= link_to("検索",search_posts_path) %></li>
-        <li class="list-group-item"><a href="/users">ユーザー一覧</a></li>
-        <li class="list-group-item"><%= link_to "ログアウト", destroy_user_session_path, method: :delete %></li>
-      </ul>
+      <%= render 'aside' %>
     </div>
     <div class="main-area">
       <div class="post-index">
         <% @posts.each do |post| %>
           <div class="recipe-list">
             <div class="recipe-left">
-              <a href="/posts/<%= post.id %>"><%= image_tag post.posts_image.to_s, class:'posts_image' %></a>
+              <%= link_to image_tag (post.posts_image.to_s, class:'posts_image'), "/posts/#{post.id}" %>
             </div>
             <div class="recipe-right">
-              <a href="/posts/<%= post.id %>"><%= post.name %></a>
+              <%= link_to "<%= post.name %>","/posts/#{post.id}" %>
               <p><%= post.content %></p>
               <% post.foods.each do |food| %>
                 <%= food.m_name %>
