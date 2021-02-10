@@ -85,8 +85,8 @@
               <% @comments.each do |c| %>
                 <div class="comment-main">
                   <div class="comment-name">
-                    <a href="/users/<% @post.user.id %>"> <%= image_tag c.user.user_image.to_s, class:"user_image-comment" %>
-                    <span><%= c.user.name %></span></a>
+                    <%= link_to image_tag(c.user.user_image.to_s,class:"user_image-comment"),"/users/#{ @post.user.id}" %>
+                    <%= link_to(c.user.name,"/users/#{@post.user.id}") %>
                   </div>
                   <div class="comment-content">
                     <%= image_tag c.cook_image.to_s %>

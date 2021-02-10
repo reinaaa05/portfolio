@@ -23,8 +23,8 @@
         </div>
         <div class="header_right">
           <% if user_signed_in? %>
-          <a href="/users/<%= current_user.id %>"><%= image_tag current_user.user_image.to_s, class:"user_image" %>
-            <%= current_user.name %></a>
+            <%= link_to image_tag(current_user.user_image.to_s, class:'user_image'), "/users/#{current_user.id}" %>
+            <%= link_to(current_user.name,"/users/#{current_user.id}") %>
           <% else %>
           <div class="signup">
             <%= link_to("Sign up",new_user_registration_path) %>
@@ -57,9 +57,6 @@
         <div id="sidemenu-form">
           <% if user_signed_in? %>
           <ul class="nav flex-column">
-            <li class="nav-item">
-              <a class="nav-link active" href="/posts/">ホーム</a>
-            </li>
             <li class="nav-item">
               <%= link_to "ホーム", posts_path %>
             </li>

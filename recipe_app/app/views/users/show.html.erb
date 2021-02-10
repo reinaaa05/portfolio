@@ -26,8 +26,8 @@
         <div class="user-show-post grid">
           <% @post.each do |post| %>
             <div class="item">
-              <a href="/posts/<%= post.id %>"><%= image_tag post.posts_image.to_s, :size => '200x200',class:'show-user' %>
-              <p><%= post.name %></p></a>
+              <%= link_to image_tag(post.posts_image.to_s,:size => '200x200', class:'show-user'), "/posts/#{post.id}" %>
+              <p><%= link_to(post.name,"/posts/#{post.id}") %></p>
             </div>
           <% end %>
         </div>

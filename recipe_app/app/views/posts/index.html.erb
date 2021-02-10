@@ -8,10 +8,10 @@
         <% @posts.each do |post| %>
           <div class="recipe-list">
             <div class="recipe-left">
-              <%= link_to image_tag (post.posts_image.to_s, class:'posts_image'), "/posts/#{post.id}" %>
+              <%= link_to image_tag(post.posts_image.to_s, class:'posts_image'), "/posts/#{post.id}" %>
             </div>
             <div class="recipe-right">
-              <%= link_to "<%= post.name %>","/posts/#{post.id}" %>
+              <%= link_to(post.name,"/posts/#{post.id}") %>
               <p><%= post.content %></p>
               <% post.foods.each do |food| %>
                 <%= food.m_name %>
