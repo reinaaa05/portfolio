@@ -931,3 +931,221 @@ Processing by HelloController#index as HTML
 Completed 200 OK in 44ms (Views: 42.0ms | Allocations: 4664)
 
 
+Started GET "/hello/index" for ::1 at 2021-02-15 23:33:31 +0900
+Processing by HelloController#index as HTML
+  Rendering layout layouts/hello.html.erb
+  Rendering hello/index.html.erb within layouts/hello
+  Rendered hello/index.html.erb within layouts/hello (Duration: 0.5ms | Allocations: 125)
+  Rendered layout layouts/hello.html.erb (Duration: 11.8ms | Allocations: 4410)
+Completed 500 Internal Server Error in 20ms (Allocations: 5236)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `csrf_mata_tags' for #<ActionView::Base:0x0000000001c188>
+Did you mean?  csrf_meta_tags
+               csrf_meta_tag):
+    2: <html>
+    3: <head>
+    4:   <title><%= @title %></title>
+    5:   <%= csrf_mata_tags %>
+    6:   <%= csp_meta_tag %>
+    7:   <link rel="stylesheet" href="https://stackpath.bootatrapcdn.com/bootstrap/4.3.1/css/bootstrap.css">
+    8:   <%= stylesheet_link_tag 'application', media: 'all', 'data-turblinks-track': 'reload' %>
+  
+app/views/layouts/hello.html.erb:5
+Started GET "/hello/index" for ::1 at 2021-02-15 23:35:03 +0900
+Processing by HelloController#index as HTML
+  Rendering layout layouts/hello.html.erb
+  Rendering hello/index.html.erb within layouts/hello
+  Rendered hello/index.html.erb within layouts/hello (Duration: 1.1ms | Allocations: 120)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendering layouts/hello_header.html.erb
+  Rendered layouts/hello_header.html.erb (Duration: 0.7ms | Allocations: 129)
+  Rendering layouts/hello_footer.html.erb
+  Rendered layouts/hello_footer.html.erb (Duration: 0.6ms | Allocations: 128)
+  Rendered layout layouts/hello.html.erb (Duration: 50.0ms | Allocations: 5002)
+Completed 200 OK in 58ms (Views: 55.1ms | Allocations: 5813)
+
+
+Started GET "/hello/index" for ::1 at 2021-02-15 23:41:39 +0900
+Processing by HelloController#index as HTML
+  Rendering layout layouts/hello.html.erb
+  Rendering hello/index.html.erb within layouts/hello
+  Rendered hello/index.html.erb within layouts/hello (Duration: 0.7ms | Allocations: 119)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendering layouts/hello_header.html.erb
+  Rendered layouts/hello_header.html.erb (Duration: 0.7ms | Allocations: 127)
+  Rendering layouts/hello_footer.html.erb
+  Rendered layouts/hello_footer.html.erb (Duration: 0.6ms | Allocations: 128)
+  Rendered layout layouts/hello.html.erb (Duration: 50.7ms | Allocations: 4981)
+Completed 200 OK in 60ms (Views: 56.7ms | Allocations: 5790)
+
+
+Started GET "/hello/index" for ::1 at 2021-02-15 23:41:41 +0900
+Processing by HelloController#index as HTML
+  Rendering layout layouts/hello.html.erb
+  Rendering hello/index.html.erb within layouts/hello
+  Rendered hello/index.html.erb within layouts/hello (Duration: 0.1ms | Allocations: 38)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendering layouts/hello_header.html.erb
+  Rendered layouts/hello_header.html.erb (Duration: 0.1ms | Allocations: 38)
+  Rendering layouts/hello_footer.html.erb
+  Rendered layouts/hello_footer.html.erb (Duration: 0.1ms | Allocations: 38)
+  Rendered layout layouts/hello.html.erb (Duration: 43.1ms | Allocations: 4229)
+Completed 200 OK in 45ms (Views: 44.8ms | Allocations: 4592)
+
+
+Started GET "/hello/index" for ::1 at 2021-02-15 23:41:43 +0900
+Processing by HelloController#index as HTML
+  Rendering layout layouts/hello.html.erb
+  Rendering hello/index.html.erb within layouts/hello
+  Rendered hello/index.html.erb within layouts/hello (Duration: 0.1ms | Allocations: 38)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendering layouts/hello_header.html.erb
+  Rendered layouts/hello_header.html.erb (Duration: 0.1ms | Allocations: 38)
+  Rendering layouts/hello_footer.html.erb
+  Rendered layouts/hello_footer.html.erb (Duration: 0.1ms | Allocations: 38)
+  Rendered layout layouts/hello.html.erb (Duration: 45.2ms | Allocations: 4226)
+Completed 200 OK in 48ms (Views: 47.4ms | Allocations: 4588)
+
+
+Started GET "/hello/index" for ::1 at 2021-02-15 23:41:46 +0900
+Processing by HelloController#index as HTML
+  Rendering layout layouts/hello.html.erb
+  Rendering hello/index.html.erb within layouts/hello
+  Rendered hello/index.html.erb within layouts/hello (Duration: 0.1ms | Allocations: 38)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendering layouts/hello_header.html.erb
+  Rendered layouts/hello_header.html.erb (Duration: 0.1ms | Allocations: 38)
+  Rendering layouts/hello_footer.html.erb
+  Rendered layouts/hello_footer.html.erb (Duration: 0.1ms | Allocations: 38)
+  Rendered layout layouts/hello.html.erb (Duration: 40.4ms | Allocations: 4234)
+Completed 200 OK in 44ms (Views: 42.9ms | Allocations: 4596)
+
+
+Started GET "/hello/index" for ::1 at 2021-02-15 23:41:48 +0900
+Processing by HelloController#index as HTML
+  Rendering layout layouts/hello.html.erb
+  Rendering hello/index.html.erb within layouts/hello
+  Rendered hello/index.html.erb within layouts/hello (Duration: 0.1ms | Allocations: 38)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendering layouts/hello_header.html.erb
+  Rendered layouts/hello_header.html.erb (Duration: 0.1ms | Allocations: 38)
+  Rendering layouts/hello_footer.html.erb
+  Rendered layouts/hello_footer.html.erb (Duration: 0.1ms | Allocations: 38)
+  Rendered layout layouts/hello.html.erb (Duration: 42.4ms | Allocations: 4226)
+Completed 200 OK in 46ms (Views: 45.4ms | Allocations: 4588)
+
+
+Started GET "/hello/index" for ::1 at 2021-02-15 23:41:49 +0900
+Processing by HelloController#index as HTML
+  Rendering layout layouts/hello.html.erb
+  Rendering hello/index.html.erb within layouts/hello
+  Rendered hello/index.html.erb within layouts/hello (Duration: 0.1ms | Allocations: 38)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendering layouts/hello_header.html.erb
+  Rendered layouts/hello_header.html.erb (Duration: 0.1ms | Allocations: 38)
+  Rendering layouts/hello_footer.html.erb
+  Rendered layouts/hello_footer.html.erb (Duration: 0.1ms | Allocations: 38)
+  Rendered layout layouts/hello.html.erb (Duration: 44.4ms | Allocations: 4226)
+Completed 200 OK in 47ms (Views: 46.5ms | Allocations: 4588)
+
+
+Started GET "/hello/index" for ::1 at 2021-02-15 23:41:49 +0900
+Processing by HelloController#index as HTML
+  Rendering layout layouts/hello.html.erb
+  Rendering hello/index.html.erb within layouts/hello
+  Rendered hello/index.html.erb within layouts/hello (Duration: 0.1ms | Allocations: 38)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendering layouts/hello_header.html.erb
+  Rendered layouts/hello_header.html.erb (Duration: 0.1ms | Allocations: 38)
+  Rendering layouts/hello_footer.html.erb
+  Rendered layouts/hello_footer.html.erb (Duration: 0.1ms | Allocations: 38)
+  Rendered layout layouts/hello.html.erb (Duration: 40.4ms | Allocations: 4234)
+Completed 200 OK in 43ms (Views: 42.4ms | Allocations: 4596)
+
+
+Started GET "/hello/index" for ::1 at 2021-02-15 23:41:50 +0900
+Processing by HelloController#index as HTML
+  Rendering layout layouts/hello.html.erb
+  Rendering hello/index.html.erb within layouts/hello
+  Rendered hello/index.html.erb within layouts/hello (Duration: 0.1ms | Allocations: 38)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendering layouts/hello_header.html.erb
+  Rendered layouts/hello_header.html.erb (Duration: 0.1ms | Allocations: 38)
+  Rendering layouts/hello_footer.html.erb
+  Rendered layouts/hello_footer.html.erb (Duration: 0.1ms | Allocations: 38)
+  Rendered layout layouts/hello.html.erb (Duration: 44.5ms | Allocations: 4226)
+Completed 200 OK in 49ms (Views: 48.2ms | Allocations: 4588)
+
+
+Started GET "/hello/index" for ::1 at 2021-02-15 23:41:50 +0900
+Processing by HelloController#index as HTML
+  Rendering layout layouts/hello.html.erb
+  Rendering hello/index.html.erb within layouts/hello
+  Rendered hello/index.html.erb within layouts/hello (Duration: 0.3ms | Allocations: 38)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendering layouts/hello_header.html.erb
+  Rendered layouts/hello_header.html.erb (Duration: 0.1ms | Allocations: 38)
+  Rendering layouts/hello_footer.html.erb
+  Rendered layouts/hello_footer.html.erb (Duration: 0.1ms | Allocations: 38)
+  Rendered layout layouts/hello.html.erb (Duration: 43.2ms | Allocations: 4226)
+Completed 200 OK in 45ms (Views: 44.2ms | Allocations: 4588)
+
+
+Started GET "/hello/index" for ::1 at 2021-02-15 23:41:51 +0900
+Processing by HelloController#index as HTML
+  Rendering layout layouts/hello.html.erb
+  Rendering hello/index.html.erb within layouts/hello
+  Rendered hello/index.html.erb within layouts/hello (Duration: 0.1ms | Allocations: 38)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendering layouts/hello_header.html.erb
+  Rendered layouts/hello_header.html.erb (Duration: 0.1ms | Allocations: 38)
+  Rendering layouts/hello_footer.html.erb
+  Rendered layouts/hello_footer.html.erb (Duration: 0.1ms | Allocations: 38)
+  Rendered layout layouts/hello.html.erb (Duration: 43.0ms | Allocations: 4226)
+Completed 200 OK in 45ms (Views: 44.5ms | Allocations: 4588)
+
+
+Started GET "/hello/index" for ::1 at 2021-02-15 23:41:52 +0900
+Processing by HelloController#index as HTML
+  Rendering layout layouts/hello.html.erb
+  Rendering hello/index.html.erb within layouts/hello
+  Rendered hello/index.html.erb within layouts/hello (Duration: 0.1ms | Allocations: 38)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendering layouts/hello_header.html.erb
+  Rendered layouts/hello_header.html.erb (Duration: 0.1ms | Allocations: 38)
+  Rendering layouts/hello_footer.html.erb
+  Rendered layouts/hello_footer.html.erb (Duration: 0.1ms | Allocations: 38)
+  Rendered layout layouts/hello.html.erb (Duration: 41.4ms | Allocations: 4235)
+Completed 200 OK in 44ms (Views: 43.5ms | Allocations: 4597)
+
+
+Started GET "/hello/index" for ::1 at 2021-02-15 23:43:43 +0900
+Processing by HelloController#index as HTML
+  Rendering layout layouts/hello.html.erb
+  Rendering hello/index.html.erb within layouts/hello
+  Rendered hello/index.html.erb within layouts/hello (Duration: 0.7ms | Allocations: 124)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendering layouts/hello_header.html.erb
+  Rendered layouts/hello_header.html.erb (Duration: 0.7ms | Allocations: 127)
+  Rendering layouts/hello_footer.html.erb
+  Rendered layouts/hello_footer.html.erb (Duration: 0.6ms | Allocations: 127)
+  Rendered layout layouts/hello.html.erb (Duration: 50.7ms | Allocations: 4996)
+Completed 200 OK in 57ms (Views: 54.8ms | Allocations: 5807)
+
+
+Started GET "/hello/index" for ::1 at 2021-02-15 23:44:40 +0900
+Processing by HelloController#index as HTML
+  Rendering layout layouts/hello.html.erb
+  Rendering hello/index.html.erb within layouts/hello
+  Rendered hello/index.html.erb within layouts/hello (Duration: 0.6ms | Allocations: 119)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendering layouts/hello_header.html.erb
+  Rendered layouts/hello_header.html.erb (Duration: 0.8ms | Allocations: 127)
+  Rendering layouts/hello_footer.html.erb
+  Rendered layouts/hello_footer.html.erb (Duration: 0.6ms | Allocations: 127)
+  Rendered layout layouts/hello.html.erb (Duration: 54.8ms | Allocations: 4983)
+Completed 200 OK in 62ms (Views: 59.5ms | Allocations: 5793)
+
+
