@@ -436,3 +436,215 @@ Processing by HelloController#index as HTML
 Completed 200 OK in 60ms (Views: 56.0ms | Allocations: 5648)
 
 
+Started GET "/hello/index" for ::1 at 2021-02-15 19:56:06 +0900
+Processing by HelloController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering hello/index.html.erb within layouts/application
+  Rendered hello/index.html.erb within layouts/application (Duration: 3.1ms | Allocations: 803)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 48.4ms | Allocations: 4911)
+Completed 200 OK in 62ms (Views: 59.5ms | Allocations: 6041)
+
+
+Started POST "/hello/index" for ::1 at 2021-02-15 19:56:10 +0900
+Processing by HelloController#index as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "check1"=>"1", "commit"=>"Click"}
+  Rendering layout layouts/application.html.erb
+  Rendering hello/index.html.erb within layouts/application
+  Rendered hello/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 235)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 44.6ms | Allocations: 4204)
+Completed 200 OK in 49ms (Views: 47.7ms | Allocations: 4621)
+
+
+Started POST "/hello/index" for ::1 at 2021-02-15 19:56:12 +0900
+Processing by HelloController#index as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "check1"=>"1", "commit"=>"Click"}
+  Rendering layout layouts/application.html.erb
+  Rendering hello/index.html.erb within layouts/application
+  Rendered hello/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 228)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 40.2ms | Allocations: 4197)
+Completed 200 OK in 43ms (Views: 41.7ms | Allocations: 4613)
+
+
+Started POST "/hello/index" for ::1 at 2021-02-15 19:56:26 +0900
+Processing by HelloController#index as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "check1"=>"1", "commit"=>"Click"}
+  Rendering layout layouts/application.html.erb
+  Rendering hello/index.html.erb within layouts/application
+  Rendered hello/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 228)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 50.8ms | Allocations: 4197)
+Completed 200 OK in 55ms (Views: 53.7ms | Allocations: 4613)
+
+
+Started GET "/hello/index" for ::1 at 2021-02-15 19:56:28 +0900
+Processing by HelloController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering hello/index.html.erb within layouts/application
+  Rendered hello/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 233)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 42.4ms | Allocations: 4188)
+Completed 200 OK in 45ms (Views: 44.1ms | Allocations: 4570)
+
+
+Started GET "/hello/index" for ::1 at 2021-02-15 19:56:30 +0900
+Processing by HelloController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering hello/index.html.erb within layouts/application
+  Rendered hello/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 233)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 47.7ms | Allocations: 4189)
+Completed 200 OK in 51ms (Views: 50.0ms | Allocations: 4571)
+
+
+Started POST "/hello/index" for ::1 at 2021-02-15 19:56:33 +0900
+Processing by HelloController#index as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "check1"=>"1", "commit"=>"Click"}
+  Rendering layout layouts/application.html.erb
+  Rendering hello/index.html.erb within layouts/application
+  Rendered hello/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 228)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 45.0ms | Allocations: 4198)
+Completed 200 OK in 48ms (Views: 46.8ms | Allocations: 4614)
+
+
+Started GET "/hello/index" for ::1 at 2021-02-15 19:58:14 +0900
+Processing by HelloController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering hello/index.html.erb within layouts/application
+  Rendered hello/index.html.erb within layouts/application (Duration: 1.6ms | Allocations: 604)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 43.5ms | Allocations: 4539)
+Completed 200 OK in 47ms (Views: 45.9ms | Allocations: 5072)
+
+
+Started POST "/hello/index" for ::1 at 2021-02-15 19:58:16 +0900
+Processing by HelloController#index as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "check1"=>"1", "commit"=>"Click"}
+  Rendering layout layouts/application.html.erb
+  Rendering hello/index.html.erb within layouts/application
+  Rendered hello/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 228)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 41.7ms | Allocations: 4197)
+Completed 200 OK in 49ms (Views: 47.7ms | Allocations: 4613)
+
+
+Started GET "/hello/index" for ::1 at 2021-02-15 19:58:38 +0900
+Processing by HelloController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering hello/index.html.erb within layouts/application
+  Rendered hello/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 603)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 45.4ms | Allocations: 4559)
+Completed 200 OK in 49ms (Views: 48.2ms | Allocations: 5092)
+
+
+Started POST "/hello/index" for ::1 at 2021-02-15 19:58:40 +0900
+Processing by HelloController#index as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "check1"=>"1", "commit"=>"Click"}
+  Rendering layout layouts/application.html.erb
+  Rendering hello/index.html.erb within layouts/application
+  Rendered hello/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 228)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 42.6ms | Allocations: 4205)
+Completed 200 OK in 46ms (Views: 45.1ms | Allocations: 4622)
+
+
+Started GET "/hello/index" for ::1 at 2021-02-15 19:58:52 +0900
+Processing by HelloController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering hello/index.html.erb within layouts/application
+  Rendered hello/index.html.erb within layouts/application (Duration: 1.3ms | Allocations: 603)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 42.6ms | Allocations: 4539)
+Completed 200 OK in 47ms (Views: 46.1ms | Allocations: 5072)
+
+
+Started POST "/hello/index" for ::1 at 2021-02-15 19:58:53 +0900
+Processing by HelloController#index as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "check1"=>"1", "commit"=>"Click"}
+  Rendering layout layouts/application.html.erb
+  Rendering hello/index.html.erb within layouts/application
+  Rendered hello/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 228)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 40.6ms | Allocations: 4197)
+Completed 200 OK in 45ms (Views: 44.0ms | Allocations: 4611)
+
+
+Started GET "/hello/index" for ::1 at 2021-02-15 20:03:17 +0900
+Processing by HelloController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering hello/index.html.erb within layouts/application
+  Rendered hello/index.html.erb within layouts/application (Duration: 20.4ms | Allocations: 4176)
+  Rendered layout layouts/application.html.erb (Duration: 21.6ms | Allocations: 4240)
+Completed 500 Internal Server Error in 36ms (Allocations: 5304)
+
+
+  
+ActionView::Template::Error (undefined method `radio_botton_tag' for #<ActionView::Base:0x00000000012660>
+Did you mean?  radio_button_tag):
+    1: <h1 class="display-4"><%= @title %></h1>
+    2: <p><%= @msg %></p>
+    3:   <%= form_tag(controller: "hello", action: "index") do %>
+    4:     <%= radio_botton_tag("r1", "radio 1") %>
+    5:     <%= label_tag("r1_radio_1", "Radio Botton 1") %><br>
+    6:     <%= radio_botton_tag("r1", "radio 2") %>
+    7:     <%= label_tag("r1_radio_2", "Radio Botton 2") %><br>
+  
+app/views/hello/index.html.erb:4
+app/views/hello/index.html.erb:3
+Started GET "/hello/index" for ::1 at 2021-02-15 20:05:17 +0900
+Processing by HelloController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering hello/index.html.erb within layouts/application
+  Rendered hello/index.html.erb within layouts/application (Duration: 2.1ms | Allocations: 517)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 46.8ms | Allocations: 4654)
+Completed 200 OK in 61ms (Views: 58.1ms | Allocations: 5745)
+
+
+Started GET "/hello/index" for ::1 at 2021-02-15 20:07:04 +0900
+Processing by HelloController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering hello/index.html.erb within layouts/application
+  Rendered hello/index.html.erb within layouts/application (Duration: 1.6ms | Allocations: 643)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 43.3ms | Allocations: 4578)
+Completed 200 OK in 46ms (Views: 45.5ms | Allocations: 5111)
+
+
+Started POST "/hello/index" for ::1 at 2021-02-15 20:07:07 +0900
+Processing by HelloController#index as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "r1"=>"radio 1", "commit"=>"Click"}
+  Rendering layout layouts/application.html.erb
+  Rendering hello/index.html.erb within layouts/application
+  Rendered hello/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 268)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 46.0ms | Allocations: 4237)
+Completed 200 OK in 49ms (Views: 48.2ms | Allocations: 4653)
+
+
+Started POST "/hello/index" for ::1 at 2021-02-15 20:07:09 +0900
+Processing by HelloController#index as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "r1"=>"radio 2", "commit"=>"Click"}
+  Rendering layout layouts/application.html.erb
+  Rendering hello/index.html.erb within layouts/application
+  Rendered hello/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 268)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 46.2ms | Allocations: 4237)
+Completed 200 OK in 49ms (Views: 48.4ms | Allocations: 4653)
+
+
+Started POST "/hello/index" for ::1 at 2021-02-15 20:07:11 +0900
+Processing by HelloController#index as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "commit"=>"Click"}
+  Rendering layout layouts/application.html.erb
+  Rendering hello/index.html.erb within layouts/application
+  Rendered hello/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 268)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 47.2ms | Allocations: 4245)
+Completed 200 OK in 50ms (Views: 49.1ms | Allocations: 4661)
+
+
