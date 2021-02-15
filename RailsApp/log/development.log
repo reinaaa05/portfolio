@@ -33,3 +33,406 @@ Entrypoint application = js/application-b43fa54005da8e229d8c.js js/application-b
 Completed 200 OK in 7611ms (Views: 7599.2ms | ActiveRecord: 0.0ms | Allocations: 22131)
 
 
+Started GET "/" for ::1 at 2021-02-15 10:35:41 +0900
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/railties-6.1.2.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/railties-6.1.2.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 14.2ms | Allocations: 339)
+Completed 200 OK in 48ms (Views: 20.3ms | ActiveRecord: 0.0ms | Allocations: 2507)
+
+
+Started GET "/HELLO" for ::1 at 2021-02-15 10:37:43 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/HELLO"):
+  
+Started GET "/" for ::1 at 2021-02-15 10:37:49 +0900
+Processing by Rails::WelcomeController#index as HTML
+  Rendering C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/railties-6.1.2.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/railties-6.1.2.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 7.4ms | Allocations: 216)
+Completed 200 OK in 14ms (Views: 10.6ms | Allocations: 841)
+
+
+Started GET "/hello" for ::1 at 2021-02-15 10:38:00 +0900
+Processing by HelloController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering hello/index.html.erb within layouts/application
+  Rendered hello/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 139)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 73.2ms | Allocations: 6601)
+Completed 200 OK in 85ms (Views: 82.7ms | Allocations: 7676)
+
+
+Started GET "/hello" for ::1 at 2021-02-15 10:38:39 +0900
+Processing by HelloController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering hello/index.html.erb within layouts/application
+  Rendered hello/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 39)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 39.5ms | Allocations: 3998)
+Completed 200 OK in 43ms (Views: 41.7ms | Allocations: 4387)
+
+
+Started GET "/hello" for ::1 at 2021-02-15 10:46:15 +0900
+Processing by HelloController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering hello/index.html.erb within layouts/application
+  Rendered hello/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 39)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 40.5ms | Allocations: 3979)
+Completed 200 OK in 44ms (Views: 43.6ms | Allocations: 4488)
+
+
+Started GET "/hello/other" for ::1 at 2021-02-15 10:46:36 +0900
+Processing by HelloController#other as HTML
+Redirected to http://localhost:3000/hello/index?msg=from+other+page
+Completed 302 Found in 2ms (Allocations: 637)
+
+
+Started GET "/hello/index?msg=from+other+page" for ::1 at 2021-02-15 10:46:36 +0900
+Processing by HelloController#index as HTML
+  Parameters: {"msg"=>"from other page"}
+  Rendering layout layouts/application.html.erb
+  Rendering hello/index.html.erb within layouts/application
+  Rendered hello/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 40)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 38.9ms | Allocations: 3997)
+Completed 200 OK in 41ms (Views: 40.5ms | Allocations: 4385)
+
+
+Started GET "/hello" for ::1 at 2021-02-15 10:46:41 +0900
+Processing by HelloController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering hello/index.html.erb within layouts/application
+  Rendered hello/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 39)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 38.3ms | Allocations: 3997)
+Completed 200 OK in 41ms (Views: 40.3ms | Allocations: 4386)
+
+
+Started GET "/hello/index?msg=from+other+page" for ::1 at 2021-02-15 10:46:43 +0900
+Processing by HelloController#index as HTML
+  Parameters: {"msg"=>"from other page"}
+  Rendering layout layouts/application.html.erb
+  Rendering hello/index.html.erb within layouts/application
+  Rendered hello/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 40)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 38.4ms | Allocations: 3997)
+Completed 200 OK in 41ms (Views: 40.4ms | Allocations: 4384)
+
+
+Started GET "/hello/index?msg=from+other+page" for ::1 at 2021-02-15 11:03:53 +0900
+Processing by HelloController#index as HTML
+  Parameters: {"msg"=>"from other page"}
+  Rendering layout layouts/application.html.erb
+  Rendering hello/index.html.erb within layouts/application
+  Rendered hello/index.html.erb within layouts/application (Duration: 1.2ms | Allocations: 158)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 42.1ms | Allocations: 4276)
+Completed 200 OK in 53ms (Views: 50.1ms | Allocations: 5413)
+
+
+Started GET "/hello/index?msg=from+other+page" for ::1 at 2021-02-15 11:04:18 +0900
+Processing by HelloController#index as HTML
+  Parameters: {"msg"=>"from other page"}
+  Rendering layout layouts/application.html.erb
+  Rendering hello/index.html.erb within layouts/application
+  Rendered hello/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 40)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 45.3ms | Allocations: 3997)
+Completed 200 OK in 48ms (Views: 47.8ms | Allocations: 4381)
+
+
+Started GET "/hello/" for ::1 at 2021-02-15 11:04:24 +0900
+Processing by HelloController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering hello/index.html.erb within layouts/application
+  Rendered hello/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 40)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 38.5ms | Allocations: 3997)
+Completed 200 OK in 42ms (Views: 41.1ms | Allocations: 4379)
+
+
+Started GET "/hello" for ::1 at 2021-02-15 11:04:30 +0900
+Processing by HelloController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering hello/index.html.erb within layouts/application
+  Rendered hello/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 40)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 36.7ms | Allocations: 3997)
+Completed 200 OK in 39ms (Views: 38.3ms | Allocations: 4379)
+
+
+Started GET "/hello" for ::1 at 2021-02-15 11:07:41 +0900
+Processing by HelloController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering hello/index.html.erb within layouts/application
+  Rendered hello/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 151)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 40.9ms | Allocations: 4283)
+Completed 200 OK in 53ms (Views: 50.4ms | Allocations: 5372)
+
+
+Started GET "/hello" for ::1 at 2021-02-15 11:09:07 +0900
+Processing by HelloController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering hello/index.html.erb within layouts/application
+  Rendered hello/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 40)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 39.1ms | Allocations: 3997)
+Completed 200 OK in 42ms (Views: 40.9ms | Allocations: 4381)
+
+
+Started GET "/hello" for ::1 at 2021-02-15 11:12:13 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/hello"):
+  
+Started GET "/hello" for ::1 at 2021-02-15 11:12:20 +0900
+Processing by HelloController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering hello/index.html.erb within layouts/application
+  Rendered hello/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 40)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 39.2ms | Allocations: 4014)
+Completed 200 OK in 43ms (Views: 41.5ms | Allocations: 4554)
+
+
+Started GET "/hello" for ::1 at 2021-02-15 11:12:46 +0900
+Processing by HelloController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering hello/index.html.erb within layouts/application
+  Rendered hello/index.html.erb within layouts/application (Duration: 1.5ms | Allocations: 151)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 43.3ms | Allocations: 4282)
+Completed 200 OK in 54ms (Views: 51.5ms | Allocations: 5378)
+
+
+Started GET "/hello" for ::1 at 2021-02-15 11:12:53 +0900
+Processing by HelloController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering hello/index.html.erb within layouts/application
+  Rendered hello/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 40)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 36.9ms | Allocations: 3997)
+Completed 200 OK in 40ms (Views: 39.1ms | Allocations: 4381)
+
+
+Started GET "/hello" for ::1 at 2021-02-15 11:23:05 +0900
+Processing by HelloController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering hello/index.html.erb within layouts/application
+  Rendered hello/index.html.erb within layouts/application (Duration: 10.9ms | Allocations: 4525)
+  Rendered layout layouts/application.html.erb (Duration: 12.1ms | Allocations: 4589)
+Completed 500 Internal Server Error in 25ms (Allocations: 5656)
+
+
+  
+ActionView::Template::Error (undefined method `text_tag' for #<ActionView::Base:0x0000000000d098>
+Did you mean?  text_field_tag):
+    1: <h1 class="display-4"><%= @title %></h1>
+    2: <p><%= @msg %></p>
+    3:   <%= form_tag(controller: "hello", action: "index") do %>
+    4:     <%= text_tag("input1") %>
+    5:     <%= submit_tag("Click") %>
+    6:   <% end %>
+  
+app/views/hello/index.html.erb:4
+app/views/hello/index.html.erb:3
+Started GET "/hello" for ::1 at 2021-02-15 11:23:33 +0900
+Processing by HelloController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering hello/index.html.erb within layouts/application
+  Rendered hello/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 408)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 48.5ms | Allocations: 4545)
+Completed 200 OK in 60ms (Views: 56.1ms | Allocations: 5640)
+
+
+Started POST "/hello/index" for ::1 at 2021-02-15 11:23:38 +0900
+Processing by HelloController#index as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "input1"=>"あああ", "commit"=>"Click"}
+  Rendering layout layouts/application.html.erb
+  Rendering hello/index.html.erb within layouts/application
+  Rendered hello/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 214)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 40.2ms | Allocations: 4191)
+Completed 200 OK in 43ms (Views: 42.7ms | Allocations: 4623)
+
+
+Started GET "/hello/index" for ::1 at 2021-02-15 11:27:13 +0900
+Processing by HelloController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering hello/index.html.erb within layouts/application
+  Rendered hello/index.html.erb within layouts/application (Duration: 2.2ms | Allocations: 1177)
+  Rendered layout layouts/application.html.erb (Duration: 3.6ms | Allocations: 1242)
+Completed 500 Internal Server Error in 14ms (Allocations: 2310)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <h1 class="display-4"><%= @title %></h1>
+<p><%= @msg %></p>
+  <%= form_tag(controller: "hello", action: "index") do %>
+    <%= text_field_tag("input1", "", {class:"form-control"}) %>
+    <%= submit_tag("Click", {class: btn btn-primary"}) %>
+  <% end %>
+):
+1:    <h1 class="display-4"><%= @title %></h1>
+2:    <p><%= @msg %></p>
+3:      <%= form_tag(controller: "hello", action: "index") do %>
+4:        <%= text_field_tag("input1", "", {class:"form-control"}) %>
+5:        <%= submit_tag("Click", {class: btn btn-primary"}) %>
+6:      <% end %>
+  
+app/views/hello/index.html.erb:5: syntax error, unexpected local variable or method, expecting `do' or '{' or '('
+app/views/hello/index.html.erb:5: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/hello/index.html.erb:8: unterminated string meets end of file
+app/views/hello/index.html.erb:8: syntax error, unexpected end-of-input, expecting ')'
+app/views/hello/index.html.erb:5: syntax error, unexpected local variable or method, expecting `do' or '{' or '('
+app/views/hello/index.html.erb:5: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/hello/index.html.erb:8: unterminated string meets end of file
+app/views/hello/index.html.erb:8: syntax error, unexpected end-of-input, expecting ')'
+app/views/hello/index.html.erb:5: syntax error, unexpected local variable or method, expecting `do' or '{' or '('
+app/views/hello/index.html.erb:5: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/hello/index.html.erb:8: unterminated string meets end of file
+app/views/hello/index.html.erb:8: syntax error, unexpected end-of-input, expecting ')'
+app/views/hello/index.html.erb:5: syntax error, unexpected local variable or method, expecting `do' or '{' or '('
+app/views/hello/index.html.erb:5: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/hello/index.html.erb:8: unterminated string meets end of file
+app/views/hello/index.html.erb:8: syntax error, unexpected end-of-input, expecting ')'
+app/views/hello/index.html.erb:5: syntax error, unexpected local variable or method, expecting `do' or '{' or '('
+app/views/hello/index.html.erb:5: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/hello/index.html.erb:8: unterminated string meets end of file
+app/views/hello/index.html.erb:8: syntax error, unexpected end-of-input, expecting ')'
+app/views/hello/index.html.erb:5: syntax error, unexpected local variable or method, expecting `do' or '{' or '('
+app/views/hello/index.html.erb:5: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/hello/index.html.erb:8: unterminated string meets end of file
+app/views/hello/index.html.erb:8: syntax error, unexpected end-of-input, expecting ')'
+Started GET "/hello/index" for ::1 at 2021-02-15 11:27:31 +0900
+Processing by HelloController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering hello/index.html.erb within layouts/application
+  Rendered hello/index.html.erb within layouts/application (Duration: 1.3ms | Allocations: 414)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 49.5ms | Allocations: 4551)
+Completed 200 OK in 61ms (Views: 58.5ms | Allocations: 5646)
+
+
+Started GET "/hello/index" for ::1 at 2021-02-15 11:28:07 +0900
+Processing by HelloController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering hello/index.html.erb within layouts/application
+  Rendered hello/index.html.erb within layouts/application (Duration: 1.3ms | Allocations: 417)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 43.8ms | Allocations: 4554)
+Completed 200 OK in 54ms (Views: 51.5ms | Allocations: 5649)
+
+
+Started GET "/hello/index" for ::1 at 2021-02-15 11:28:19 +0900
+Processing by HelloController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering hello/index.html.erb within layouts/application
+  Rendered hello/index.html.erb within layouts/application (Duration: 1.3ms | Allocations: 412)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 47.0ms | Allocations: 4541)
+Completed 200 OK in 60ms (Views: 57.3ms | Allocations: 5630)
+
+
+Started POST "/hello/index" for ::1 at 2021-02-15 11:28:22 +0900
+Processing by HelloController#index as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "input1"=>"あああ", "commit"=>"Click"}
+  Rendering layout layouts/application.html.erb
+  Rendering hello/index.html.erb within layouts/application
+  Rendered hello/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 226)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 38.5ms | Allocations: 4195)
+Completed 200 OK in 41ms (Views: 40.2ms | Allocations: 4616)
+
+
+Started GET "/hello/index" for ::1 at 2021-02-15 19:49:26 +0900
+Processing by HelloController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering hello/index.html.erb within layouts/application
+  Rendered hello/index.html.erb within layouts/application (Duration: 2.3ms | Allocations: 493)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 53.6ms | Allocations: 4622)
+Completed 200 OK in 76ms (Views: 71.7ms | Allocations: 5711)
+
+
+Started GET "/hello/index" for ::1 at 2021-02-15 19:49:39 +0900
+Processing by HelloController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering hello/index.html.erb within layouts/application
+  Rendered hello/index.html.erb within layouts/application (Duration: 2.5ms | Allocations: 488)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 609.2ms | Allocations: 4618)
+Completed 200 OK in 805ms (Views: 800.6ms | Allocations: 5709)
+
+
+Started POST "/hello/index" for ::1 at 2021-02-15 19:49:47 +0900
+Processing by HelloController#index as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "input1"=>"", "check1"=>"1", "commit"=>"Click"}
+  Rendering layout layouts/application.html.erb
+  Rendering hello/index.html.erb within layouts/application
+  Rendered hello/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 259)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 47.1ms | Allocations: 4228)
+Completed 200 OK in 50ms (Views: 49.4ms | Allocations: 4649)
+
+
+Started GET "/hello/index" for ::1 at 2021-02-15 19:51:07 +0900
+Processing by HelloController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering hello/index.html.erb within layouts/application
+  Rendered hello/index.html.erb within layouts/application (Duration: 1.5ms | Allocations: 1171)
+  Rendered layout layouts/application.html.erb (Duration: 3.5ms | Allocations: 1236)
+Completed 500 Internal Server Error in 18ms (Allocations: 2299)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <h1 class="display-4"><%= @title %></h1>
+<p><%= @msg %></p>
+  <%= form_tag(controller: "hello", action: "index") do %>
+    <%= text_field_tag("input1", "", {class:"form-control"}) %>
+    <%= submit_tag("Click", {class: btn btn-primary"}) %>
+  <% end %>
+):
+1:    <h1 class="display-4"><%= @title %></h1>
+2:    <p><%= @msg %></p>
+3:      <%= form_tag(controller: "hello", action: "index") do %>
+4:        <%= text_field_tag("input1", "", {class:"form-control"}) %>
+5:        <%= submit_tag("Click", {class: btn btn-primary"}) %>
+6:      <% end %>
+  
+app/views/hello/index.html.erb:5: syntax error, unexpected local variable or method, expecting `do' or '{' or '('
+app/views/hello/index.html.erb:5: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/hello/index.html.erb:8: unterminated string meets end of file
+app/views/hello/index.html.erb:8: syntax error, unexpected end-of-input, expecting ')'
+app/views/hello/index.html.erb:5: syntax error, unexpected local variable or method, expecting `do' or '{' or '('
+app/views/hello/index.html.erb:5: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/hello/index.html.erb:8: unterminated string meets end of file
+app/views/hello/index.html.erb:8: syntax error, unexpected end-of-input, expecting ')'
+app/views/hello/index.html.erb:5: syntax error, unexpected local variable or method, expecting `do' or '{' or '('
+app/views/hello/index.html.erb:5: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/hello/index.html.erb:8: unterminated string meets end of file
+app/views/hello/index.html.erb:8: syntax error, unexpected end-of-input, expecting ')'
+app/views/hello/index.html.erb:5: syntax error, unexpected local variable or method, expecting `do' or '{' or '('
+app/views/hello/index.html.erb:5: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/hello/index.html.erb:8: unterminated string meets end of file
+app/views/hello/index.html.erb:8: syntax error, unexpected end-of-input, expecting ')'
+app/views/hello/index.html.erb:5: syntax error, unexpected local variable or method, expecting `do' or '{' or '('
+app/views/hello/index.html.erb:5: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/hello/index.html.erb:8: unterminated string meets end of file
+app/views/hello/index.html.erb:8: syntax error, unexpected end-of-input, expecting ')'
+app/views/hello/index.html.erb:5: syntax error, unexpected local variable or method, expecting `do' or '{' or '('
+app/views/hello/index.html.erb:5: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/hello/index.html.erb:8: unterminated string meets end of file
+app/views/hello/index.html.erb:8: syntax error, unexpected end-of-input, expecting ')'
+Started GET "/hello/index" for ::1 at 2021-02-15 19:51:30 +0900
+Processing by HelloController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering hello/index.html.erb within layouts/application
+  Rendered hello/index.html.erb within layouts/application (Duration: 3.2ms | Allocations: 415)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 46.9ms | Allocations: 4552)
+Completed 200 OK in 60ms (Views: 56.0ms | Allocations: 5648)
+
+
