@@ -1149,3 +1149,1287 @@ Processing by HelloController#index as HTML
 Completed 200 OK in 62ms (Views: 59.5ms | Allocations: 5793)
 
 
+Started GET "/" for ::1 at 2021-02-16 14:53:06 +0900
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/railties-6.1.2.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/railties-6.1.2.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 7.2ms | Allocations: 339)
+Completed 200 OK in 26ms (Views: 11.3ms | ActiveRecord: 0.0ms | Allocations: 2521)
+
+
+Started GET "/msgboard" for ::1 at 2021-02-16 14:53:21 +0900
+  
+SyntaxError (C:/Users/User/portfolio/RailsApp/app/controllers/msgboard_controller.rb:33: circular argument reference - msg
+C:/Users/User/portfolio/RailsApp/app/controllers/msgboard_controller.rb:33: circular argument reference - name
+C:/Users/User/portfolio/RailsApp/app/controllers/msgboard_controller.rb:33: circular argument reference - mail
+C:/Users/User/portfolio/RailsApp/app/controllers/msgboard_controller.rb:38: syntax error, unexpected end-of-input, expecting `end'):
+  
+app/controllers/msgboard_controller.rb:33: circular argument reference - msg
+app/controllers/msgboard_controller.rb:33: circular argument reference - name
+app/controllers/msgboard_controller.rb:33: circular argument reference - mail
+app/controllers/msgboard_controller.rb:38: syntax error, unexpected end-of-input, expecting `end'
+app/controllers/msgboard_controller.rb:33: circular argument reference - msg
+app/controllers/msgboard_controller.rb:33: circular argument reference - name
+app/controllers/msgboard_controller.rb:33: circular argument reference - mail
+app/controllers/msgboard_controller.rb:38: syntax error, unexpected end-of-input, expecting `end'
+app/controllers/msgboard_controller.rb:33: circular argument reference - msg
+app/controllers/msgboard_controller.rb:33: circular argument reference - name
+app/controllers/msgboard_controller.rb:33: circular argument reference - mail
+app/controllers/msgboard_controller.rb:38: syntax error, unexpected end-of-input, expecting `end'
+Started GET "/msgboard" for ::1 at 2021-02-16 14:53:58 +0900
+  
+SyntaxError (C:/Users/User/portfolio/RailsApp/app/controllers/msgboard_controller.rb:33: circular argument reference - msg
+C:/Users/User/portfolio/RailsApp/app/controllers/msgboard_controller.rb:33: circular argument reference - name
+C:/Users/User/portfolio/RailsApp/app/controllers/msgboard_controller.rb:33: circular argument reference - mail
+C:/Users/User/portfolio/RailsApp/app/controllers/msgboard_controller.rb:38: syntax error, unexpected end-of-input, expecting `end'):
+  
+app/controllers/msgboard_controller.rb:33: circular argument reference - msg
+app/controllers/msgboard_controller.rb:33: circular argument reference - name
+app/controllers/msgboard_controller.rb:33: circular argument reference - mail
+app/controllers/msgboard_controller.rb:38: syntax error, unexpected end-of-input, expecting `end'
+app/controllers/msgboard_controller.rb:33: circular argument reference - msg
+app/controllers/msgboard_controller.rb:33: circular argument reference - name
+app/controllers/msgboard_controller.rb:33: circular argument reference - mail
+app/controllers/msgboard_controller.rb:38: syntax error, unexpected end-of-input, expecting `end'
+app/controllers/msgboard_controller.rb:33: circular argument reference - msg
+app/controllers/msgboard_controller.rb:33: circular argument reference - name
+app/controllers/msgboard_controller.rb:33: circular argument reference - mail
+app/controllers/msgboard_controller.rb:38: syntax error, unexpected end-of-input, expecting `end'
+Started GET "/msgboard" for ::1 at 2021-02-16 14:59:41 +0900
+  
+SyntaxError (C:/Users/User/portfolio/RailsApp/app/controllers/msgboard_controller.rb:33: circular argument reference - msg
+C:/Users/User/portfolio/RailsApp/app/controllers/msgboard_controller.rb:33: circular argument reference - name
+C:/Users/User/portfolio/RailsApp/app/controllers/msgboard_controller.rb:33: circular argument reference - mail
+C:/Users/User/portfolio/RailsApp/app/controllers/msgboard_controller.rb:38: syntax error, unexpected end-of-input, expecting `end'):
+  
+app/controllers/msgboard_controller.rb:33: circular argument reference - msg
+app/controllers/msgboard_controller.rb:33: circular argument reference - name
+app/controllers/msgboard_controller.rb:33: circular argument reference - mail
+app/controllers/msgboard_controller.rb:38: syntax error, unexpected end-of-input, expecting `end'
+app/controllers/msgboard_controller.rb:33: circular argument reference - msg
+app/controllers/msgboard_controller.rb:33: circular argument reference - name
+app/controllers/msgboard_controller.rb:33: circular argument reference - mail
+app/controllers/msgboard_controller.rb:38: syntax error, unexpected end-of-input, expecting `end'
+app/controllers/msgboard_controller.rb:33: circular argument reference - msg
+app/controllers/msgboard_controller.rb:33: circular argument reference - name
+app/controllers/msgboard_controller.rb:33: circular argument reference - mail
+app/controllers/msgboard_controller.rb:38: syntax error, unexpected end-of-input, expecting `end'
+Started GET "/msgboard" for ::1 at 2021-02-16 15:01:51 +0900
+  
+SyntaxError (C:/Users/User/portfolio/RailsApp/app/controllers/msgboard_controller.rb:35: circular argument reference - msg
+C:/Users/User/portfolio/RailsApp/app/controllers/msgboard_controller.rb:35: circular argument reference - name
+C:/Users/User/portfolio/RailsApp/app/controllers/msgboard_controller.rb:35: circular argument reference - mail):
+  
+app/controllers/msgboard_controller.rb:35: circular argument reference - msg
+app/controllers/msgboard_controller.rb:35: circular argument reference - name
+app/controllers/msgboard_controller.rb:35: circular argument reference - mail
+app/controllers/msgboard_controller.rb:35: circular argument reference - msg
+app/controllers/msgboard_controller.rb:35: circular argument reference - name
+app/controllers/msgboard_controller.rb:35: circular argument reference - mail
+app/controllers/msgboard_controller.rb:35: circular argument reference - msg
+app/controllers/msgboard_controller.rb:35: circular argument reference - name
+app/controllers/msgboard_controller.rb:35: circular argument reference - mail
+Started GET "/msgboard" for ::1 at 2021-02-16 15:03:22 +0900
+  
+SyntaxError (C:/Users/User/portfolio/RailsApp/app/controllers/msgboard_controller.rb:35: circular argument reference - msg
+C:/Users/User/portfolio/RailsApp/app/controllers/msgboard_controller.rb:35: circular argument reference - name
+C:/Users/User/portfolio/RailsApp/app/controllers/msgboard_controller.rb:35: circular argument reference - mail):
+  
+app/controllers/msgboard_controller.rb:35: circular argument reference - msg
+app/controllers/msgboard_controller.rb:35: circular argument reference - name
+app/controllers/msgboard_controller.rb:35: circular argument reference - mail
+app/controllers/msgboard_controller.rb:35: circular argument reference - msg
+app/controllers/msgboard_controller.rb:35: circular argument reference - name
+app/controllers/msgboard_controller.rb:35: circular argument reference - mail
+app/controllers/msgboard_controller.rb:35: circular argument reference - msg
+app/controllers/msgboard_controller.rb:35: circular argument reference - name
+app/controllers/msgboard_controller.rb:35: circular argument reference - mail
+Started GET "/msgboard" for ::1 at 2021-02-16 15:09:17 +0900
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  
+SyntaxError (C:/Users/User/portfolio/RailsApp/app/controllers/msgboard_controller.rb:35: circular argument reference - msg
+C:/Users/User/portfolio/RailsApp/app/controllers/msgboard_controller.rb:35: circular argument reference - name
+C:/Users/User/portfolio/RailsApp/app/controllers/msgboard_controller.rb:35: circular argument reference - mail):
+  
+app/controllers/msgboard_controller.rb:35: circular argument reference - msg
+app/controllers/msgboard_controller.rb:35: circular argument reference - name
+app/controllers/msgboard_controller.rb:35: circular argument reference - mail
+app/controllers/msgboard_controller.rb:35: circular argument reference - msg
+app/controllers/msgboard_controller.rb:35: circular argument reference - name
+app/controllers/msgboard_controller.rb:35: circular argument reference - mail
+app/controllers/msgboard_controller.rb:35: circular argument reference - msg
+app/controllers/msgboard_controller.rb:35: circular argument reference - name
+app/controllers/msgboard_controller.rb:35: circular argument reference - mail
+Started GET "/msgboard" for ::1 at 2021-02-16 15:10:18 +0900
+  
+SyntaxError (C:/Users/User/portfolio/RailsApp/app/controllers/msgboard_controller.rb:40: syntax error, unexpected `end', expecting end-of-input):
+  
+app/controllers/msgboard_controller.rb:40: syntax error, unexpected `end', expecting end-of-input
+app/controllers/msgboard_controller.rb:40: syntax error, unexpected `end', expecting end-of-input
+app/controllers/msgboard_controller.rb:40: syntax error, unexpected `end', expecting end-of-input
+Started GET "/msgboard" for ::1 at 2021-02-16 15:12:15 +0900
+  
+SyntaxError (C:/Users/User/portfolio/RailsApp/app/controllers/msgboard_controller.rb:35: circular argument reference - msg
+C:/Users/User/portfolio/RailsApp/app/controllers/msgboard_controller.rb:35: circular argument reference - name
+C:/Users/User/portfolio/RailsApp/app/controllers/msgboard_controller.rb:35: circular argument reference - mail
+C:/Users/User/portfolio/RailsApp/app/controllers/msgboard_controller.rb:39: syntax error, unexpected end-of-input, expecting `end'):
+  
+app/controllers/msgboard_controller.rb:35: circular argument reference - msg
+app/controllers/msgboard_controller.rb:35: circular argument reference - name
+app/controllers/msgboard_controller.rb:35: circular argument reference - mail
+app/controllers/msgboard_controller.rb:39: syntax error, unexpected end-of-input, expecting `end'
+app/controllers/msgboard_controller.rb:35: circular argument reference - msg
+app/controllers/msgboard_controller.rb:35: circular argument reference - name
+app/controllers/msgboard_controller.rb:35: circular argument reference - mail
+app/controllers/msgboard_controller.rb:39: syntax error, unexpected end-of-input, expecting `end'
+app/controllers/msgboard_controller.rb:35: circular argument reference - msg
+app/controllers/msgboard_controller.rb:35: circular argument reference - name
+app/controllers/msgboard_controller.rb:35: circular argument reference - mail
+app/controllers/msgboard_controller.rb:39: syntax error, unexpected end-of-input, expecting `end'
+Started GET "/msgboard" for ::1 at 2021-02-16 15:12:19 +0900
+  
+SyntaxError (C:/Users/User/portfolio/RailsApp/app/controllers/msgboard_controller.rb:35: circular argument reference - msg
+C:/Users/User/portfolio/RailsApp/app/controllers/msgboard_controller.rb:35: circular argument reference - name
+C:/Users/User/portfolio/RailsApp/app/controllers/msgboard_controller.rb:35: circular argument reference - mail
+C:/Users/User/portfolio/RailsApp/app/controllers/msgboard_controller.rb:39: syntax error, unexpected end-of-input, expecting `end'):
+  
+app/controllers/msgboard_controller.rb:35: circular argument reference - msg
+app/controllers/msgboard_controller.rb:35: circular argument reference - name
+app/controllers/msgboard_controller.rb:35: circular argument reference - mail
+app/controllers/msgboard_controller.rb:39: syntax error, unexpected end-of-input, expecting `end'
+app/controllers/msgboard_controller.rb:35: circular argument reference - msg
+app/controllers/msgboard_controller.rb:35: circular argument reference - name
+app/controllers/msgboard_controller.rb:35: circular argument reference - mail
+app/controllers/msgboard_controller.rb:39: syntax error, unexpected end-of-input, expecting `end'
+app/controllers/msgboard_controller.rb:35: circular argument reference - msg
+app/controllers/msgboard_controller.rb:35: circular argument reference - name
+app/controllers/msgboard_controller.rb:35: circular argument reference - mail
+app/controllers/msgboard_controller.rb:39: syntax error, unexpected end-of-input, expecting `end'
+Started GET "/msgboard" for ::1 at 2021-02-16 15:12:27 +0900
+  
+SyntaxError (C:/Users/User/portfolio/RailsApp/app/controllers/msgboard_controller.rb:35: circular argument reference - msg
+C:/Users/User/portfolio/RailsApp/app/controllers/msgboard_controller.rb:35: circular argument reference - name
+C:/Users/User/portfolio/RailsApp/app/controllers/msgboard_controller.rb:35: circular argument reference - mail):
+  
+app/controllers/msgboard_controller.rb:35: circular argument reference - msg
+app/controllers/msgboard_controller.rb:35: circular argument reference - name
+app/controllers/msgboard_controller.rb:35: circular argument reference - mail
+app/controllers/msgboard_controller.rb:35: circular argument reference - msg
+app/controllers/msgboard_controller.rb:35: circular argument reference - name
+app/controllers/msgboard_controller.rb:35: circular argument reference - mail
+app/controllers/msgboard_controller.rb:35: circular argument reference - msg
+app/controllers/msgboard_controller.rb:35: circular argument reference - name
+app/controllers/msgboard_controller.rb:35: circular argument reference - mail
+Started GET "/msgboard" for ::1 at 2021-02-16 15:36:38 +0900
+  
+SyntaxError (C:/Users/User/portfolio/RailsApp/app/controllers/msgboard_controller.rb:35: circular argument reference - msg
+C:/Users/User/portfolio/RailsApp/app/controllers/msgboard_controller.rb:35: circular argument reference - name
+C:/Users/User/portfolio/RailsApp/app/controllers/msgboard_controller.rb:35: circular argument reference - mail):
+  
+app/controllers/msgboard_controller.rb:35: circular argument reference - msg
+app/controllers/msgboard_controller.rb:35: circular argument reference - name
+app/controllers/msgboard_controller.rb:35: circular argument reference - mail
+app/controllers/msgboard_controller.rb:35: circular argument reference - msg
+app/controllers/msgboard_controller.rb:35: circular argument reference - name
+app/controllers/msgboard_controller.rb:35: circular argument reference - mail
+app/controllers/msgboard_controller.rb:35: circular argument reference - msg
+app/controllers/msgboard_controller.rb:35: circular argument reference - name
+app/controllers/msgboard_controller.rb:35: circular argument reference - mail
+Started GET "/msgboard" for ::1 at 2021-02-16 15:37:29 +0900
+Processing by MsgboardController#index as HTML
+Completed 500 Internal Server Error in 17ms (Allocations: 2623)
+
+
+  
+ActionView::MissingTemplate (Missing template layouts/msgbord with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}. Searched in:
+  * "C:/Users/User/portfolio/RailsApp/app/views"
+  * "C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/actiontext-6.1.2.1/app/views"
+  * "C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/actionmailbox-6.1.2.1/app/views"
+):
+  
+actionview (6.1.2.1) lib/action_view/path_set.rb:48:in `find'
+actionview (6.1.2.1) lib/action_view/lookup_context.rb:127:in `find'
+actionview (6.1.2.1) lib/action_view/renderer/template_renderer.rb:97:in `resolve_layout'
+actionview (6.1.2.1) lib/action_view/renderer/template_renderer.rb:104:in `resolve_layout'
+actionview (6.1.2.1) lib/action_view/renderer/template_renderer.rb:84:in `find_layout'
+actionview (6.1.2.1) lib/action_view/renderer/template_renderer.rb:67:in `render_with_layout'
+actionview (6.1.2.1) lib/action_view/renderer/template_renderer.rb:55:in `render_template'
+actionview (6.1.2.1) lib/action_view/renderer/template_renderer.rb:11:in `render'
+actionview (6.1.2.1) lib/action_view/renderer/renderer.rb:61:in `render_template_to_object'
+actionview (6.1.2.1) lib/action_view/renderer/renderer.rb:29:in `render_to_object'
+actionview (6.1.2.1) lib/action_view/rendering.rb:117:in `block in _render_template'
+actionview (6.1.2.1) lib/action_view/base.rb:273:in `in_rendering_context'
+actionview (6.1.2.1) lib/action_view/rendering.rb:116:in `_render_template'
+actionpack (6.1.2.1) lib/action_controller/metal/streaming.rb:218:in `_render_template'
+actionview (6.1.2.1) lib/action_view/rendering.rb:103:in `render_to_body'
+actionpack (6.1.2.1) lib/action_controller/metal/rendering.rb:52:in `render_to_body'
+actionpack (6.1.2.1) lib/action_controller/metal/renderers.rb:142:in `render_to_body'
+actionpack (6.1.2.1) lib/abstract_controller/rendering.rb:25:in `render'
+actionpack (6.1.2.1) lib/action_controller/metal/rendering.rb:36:in `render'
+actionpack (6.1.2.1) lib/action_controller/metal/instrumentation.rb:46:in `block (2 levels) in render'
+C:/Ruby27-x64/lib/ruby/2.7.0/benchmark.rb:308:in `realtime'
+activesupport (6.1.2.1) lib/active_support/core_ext/benchmark.rb:14:in `ms'
+actionpack (6.1.2.1) lib/action_controller/metal/instrumentation.rb:46:in `block in render'
+actionpack (6.1.2.1) lib/action_controller/metal/instrumentation.rb:86:in `cleanup_view_runtime'
+activerecord (6.1.2.1) lib/active_record/railties/controller_runtime.rb:39:in `cleanup_view_runtime'
+actionpack (6.1.2.1) lib/action_controller/metal/instrumentation.rb:45:in `render'
+actionpack (6.1.2.1) lib/action_controller/metal/implicit_render.rb:35:in `default_render'
+actionpack (6.1.2.1) lib/action_controller/metal/basic_implicit_render.rb:6:in `block in send_action'
+actionpack (6.1.2.1) lib/action_controller/metal/basic_implicit_render.rb:6:in `tap'
+actionpack (6.1.2.1) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (6.1.2.1) lib/abstract_controller/base.rb:228:in `process_action'
+actionpack (6.1.2.1) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (6.1.2.1) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (6.1.2.1) lib/active_support/callbacks.rb:117:in `block in run_callbacks'
+actiontext (6.1.2.1) lib/action_text/rendering.rb:20:in `with_renderer'
+actiontext (6.1.2.1) lib/action_text/engine.rb:55:in `block (4 levels) in <class:Engine>'
+activesupport (6.1.2.1) lib/active_support/callbacks.rb:126:in `instance_exec'
+activesupport (6.1.2.1) lib/active_support/callbacks.rb:126:in `block in run_callbacks'
+activesupport (6.1.2.1) lib/active_support/callbacks.rb:137:in `run_callbacks'
+actionpack (6.1.2.1) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (6.1.2.1) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (6.1.2.1) lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+activesupport (6.1.2.1) lib/active_support/notifications.rb:203:in `block in instrument'
+activesupport (6.1.2.1) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (6.1.2.1) lib/active_support/notifications.rb:203:in `instrument'
+actionpack (6.1.2.1) lib/action_controller/metal/instrumentation.rb:33:in `process_action'
+actionpack (6.1.2.1) lib/action_controller/metal/params_wrapper.rb:249:in `process_action'
+activerecord (6.1.2.1) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (6.1.2.1) lib/abstract_controller/base.rb:165:in `process'
+actionview (6.1.2.1) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.1.2.1) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.1.2.1) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.1.2.1) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.1.2.1) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.1.2.1) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (6.1.2.1) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.1.2.1) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.1.2.1) lib/action_dispatch/routing/route_set.rb:842:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (6.1.2.1) lib/action_dispatch/http/permissions_policy.rb:22:in `call'
+actionpack (6.1.2.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.1.2.1) lib/action_dispatch/middleware/cookies.rb:689:in `call'
+activerecord (6.1.2.1) lib/active_record/migration.rb:601:in `call'
+actionpack (6.1.2.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.2.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.2.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.2.1) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.1.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.2.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.2.1) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.2.1) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.2.1) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.1.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.2.1) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.2.1) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.2.1) lib/action_dispatch/middleware/host_authorization.rb:98:in `call'
+rack-mini-profiler (2.3.1) lib/mini_profiler/profiler.rb:373:in `call'
+webpacker (5.2.1) lib/webpacker/dev_server_proxy.rb:25:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.1.2.1) lib/rails/engine.rb:539:in `call'
+puma (5.2.1) lib/puma/configuration.rb:247:in `call'
+puma (5.2.1) lib/puma/request.rb:76:in `block in handle_request'
+puma (5.2.1) lib/puma/thread_pool.rb:337:in `with_force_shutdown'
+puma (5.2.1) lib/puma/request.rb:75:in `handle_request'
+puma (5.2.1) lib/puma/server.rb:431:in `process_client'
+puma (5.2.1) lib/puma/thread_pool.rb:145:in `block in spawn_thread'
+Started GET "/msgboard" for ::1 at 2021-02-16 15:43:59 +0900
+  
+SyntaxError (C:/Users/User/portfolio/RailsApp/app/controllers/msgboard_controller.rb:35: circular argument reference - msg
+C:/Users/User/portfolio/RailsApp/app/controllers/msgboard_controller.rb:35: circular argument reference - name
+C:/Users/User/portfolio/RailsApp/app/controllers/msgboard_controller.rb:35: circular argument reference - mail):
+  
+app/controllers/msgboard_controller.rb:35: circular argument reference - msg
+app/controllers/msgboard_controller.rb:35: circular argument reference - name
+app/controllers/msgboard_controller.rb:35: circular argument reference - mail
+app/controllers/msgboard_controller.rb:35: circular argument reference - msg
+app/controllers/msgboard_controller.rb:35: circular argument reference - name
+app/controllers/msgboard_controller.rb:35: circular argument reference - mail
+app/controllers/msgboard_controller.rb:35: circular argument reference - msg
+app/controllers/msgboard_controller.rb:35: circular argument reference - name
+app/controllers/msgboard_controller.rb:35: circular argument reference - mail
+Started GET "/msgboard" for ::1 at 2021-02-16 15:48:47 +0900
+Processing by MsgboardController#index as HTML
+Completed 500 Internal Server Error in 2ms (Allocations: 917)
+
+
+  
+ActionView::MissingTemplate (Missing template layouts/msgbord with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}. Searched in:
+  * "C:/Users/User/portfolio/RailsApp/app/views"
+  * "C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/actiontext-6.1.2.1/app/views"
+  * "C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/actionmailbox-6.1.2.1/app/views"
+):
+  
+actionview (6.1.2.1) lib/action_view/path_set.rb:48:in `find'
+actionview (6.1.2.1) lib/action_view/lookup_context.rb:127:in `find'
+actionview (6.1.2.1) lib/action_view/renderer/template_renderer.rb:97:in `resolve_layout'
+actionview (6.1.2.1) lib/action_view/renderer/template_renderer.rb:104:in `resolve_layout'
+actionview (6.1.2.1) lib/action_view/renderer/template_renderer.rb:84:in `find_layout'
+actionview (6.1.2.1) lib/action_view/renderer/template_renderer.rb:67:in `render_with_layout'
+actionview (6.1.2.1) lib/action_view/renderer/template_renderer.rb:55:in `render_template'
+actionview (6.1.2.1) lib/action_view/renderer/template_renderer.rb:11:in `render'
+actionview (6.1.2.1) lib/action_view/renderer/renderer.rb:61:in `render_template_to_object'
+actionview (6.1.2.1) lib/action_view/renderer/renderer.rb:29:in `render_to_object'
+actionview (6.1.2.1) lib/action_view/rendering.rb:117:in `block in _render_template'
+actionview (6.1.2.1) lib/action_view/base.rb:273:in `in_rendering_context'
+actionview (6.1.2.1) lib/action_view/rendering.rb:116:in `_render_template'
+actionpack (6.1.2.1) lib/action_controller/metal/streaming.rb:218:in `_render_template'
+actionview (6.1.2.1) lib/action_view/rendering.rb:103:in `render_to_body'
+actionpack (6.1.2.1) lib/action_controller/metal/rendering.rb:52:in `render_to_body'
+actionpack (6.1.2.1) lib/action_controller/metal/renderers.rb:142:in `render_to_body'
+actionpack (6.1.2.1) lib/abstract_controller/rendering.rb:25:in `render'
+actionpack (6.1.2.1) lib/action_controller/metal/rendering.rb:36:in `render'
+actionpack (6.1.2.1) lib/action_controller/metal/instrumentation.rb:46:in `block (2 levels) in render'
+C:/Ruby27-x64/lib/ruby/2.7.0/benchmark.rb:308:in `realtime'
+activesupport (6.1.2.1) lib/active_support/core_ext/benchmark.rb:14:in `ms'
+actionpack (6.1.2.1) lib/action_controller/metal/instrumentation.rb:46:in `block in render'
+actionpack (6.1.2.1) lib/action_controller/metal/instrumentation.rb:86:in `cleanup_view_runtime'
+activerecord (6.1.2.1) lib/active_record/railties/controller_runtime.rb:39:in `cleanup_view_runtime'
+actionpack (6.1.2.1) lib/action_controller/metal/instrumentation.rb:45:in `render'
+actionpack (6.1.2.1) lib/action_controller/metal/implicit_render.rb:35:in `default_render'
+actionpack (6.1.2.1) lib/action_controller/metal/basic_implicit_render.rb:6:in `block in send_action'
+actionpack (6.1.2.1) lib/action_controller/metal/basic_implicit_render.rb:6:in `tap'
+actionpack (6.1.2.1) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (6.1.2.1) lib/abstract_controller/base.rb:228:in `process_action'
+actionpack (6.1.2.1) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (6.1.2.1) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (6.1.2.1) lib/active_support/callbacks.rb:117:in `block in run_callbacks'
+actiontext (6.1.2.1) lib/action_text/rendering.rb:20:in `with_renderer'
+actiontext (6.1.2.1) lib/action_text/engine.rb:55:in `block (4 levels) in <class:Engine>'
+activesupport (6.1.2.1) lib/active_support/callbacks.rb:126:in `instance_exec'
+activesupport (6.1.2.1) lib/active_support/callbacks.rb:126:in `block in run_callbacks'
+activesupport (6.1.2.1) lib/active_support/callbacks.rb:137:in `run_callbacks'
+actionpack (6.1.2.1) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (6.1.2.1) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (6.1.2.1) lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+activesupport (6.1.2.1) lib/active_support/notifications.rb:203:in `block in instrument'
+activesupport (6.1.2.1) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (6.1.2.1) lib/active_support/notifications.rb:203:in `instrument'
+actionpack (6.1.2.1) lib/action_controller/metal/instrumentation.rb:33:in `process_action'
+actionpack (6.1.2.1) lib/action_controller/metal/params_wrapper.rb:249:in `process_action'
+activerecord (6.1.2.1) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (6.1.2.1) lib/abstract_controller/base.rb:165:in `process'
+actionview (6.1.2.1) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.1.2.1) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.1.2.1) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.1.2.1) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.1.2.1) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.1.2.1) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (6.1.2.1) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.1.2.1) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.1.2.1) lib/action_dispatch/routing/route_set.rb:842:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (6.1.2.1) lib/action_dispatch/http/permissions_policy.rb:22:in `call'
+actionpack (6.1.2.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.1.2.1) lib/action_dispatch/middleware/cookies.rb:689:in `call'
+activerecord (6.1.2.1) lib/active_record/migration.rb:601:in `call'
+actionpack (6.1.2.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.2.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.2.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.2.1) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.1.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.2.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.2.1) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.2.1) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.2.1) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.1.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.2.1) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.2.1) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.2.1) lib/action_dispatch/middleware/host_authorization.rb:98:in `call'
+rack-mini-profiler (2.3.1) lib/mini_profiler/profiler.rb:373:in `call'
+webpacker (5.2.1) lib/webpacker/dev_server_proxy.rb:25:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.1.2.1) lib/rails/engine.rb:539:in `call'
+puma (5.2.1) lib/puma/configuration.rb:247:in `call'
+puma (5.2.1) lib/puma/request.rb:76:in `block in handle_request'
+puma (5.2.1) lib/puma/thread_pool.rb:337:in `with_force_shutdown'
+puma (5.2.1) lib/puma/request.rb:75:in `handle_request'
+puma (5.2.1) lib/puma/server.rb:431:in `process_client'
+puma (5.2.1) lib/puma/thread_pool.rb:145:in `block in spawn_thread'
+Started GET "/msgboard" for ::1 at 2021-02-16 16:03:54 +0900
+Processing by MsgboardController#index as HTML
+Completed 500 Internal Server Error in 2ms (Allocations: 917)
+
+
+  
+ActionView::MissingTemplate (Missing template layouts/msgbord with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}. Searched in:
+  * "C:/Users/User/portfolio/RailsApp/app/views"
+  * "C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/actiontext-6.1.2.1/app/views"
+  * "C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/actionmailbox-6.1.2.1/app/views"
+):
+  
+actionview (6.1.2.1) lib/action_view/path_set.rb:48:in `find'
+actionview (6.1.2.1) lib/action_view/lookup_context.rb:127:in `find'
+actionview (6.1.2.1) lib/action_view/renderer/template_renderer.rb:97:in `resolve_layout'
+actionview (6.1.2.1) lib/action_view/renderer/template_renderer.rb:104:in `resolve_layout'
+actionview (6.1.2.1) lib/action_view/renderer/template_renderer.rb:84:in `find_layout'
+actionview (6.1.2.1) lib/action_view/renderer/template_renderer.rb:67:in `render_with_layout'
+actionview (6.1.2.1) lib/action_view/renderer/template_renderer.rb:55:in `render_template'
+actionview (6.1.2.1) lib/action_view/renderer/template_renderer.rb:11:in `render'
+actionview (6.1.2.1) lib/action_view/renderer/renderer.rb:61:in `render_template_to_object'
+actionview (6.1.2.1) lib/action_view/renderer/renderer.rb:29:in `render_to_object'
+actionview (6.1.2.1) lib/action_view/rendering.rb:117:in `block in _render_template'
+actionview (6.1.2.1) lib/action_view/base.rb:273:in `in_rendering_context'
+actionview (6.1.2.1) lib/action_view/rendering.rb:116:in `_render_template'
+actionpack (6.1.2.1) lib/action_controller/metal/streaming.rb:218:in `_render_template'
+actionview (6.1.2.1) lib/action_view/rendering.rb:103:in `render_to_body'
+actionpack (6.1.2.1) lib/action_controller/metal/rendering.rb:52:in `render_to_body'
+actionpack (6.1.2.1) lib/action_controller/metal/renderers.rb:142:in `render_to_body'
+actionpack (6.1.2.1) lib/abstract_controller/rendering.rb:25:in `render'
+actionpack (6.1.2.1) lib/action_controller/metal/rendering.rb:36:in `render'
+actionpack (6.1.2.1) lib/action_controller/metal/instrumentation.rb:46:in `block (2 levels) in render'
+C:/Ruby27-x64/lib/ruby/2.7.0/benchmark.rb:308:in `realtime'
+activesupport (6.1.2.1) lib/active_support/core_ext/benchmark.rb:14:in `ms'
+actionpack (6.1.2.1) lib/action_controller/metal/instrumentation.rb:46:in `block in render'
+actionpack (6.1.2.1) lib/action_controller/metal/instrumentation.rb:86:in `cleanup_view_runtime'
+activerecord (6.1.2.1) lib/active_record/railties/controller_runtime.rb:39:in `cleanup_view_runtime'
+actionpack (6.1.2.1) lib/action_controller/metal/instrumentation.rb:45:in `render'
+actionpack (6.1.2.1) lib/action_controller/metal/implicit_render.rb:35:in `default_render'
+actionpack (6.1.2.1) lib/action_controller/metal/basic_implicit_render.rb:6:in `block in send_action'
+actionpack (6.1.2.1) lib/action_controller/metal/basic_implicit_render.rb:6:in `tap'
+actionpack (6.1.2.1) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (6.1.2.1) lib/abstract_controller/base.rb:228:in `process_action'
+actionpack (6.1.2.1) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (6.1.2.1) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (6.1.2.1) lib/active_support/callbacks.rb:117:in `block in run_callbacks'
+actiontext (6.1.2.1) lib/action_text/rendering.rb:20:in `with_renderer'
+actiontext (6.1.2.1) lib/action_text/engine.rb:55:in `block (4 levels) in <class:Engine>'
+activesupport (6.1.2.1) lib/active_support/callbacks.rb:126:in `instance_exec'
+activesupport (6.1.2.1) lib/active_support/callbacks.rb:126:in `block in run_callbacks'
+activesupport (6.1.2.1) lib/active_support/callbacks.rb:137:in `run_callbacks'
+actionpack (6.1.2.1) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (6.1.2.1) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (6.1.2.1) lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+activesupport (6.1.2.1) lib/active_support/notifications.rb:203:in `block in instrument'
+activesupport (6.1.2.1) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (6.1.2.1) lib/active_support/notifications.rb:203:in `instrument'
+actionpack (6.1.2.1) lib/action_controller/metal/instrumentation.rb:33:in `process_action'
+actionpack (6.1.2.1) lib/action_controller/metal/params_wrapper.rb:249:in `process_action'
+activerecord (6.1.2.1) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (6.1.2.1) lib/abstract_controller/base.rb:165:in `process'
+actionview (6.1.2.1) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.1.2.1) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.1.2.1) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.1.2.1) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.1.2.1) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.1.2.1) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (6.1.2.1) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.1.2.1) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.1.2.1) lib/action_dispatch/routing/route_set.rb:842:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (6.1.2.1) lib/action_dispatch/http/permissions_policy.rb:22:in `call'
+actionpack (6.1.2.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.1.2.1) lib/action_dispatch/middleware/cookies.rb:689:in `call'
+activerecord (6.1.2.1) lib/active_record/migration.rb:601:in `call'
+actionpack (6.1.2.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.2.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.2.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.2.1) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.1.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.2.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.2.1) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.2.1) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.2.1) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.1.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.2.1) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.2.1) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.2.1) lib/action_dispatch/middleware/host_authorization.rb:98:in `call'
+rack-mini-profiler (2.3.1) lib/mini_profiler/profiler.rb:373:in `call'
+webpacker (5.2.1) lib/webpacker/dev_server_proxy.rb:25:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.1.2.1) lib/rails/engine.rb:539:in `call'
+puma (5.2.1) lib/puma/configuration.rb:247:in `call'
+puma (5.2.1) lib/puma/request.rb:76:in `block in handle_request'
+puma (5.2.1) lib/puma/thread_pool.rb:337:in `with_force_shutdown'
+puma (5.2.1) lib/puma/request.rb:75:in `handle_request'
+puma (5.2.1) lib/puma/server.rb:431:in `process_client'
+puma (5.2.1) lib/puma/thread_pool.rb:145:in `block in spawn_thread'
+Started GET "/msgboard" for ::1 at 2021-02-16 16:03:57 +0900
+Processing by MsgboardController#index as HTML
+Completed 500 Internal Server Error in 1ms (Allocations: 819)
+
+
+  
+ActionView::MissingTemplate (Missing template layouts/msgbord with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}. Searched in:
+  * "C:/Users/User/portfolio/RailsApp/app/views"
+  * "C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/actiontext-6.1.2.1/app/views"
+  * "C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/actionmailbox-6.1.2.1/app/views"
+):
+  
+actionview (6.1.2.1) lib/action_view/path_set.rb:48:in `find'
+actionview (6.1.2.1) lib/action_view/lookup_context.rb:127:in `find'
+actionview (6.1.2.1) lib/action_view/renderer/template_renderer.rb:97:in `resolve_layout'
+actionview (6.1.2.1) lib/action_view/renderer/template_renderer.rb:104:in `resolve_layout'
+actionview (6.1.2.1) lib/action_view/renderer/template_renderer.rb:84:in `find_layout'
+actionview (6.1.2.1) lib/action_view/renderer/template_renderer.rb:67:in `render_with_layout'
+actionview (6.1.2.1) lib/action_view/renderer/template_renderer.rb:55:in `render_template'
+actionview (6.1.2.1) lib/action_view/renderer/template_renderer.rb:11:in `render'
+actionview (6.1.2.1) lib/action_view/renderer/renderer.rb:61:in `render_template_to_object'
+actionview (6.1.2.1) lib/action_view/renderer/renderer.rb:29:in `render_to_object'
+actionview (6.1.2.1) lib/action_view/rendering.rb:117:in `block in _render_template'
+actionview (6.1.2.1) lib/action_view/base.rb:273:in `in_rendering_context'
+actionview (6.1.2.1) lib/action_view/rendering.rb:116:in `_render_template'
+actionpack (6.1.2.1) lib/action_controller/metal/streaming.rb:218:in `_render_template'
+actionview (6.1.2.1) lib/action_view/rendering.rb:103:in `render_to_body'
+actionpack (6.1.2.1) lib/action_controller/metal/rendering.rb:52:in `render_to_body'
+actionpack (6.1.2.1) lib/action_controller/metal/renderers.rb:142:in `render_to_body'
+actionpack (6.1.2.1) lib/abstract_controller/rendering.rb:25:in `render'
+actionpack (6.1.2.1) lib/action_controller/metal/rendering.rb:36:in `render'
+actionpack (6.1.2.1) lib/action_controller/metal/instrumentation.rb:46:in `block (2 levels) in render'
+C:/Ruby27-x64/lib/ruby/2.7.0/benchmark.rb:308:in `realtime'
+activesupport (6.1.2.1) lib/active_support/core_ext/benchmark.rb:14:in `ms'
+actionpack (6.1.2.1) lib/action_controller/metal/instrumentation.rb:46:in `block in render'
+actionpack (6.1.2.1) lib/action_controller/metal/instrumentation.rb:86:in `cleanup_view_runtime'
+activerecord (6.1.2.1) lib/active_record/railties/controller_runtime.rb:39:in `cleanup_view_runtime'
+actionpack (6.1.2.1) lib/action_controller/metal/instrumentation.rb:45:in `render'
+actionpack (6.1.2.1) lib/action_controller/metal/implicit_render.rb:35:in `default_render'
+actionpack (6.1.2.1) lib/action_controller/metal/basic_implicit_render.rb:6:in `block in send_action'
+actionpack (6.1.2.1) lib/action_controller/metal/basic_implicit_render.rb:6:in `tap'
+actionpack (6.1.2.1) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (6.1.2.1) lib/abstract_controller/base.rb:228:in `process_action'
+actionpack (6.1.2.1) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (6.1.2.1) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (6.1.2.1) lib/active_support/callbacks.rb:117:in `block in run_callbacks'
+actiontext (6.1.2.1) lib/action_text/rendering.rb:20:in `with_renderer'
+actiontext (6.1.2.1) lib/action_text/engine.rb:55:in `block (4 levels) in <class:Engine>'
+activesupport (6.1.2.1) lib/active_support/callbacks.rb:126:in `instance_exec'
+activesupport (6.1.2.1) lib/active_support/callbacks.rb:126:in `block in run_callbacks'
+activesupport (6.1.2.1) lib/active_support/callbacks.rb:137:in `run_callbacks'
+actionpack (6.1.2.1) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (6.1.2.1) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (6.1.2.1) lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+activesupport (6.1.2.1) lib/active_support/notifications.rb:203:in `block in instrument'
+activesupport (6.1.2.1) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (6.1.2.1) lib/active_support/notifications.rb:203:in `instrument'
+actionpack (6.1.2.1) lib/action_controller/metal/instrumentation.rb:33:in `process_action'
+actionpack (6.1.2.1) lib/action_controller/metal/params_wrapper.rb:249:in `process_action'
+activerecord (6.1.2.1) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (6.1.2.1) lib/abstract_controller/base.rb:165:in `process'
+actionview (6.1.2.1) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.1.2.1) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.1.2.1) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.1.2.1) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.1.2.1) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.1.2.1) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (6.1.2.1) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.1.2.1) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.1.2.1) lib/action_dispatch/routing/route_set.rb:842:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (6.1.2.1) lib/action_dispatch/http/permissions_policy.rb:22:in `call'
+actionpack (6.1.2.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.1.2.1) lib/action_dispatch/middleware/cookies.rb:689:in `call'
+activerecord (6.1.2.1) lib/active_record/migration.rb:601:in `call'
+actionpack (6.1.2.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.2.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.2.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.2.1) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.1.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.2.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.2.1) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.2.1) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.2.1) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.1.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.2.1) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.2.1) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.2.1) lib/action_dispatch/middleware/host_authorization.rb:98:in `call'
+rack-mini-profiler (2.3.1) lib/mini_profiler/profiler.rb:373:in `call'
+webpacker (5.2.1) lib/webpacker/dev_server_proxy.rb:25:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.1.2.1) lib/rails/engine.rb:539:in `call'
+puma (5.2.1) lib/puma/configuration.rb:247:in `call'
+puma (5.2.1) lib/puma/request.rb:76:in `block in handle_request'
+puma (5.2.1) lib/puma/thread_pool.rb:337:in `with_force_shutdown'
+puma (5.2.1) lib/puma/request.rb:75:in `handle_request'
+puma (5.2.1) lib/puma/server.rb:431:in `process_client'
+puma (5.2.1) lib/puma/thread_pool.rb:145:in `block in spawn_thread'
+Started GET "/msgboard" for ::1 at 2021-02-16 16:07:45 +0900
+Processing by MsgboardController#index as HTML
+Completed 500 Internal Server Error in 2ms (Allocations: 917)
+
+
+  
+ActionView::MissingTemplate (Missing template layouts/msgbord with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}. Searched in:
+  * "C:/Users/User/portfolio/RailsApp/app/views"
+  * "C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/actiontext-6.1.2.1/app/views"
+  * "C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/actionmailbox-6.1.2.1/app/views"
+):
+  
+actionview (6.1.2.1) lib/action_view/path_set.rb:48:in `find'
+actionview (6.1.2.1) lib/action_view/lookup_context.rb:127:in `find'
+actionview (6.1.2.1) lib/action_view/renderer/template_renderer.rb:97:in `resolve_layout'
+actionview (6.1.2.1) lib/action_view/renderer/template_renderer.rb:104:in `resolve_layout'
+actionview (6.1.2.1) lib/action_view/renderer/template_renderer.rb:84:in `find_layout'
+actionview (6.1.2.1) lib/action_view/renderer/template_renderer.rb:67:in `render_with_layout'
+actionview (6.1.2.1) lib/action_view/renderer/template_renderer.rb:55:in `render_template'
+actionview (6.1.2.1) lib/action_view/renderer/template_renderer.rb:11:in `render'
+actionview (6.1.2.1) lib/action_view/renderer/renderer.rb:61:in `render_template_to_object'
+actionview (6.1.2.1) lib/action_view/renderer/renderer.rb:29:in `render_to_object'
+actionview (6.1.2.1) lib/action_view/rendering.rb:117:in `block in _render_template'
+actionview (6.1.2.1) lib/action_view/base.rb:273:in `in_rendering_context'
+actionview (6.1.2.1) lib/action_view/rendering.rb:116:in `_render_template'
+actionpack (6.1.2.1) lib/action_controller/metal/streaming.rb:218:in `_render_template'
+actionview (6.1.2.1) lib/action_view/rendering.rb:103:in `render_to_body'
+actionpack (6.1.2.1) lib/action_controller/metal/rendering.rb:52:in `render_to_body'
+actionpack (6.1.2.1) lib/action_controller/metal/renderers.rb:142:in `render_to_body'
+actionpack (6.1.2.1) lib/abstract_controller/rendering.rb:25:in `render'
+actionpack (6.1.2.1) lib/action_controller/metal/rendering.rb:36:in `render'
+actionpack (6.1.2.1) lib/action_controller/metal/instrumentation.rb:46:in `block (2 levels) in render'
+C:/Ruby27-x64/lib/ruby/2.7.0/benchmark.rb:308:in `realtime'
+activesupport (6.1.2.1) lib/active_support/core_ext/benchmark.rb:14:in `ms'
+actionpack (6.1.2.1) lib/action_controller/metal/instrumentation.rb:46:in `block in render'
+actionpack (6.1.2.1) lib/action_controller/metal/instrumentation.rb:86:in `cleanup_view_runtime'
+activerecord (6.1.2.1) lib/active_record/railties/controller_runtime.rb:39:in `cleanup_view_runtime'
+actionpack (6.1.2.1) lib/action_controller/metal/instrumentation.rb:45:in `render'
+actionpack (6.1.2.1) lib/action_controller/metal/implicit_render.rb:35:in `default_render'
+actionpack (6.1.2.1) lib/action_controller/metal/basic_implicit_render.rb:6:in `block in send_action'
+actionpack (6.1.2.1) lib/action_controller/metal/basic_implicit_render.rb:6:in `tap'
+actionpack (6.1.2.1) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (6.1.2.1) lib/abstract_controller/base.rb:228:in `process_action'
+actionpack (6.1.2.1) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (6.1.2.1) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (6.1.2.1) lib/active_support/callbacks.rb:117:in `block in run_callbacks'
+actiontext (6.1.2.1) lib/action_text/rendering.rb:20:in `with_renderer'
+actiontext (6.1.2.1) lib/action_text/engine.rb:55:in `block (4 levels) in <class:Engine>'
+activesupport (6.1.2.1) lib/active_support/callbacks.rb:126:in `instance_exec'
+activesupport (6.1.2.1) lib/active_support/callbacks.rb:126:in `block in run_callbacks'
+activesupport (6.1.2.1) lib/active_support/callbacks.rb:137:in `run_callbacks'
+actionpack (6.1.2.1) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (6.1.2.1) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (6.1.2.1) lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+activesupport (6.1.2.1) lib/active_support/notifications.rb:203:in `block in instrument'
+activesupport (6.1.2.1) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (6.1.2.1) lib/active_support/notifications.rb:203:in `instrument'
+actionpack (6.1.2.1) lib/action_controller/metal/instrumentation.rb:33:in `process_action'
+actionpack (6.1.2.1) lib/action_controller/metal/params_wrapper.rb:249:in `process_action'
+activerecord (6.1.2.1) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (6.1.2.1) lib/abstract_controller/base.rb:165:in `process'
+actionview (6.1.2.1) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.1.2.1) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.1.2.1) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.1.2.1) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.1.2.1) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.1.2.1) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (6.1.2.1) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.1.2.1) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.1.2.1) lib/action_dispatch/routing/route_set.rb:842:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (6.1.2.1) lib/action_dispatch/http/permissions_policy.rb:22:in `call'
+actionpack (6.1.2.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.1.2.1) lib/action_dispatch/middleware/cookies.rb:689:in `call'
+activerecord (6.1.2.1) lib/active_record/migration.rb:601:in `call'
+actionpack (6.1.2.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.2.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.2.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.2.1) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.1.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.2.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.2.1) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.2.1) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.2.1) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.1.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.2.1) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.2.1) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.2.1) lib/action_dispatch/middleware/host_authorization.rb:98:in `call'
+rack-mini-profiler (2.3.1) lib/mini_profiler/profiler.rb:373:in `call'
+webpacker (5.2.1) lib/webpacker/dev_server_proxy.rb:25:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.1.2.1) lib/rails/engine.rb:539:in `call'
+puma (5.2.1) lib/puma/configuration.rb:247:in `call'
+puma (5.2.1) lib/puma/request.rb:76:in `block in handle_request'
+puma (5.2.1) lib/puma/thread_pool.rb:337:in `with_force_shutdown'
+puma (5.2.1) lib/puma/request.rb:75:in `handle_request'
+puma (5.2.1) lib/puma/server.rb:431:in `process_client'
+puma (5.2.1) lib/puma/thread_pool.rb:145:in `block in spawn_thread'
+Started GET "/msgboard" for ::1 at 2021-02-16 16:14:29 +0900
+  
+SyntaxError (C:/Users/User/portfolio/RailsApp/app/controllers/msgboard_controller.rb:35: circular argument reference - msg
+C:/Users/User/portfolio/RailsApp/app/controllers/msgboard_controller.rb:35: circular argument reference - name
+C:/Users/User/portfolio/RailsApp/app/controllers/msgboard_controller.rb:35: circular argument reference - mail):
+  
+app/controllers/msgboard_controller.rb:35: circular argument reference - msg
+app/controllers/msgboard_controller.rb:35: circular argument reference - name
+app/controllers/msgboard_controller.rb:35: circular argument reference - mail
+app/controllers/msgboard_controller.rb:35: circular argument reference - msg
+app/controllers/msgboard_controller.rb:35: circular argument reference - name
+app/controllers/msgboard_controller.rb:35: circular argument reference - mail
+app/controllers/msgboard_controller.rb:35: circular argument reference - msg
+app/controllers/msgboard_controller.rb:35: circular argument reference - name
+app/controllers/msgboard_controller.rb:35: circular argument reference - mail
+Started GET "/msgboard" for ::1 at 2021-02-16 16:14:39 +0900
+Processing by MsgboardController#index as HTML
+Completed 500 Internal Server Error in 16ms (Allocations: 1787)
+
+
+  
+ActionView::MissingTemplate (Missing template layouts/msgbord with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}. Searched in:
+  * "C:/Users/User/portfolio/RailsApp/app/views"
+  * "C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/actiontext-6.1.2.1/app/views"
+  * "C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/actionmailbox-6.1.2.1/app/views"
+):
+  
+actionview (6.1.2.1) lib/action_view/path_set.rb:48:in `find'
+actionview (6.1.2.1) lib/action_view/lookup_context.rb:127:in `find'
+actionview (6.1.2.1) lib/action_view/renderer/template_renderer.rb:97:in `resolve_layout'
+actionview (6.1.2.1) lib/action_view/renderer/template_renderer.rb:104:in `resolve_layout'
+actionview (6.1.2.1) lib/action_view/renderer/template_renderer.rb:84:in `find_layout'
+actionview (6.1.2.1) lib/action_view/renderer/template_renderer.rb:67:in `render_with_layout'
+actionview (6.1.2.1) lib/action_view/renderer/template_renderer.rb:55:in `render_template'
+actionview (6.1.2.1) lib/action_view/renderer/template_renderer.rb:11:in `render'
+actionview (6.1.2.1) lib/action_view/renderer/renderer.rb:61:in `render_template_to_object'
+actionview (6.1.2.1) lib/action_view/renderer/renderer.rb:29:in `render_to_object'
+actionview (6.1.2.1) lib/action_view/rendering.rb:117:in `block in _render_template'
+actionview (6.1.2.1) lib/action_view/base.rb:273:in `in_rendering_context'
+actionview (6.1.2.1) lib/action_view/rendering.rb:116:in `_render_template'
+actionpack (6.1.2.1) lib/action_controller/metal/streaming.rb:218:in `_render_template'
+actionview (6.1.2.1) lib/action_view/rendering.rb:103:in `render_to_body'
+actionpack (6.1.2.1) lib/action_controller/metal/rendering.rb:52:in `render_to_body'
+actionpack (6.1.2.1) lib/action_controller/metal/renderers.rb:142:in `render_to_body'
+actionpack (6.1.2.1) lib/abstract_controller/rendering.rb:25:in `render'
+actionpack (6.1.2.1) lib/action_controller/metal/rendering.rb:36:in `render'
+actionpack (6.1.2.1) lib/action_controller/metal/instrumentation.rb:46:in `block (2 levels) in render'
+C:/Ruby27-x64/lib/ruby/2.7.0/benchmark.rb:308:in `realtime'
+activesupport (6.1.2.1) lib/active_support/core_ext/benchmark.rb:14:in `ms'
+actionpack (6.1.2.1) lib/action_controller/metal/instrumentation.rb:46:in `block in render'
+actionpack (6.1.2.1) lib/action_controller/metal/instrumentation.rb:86:in `cleanup_view_runtime'
+activerecord (6.1.2.1) lib/active_record/railties/controller_runtime.rb:39:in `cleanup_view_runtime'
+actionpack (6.1.2.1) lib/action_controller/metal/instrumentation.rb:45:in `render'
+actionpack (6.1.2.1) lib/action_controller/metal/implicit_render.rb:35:in `default_render'
+actionpack (6.1.2.1) lib/action_controller/metal/basic_implicit_render.rb:6:in `block in send_action'
+actionpack (6.1.2.1) lib/action_controller/metal/basic_implicit_render.rb:6:in `tap'
+actionpack (6.1.2.1) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (6.1.2.1) lib/abstract_controller/base.rb:228:in `process_action'
+actionpack (6.1.2.1) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (6.1.2.1) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (6.1.2.1) lib/active_support/callbacks.rb:117:in `block in run_callbacks'
+actiontext (6.1.2.1) lib/action_text/rendering.rb:20:in `with_renderer'
+actiontext (6.1.2.1) lib/action_text/engine.rb:55:in `block (4 levels) in <class:Engine>'
+activesupport (6.1.2.1) lib/active_support/callbacks.rb:126:in `instance_exec'
+activesupport (6.1.2.1) lib/active_support/callbacks.rb:126:in `block in run_callbacks'
+activesupport (6.1.2.1) lib/active_support/callbacks.rb:137:in `run_callbacks'
+actionpack (6.1.2.1) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (6.1.2.1) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (6.1.2.1) lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+activesupport (6.1.2.1) lib/active_support/notifications.rb:203:in `block in instrument'
+activesupport (6.1.2.1) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (6.1.2.1) lib/active_support/notifications.rb:203:in `instrument'
+actionpack (6.1.2.1) lib/action_controller/metal/instrumentation.rb:33:in `process_action'
+actionpack (6.1.2.1) lib/action_controller/metal/params_wrapper.rb:249:in `process_action'
+activerecord (6.1.2.1) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (6.1.2.1) lib/abstract_controller/base.rb:165:in `process'
+actionview (6.1.2.1) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.1.2.1) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.1.2.1) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.1.2.1) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.1.2.1) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.1.2.1) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (6.1.2.1) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.1.2.1) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.1.2.1) lib/action_dispatch/routing/route_set.rb:842:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (6.1.2.1) lib/action_dispatch/http/permissions_policy.rb:22:in `call'
+actionpack (6.1.2.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.1.2.1) lib/action_dispatch/middleware/cookies.rb:689:in `call'
+activerecord (6.1.2.1) lib/active_record/migration.rb:601:in `call'
+actionpack (6.1.2.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.2.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.2.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.2.1) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.1.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.2.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.2.1) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.2.1) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.2.1) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.1.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.2.1) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.2.1) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.2.1) lib/action_dispatch/middleware/host_authorization.rb:98:in `call'
+rack-mini-profiler (2.3.1) lib/mini_profiler/profiler.rb:373:in `call'
+webpacker (5.2.1) lib/webpacker/dev_server_proxy.rb:25:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.1.2.1) lib/rails/engine.rb:539:in `call'
+puma (5.2.1) lib/puma/configuration.rb:247:in `call'
+puma (5.2.1) lib/puma/request.rb:76:in `block in handle_request'
+puma (5.2.1) lib/puma/thread_pool.rb:337:in `with_force_shutdown'
+puma (5.2.1) lib/puma/request.rb:75:in `handle_request'
+puma (5.2.1) lib/puma/server.rb:431:in `process_client'
+puma (5.2.1) lib/puma/thread_pool.rb:145:in `block in spawn_thread'
+Started GET "/msgboard" for ::1 at 2021-02-16 16:15:57 +0900
+  
+SyntaxError (C:/Users/User/portfolio/RailsApp/app/controllers/msgboard_controller.rb:35: circular argument reference - msg
+C:/Users/User/portfolio/RailsApp/app/controllers/msgboard_controller.rb:35: circular argument reference - name
+C:/Users/User/portfolio/RailsApp/app/controllers/msgboard_controller.rb:35: circular argument reference - mail):
+  
+app/controllers/msgboard_controller.rb:35: circular argument reference - msg
+app/controllers/msgboard_controller.rb:35: circular argument reference - name
+app/controllers/msgboard_controller.rb:35: circular argument reference - mail
+app/controllers/msgboard_controller.rb:35: circular argument reference - msg
+app/controllers/msgboard_controller.rb:35: circular argument reference - name
+app/controllers/msgboard_controller.rb:35: circular argument reference - mail
+app/controllers/msgboard_controller.rb:35: circular argument reference - msg
+app/controllers/msgboard_controller.rb:35: circular argument reference - name
+app/controllers/msgboard_controller.rb:35: circular argument reference - mail
+Started GET "/msgboard" for ::1 at 2021-02-16 16:17:23 +0900
+Processing by MsgboardController#index as HTML
+Completed 500 Internal Server Error in 3ms (Allocations: 917)
+
+
+  
+ActionView::MissingTemplate (Missing template layouts/msgbord with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}. Searched in:
+  * "C:/Users/User/portfolio/RailsApp/app/views"
+  * "C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/actiontext-6.1.2.1/app/views"
+  * "C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/actionmailbox-6.1.2.1/app/views"
+):
+  
+actionview (6.1.2.1) lib/action_view/path_set.rb:48:in `find'
+actionview (6.1.2.1) lib/action_view/lookup_context.rb:127:in `find'
+actionview (6.1.2.1) lib/action_view/renderer/template_renderer.rb:97:in `resolve_layout'
+actionview (6.1.2.1) lib/action_view/renderer/template_renderer.rb:104:in `resolve_layout'
+actionview (6.1.2.1) lib/action_view/renderer/template_renderer.rb:84:in `find_layout'
+actionview (6.1.2.1) lib/action_view/renderer/template_renderer.rb:67:in `render_with_layout'
+actionview (6.1.2.1) lib/action_view/renderer/template_renderer.rb:55:in `render_template'
+actionview (6.1.2.1) lib/action_view/renderer/template_renderer.rb:11:in `render'
+actionview (6.1.2.1) lib/action_view/renderer/renderer.rb:61:in `render_template_to_object'
+actionview (6.1.2.1) lib/action_view/renderer/renderer.rb:29:in `render_to_object'
+actionview (6.1.2.1) lib/action_view/rendering.rb:117:in `block in _render_template'
+actionview (6.1.2.1) lib/action_view/base.rb:273:in `in_rendering_context'
+actionview (6.1.2.1) lib/action_view/rendering.rb:116:in `_render_template'
+actionpack (6.1.2.1) lib/action_controller/metal/streaming.rb:218:in `_render_template'
+actionview (6.1.2.1) lib/action_view/rendering.rb:103:in `render_to_body'
+actionpack (6.1.2.1) lib/action_controller/metal/rendering.rb:52:in `render_to_body'
+actionpack (6.1.2.1) lib/action_controller/metal/renderers.rb:142:in `render_to_body'
+actionpack (6.1.2.1) lib/abstract_controller/rendering.rb:25:in `render'
+actionpack (6.1.2.1) lib/action_controller/metal/rendering.rb:36:in `render'
+actionpack (6.1.2.1) lib/action_controller/metal/instrumentation.rb:46:in `block (2 levels) in render'
+C:/Ruby27-x64/lib/ruby/2.7.0/benchmark.rb:308:in `realtime'
+activesupport (6.1.2.1) lib/active_support/core_ext/benchmark.rb:14:in `ms'
+actionpack (6.1.2.1) lib/action_controller/metal/instrumentation.rb:46:in `block in render'
+actionpack (6.1.2.1) lib/action_controller/metal/instrumentation.rb:86:in `cleanup_view_runtime'
+activerecord (6.1.2.1) lib/active_record/railties/controller_runtime.rb:39:in `cleanup_view_runtime'
+actionpack (6.1.2.1) lib/action_controller/metal/instrumentation.rb:45:in `render'
+actionpack (6.1.2.1) lib/action_controller/metal/implicit_render.rb:35:in `default_render'
+actionpack (6.1.2.1) lib/action_controller/metal/basic_implicit_render.rb:6:in `block in send_action'
+actionpack (6.1.2.1) lib/action_controller/metal/basic_implicit_render.rb:6:in `tap'
+actionpack (6.1.2.1) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (6.1.2.1) lib/abstract_controller/base.rb:228:in `process_action'
+actionpack (6.1.2.1) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (6.1.2.1) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (6.1.2.1) lib/active_support/callbacks.rb:117:in `block in run_callbacks'
+actiontext (6.1.2.1) lib/action_text/rendering.rb:20:in `with_renderer'
+actiontext (6.1.2.1) lib/action_text/engine.rb:55:in `block (4 levels) in <class:Engine>'
+activesupport (6.1.2.1) lib/active_support/callbacks.rb:126:in `instance_exec'
+activesupport (6.1.2.1) lib/active_support/callbacks.rb:126:in `block in run_callbacks'
+activesupport (6.1.2.1) lib/active_support/callbacks.rb:137:in `run_callbacks'
+actionpack (6.1.2.1) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (6.1.2.1) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (6.1.2.1) lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+activesupport (6.1.2.1) lib/active_support/notifications.rb:203:in `block in instrument'
+activesupport (6.1.2.1) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (6.1.2.1) lib/active_support/notifications.rb:203:in `instrument'
+actionpack (6.1.2.1) lib/action_controller/metal/instrumentation.rb:33:in `process_action'
+actionpack (6.1.2.1) lib/action_controller/metal/params_wrapper.rb:249:in `process_action'
+activerecord (6.1.2.1) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (6.1.2.1) lib/abstract_controller/base.rb:165:in `process'
+actionview (6.1.2.1) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.1.2.1) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.1.2.1) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.1.2.1) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.1.2.1) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.1.2.1) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (6.1.2.1) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.1.2.1) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.1.2.1) lib/action_dispatch/routing/route_set.rb:842:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (6.1.2.1) lib/action_dispatch/http/permissions_policy.rb:22:in `call'
+actionpack (6.1.2.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.1.2.1) lib/action_dispatch/middleware/cookies.rb:689:in `call'
+activerecord (6.1.2.1) lib/active_record/migration.rb:601:in `call'
+actionpack (6.1.2.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.2.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.2.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.2.1) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.1.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.2.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.2.1) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.2.1) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.2.1) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.1.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.2.1) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.2.1) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.2.1) lib/action_dispatch/middleware/host_authorization.rb:98:in `call'
+rack-mini-profiler (2.3.1) lib/mini_profiler/profiler.rb:373:in `call'
+webpacker (5.2.1) lib/webpacker/dev_server_proxy.rb:25:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.1.2.1) lib/rails/engine.rb:539:in `call'
+puma (5.2.1) lib/puma/configuration.rb:247:in `call'
+puma (5.2.1) lib/puma/request.rb:76:in `block in handle_request'
+puma (5.2.1) lib/puma/thread_pool.rb:337:in `with_force_shutdown'
+puma (5.2.1) lib/puma/request.rb:75:in `handle_request'
+puma (5.2.1) lib/puma/server.rb:431:in `process_client'
+puma (5.2.1) lib/puma/thread_pool.rb:145:in `block in spawn_thread'
+Started GET "/msgboard" for ::1 at 2021-02-16 16:19:11 +0900
+Processing by MsgboardController#index as HTML
+Completed 500 Internal Server Error in 1ms (Allocations: 818)
+
+
+  
+ActionView::MissingTemplate (Missing template layouts/msgbord with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}. Searched in:
+  * "C:/Users/User/portfolio/RailsApp/app/views"
+  * "C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/actiontext-6.1.2.1/app/views"
+  * "C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/actionmailbox-6.1.2.1/app/views"
+):
+  
+actionview (6.1.2.1) lib/action_view/path_set.rb:48:in `find'
+actionview (6.1.2.1) lib/action_view/lookup_context.rb:127:in `find'
+actionview (6.1.2.1) lib/action_view/renderer/template_renderer.rb:97:in `resolve_layout'
+actionview (6.1.2.1) lib/action_view/renderer/template_renderer.rb:104:in `resolve_layout'
+actionview (6.1.2.1) lib/action_view/renderer/template_renderer.rb:84:in `find_layout'
+actionview (6.1.2.1) lib/action_view/renderer/template_renderer.rb:67:in `render_with_layout'
+actionview (6.1.2.1) lib/action_view/renderer/template_renderer.rb:55:in `render_template'
+actionview (6.1.2.1) lib/action_view/renderer/template_renderer.rb:11:in `render'
+actionview (6.1.2.1) lib/action_view/renderer/renderer.rb:61:in `render_template_to_object'
+actionview (6.1.2.1) lib/action_view/renderer/renderer.rb:29:in `render_to_object'
+actionview (6.1.2.1) lib/action_view/rendering.rb:117:in `block in _render_template'
+actionview (6.1.2.1) lib/action_view/base.rb:273:in `in_rendering_context'
+actionview (6.1.2.1) lib/action_view/rendering.rb:116:in `_render_template'
+actionpack (6.1.2.1) lib/action_controller/metal/streaming.rb:218:in `_render_template'
+actionview (6.1.2.1) lib/action_view/rendering.rb:103:in `render_to_body'
+actionpack (6.1.2.1) lib/action_controller/metal/rendering.rb:52:in `render_to_body'
+actionpack (6.1.2.1) lib/action_controller/metal/renderers.rb:142:in `render_to_body'
+actionpack (6.1.2.1) lib/abstract_controller/rendering.rb:25:in `render'
+actionpack (6.1.2.1) lib/action_controller/metal/rendering.rb:36:in `render'
+actionpack (6.1.2.1) lib/action_controller/metal/instrumentation.rb:46:in `block (2 levels) in render'
+C:/Ruby27-x64/lib/ruby/2.7.0/benchmark.rb:308:in `realtime'
+activesupport (6.1.2.1) lib/active_support/core_ext/benchmark.rb:14:in `ms'
+actionpack (6.1.2.1) lib/action_controller/metal/instrumentation.rb:46:in `block in render'
+actionpack (6.1.2.1) lib/action_controller/metal/instrumentation.rb:86:in `cleanup_view_runtime'
+activerecord (6.1.2.1) lib/active_record/railties/controller_runtime.rb:39:in `cleanup_view_runtime'
+actionpack (6.1.2.1) lib/action_controller/metal/instrumentation.rb:45:in `render'
+actionpack (6.1.2.1) lib/action_controller/metal/implicit_render.rb:35:in `default_render'
+actionpack (6.1.2.1) lib/action_controller/metal/basic_implicit_render.rb:6:in `block in send_action'
+actionpack (6.1.2.1) lib/action_controller/metal/basic_implicit_render.rb:6:in `tap'
+actionpack (6.1.2.1) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (6.1.2.1) lib/abstract_controller/base.rb:228:in `process_action'
+actionpack (6.1.2.1) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (6.1.2.1) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (6.1.2.1) lib/active_support/callbacks.rb:117:in `block in run_callbacks'
+actiontext (6.1.2.1) lib/action_text/rendering.rb:20:in `with_renderer'
+actiontext (6.1.2.1) lib/action_text/engine.rb:55:in `block (4 levels) in <class:Engine>'
+activesupport (6.1.2.1) lib/active_support/callbacks.rb:126:in `instance_exec'
+activesupport (6.1.2.1) lib/active_support/callbacks.rb:126:in `block in run_callbacks'
+activesupport (6.1.2.1) lib/active_support/callbacks.rb:137:in `run_callbacks'
+actionpack (6.1.2.1) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (6.1.2.1) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (6.1.2.1) lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+activesupport (6.1.2.1) lib/active_support/notifications.rb:203:in `block in instrument'
+activesupport (6.1.2.1) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (6.1.2.1) lib/active_support/notifications.rb:203:in `instrument'
+actionpack (6.1.2.1) lib/action_controller/metal/instrumentation.rb:33:in `process_action'
+actionpack (6.1.2.1) lib/action_controller/metal/params_wrapper.rb:249:in `process_action'
+activerecord (6.1.2.1) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (6.1.2.1) lib/abstract_controller/base.rb:165:in `process'
+actionview (6.1.2.1) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.1.2.1) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.1.2.1) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.1.2.1) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.1.2.1) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.1.2.1) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (6.1.2.1) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.1.2.1) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.1.2.1) lib/action_dispatch/routing/route_set.rb:842:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (6.1.2.1) lib/action_dispatch/http/permissions_policy.rb:22:in `call'
+actionpack (6.1.2.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.1.2.1) lib/action_dispatch/middleware/cookies.rb:689:in `call'
+activerecord (6.1.2.1) lib/active_record/migration.rb:601:in `call'
+actionpack (6.1.2.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.2.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.2.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.2.1) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.1.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.2.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.2.1) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.2.1) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.2.1) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.1.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.2.1) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.2.1) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.2.1) lib/action_dispatch/middleware/host_authorization.rb:98:in `call'
+rack-mini-profiler (2.3.1) lib/mini_profiler/profiler.rb:373:in `call'
+webpacker (5.2.1) lib/webpacker/dev_server_proxy.rb:25:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.1.2.1) lib/rails/engine.rb:539:in `call'
+puma (5.2.1) lib/puma/configuration.rb:247:in `call'
+puma (5.2.1) lib/puma/request.rb:76:in `block in handle_request'
+puma (5.2.1) lib/puma/thread_pool.rb:337:in `with_force_shutdown'
+puma (5.2.1) lib/puma/request.rb:75:in `handle_request'
+puma (5.2.1) lib/puma/server.rb:431:in `process_client'
+puma (5.2.1) lib/puma/thread_pool.rb:145:in `block in spawn_thread'
+Started GET "/msgboard" for ::1 at 2021-02-16 16:20:32 +0900
+Processing by MsgboardController#index as HTML
+Completed 500 Internal Server Error in 1ms (Allocations: 917)
+
+
+  
+ActionView::MissingTemplate (Missing template layouts/msgbord with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}. Searched in:
+  * "C:/Users/User/portfolio/RailsApp/app/views"
+  * "C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/actiontext-6.1.2.1/app/views"
+  * "C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/actionmailbox-6.1.2.1/app/views"
+):
+  
+actionview (6.1.2.1) lib/action_view/path_set.rb:48:in `find'
+actionview (6.1.2.1) lib/action_view/lookup_context.rb:127:in `find'
+actionview (6.1.2.1) lib/action_view/renderer/template_renderer.rb:97:in `resolve_layout'
+actionview (6.1.2.1) lib/action_view/renderer/template_renderer.rb:104:in `resolve_layout'
+actionview (6.1.2.1) lib/action_view/renderer/template_renderer.rb:84:in `find_layout'
+actionview (6.1.2.1) lib/action_view/renderer/template_renderer.rb:67:in `render_with_layout'
+actionview (6.1.2.1) lib/action_view/renderer/template_renderer.rb:55:in `render_template'
+actionview (6.1.2.1) lib/action_view/renderer/template_renderer.rb:11:in `render'
+actionview (6.1.2.1) lib/action_view/renderer/renderer.rb:61:in `render_template_to_object'
+actionview (6.1.2.1) lib/action_view/renderer/renderer.rb:29:in `render_to_object'
+actionview (6.1.2.1) lib/action_view/rendering.rb:117:in `block in _render_template'
+actionview (6.1.2.1) lib/action_view/base.rb:273:in `in_rendering_context'
+actionview (6.1.2.1) lib/action_view/rendering.rb:116:in `_render_template'
+actionpack (6.1.2.1) lib/action_controller/metal/streaming.rb:218:in `_render_template'
+actionview (6.1.2.1) lib/action_view/rendering.rb:103:in `render_to_body'
+actionpack (6.1.2.1) lib/action_controller/metal/rendering.rb:52:in `render_to_body'
+actionpack (6.1.2.1) lib/action_controller/metal/renderers.rb:142:in `render_to_body'
+actionpack (6.1.2.1) lib/abstract_controller/rendering.rb:25:in `render'
+actionpack (6.1.2.1) lib/action_controller/metal/rendering.rb:36:in `render'
+actionpack (6.1.2.1) lib/action_controller/metal/instrumentation.rb:46:in `block (2 levels) in render'
+C:/Ruby27-x64/lib/ruby/2.7.0/benchmark.rb:308:in `realtime'
+activesupport (6.1.2.1) lib/active_support/core_ext/benchmark.rb:14:in `ms'
+actionpack (6.1.2.1) lib/action_controller/metal/instrumentation.rb:46:in `block in render'
+actionpack (6.1.2.1) lib/action_controller/metal/instrumentation.rb:86:in `cleanup_view_runtime'
+activerecord (6.1.2.1) lib/active_record/railties/controller_runtime.rb:39:in `cleanup_view_runtime'
+actionpack (6.1.2.1) lib/action_controller/metal/instrumentation.rb:45:in `render'
+actionpack (6.1.2.1) lib/action_controller/metal/implicit_render.rb:35:in `default_render'
+actionpack (6.1.2.1) lib/action_controller/metal/basic_implicit_render.rb:6:in `block in send_action'
+actionpack (6.1.2.1) lib/action_controller/metal/basic_implicit_render.rb:6:in `tap'
+actionpack (6.1.2.1) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (6.1.2.1) lib/abstract_controller/base.rb:228:in `process_action'
+actionpack (6.1.2.1) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (6.1.2.1) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (6.1.2.1) lib/active_support/callbacks.rb:117:in `block in run_callbacks'
+actiontext (6.1.2.1) lib/action_text/rendering.rb:20:in `with_renderer'
+actiontext (6.1.2.1) lib/action_text/engine.rb:55:in `block (4 levels) in <class:Engine>'
+activesupport (6.1.2.1) lib/active_support/callbacks.rb:126:in `instance_exec'
+activesupport (6.1.2.1) lib/active_support/callbacks.rb:126:in `block in run_callbacks'
+activesupport (6.1.2.1) lib/active_support/callbacks.rb:137:in `run_callbacks'
+actionpack (6.1.2.1) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (6.1.2.1) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (6.1.2.1) lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+activesupport (6.1.2.1) lib/active_support/notifications.rb:203:in `block in instrument'
+activesupport (6.1.2.1) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (6.1.2.1) lib/active_support/notifications.rb:203:in `instrument'
+actionpack (6.1.2.1) lib/action_controller/metal/instrumentation.rb:33:in `process_action'
+actionpack (6.1.2.1) lib/action_controller/metal/params_wrapper.rb:249:in `process_action'
+activerecord (6.1.2.1) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (6.1.2.1) lib/abstract_controller/base.rb:165:in `process'
+actionview (6.1.2.1) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.1.2.1) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.1.2.1) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.1.2.1) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.1.2.1) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.1.2.1) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (6.1.2.1) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.1.2.1) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.1.2.1) lib/action_dispatch/routing/route_set.rb:842:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (6.1.2.1) lib/action_dispatch/http/permissions_policy.rb:22:in `call'
+actionpack (6.1.2.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.1.2.1) lib/action_dispatch/middleware/cookies.rb:689:in `call'
+activerecord (6.1.2.1) lib/active_record/migration.rb:601:in `call'
+actionpack (6.1.2.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.2.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.2.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.2.1) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.1.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.2.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.2.1) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.2.1) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.2.1) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.1.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.2.1) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.2.1) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.2.1) lib/action_dispatch/middleware/host_authorization.rb:98:in `call'
+rack-mini-profiler (2.3.1) lib/mini_profiler/profiler.rb:373:in `call'
+webpacker (5.2.1) lib/webpacker/dev_server_proxy.rb:25:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.1.2.1) lib/rails/engine.rb:539:in `call'
+puma (5.2.1) lib/puma/configuration.rb:247:in `call'
+puma (5.2.1) lib/puma/request.rb:76:in `block in handle_request'
+puma (5.2.1) lib/puma/thread_pool.rb:337:in `with_force_shutdown'
+puma (5.2.1) lib/puma/request.rb:75:in `handle_request'
+puma (5.2.1) lib/puma/server.rb:431:in `process_client'
+puma (5.2.1) lib/puma/thread_pool.rb:145:in `block in spawn_thread'
