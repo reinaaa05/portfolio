@@ -43,8 +43,8 @@ class PeopleController < ApplicationController
     @msg = 'please type search word...'
     @people = Array.new 
     if request.post?
-      f = params[:find].split ','
-      @people = Person.where "age >= ? and age <= ?", f[0], f[1]
+      f = '%' + params[:find] + '%'
+      @people = Person.where "name like ? or mail like ?", f,f
     end
   end
 
