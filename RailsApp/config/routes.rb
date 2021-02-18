@@ -6,6 +6,8 @@ Rails.application.routes.draw do
   get 'people/index'
   get 'people', to: 'people#index'
   get 'people/add'
+  get 'people/find'
+  post 'people/find'
   post 'people/add', to: 'people#create'
   get 'people/:id', to: 'people#show'
   get 'people/edit/:id', to: 'people#edit'

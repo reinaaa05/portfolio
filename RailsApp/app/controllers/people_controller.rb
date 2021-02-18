@@ -1,4 +1,5 @@
 class PeopleController < ApplicationController
+  layout 'people'
   def index
     @msg = 'Person data.'
     @data = Person.all
@@ -36,6 +37,15 @@ class PeopleController < ApplicationController
     obj = Person.find(params[:id])
     obj.destroy
     redirect_to '/people'
+  end
+
+  def find
+    @msg = 'please type search word...'
+    @people = Array.new 
+    if request.post?
+      f = params[:find].split ','
+      @people = Person.where "age >= ? and age <= ?", f[0], f[1]
+    end
   end
 
   private
