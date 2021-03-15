@@ -1,4 +1,4 @@
-{% extends './base.html' %}
+{% extends 'layout.html' %}
 {% block content %}
 
 <h1>お店一覧</h1>
@@ -14,8 +14,10 @@
     </tr>
     {% endfor %}
 </table>
-<div>
-    <a href='{% url "lunchmap:create" %}'>新しいお店</a>
-</div>
+{% if user.is_authenticated %}
+        <div>
+            <a href='{% url "lunchmap:create" %}'>新しいお店</a>
+        </div>
+{% endif %}
 
 {% endblock %}
