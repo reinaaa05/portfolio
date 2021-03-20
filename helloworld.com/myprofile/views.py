@@ -9,4 +9,4 @@ def top(request):
     return render(request, 'myprofile/top.html', context)
 
 def resume(request):
-    return render(request, 'myprofile/resume.html')
+    return render(request, 'myprofile/resumex.html')
