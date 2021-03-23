@@ -10,5 +10,5 @@ class VideoCreate(generic.CreateView):
     fields = '__all__'
     success_url = reverse_lazy('videos:video_list')
 
-class VideoDetail(generic.DeleteView):
+class VideoDetail(generic.DetailView):
     model = Video

@@ -7,8 +7,7 @@
             <div class="video">
                 {% if video.thumbnail %}
                     <img src="{{ video.thumbnail.url }}">
-                {% else %}
-                    <img src="{{ static 'video.noimage.png' }}">
+
                 {% endif %}
                 <h2>{{ video.title }}</h2>
             </div>
