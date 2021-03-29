@@ -1,11 +1,14 @@
 {% load static %}
+{% load videos %}
 <!DOCTYPE html>
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>動画アップロード</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css">
   <link rel="stylesheet" href="{% static 'videos/style.css' %}">
+  <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
 </head>
 <body>
     <p>
@@ -13,6 +16,17 @@
       <a href="{% url 'videos:video_create' %}">アップロード</a>
     </p>
     <br>
-    {% block content %}{% endblock %}  
+    <div class="section">
+      <div class="container">
+        <main class="column is-7">
+          {% block content %}{% endblock %} 
+        </main>
+        <aside class="column is-4 is-offset-1 menu ">
+          {% create_search_form request %}
+        </aside>
+      </div>
+    </div>
+
+ 
 </body>
 </html>
