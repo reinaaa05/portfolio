@@ -1,10 +1,10 @@
 {% extends 'videos/base.html' %}
 
 {% block content %}
-    <form action="" method="POST" enctype="multipart/form-data">
-        {{ form.as_p }}
+<p>「{{ object.title }}」を削除しますか?</p>
+    <form action="" method="POST">
         {% csrf_token %}
-        <button type="submit">{{ object|yesno:'更新,作成'}}</button>
+        <button type='submit'>削除する</button>
     </form>
     <div>
         <a href='JavaScript:history.back()'>&lt; 戻る</a>

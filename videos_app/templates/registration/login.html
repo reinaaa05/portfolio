@@ -1,0 +1,25 @@
+{% extends '../layout.html' %}
+
+{%block content %}
+<h1>Login</h1>
+<section class="common-form">
+  {% if form.errors %}
+    <p claass="error-msg">名前とパスワードが一致しません</p>
+  {% endif %}
+
+  {% if next %}
+    {% if user.is_authenticated %}
+      <p class="error-msg">権限がありません</p>
+    {% else %}
+      <p class="error-msg">ログインしてください</p>
+    {% endif %}
+  {% endif %}
+
+  <form action="{% url 'login %}" method="POST">
+    {% cseh_token %}
+    <input type="hidden" name="next" value="{{ next }}"/>
+    {{ form.as_p }}
+    <button type='submit'>Login</button>
+  </form>
+</section>
+{% endblock %}

@@ -12,4 +12,9 @@
             </div>
         {% endfor %}
     </section>
+    <div>
+        <a href="{% url 'videos:video_list' %}">一覧</a>
+        <a href="{% url 'videos:video_update' video.pk %}">編集</a>
+        <a href="{% url 'videos:video_delete' video.pk %}">削除</a>
+    </div>
 {% endblock %}
