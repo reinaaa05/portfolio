@@ -1,4 +1,4 @@
-{% extends 'videos/base.html' %}
+{% extends 'layout.html' %}
 
 {% block content %}
     <h1>{{ video.title }}</h1>
@@ -13,8 +13,10 @@
         {% endfor %}
     </section>
     <div>
-        <a href="{% url 'videos:video_list' %}">一覧</a>
-        <a href="{% url 'videos:video_update' video.pk %}">編集</a>
-        <a href="{% url 'videos:video_delete' video.pk %}">削除</a>
+        <a href="{% url 'videos:video_list' %}" class="button is-light">一覧</a>
+        {% if request.user.id == object.author_id %}
+            <a href="{% url 'videos:video_update' video.pk %}" class="button is-light">編集</a>
+            <a href="{% url 'videos:video_delete' video.pk %}" class="button is-light">削除</a>
+        {%endif %}
     </div>
 {% endblock %}

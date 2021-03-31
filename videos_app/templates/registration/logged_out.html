@@ -1,7 +1,7 @@
 {% extends '../layout.html' %}
 
 {%block content %}
-<h1>Logout</h1>
-<p>ありがとうございました</p>
-<p><a href="{% url 'login' %}">Login again</a></p>
+<p>ログアウトしました</p>
+<br>
+<p><a href="{% url 'login' %}" class="button is-light">Login</a></p>
 {% endblock %}

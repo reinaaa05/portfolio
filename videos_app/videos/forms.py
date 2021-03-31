@@ -1,6 +1,11 @@
 from django import forms
 from .models import Comment, Video
 
+class VideoCreate(forms.ModelForm):
+    class Mata:
+      model = Video
+      exclude = ('writer',)
+
 class CommentCreateForm(forms.ModelForm):
 
     class Meta:

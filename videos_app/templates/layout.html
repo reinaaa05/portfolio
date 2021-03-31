@@ -21,39 +21,48 @@
         <span aria-hidden="true"></span>
       </a>
     </div>
+
     <div id="navbarBasicExample" class="navbar-menu">
       <div class="navbar-start">
         <a class="navbar-item" href="{% url 'videos:video_list' %}">ホーム</a>
         <a class="navbar-item" href="{% url 'videos:video_create' %}">動画投稿</a>
       </div>
     </div>
-    <div class="navbar-end">
+    <div class="navber-end">
       <div class="navbar-item">
         <div class="buttons">
-          <a href="{% url 'signup' %}" class="button is-primary">
-            <strong>Sign up</strong>
+          {% if user.is_authenticated %}
+          
+          <span class="navbar-item">{{ user }}</span>
+          <a href="{% url 'logout' %}" class="navbar-item">
+            <strong>logout</strong>
           </a>
-          <a href="{% url 'login' %}" class="button is-light">
-            Log in
+          {% else %}
+          <a href="{% url 'login' %}" class="navbar-item">
+            <strong>login</strong>
           </a>
+          <a href="{% url 'accounts:signup' %}" class="navbar-item">
+            <strong>SignUp</strong>
+          </a>
+          {% endif %}
         </div>
       </div>
     </div>
   </nav>
 </header>
-    <div class="section">
-      <div class="container">
-        <div class="columns">
-          <main class="column is-10">
-            {% block content %}{% endblock %} 
-          </main>
-          <aside class="column is-4 is-offset-1 menu ">
-            {% create_search_form request %}
-          </aside>
-        </div>
-      </div>
+<div class="section">
+  <div class="container">
+    <div class="columns">
+      <main class="column is-10">
+        {% block content %}{% endblock %} 
+      </main>
+      {% if user.is_authenticated %}
+        <aside class="column is-4 is-offset-1 menu ">
+          {% create_search_form request %}
+        </aside>
+      {% endif %}
     </div>
-
- 
+  </div>
+</div>
 </body>
 </html>

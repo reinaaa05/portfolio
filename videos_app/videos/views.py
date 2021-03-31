@@ -4,7 +4,8 @@ from .models import Video, Comment
 from django.urls import reverse_lazy
 from django.db.models import Q
 from .forms import CommentCreateForm, VideoSearchForm
-
+from django.contrib.auth.mixins import LoginRequiredMixin
+from django.core.exceptions import PermissionDenied
 
 class VideoList(generic.ListView):
     model = Video
@@ -23,21 +24,31 @@ class VideoList(generic.ListView):
 class VideoDetail(generic.DetailView):
     model = Video
 
-class VideoCreate(generic.CreateView):
+class VideoCreate(LoginRequiredMixin,generic.CreateView):
     model = Video
-    fields = '__all__'
+    fields = ['title','thumbnail', 'file', 'category'] #'__all__'
+    # success_url = reverse_lazy('videos:video_list')
+
+    def form_valid(self, form):
+        form.instance.author = self.request.user
+        return super(VideoCreate, self).form_valit(form)
+
+class VideoUpdate(LoginRequiredMixin,generic.UpdateView):
+    model = Video
+    fields = ['title','thumbnail', 'file', 'category'] #'__all__'
     success_url = reverse_lazy('videos:video_list')
 
-class VideoUpdate(generic.UpdateView):
+    def dispatch(self, request, *args, **kwargs):
+        obj = self.get_object()
+        if obj.author != self.request.user:
+            raise PermissionDenied('権限がありません')
+        return super(VideoUpdate, self).dispatch(request, *args, **kwargs)
+
+class VideoDelete(LoginRequiredMixin,generic.DeleteView):
     model = Video
-    fields = '__all__'
     success_url = reverse_lazy('videos:video_list')
 
-class VideoDelete(generic.DeleteView):
-    model = Video
-    success_url = reverse_lazy('videos:video_list')
-
-class CommentCreate(generic.CreateView):
+class CommentCreate(LoginRequiredMixin,generic.CreateView):
     model = Comment
     form_class = CommentCreateForm
 
