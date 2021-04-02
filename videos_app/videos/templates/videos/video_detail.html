@@ -3,8 +3,9 @@
 {% block content %}
     <h1>{{ video.title }}</h1>
     <video src="{{ video.file.url }}" controls></video>
-
-    <a class="button is-primary" href="{% url 'videos:comment_create' video.pk %}">コメントする</a>
+    <h2><a href="{% url 'videos:user_detail' user.pk %}">{{ video.writer }}</a></h2>
+    <br>
+    <a class="button is-light" href="{% url 'videos:comment_create' video.pk %}">コメントする</a>
     <section class="section">
         {% for comment in video.comment_set.all %}
             <div class="box">
@@ -14,9 +15,9 @@
     </section>
     <div>
         <a href="{% url 'videos:video_list' %}" class="button is-light">一覧</a>
-        {% if request.user.id == object.author_id %}
+        {% if request.user.id == object.writer_id %}
             <a href="{% url 'videos:video_update' video.pk %}" class="button is-light">編集</a>
             <a href="{% url 'videos:video_delete' video.pk %}" class="button is-light">削除</a>
-        {%endif %}
+        {% endif %}
     </div>
 {% endblock %}

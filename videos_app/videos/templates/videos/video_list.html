@@ -3,18 +3,20 @@
 {% load videos %}
 
 {% block content %}
-    {% for video in video_list %}
+    <div class="video_list">
+        {% for video in video_list %}
         <a href="{% url 'videos:video_detail' video.pk %}">
             <div class="video">
                 {% if video.thumbnail %}
-                    <img src="{{ video.thumbnail.url }}">
+                <img src="{{ video.thumbnail.url }}">
                 {% else %}
-                    <img src="{% static 'videos/noimage.png' %}">
+                <img src="{% static 'videos/noimage.png' %}">
                 {% endif %}
                 <h2>{{ video.title }}</h2>
             </div>
         </a>
-    {% endfor %}
+        {% endfor %}
+    </div>
     <div class="num">
         <!-- 前の部分 -->
         {% if page_obj.has_previous %}

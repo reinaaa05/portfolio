@@ -1,5 +1,5 @@
 from django import forms
-from .models import Comment, Video
+from .models import Comment, Video, Category
 
 class VideoCreate(forms.ModelForm):
     class Mata:
