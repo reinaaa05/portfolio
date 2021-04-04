@@ -1,9 +1,10 @@
+
 {% extends 'layout.html' %}
 
 {% block content %}
     <h1>{{ video.title }}</h1>
     <video src="{{ video.file.url }}" controls></video>
-    <h2><a href="{% url 'videos:user_detail' user.pk %}">{{ video.writer }}</a></h2>
+    <h2><a href="{% url 'videos:user_detail' video.writer.pk %}">{{ video.writer }}</a></h2>
     <br>
     <a class="button is-light" href="{% url 'videos:comment_create' video.pk %}">コメントする</a>
     <section class="section">

@@ -4,7 +4,7 @@
 
 {% block content %}
 <div class="video_list">
-  {% for video in video_list %}
+  {% for video in object.video_set.all %}
   <a href="{% url 'videos:video_detail' video.pk %}">
       <div class="video">
           {% if video.thumbnail %}

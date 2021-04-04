@@ -68,4 +68,6 @@ class CommentCreate(LoginRequiredMixin,generic.CreateView):
 
 class UserDetail(generic.DetailView):
     model = Video
+    slug_field = 'user_name'
+    slug_url_kwarg = 'user_name'
     template_name = 'videos/user_detail.html'
