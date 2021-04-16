@@ -1,16 +1,10 @@
 {% extends 'base.html' %}
-{% load static %}
-
-{% block customcss %}
-<link href="{% static 'style.css' %}" rel="stylesheet">
-{% endblock customcss %}
-
 {% block content %} 
 <body class="text-center">
-    {{ error }}
+    {{ context }}
   <main class="form-signin">
     <form method="POST">{% csrf_token %}
-      <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
+      <h1 class="h3 mb-3 fw-normal">Please login</h1>
   
       <div class="form-floating">
         <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com" name='username'>
@@ -20,7 +14,7 @@
         <input type="password" class="form-control" id="floatingPassword" placeholder="Password" name='password'>
         <label for="floatingPassword">Password</label>
       </div>
-      <button class="w-100 btn btn-lg btn-primary" type="submit">Sign in</button>
+      <button class="w-100 btn btn-lg btn-primary" type="submit">login</button>
     </form>
   </main>
 </body>
