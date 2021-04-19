@@ -1,0 +1,12 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+    <form action="" method="POST" enctype="multipart/form-data">
+        {{ form.as_p }}
+        {% csrf_token %}
+        <button type="submit">{{ object|yesno:'更新,作成'}}</button>
+    </form>
+    <div>
+        <a href='JavaScript:history.back()'>&lt; 戻る</a>
+    </div>
+{% endblock %}

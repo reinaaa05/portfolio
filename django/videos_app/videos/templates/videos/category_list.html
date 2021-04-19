@@ -1,0 +1,7 @@
+<p class="menu-label">カテゴリ一覧</p>
+<ul class="menu-list">
+  {% for category in category_list %}
+    <li><a href="{% url 'videos:video_category_list' category.pk %}">{{ category }}</a></li>
+  {% endfor %}
+  <a href="{% url 'videos:video_list' %}">ホーム</a>
+</ul>

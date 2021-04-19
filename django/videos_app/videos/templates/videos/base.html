@@ -1,0 +1,44 @@
+{% load static %}
+{% load videos %}
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>動画アップロード</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css">
+  <link rel="stylesheet" href="{% static 'videos/style.css' %}">
+  <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+</head>
+<body>
+<header>
+  <nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <h2 class="navbar-item">video_list</h2>
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+    <div id="navbarBasicExample" class="navbar-menu">
+      <div class="navbar-start">
+        <a class="navbar-item" href="{% url 'videos:video_list' %}">ホーム</a>
+        <a class="navbar-item" href="{% url 'videos:video_create' %}">動画投稿</a>
+        </div>
+      </div>
+  </header>
+    <div class="section">
+      <div class="container">
+        <div class="columns">
+          <main class="column is-10">
+            {% block content %}{% endblock %} 
+          </main>
+          <aside class="column is-4 is-offset-1 menu ">
+            {% create_search_form request %}
+          </aside>
+        </div>
+      </div>
+    </div>
+</body>
+</html>
