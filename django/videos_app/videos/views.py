@@ -1,4 +1,4 @@
-from django.shortcuts import get_object_or_404, redirect
+from django.shortcuts import get_object_or_404, redirect, render
 from django.views import generic
 from .models import Video, Comment,Category
 from django.urls import reverse_lazy
@@ -79,10 +79,28 @@ class UserDetail(generic.ListView):
 def goodfunc(request,pk):
     object = Video.objects.get(pk=pk)
     username = request.user.get_username()
+    if object.good == None:
+        object.good = 0
+    if object.goodtext == None:
+        object.goodtext = 'a'
     if username in object.goodtext:
-        return redirect('videos:video_list')
+        return redirect('videos:video_detail', pk=pk)
     else:
         object.good = object.good + 1
-        object.goodtext = object.goodtext + ' ' + str(username)
+        object.goodtext = object.goodtext + ' ' + username
         object.save()
-        return redirect('videos:video_list')
+        return redirect('videos:video_detail', pk=pk)
+def badfunc(request,pk):
+    object = Video.objects.get(pk=pk)
+    username = request.user.get_username()
+    if object.bad == None:
+        object.bad = 0
+    if object.badtext == None:
+        object.badtext = 'a'
+    if username in object.badtext:
+        return redirect('videos:video_detail', pk=pk)
+    else:
+        object.bad = object.bad + 1
+        object.badtext = object.badtext + ' ' + username
+        object.save()
+        return redirect('videos:video_detail', pk=pk)
