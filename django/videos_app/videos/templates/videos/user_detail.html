@@ -3,6 +3,7 @@
 {% load videos %}
 
 {% block content %}
+<h1>{{ user }}のチャンネル</h1>
 <div class="video_list">
     {% for video in video_list %}
       {% if pk == video.writer.pk %}

@@ -7,6 +7,7 @@ from .forms import CommentCreateForm, VideoSearchForm
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.core.exceptions import PermissionDenied
 from django.contrib.auth.models import User
+from django.views.generic import ListView
 
 class VideoList(generic.ListView):
     model = Video
@@ -70,6 +71,7 @@ class CommentCreate(LoginRequiredMixin,generic.CreateView):
 class UserDetail(generic.ListView):
     model = Video
     template_name = 'videos/user_detail.html'
+    # user = User.objects.get(pk=user_id)
  
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
@@ -104,3 +106,18 @@ def badfunc(request,pk):
         object.badtext = object.badtext + ' ' + username
         object.save()
         return redirect('videos:video_detail', pk=pk)
+
+class Ranking(ListView):
+    template_name = 'videos/ranking.html'
+    model = Video
+    paginate_by = 9
+    ordering = '-good'
+    def get_queryset(self):
+        queryset = super().get_queryset()
+        form = VideoSearchForm(self.request.GET or None)
+        if form.is_valid():
+            key_word = form.cleaned_data.get('key_word')
+            if key_word:
+                queryset = queryset.filter(Q(title__icontains=key_word) | Q(title__icontains=key_word))
+            
+        return queryset

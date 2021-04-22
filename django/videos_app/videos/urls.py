@@ -14,4 +14,5 @@ urlpatterns = [
     path('user/<int:pk>', views.UserDetail.as_view(), name='user_detail'),
     path('good/<int:pk>',goodfunc, name='good'),
     path('bad/<int:pk>', badfunc, name='bad'),
+    path('ranking',views.Ranking.as_view(), name='ranking'),
 ]
