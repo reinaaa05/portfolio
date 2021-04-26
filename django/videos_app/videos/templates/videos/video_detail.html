@@ -4,19 +4,20 @@
 {% block content %}
     <h1>{{ video.title }}</h1>
     <video src="{{ video.file.url }}" controls></video>
-    <h2><a href="{% url 'videos:user_detail' video.writer.pk %}">{{ video.writer }}</a></h2>
-    <br>
-    {% if video.good == None %}
-        <a href="{% url 'videos:good' video.pk %}" class="button is-light"><i class="far fa-thumbs-up"></i></a>
-    {% else %}
-        <a href="{% url 'videos:good' video.pk %}" class="button is-light"><i class="far fa-thumbs-up"></i>{{ video.good }}</a>
-    {% endif %}
-    {% if video.bad == None %}
-        <a href="{% url 'videos:bad' video.pk %}" class="button is-light"><i class="far fa-thumbs-down"></i></a>
-    {% else %}
-        <a href="{% url 'videos:bad' video.pk %}" class="button is-light"><i class="far fa-thumbs-down"></i>{{ video.bad }}</a>
-    {% endif %}
-    <a class="button is-light" href="{% url 'videos:comment_create' video.pk %}">コメントする</a>
+    <a href="{% url 'videos:user_detail' video.writer.pk %}">{{ video.writer }}</a>
+    <div class="link">
+        {% if video.good == None %}
+            <a href="{% url 'videos:good' video.pk %}" class="button is-light"><i class="far fa-thumbs-up"></i></a>
+        {% else %}
+            <a href="{% url 'videos:good' video.pk %}" class="button is-light"><i class="far fa-thumbs-up"></i>{{ video.good }}</a>
+        {% endif %}
+        {% if video.bad == None %}
+            <a href="{% url 'videos:bad' video.pk %}" class="button is-light"><i class="far fa-thumbs-down"></i></a>
+        {% else %}
+            <a href="{% url 'videos:bad' video.pk %}" class="button is-light"><i class="far fa-thumbs-down"></i>{{ video.bad }}</a>
+        {% endif %}
+        <a href="{% url 'videos:comment_create' video.pk %}" class="button is-light">コメントする</a>
+    </div>
     <section class="section">
         {% for comment in video.comment_set.all %}
             <div class="box">

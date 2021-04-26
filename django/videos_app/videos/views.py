@@ -11,7 +11,7 @@ from django.views.generic import ListView
 
 class VideoList(generic.ListView):
     model = Video
-    paginate_by = 9
+    paginate_by = 6
     def get_queryset(self):
         queryset = super().get_queryset()
         form = VideoSearchForm(self.request.GET or None)
@@ -71,7 +71,6 @@ class CommentCreate(LoginRequiredMixin,generic.CreateView):
 class UserDetail(generic.ListView):
     model = Video
     template_name = 'videos/user_detail.html'
-    # user = User.objects.get(pk=user_id)
  
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
