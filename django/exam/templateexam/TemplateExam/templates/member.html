@@ -1,0 +1,10 @@
+{% extends "base.html "%}
+{% block title%}
+メンバー一覧{{ block.super }}
+{% endblock %}
+
+{% block content %}
+{% for member in members %}
+    <p><a hreh"{% url 'app:member' id=member.id %}"></a></p>
+{% endfor %}
+{% endblock %}
