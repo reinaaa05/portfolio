@@ -9,10 +9,10 @@ class Member:
         self.picture_path = picture_path
 
 member_list = [
-    Menber(0, 'Taro','2018/04/01,'img/taro.jpg'),
-    Menber(1, 'Jiro','2019/04/01,'img/jiro.jpg'),
-    Menber(2, 'Hanako','2019/05/01,'img/hanako.jpg'),
-    Menber(3, 'Yoshiko','2018/10/01,'img/yoshiko.jpg'),
+    Member(0, 'Taro','2018/04/01','img/taro.jpg'),
+    Member(1, 'Jiro','2019/04/01','img/jiro.jpg'),
+    Member(2, 'Hanako','2019/05/01','img/hanako.jpg'),
+    Member(3, 'Yoshiko','2018/10/01','img/yoshiko.jpg'),
 ]
 
 
@@ -21,7 +21,7 @@ def home(request):
     return render(request,'home.html')
 
 #メンバー一覧画面
-def menbers(request):
+def members(request):
     return render(request,'members.html',context={
         'members':member_list
     })
