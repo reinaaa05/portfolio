@@ -38,6 +38,9 @@ class Students(models.Model):
         'Prefectures',on_delete=models.CASCADE
     )
 
+    def __str__(self):
+        return f'{self.pk}, {self.name}, {self.age}'
+
     class Meta:
         db_table = 'students'
 
