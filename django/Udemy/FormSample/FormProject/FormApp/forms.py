@@ -1,7 +1,7 @@
 from django import forms
 from django.core import validators
 from django.forms import fields
-from .models import Post
+from .models import ModelSetPost, Post
 
 def check_name(value):
     if value == 'あああああ':
@@ -52,8 +52,8 @@ class UserInfo(forms.Form):
     def clean(self):
         cleaned_data = super().clean()
         mail = cleaned_data['mail']
-        verify_male = cleaned_data['verify_mail']
-        if mail != verify_male:
+        verify_mail = cleaned_data['verify_mail']
+        if mail != verify_mail:
             raise forms.ValidationError('メールアドレスが一致しません')
 
 class BaseForm(forms.ModelForm):
@@ -99,3 +99,15 @@ class PostModelForm(BaseForm):
         is_exists = Post.objects.filter(title=title).first()
         if is_exists:
             raise validators.ValidationError('そのタイトルはすでに存在します')
+
+class FormSetPost(forms.Form):
+    title = forms.CharField(label='タイトル')
+    memo = forms.CharField(label='メモ')
+
+class  ModelFormSetPost(forms.ModelForm):
+    title = forms.CharField(label='タイトル')
+    memo = forms.CharField(label='メモ')
+
+    class Meta:
+        model = ModelSetPost
+        fields = '__all__'
