@@ -2,6 +2,8 @@ from django.shortcuts import render
 from django.forms import formset_factory,modelformset_factory
 from . import forms
 from .models import ModelSetPost
+from django.core.files.storage import FileSystemStorage
+import os 
 
 def index(request):
     return render(request,'formapp/index.html')
@@ -54,3 +56,28 @@ def modelform_set_post(request):
         request, 'formapp/modelform_set_post.html',
         context = {'formset':formset }
     )
+
+def upload_sample(request):
+    if request.method == 'POST' and request.FILES['upload_file']:
+        #送られたファイルの取り出し
+        upload_file = request.FILES['upload_file']
+        fs = FileSystemStorage() #ファイルを保存する
+        file_path = os.path.join('upload', upload_file.name)
+        file = fs.save(file_path, upload_file)
+        uploaded_file_url = fs.url(file)
+        return render(request, 'formapp/upload_file.html',
+        context = {'uploaded_file_url': uploaded_file_url}
+        )
+    return render(request, 'formapp/upload_file.html')
+
+def upload_model_form(request):
+    user = None
+    if request.method == 'POST':
+        form = forms.UserForm(request.POST,request.FILES)
+        if form.is_valid():
+            user = form.save()
+    else:
+        form = forms.UserForm()
+    return render(request,'formapp/upload_model_form.html',
+        context = {'form':form, 'user': user}
+        )
