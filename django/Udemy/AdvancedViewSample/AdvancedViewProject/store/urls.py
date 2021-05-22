@@ -9,3 +9,4 @@ urlpatterns = [
     path('to_google/',views.to_google, name='to_google'),
     path('one_item/',views.one_item, name='one_item'),
 ]
+
