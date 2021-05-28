@@ -19,3 +19,14 @@ class Books(BaseModel):
     
     def get_absolute_url(self):
         return reverse_lazy('store:detail_book', kwargs={'pk': self.pk})
+
+class PicturesManager(models.Manager):
+    def filter_by_book(self, book):
+        return self.filter(book=book).all()
+
+class Pictures(BaseModel):
+    picture = models.FileField(upload_to='picture/')
+    book = models.ForeignKey(
+        'books', on_delete=models.CASCADE
+    )
+    objects = PicturesManager()
