@@ -1,5 +1,10 @@
 from django.db import models
 from django.urls import reverse_lazy
+from django.dispatch import receiver
+import os
+import logging
+
+application_logger = logging.getLogger('application-logger')
 
 
 class BaseModel(models.Model):
@@ -30,3 +35,11 @@ class Pictures(BaseModel):
         'books', on_delete=models.CASCADE
     )
     objects = PicturesManager()
+
+
+@receiver(models.signals.post_delete, sender=Pictures)
+def delete_picture(sender, instance, **kwargs):
+    if instance.picture:
+        if os.path.isfile(instance.picture.path):
+            os.remove(instance.picture.path)
+            application_logger.info(f'{instance.picture.path}を削除しました')

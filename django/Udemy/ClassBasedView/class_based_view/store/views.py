@@ -13,6 +13,11 @@ from .models import Books, Pictures
 from django.urls import reverse_lazy
 from django.contrib.messages.views import SuccessMessageMixin
 from django.contrib import messages
+import logging
+from django.http import Http404
+
+application_logger = logging.getLogger('application-logger')
+error_logger= logging.getLogger('error-logger')
 
 class IndexView(View):
 
@@ -22,12 +27,12 @@ class IndexView(View):
             'book_form': book_form
         })
 
-    def post(self, requset, *args, **kwargs):
-        book_form = forms.BookForm(requset.POST or None)
+    def post(self, request, *args, **kwargs):
+        book_form = forms.BookForm(request.POST or None)
         if book_form.is_valid():
             book_form.save()
-        return render(requset, 'index.html', context={
-            'book_form': book_form
+        return render(request, 'index.html', context={
+            'book_form': book_form,
         })
 
 class HomeView(TemplateView):
@@ -36,7 +41,10 @@ class HomeView(TemplateView):
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        print(kwargs)
+        application_logger.debug('Home画面を表示します。')
+        if kwargs.get('name') == 'あああ':
+            #error_logger.error('この名前は使用できません')
+            raise Http404('この名前は使用できません')
         context['name'] = kwargs.get('name')
         context['time'] = datetime.now()
         return context
