@@ -1,11 +1,18 @@
 from django.db.models import query
 from django.http import response
 from django.shortcuts import render, get_object_or_404
+from django.views.generic.base import TemplateView
 from django.views.generic.list import ListView
 from django.views.generic.detail import DetailView
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.http import JsonResponse, Http404
+from django.views.generic.base import TemplateView
 from django.contrib.auth.decorators import login_required
+from django.urls import reverse_lazy
+from .forms import (CartUpdateForm)
+from django.views.generic.edit import (
+    UpdateView, DeleteView, CreateView
+)
 from .models import (
     CartItems,
     Products, Carts, CartItems
@@ -85,3 +92,41 @@ def add_product(request):
                 cart=cart[0]
             )
             return JsonResponse({'message': '商品をカートに追加しました。'})
+
+class CartItemsView(LoginRequiredMixin, TemplateView):
+    template_name = os.path.join('stores', 'cart_items.html')
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        user_id = self.request.user.id
+        query = CartItems.objects.filter(cart_id=user_id)
+        total_price = 0
+        items = []
+        for item in query.all():
+            total_price += item.quantity * item.product.price
+            picture = item.product.productpictures_set.first()
+            picture = picture.picture if picture else None
+            in_stock = True if item.product.stock >= item.quantity else False
+            tmp_item = {
+                'quantity': item.quantity,
+                'picture': picture,
+                'name': item.product.name,
+                'id': item.id,
+                'price':item.product.price,
+                'in_stock': in_stock,
+            }
+            items.append(tmp_item)
+        context['total_price']=total_price
+        context['items'] =items
+        return context
+
+class CartUpdateView(LoginRequiredMixin, UpdateView):
+    template_name = os.path.join('stores', 'update_cart.html')
+    form_class = CartUpdateForm
+    model = CartItems
+    success_url = reverse_lazy('stores:cart_items')
+
+class CartDeleteView(LoginRequiredMixin, DeleteView):
+    template_name = os.path.join('stores', 'delete_cart.html')
+    model = CartItems
+    success_url = reverse_lazy('stores:cart_items')

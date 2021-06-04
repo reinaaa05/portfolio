@@ -16,7 +16,7 @@
         <p>在庫: {{ object.stock }}</p>
         {% if object.stock %}
             {% if is_added %}
-                <p class="btn btn-denger">カートに追加済みです</p>
+                <p class="btn btn-danger">カートに追加済みです</p>
             {% else %}
                 <input type="number" id="quantity" name="quantity" min="1" max="{{ object.stock }}"><br>
                 <button id="add_product" type="button" class="btn btn-primary">カートに追加</button>
