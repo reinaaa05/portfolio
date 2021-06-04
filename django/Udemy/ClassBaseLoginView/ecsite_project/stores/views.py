@@ -1,9 +1,14 @@
 from django.db.models import query
-from django.shortcuts import render
+from django.http import response
+from django.shortcuts import render, get_object_or_404
 from django.views.generic.list import ListView
+from django.views.generic.detail import DetailView
 from django.contrib.auth.mixins import LoginRequiredMixin
+from django.http import JsonResponse, Http404
+from django.contrib.auth.decorators import login_required
 from .models import (
-    Products,
+    CartItems,
+    Products, Carts, CartItems
 )
 
 import os
@@ -42,3 +47,41 @@ class ProductListView(LoginRequiredMixin, ListView):
         elif order_by_price == '2':
             context['descending'] = True
         return context
+
+
+class ProductDetailView(LoginRequiredMixin, DetailView):
+    model = Products
+    template_name = os.path.join('stores', 'product_detail.html')
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['is_added'] = CartItems.objects.filter(
+            cart_id=self.request.user.id,
+            product_id=kwargs.get('object').id
+        ).first()
+        return context
+
+@login_required
+def add_product(request):
+    if request.is_ajax:
+        product_id = request.POST.get('product_id')
+        quantity = request.POST.get('quantity')
+        product = get_object_or_404(Products, id=product_id)
+        if int(quantity) > product.stock:
+            response = JsonResponse({'message':'在庫数を超えています。'})
+            response.status_code = 403
+            return response
+        if int(quantity) <= 0:
+            response = JsonResponse({'message': '0より大きい値を入力してください'})
+            response.status_code = 403
+            return response
+        cart = Carts.objects.get_or_create(
+            user=request.user
+        )
+        if all([product_id, cart, quantity]):
+            CartItems.objects.save_item(
+                quantity=quantity,
+                product_id=product_id,
+                cart=cart[0]
+            )
+            return JsonResponse({'message': '商品をカートに追加しました。'})
