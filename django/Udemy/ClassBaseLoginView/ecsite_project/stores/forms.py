@@ -1,9 +1,10 @@
 from django import forms
 from django.core.exceptions import ValidationError
 from django.forms import fields, models
-from .models import CartItems
+from .models import Addresses, CartItems
 from django.shortcuts import get_object_or_404
 from django.core.exceptions import ValidationError
+from django.core.ca
 class CartUpdateForm(forms.ModelForm):
     quantity = forms.IntegerField(label='数量', min_value=1)
     id = forms.CharField(widget=forms.HiddenInput())
@@ -18,3 +19,20 @@ class CartUpdateForm(forms.ModelForm):
         cart_item = get_object_or_404(CartItems, pk=id)
         if quantity > cart_item.product.stock:
             raise ValidationError(f'在庫数を超えています. {cart_item.product.stock}以下にしてください')
+
+class AddressInputForm(forms.ModelForm):
+    address = forms.CharField(label='住所', widget=forms.TextInput(attrs={'size': '80'}))
+
+    class Meta:
+        model = Addresses
+        fields = ['zip_code', 'prefecture', 'address']
+        labels ={
+            'zip_code': '郵便番号',
+            'prefecture': '都道府県',
+        }
+
+    def save(self):
+        address = super().save(commit=False)
+        address.user = self.user
+        address.save()
+        return address

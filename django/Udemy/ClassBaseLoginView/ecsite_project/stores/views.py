@@ -1,5 +1,5 @@
 from django.db.models import query
-from django.http import response
+from django.http import request, response
 from django.shortcuts import render, get_object_or_404
 from django.views.generic.base import TemplateView
 from django.views.generic.list import ListView
@@ -9,7 +9,7 @@ from django.http import JsonResponse, Http404
 from django.views.generic.base import TemplateView
 from django.contrib.auth.decorators import login_required
 from django.urls import reverse_lazy
-from .forms import (CartUpdateForm)
+from .forms import (CartUpdateForm, AddressInputForm)
 from django.views.generic.edit import (
     UpdateView, DeleteView, CreateView
 )
@@ -130,3 +130,18 @@ class CartDeleteView(LoginRequiredMixin, DeleteView):
     template_name = os.path.join('stores', 'delete_cart.html')
     model = CartItems
     success_url = reverse_lazy('stores:cart_items')
+
+class InputAddressView(LoginRequiredMixin, CreateView):
+    template_name = os.path.join('stores', 'input_address.html')
+    form_class = AddressInputForm
+    success_url = reverse_lazy('stores:cart_items')
+
+    def get(self, request):
+        cart = get_object_or_404(Carts, user_id=request.user.id)
+        if not cart.cartitems_set.all():
+            raise Http404('商品が入っていません')
+        return super().get(request)
+
+    def form_valid(self, form):
+        form.user = self.request.user
+        return super().form_valid(form)
