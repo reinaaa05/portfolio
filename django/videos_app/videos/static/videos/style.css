@@ -2,6 +2,13 @@
   margin: 0;
 }
 
+a {
+  color: black;
+}
+a:hover {
+  opacity:0.5;
+}
+
 body {
   width: 80%;
   margin: 0 auto;
@@ -17,6 +24,16 @@ li{
   margin: 15px;
 }
 
+.video_title {
+  margin-left: 20px;
+  font-size: 30px;
+}
+
+.video_writer {
+  font-size: 20px;
+  margin-left: 20px;
+}
+
 .maierea {
   display: flex;
   justify-content: center;
@@ -28,6 +45,7 @@ aside{
 
 main {
   width: 80%;
+  margin-left: 10px;
 }
 
 /*video_list.html*/
@@ -70,12 +88,22 @@ video {
   display: flex;
   justify-content: space-between;
 }
+/* search.html */
+
+.category_list_page{
+  margin-top: 20px;
+}
+
 
 
 /* スマホレスポンシブデザイン */
 
 @media all and (max-width: 1000px) {
-  
+.maierea {
+    display: block;
+    justify-content: center;
+  }
+
 .video {
     margin: 10px auto;
   }
@@ -85,17 +113,19 @@ aside {
    width: 0;
   }
 
-main {
-  float: left;
-  margin-left: -100px;
-}
 .container {
-  width: 50%;
+  width: 100%;
 }
 /* ナビを縦並びにする */
 .nav_list {
   display:block;
   float: right;
+}
+
+/* video_detail */
+
+.video_detail {
+  width: 100%;
 }
 
 

@@ -3,7 +3,6 @@
 {% load videos %}
 
 {% block content %}
-<!-- <h1>{{ video_list.writer }}のチャンネル</h1> -->
 <div class="video_list grid">
     {% for video in video_list %}
       {% if pk == video.writer.pk %}
@@ -20,4 +19,5 @@
       {% endif %}
     {% endfor %}
 </div>
+<a href='JavaScript:history.back()' class="button is-light">戻る</a>
 {% endblock %}

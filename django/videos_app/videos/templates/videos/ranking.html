@@ -36,4 +36,5 @@
             <a href="?{% url_replace request 'page' page_obj.next_page_number %}">次へ</a>
         {% endif %}
     </div>
-        {% endblock %}
+    <a href='JavaScript:history.back()' class="button is-light">戻る</a>
+{% endblock %}

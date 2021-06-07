@@ -41,18 +41,16 @@
 <div class="section">
   <div class="container">
     <div class="maierea">
-      <aside class="aside">
-        {% if user.is_authenticated %}
-          {% create_search_form request %}
-          {% create_category_list %}
-        {% endif %}
-      </aside>
-      <main>
-        <div class="main">
-          {% block content %}
-          {% endblock %} 
-        </div>
-      </main>
+    {% block content %}
+    <div class="search">
+      <div class="search_page">
+        {% create_search_form request %}
+      </div>
+      <div class="category_list_page">
+        {% create_category_list %}
+      </div>
+    </div>
+    {% endblock %}
     </div>
   </div>
 </div>

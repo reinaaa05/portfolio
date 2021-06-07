@@ -5,7 +5,7 @@ from django.conf import settings
 
 class Category(models.Model):
    name = models.CharField('カテゴリ名', max_length=255, unique=True)
-
+   
    def __str__(self):
       return self.name
 

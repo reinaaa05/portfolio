@@ -1,5 +1,6 @@
 from django.shortcuts import get_object_or_404, redirect, render
 from django.views import generic
+from django.views.generic.base import TemplateView
 from .models import Video, Comment,Category
 from django.urls import reverse_lazy
 from django.db.models import Q
@@ -121,3 +122,5 @@ class Ranking(LoginRequiredMixin, ListView):
             
         return queryset
 
+class Search(LoginRequiredMixin, TemplateView):
+    template_name = 'videos/search.html'
