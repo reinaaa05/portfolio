@@ -106,7 +106,7 @@ def badfunc(request,pk):
         object.save()
         return redirect('videos:video_detail', pk=pk)
 
-class Ranking(ListView):
+class Ranking(LoginRequiredMixin, ListView):
     template_name = 'videos/ranking.html'
     model = Video
     paginate_by = 9
@@ -120,3 +120,4 @@ class Ranking(ListView):
                 queryset = queryset.filter(Q(title__icontains=key_word) | Q(title__icontains=key_word))
             
         return queryset
+

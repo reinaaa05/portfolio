@@ -20,58 +20,38 @@
   <nav class="navbar is-dark" role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
       <h2 class="navbar-item">video_list</h2>
-      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-      </a>
-    </div>
-
-    <div id="navbarBasicExample" class="navbar-menu">
-      <div class="navbar-start">
-        <a class="navbar-item" href="{% url 'videos:video_list' %}">ホーム</a>
-        <a class="navbar-item" href="{% url 'videos:video_create' %}">動画投稿</a>
-        <a class="navbar-item" href="{% url 'videos:ranking' %}">ランキング</a>
-      </div>
-    </div>
-    <div class="navber-end">
-      <div class="navbar-item">
-        <div class="buttons">
+      <div class="buttons">
+        <ul class="nav_list">
+          <li><a href="{% url 'videos:video_list' %}" class="button is-dark">ホーム</a></li>
+          <li><a href="{% url 'videos:video_create' %}" class="button is-dark">動画投稿</a></li>
+          <li><a href="{% url 'videos:ranking' %}" class="button is-dark">ランキング</a></li>
           {% if user.is_authenticated %}  
-            <a href="" class="button is-dark">
-              <strong>{{ user }}</strong>
-            </a> 
-            <a href="{% url 'logout' %}" class="button is-dark">
-              <strong>logout</strong>
-            </a>
+            <li><a href="{% url 'videos:user_detail' user.id %}" class="button is-dark">{{ user }}</a> </li>
+            <li><a href="{% url 'logout' %}" class="button is-dark">logout</a></li>
           {% else %}
-            <a href="{% url 'login' %}" class="button dark">
-              <strong>login</strong>
-            </a>
-            <a href="{% url 'accounts:signup' %}" class="button dark">
-              <strong>SignUp</strong>
-            </a>
+            <li><a href="{% url 'login' %}" class="button dark">login</a></li>
+            <li><a href="{% url 'accounts:signup' %}" class="button dark">SignUp</a></li>
           {% endif %}
-        </div>
+        </ul>
       </div>
     </div>
   </nav>
 </header>
 <div class="section">
   <div class="container">
-    <div class="columns">
-      <main class="column is-8">
+    <div class="maierea">
+      <aside>
+        {% if user.is_authenticated %}
+          {% create_search_form request %}
+          {% create_category_list %}
+        {% endif %}
+      </aside>
+      <main>
         <div class="mainarea">
           {% block content %}
           {% endblock %} 
         </div>
       </main>
-      {% if user.is_authenticated %}
-        <aside class="column is-3 is-offset-1 menu ">
-          {% create_search_form request %}
-          {% create_category_list %}
-        </aside>
-      {% endif %}
     </div>
   </div>
 </div>

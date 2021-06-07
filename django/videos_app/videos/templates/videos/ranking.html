@@ -3,19 +3,19 @@
 {% load videos %}
 
 {% block content %}
-    <div class="video_list">
+    <div class="video_list grid">
         {% for video in video_list %}
-            <h1>{{ forloop.counter }}位</h1>
-            <a href="{% url 'videos:video_detail' video.pk %}">
-                <div class="video">
-                    {% if video.thumbnail %}
+            <div class="video">
+                <h1>{{ forloop.counter }}位</h1>
+                <a href="{% url 'videos:video_detail' video.pk %}">
+                {% if video.thumbnail %}
                     <img src="{{ video.thumbnail.url }}">
-                    {% else %}
+                {% else %}
                     <img src="{% static 'videos/noimage.png' %}">
-                    {% endif %}
-                    <h2>{{ video.title }}</h2>
-                </div>
-            </a>
+                {% endif %}
+                <h2>{{ video.title }}</h2>
+                </a>
+            </div>
         {% endfor %}
     </div>
     <div class="num">

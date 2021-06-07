@@ -4,7 +4,7 @@
 
 {% block content %}
 <!-- <h1>{{ video_list.writer }}のチャンネル</h1> -->
-<div class="video_list">
+<div class="video_list grid">
     {% for video in video_list %}
       {% if pk == video.writer.pk %}
         <a href="{% url 'videos:video_detail' video.pk %}">
