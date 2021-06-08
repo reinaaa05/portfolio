@@ -27,6 +27,7 @@ li{
 .video_title {
   margin-left: 20px;
   font-size: 30px;
+  color: #FFF;
 }
 
 .video_writer {
@@ -73,6 +74,7 @@ video {
 .navbar {
   width: 100%;
   border-bottom: solid 2px lightgray;
+  z-index: 1;
 }
 
 .navbar h2 {
@@ -95,7 +97,44 @@ video {
 }
 
 
+/*ハンバーガーメニュー*/
+.nav-wrapper{      
+  display: none;      
+  width: 100vw;      
+  height: 100vh;      
+  position: fixed;      
+  top: 0;      
+  left: 0;       
+  z-index: 2;     
+}     
+.header-nav{        
+  width: 100%;        
+  height: 100%;        
+  background-color:#1B1310;        
+  z-index: 2;      
+}     
+.header-nav.nav-list{        
+  display: block;        
+  position: absolute;        
+  top: 50%;        
+  left: 50%;        
+  transform: translate(-50%,-50%);        
+  text-align: center;      
+}      
+.header-nav.nav-item{        
+  margin-right: 0;        
+  margin-bottom: 40px;      
+}
 
+.nav-item {
+  text-align: center;
+  padding-top: 25px;
+}
+
+.nav-item a{
+  color: #FFF;
+  font-size: 25px;
+}
 /* スマホレスポンシブデザイン */
 
 @media all and (max-width: 1000px) {
@@ -119,7 +158,6 @@ aside {
 /* ナビを縦並びにする */
 .nav_list {
   display:block;
-  float: right;
 }
 
 /* video_detail */
@@ -128,5 +166,56 @@ aside {
   width: 100%;
 }
 
+/*ハンバーガーメニュ－  */
+.burger-btn{
+  display: block;      
+  width: 39px;      
+  height: 39px;      
+  position: relative;      
+  z-index: 3;
+  border:none;    
+}    
+.bar{      
+  width: 20px;      
+  height: 1px;        
+  display: block;      
+  position: absolute;      
+  left: 650px;      
+  transform: translateX(-50%);      
+  background-color: #FFF;    
+}    
+.bar_top{   
+  top: -40px;
+}
+.bar_mid{    
+  top: -30px;
+  transform: translate(-50%,-50%);
+}
+.bar_bottom{
+  bottom: 60px;
+}
+
+/* 閉じるボタン */
+.burger-btn.close .bar_top{      
+  transform: translate(-50%,10px) rotate(45deg);      
+  transition: transform .3s;    
+}    
+.burger-btn.close .bar_mid{      
+  opacity: 0;       
+  transition: opacity .3s;    
+}    
+.burger-btn.close .bar_bottom{      
+transform: translate(-50%,-8px) rotate(-45deg);      
+transition: transform .3s;    
+}
+
+/* ナビメニューを隠す */
+.buttons {
+  display: none;
+}
+
+body.noscroll{
+  overflow: hidden;
+}
 
 }
