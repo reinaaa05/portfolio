@@ -27,7 +27,11 @@ li{
 .video_title {
   margin-left: 20px;
   font-size: 30px;
-  color: #FFF;
+}
+
+.signup {
+  font-size: 20px;
+  font-weight: bold;
 }
 
 .video_writer {
@@ -47,6 +51,11 @@ aside{
 main {
   width: 80%;
   margin-left: 10px;
+}
+
+/* 戻るボタン */
+.back_btn {
+  margin-top: 10px;
 }
 
 /*video_list.html*/
