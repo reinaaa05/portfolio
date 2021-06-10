@@ -1,0 +1,89 @@
+{% load static %}
+{% load videos %}
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>動画アップロード</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css">
+  <link rel="stylesheet" href="{% static 'videos/style.css' %}">
+  <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+  <link rel="stylesheet" href="{% static 'jquery-3.3.1.slim.min.js' %}">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+  integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+  crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>    
+  <script src="./js/script.js"></script>
+</head>
+<body>
+<header>
+  <nav class="navbar is-dark" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <h2 class="navbar-item">video_list</h2>
+      <div class="buttons">
+        <ul class="nav_list">
+          <li><a href="{% url 'videos:video_list' %}" class="button is-dark">ホーム</a></li>
+          {% if user.is_authenticated %}
+            <li><a href="{% url 'videos:video_create' %}" class="button is-dark">動画投稿</a></li>
+            <li><a href="{% url 'videos:ranking' %}" class="button is-dark">ランキング</a></li>
+            <li><a href="{% url 'videos:search' %}" class="button is-dark">検索</a></li> 
+            <li><a href="{% url 'videos:user_detail' user.id %}" class="button is-dark">{{ user }}</a> </li>
+            <li><a href="{% url 'logout' %}" class="button is-dark">Logout</a></li>
+          {% else %}
+            <li><a href="{% url 'login' %}" class="button dark">Login</a></li>
+            <li><a href="{% url 'accounts:signup' %}" class="button dark">SignUp</a></li>
+          {% endif %}
+        </ul>
+      </div>
+    </div>
+  </nav>
+    <div class="nav-wrapper"><!-- ②ナビゲーションメニュー -->
+      <nav class="header-nav">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="{% url 'videos:video_list' %}">ホーム</a></li>
+          {% if user.is_authenticated %}
+            <li class="nav-item"><a href="{% url 'videos:video_create' %}">動画投稿</a></li>
+            <li class="nav-item"><a href="{% url 'videos:ranking' %}">ランキング</a></li>
+            <li class="nav-item"><a href="{% url 'videos:search' %}">検索</a></li> 
+            <li class="nav-item"><a href="{% url 'videos:user_detail' user.id %}">{{ user }}</a> </li>
+            <li class="nav-item"><a href="{% url 'logout' %}">Logout</a></li>
+          {% else %}
+            <li class="nav-item"><a href="{% url 'login' %}">Login</a></li>
+            <li class="nav-item"><a href="{% url 'accounts:signup' %}">SignUp</a></li>
+          {% endif %}
+        </ul>
+      </nav>
+    </div>
+    <div class="burger-btn"><!-- ③ハンバーガーボタン -->
+        <span class="bar bar_top"></span>
+        <span class="bar bar_mid"></span>
+        <span class="bar bar_bottom"></span>
+    </div>
+</header>
+<div class="section">
+  <div class="container">
+    <div class="maierea">
+    {% block content %}
+    <div class="search">
+      <div class="search_page">
+        {% create_search_form request %}
+      </div>
+      <div class="category_list_page">
+        {% create_category_list %}
+      </div>
+    </div>
+    {% endblock %}
+    </div>
+  </div>
+</div>
+</body>
+</html>
+
+<script>
+$('.burger-btn').on('click',function(){
+  $('.burger-btn').toggleClass('close');
+  $('.nav-wrapper').fadeToggle(500);
+});
+</script>

@@ -25,7 +25,7 @@ SECRET_KEY = 'n=cka5b%l9z$z$g5q7uye6l+dw2mdhq+ux=*zx4ss$6w4#1dd%'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['coury-pencil.work']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
