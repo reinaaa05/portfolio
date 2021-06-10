@@ -7,7 +7,6 @@ class VideoCreate(forms.ModelForm):
       exclude = ('writer',)
 
 class CommentCreateForm(forms.ModelForm):
-
     class Meta:
         model = Comment
         fields = ('text',)

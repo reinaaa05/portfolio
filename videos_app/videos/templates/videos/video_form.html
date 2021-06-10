@@ -6,7 +6,7 @@
         {% csrf_token %}
         <button type="submit">{{ object|yesno:'更新,作成'}}</button>
     </form>
-    <div>
-        <a href='JavaScript:history.back()'>&lt; 戻る</a>
+    <div class="back_btn">
+        <a href='JavaScript:history.back()' class="button is-light">戻る</a>
     </div>
 {% endblock %}

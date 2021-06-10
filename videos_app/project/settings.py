@@ -25,7 +25,7 @@ SECRET_KEY = 'n=cka5b%l9z$z$g5q7uye6l+dw2mdhq+ux=*zx4ss$6w4#1dd%'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['coury-pencil.work']
 
 
 # Application definition
@@ -76,9 +76,18 @@ WSGI_APPLICATION = 'project.wsgi.application'
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 
 DATABASES = {
+    # 'default': {
+    #     'ENGINE': 'django.db.backends.sqlite3',
+    #     'NAME': BASE_DIR / 'db.sqlite3',
+    # }
+
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'videos_app_db',
+        'USER': 'reina01',
+        'PASSWORD': 'kumachan01' ,
+        'HOST': 'localhost',
+        'PORT': '',
     }
 }
 
@@ -129,3 +138,5 @@ STATICFILES_DIRS = [
 ]
 
 LOGIN_REDIRECT_URL = '/'
+
+DEFAULT_AUTO_FIELD='django.db.models.BigAutoField'

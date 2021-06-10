@@ -1,15 +1,18 @@
-from django.shortcuts import get_object_or_404, redirect
+from django.shortcuts import get_object_or_404, redirect, render
 from django.views import generic
+from django.views.generic.base import TemplateView
 from .models import Video, Comment,Category
 from django.urls import reverse_lazy
 from django.db.models import Q
 from .forms import CommentCreateForm, VideoSearchForm
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.core.exceptions import PermissionDenied
+from django.contrib.auth.models import User
+from django.views.generic import ListView
 
 class VideoList(generic.ListView):
     model = Video
-    paginate_by = 9
+    paginate_by = 6
     def get_queryset(self):
         queryset = super().get_queryset()
         form = VideoSearchForm(self.request.GET or None)
@@ -66,8 +69,58 @@ class CommentCreate(LoginRequiredMixin,generic.CreateView):
         comment.save()
         return redirect('videos:video_detail', pk=video_pk)
 
-class UserDetail(generic.DetailView):
+class UserDetail(generic.ListView):
     model = Video
-    slug_field = 'user_name'
-    slug_url_kwarg = 'user_name'
     template_name = 'videos/user_detail.html'
+ 
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['pk'] = self.kwargs['pk']        
+        return context
+
+def goodfunc(request,pk):
+    object = Video.objects.get(pk=pk)
+    username = request.user.get_username()
+    if object.good == None:
+        object.good = 0
+    if object.goodtext == None:
+        object.goodtext = 'a'
+    if username in object.goodtext:
+        return redirect('videos:video_detail', pk=pk)
+    else:
+        object.good = object.good + 1
+        object.goodtext = object.goodtext + ' ' + username
+        object.save()
+        return redirect('videos:video_detail', pk=pk)
+def badfunc(request,pk):
+    object = Video.objects.get(pk=pk)
+    username = request.user.get_username()
+    if object.bad == None:
+        object.bad = 0
+    if object.badtext == None:
+        object.badtext = 'a'
+    if username in object.badtext:
+        return redirect('videos:video_detail', pk=pk)
+    else:
+        object.bad = object.bad + 1
+        object.badtext = object.badtext + ' ' + username
+        object.save()
+        return redirect('videos:video_detail', pk=pk)
+
+class Ranking(LoginRequiredMixin, ListView):
+    template_name = 'videos/ranking.html'
+    model = Video
+    paginate_by = 9
+    ordering = '-good'
+    def get_queryset(self):
+        queryset = super().get_queryset()
+        form = VideoSearchForm(self.request.GET or None)
+        if form.is_valid():
+            key_word = form.cleaned_data.get('key_word')
+            if key_word:
+                queryset = queryset.filter(Q(title__icontains=key_word) | Q(title__icontains=key_word))
+            
+        return queryset
+
+class Search(LoginRequiredMixin, TemplateView):
+    template_name = 'videos/search.html'

@@ -1,14 +1,15 @@
-{% extends '../layout.html' %}
+{% extends 'layout.html' %}
 
 {%block content %}
-<h1>Sign Up</h1>
+<h2 class="signup">新規登録</h2>
 <section class="common-form">
   <form method="post">
     {% csrf_token %}
     {{ form.as_p }}
     <button type='submit'>Sign up</button>
   </form>
-
 </section>
-
+<div class="back_btn">
+    <a href="{% url 'videos:video_list' %}" class="button is-light">戻る</a>
+</div>
 {% endblock %}
